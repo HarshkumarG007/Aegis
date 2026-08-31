@@ -24,7 +24,7 @@ def mock_sim_model():
 
 @pytest.fixture
 def mock_claim_extractor():
-    with patch('aegis_eval.evaluator.claim_extractor.ClaimExtractor') as mock:
+    with patch('aegis_eval.evaluator.nli_contradiction.ClaimExtractor') as mock:
         instance = mock.return_value
         instance.extract_claims.return_value = ["extracted claim 1", "extracted claim 2"]
         yield instance
