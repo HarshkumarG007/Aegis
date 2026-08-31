@@ -93,3 +93,16 @@ class EvaluationVerdict(Base):
     rouge_l: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
 
     response = relationship("TargetResponse", back_populates="verdict")
+    claims = relationship("EvaluationVerdictClaim", back_populates="verdict")
+
+class EvaluationVerdictClaim(Base):
+    __tablename__ = "evaluation_verdict_claims"
+
+    claim_id: Mapped[str] = mapped_column(String, primary_key=True)
+    verdict_id: Mapped[str] = mapped_column(String, ForeignKey("evaluation_verdicts.verdict_id"))
+    claim_text: Mapped[str] = mapped_column(Text)
+    status: Mapped[str] = mapped_column(String) # SUPPORTED, CONTRADICTED, PARTIAL, UNSUPPORTED, ENTAILED, NOT_ENTAILED
+    evidence_chunk_id: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    metadata_json: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
+
+    verdict = relationship("EvaluationVerdict", back_populates="claims")

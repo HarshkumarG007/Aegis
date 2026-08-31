@@ -3,7 +3,7 @@ import json
 import uuid
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from aegis_eval.data.schema import BenchmarkManifest, EvaluationRun, AdversarialQuery, TargetResponse, EvaluationVerdict, RetrievedChunk
+from aegis_eval.data.schema import BenchmarkManifest, EvaluationRun, AdversarialQuery, TargetResponse, EvaluationVerdict, RetrievedChunk, EvaluationVerdictClaim
 from aegis_eval.evaluator.dispatcher import EvaluatorDispatcher
 from aegis_eval.targets.integration_contract import AegisTargetResponse
 from aegis_eval.data.manifest import BenchmarkManifest as PydanticManifest
@@ -111,6 +111,19 @@ class VerdictAggregator:
                 rouge_l=0.0
             )
             session.add(v_record)
+            
+            for claim_data in verdict_dict.get("claims", []):
+                claim_id = str(uuid.uuid4())
+                c_record = EvaluationVerdictClaim(
+                    claim_id=claim_id,
+                    verdict_id=v_id,
+                    claim_text=claim_data.get("claim", claim_data.get("interpretation", "")),
+                    status=claim_data.get("status", "UNKNOWN"),
+                    evidence_chunk_id=claim_data.get("evidence_chunk_id", claim_data.get("supported_chunk_id")),
+                    metadata_json=claim_data
+                )
+                session.add(c_record)
+                
             session.commit()
             
         return pass_fail, evidence
