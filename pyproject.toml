@@ -17,6 +17,7 @@ dependencies = [
     "sentence-transformers",
     "torch",
     "pyyaml",
+    "llama-cpp-python",
 ]
 
 [project.optional-dependencies]
