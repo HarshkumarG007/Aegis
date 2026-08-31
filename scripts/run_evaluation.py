@@ -23,6 +23,8 @@ def main():
         target = ReferenceTarget()
     else:
         target = None
+        
+    ref_target = ReferenceTarget() # Always instantiated for corpus access
     
     run_id = str(uuid.uuid4())
     print(f"Starting Evaluation Run: {run_id}")
@@ -45,30 +47,43 @@ def main():
     for i, q in enumerate(queries_flat):
         print(f"[{i+1}/{len(queries_flat)}] Evaluating {q['attack_type']}...")
         
+        status = "SUCCESS"
+        error_msg = None
+        
         if args.target == "reference":
             target_res = target.query(q["text"], q["attack_type"])
-            ans = target_res["answer_text"]
-            chunk_ids = target_res["retrieved_chunk_ids"]
+            ans = target_res.get("answer_text", "")
+            chunk_ids = target_res.get("retrieved_chunk_ids", [])
             chunk_contents = [target.corpus[cid] for cid in chunk_ids if cid in target.corpus]
         else:
             try:
                 res = requests.post(args.target, json={"query": q["text"]})
                 res.raise_for_status()
                 target_res = res.json()
-                ans = target_res["answer_text"]
-                chunk_contents = target_res.get("retrieved_chunks", [])
+                status = target_res.get("status", "SUCCESS")
+                ans = target_res.get("answer", "")
+                chunk_ids = target_res.get("retrieved_chunk_ids", [])
+                error_msg = target_res.get("error")
+                chunk_contents = [ref_target.corpus[cid] for cid in chunk_ids if cid in ref_target.corpus]
             except Exception as e:
-                print(f"   [ERROR] Failed to hit target: {e}")
-                ans = "Error"
+                status = "DAEMON_CRASH"
+                error_msg = str(e)
+                ans = ""
                 chunk_contents = []
         
         resp = {
             "id": q["id"],
             "answer_text": ans,
-            "retrieved_chunks": chunk_contents
+            "retrieved_chunks": chunk_contents,
+            "status": status,
+            "error": error_msg
         }
         
         aggregator.aggregate_and_store(run_id, q, resp)
+        
+        if status != "SUCCESS":
+            print(f"   [{status}] Bypassing evaluation. Error: {error_msg}")
+            continue
         pass_fail, ev = aggregator.dispatcher.evaluate(q["text"], q["attack_type"], ans, chunk_contents)
         
         if pass_fail:

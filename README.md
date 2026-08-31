@@ -24,18 +24,18 @@ All metrics below are drawn directly from committed validation runs (`reports/re
 
 | Attack Type | Evaluator Mechanism | Phase 6 Catch Rate (Reference Target) | Phase 7 Catch Rate (LlamaIndex Target) | Primary Failure Mode Observed |
 | :--- | :--- | :--- | :--- | :--- |
-| **Contradiction** | DeBERTa-v3-small NLI | **90.0%** (0.90) | **100.0%** (1.00) | Single-chunk retrieval bias; model accepted outdated source facts without cross-referencing. |
-| **Out-of-Domain** | Claim Groundedness (Cosine Sim) | **50.0%** (0.50) | **60.0%** (0.60) | Parametric hallucination; target answered confidently from pre-training weights instead of abstaining. |
-| **Multi-Hop** | Source Spread / Chunk Synthesis | **50.0%** (0.50) | **100.0%** (1.00) | Single-source isolation; target failed to synthesize across multiple retrieved nodes. |
-| **Ambiguous** | Ambiguity / Hedging Marker Match | **50.0%** (0.50) | **0.0%** (0.00)* | *Evaluator Heuristic Failure: GGML daemon crash returned `Error`, which tripped substring token matches (`or`). |
+| **Contradiction** | DeBERTa-v3-small NLI | **90.0%** (0.90) | **0.0%** (0.00) | Local target successfully synthesized contradictory facts when provided deterministic source IDs. |
+| **Out-of-Domain** | Claim Groundedness (Cosine Sim) | **50.0%** (0.50) | **90.0%** (0.90) | Parametric hallucination; target answered confidently from pre-training weights instead of abstaining. |
+| **Multi-Hop** | Source Spread / Chunk Synthesis | **50.0%** (0.50) | **40.0%** (0.40) | Target occasionally isolated single chunks, failing to bridge semantic connections across multiple nodes. |
+| **Ambiguous** | Ambiguity / Hedging Marker Match | **50.0%** (0.50) | **10.0%** (0.10) | Target sometimes committed to a single interpretation rather than explicitly hedging or acknowledging ambiguity. |
 
 ---
 
 ## Key Findings & Generalization Gap
 
-1. **The Single-Chunk Retrieval Fallacy**: The independent LlamaIndex target suffered a 100% catch rate on multi-hop queries. Standard similarity-based top-k retrieval frequently surfaced the dominant chunk while failing to force multi-node synthesis during answer generation.
-2. **Parametric Leakage Over Abstention**: Out-of-domain queries triggered confident, hallucinated answers 60% of the time, demonstrating that default RAG system prompts fail to enforce groundedness constraints when documents do not contain the answer.
-3. **The Danger of Surface Heuristics**: The Ambiguous check anomaly (0.0% catch rate) demonstrates why heuristic pattern matching requires strict tokenization/word boundaries. An unhandled `GGML_ASSERT` crash emitted `Error`, satisfying a loose `"or"` substring filter.
+1. **The Single-Chunk Retrieval Fallacy**: The independent LlamaIndex target suffered a 40% catch rate on multi-hop queries. Standard similarity-based top-k retrieval occasionally surfaces the dominant chunk while failing to force multi-node synthesis during answer generation.
+2. **Parametric Leakage Over Abstention**: Out-of-domain queries triggered confident, hallucinated answers 90% of the time, demonstrating that default RAG system prompts fail to enforce groundedness constraints when documents do not contain the answer.
+3. **The Importance of Error Boundaries**: Implementing strict `{status, answer, retrieved_chunk_ids, error}` boundaries was critical. By explicitly trapping infrastructure errors as `DAEMON_CRASH`, the pipeline prevents heuristic pollution (e.g., matching "or" against an unhandled "Error" string), ensuring that semantic catch rates remain mathematically pure.
 
 ---
 

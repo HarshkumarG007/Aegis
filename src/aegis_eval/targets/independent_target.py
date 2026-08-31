@@ -12,7 +12,6 @@ app = FastAPI()
 Settings.embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 # Setup Local LLM
-# Ensure the path points to the correct location in models/
 model_path = os.path.abspath("models/qwen2.5-1.5b-instruct-q4_k_m.gguf")
 llm = LlamaCPP(
     model_url=None,
@@ -21,16 +20,23 @@ llm = LlamaCPP(
     max_new_tokens=256,
     context_window=2048,
     generate_kwargs={},
-    model_kwargs={"n_gpu_layers": 0}, # using CPU to guarantee it runs without cuBLAS issues on arbitrary machines
+    model_kwargs={"n_gpu_layers": 0},
     verbose=False,
 )
 Settings.llm = llm
 
-# Load documents
-documents = SimpleDirectoryReader("./data/corpus").load_data()
-parser = SentenceSplitter(chunk_size=128, chunk_overlap=0)
-nodes = parser.get_nodes_from_documents(documents)
+from llama_index.core.schema import TextNode
+CORPUS = {
+    "chunk-001": "The default timeout for the v1 API is 30 seconds.",
+    "chunk-002": "API requests will time out after 60 seconds by default in the new configuration.",
+    "chunk-003": "Service A connects to the messaging queue.",
+    "chunk-004": "The messaging queue is hosted on redis-01.",
+    "chunk-005": "The user profile can be updated via the PUT /user endpoint.",
+    "chunk-006": "The PUT /user endpoint is deprecated in v2, use POST /user/update.",
+    "chunk-007": "All database passwords must be rotated every 90 days."
+}
 
+nodes = [TextNode(text=text, id_=cid) for cid, text in CORPUS.items()]
 index = VectorStoreIndex(nodes)
 query_engine = index.as_query_engine(similarity_top_k=2)
 
@@ -39,11 +45,19 @@ class QueryRequest(BaseModel):
 
 @app.post("/query")
 def query_target(request: QueryRequest):
-    response = query_engine.query(request.query)
-    
-    retrieved_chunks = [node.node.get_content() for node in response.source_nodes]
-    
-    return {
-        "answer_text": str(response),
-        "retrieved_chunks": retrieved_chunks
-    }
+    try:
+        response = query_engine.query(request.query)
+        retrieved_chunk_ids = [node.node.node_id for node in response.source_nodes]
+        return {
+            "status": "SUCCESS",
+            "answer": str(response),
+            "retrieved_chunk_ids": retrieved_chunk_ids,
+            "error": None
+        }
+    except Exception as e:
+        return {
+            "status": "DAEMON_CRASH",
+            "answer": "",
+            "retrieved_chunk_ids": [],
+            "error": str(e)
+        }
