@@ -9,6 +9,16 @@ def init_db():
     print(f"Connecting to database at {db_url}...")
     engine = create_engine(db_url)
     
+    # Create vector extension if not exists
+    from sqlalchemy import text
+    try:
+        with engine.connect() as conn:
+            conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector;"))
+            conn.commit()
+            print("Vector extension ensured.")
+    except Exception as e:
+        print(f"Could not create vector extension (is pgvector installed?): {e}")
+
     # Create all tables
     print("Creating tables...")
     Base.metadata.create_all(engine)

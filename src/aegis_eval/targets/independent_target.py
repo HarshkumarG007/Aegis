@@ -40,24 +40,41 @@ nodes = [TextNode(text=text, id_=cid) for cid, text in CORPUS.items()]
 index = VectorStoreIndex(nodes)
 query_engine = index.as_query_engine(similarity_top_k=2)
 
+import time
+
 class QueryRequest(BaseModel):
     query: str
+    query_id: str = "unknown"
 
 @app.post("/query")
 def query_target(request: QueryRequest):
+    start_time = time.time()
     try:
         response = query_engine.query(request.query)
-        retrieved_chunk_ids = [node.node.node_id for node in response.source_nodes]
+        retrieved_chunks = []
+        for i, node in enumerate(response.source_nodes):
+            retrieved_chunks.append({
+                "chunk_id": node.node.node_id,
+                "rank": i + 1,
+                "score": node.score
+            })
+            
+        latency_ms = int((time.time() - start_time) * 1000)
         return {
             "status": "SUCCESS",
             "answer": str(response),
-            "retrieved_chunk_ids": retrieved_chunk_ids,
+            "query_id": request.query_id,
+            "target_id": "independent_llama_target",
+            "retrieved_chunks": retrieved_chunks,
+            "latency_ms": latency_ms,
+            "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+            "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
             "error": None
         }
     except Exception as e:
         return {
             "status": "DAEMON_CRASH",
-            "answer": "",
-            "retrieved_chunk_ids": [],
+            "query_id": request.query_id,
+            "target_id": "independent_llama_target",
             "error": str(e)
         }
