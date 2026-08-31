@@ -12,9 +12,10 @@ class EvaluatorDispatcher:
             "ambiguous": AmbiguityEvaluator()
         }
         
-    def evaluate(self, query: str, attack_type: str, answer: str, retrieved_chunks: list[str]) -> tuple[bool, str]:
+    def evaluate(self, query: dict, answer: str, chunks_dict: dict) -> dict:
+        attack_type = query.get("attack_type")
         if attack_type not in self.evaluators:
             raise ValueError(f"Unknown attack type: {attack_type}")
             
         evaluator = self.evaluators[attack_type]
-        return evaluator.evaluate(query, answer, retrieved_chunks)
+        return evaluator.evaluate(query, answer, chunks_dict)

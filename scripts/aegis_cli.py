@@ -119,9 +119,9 @@ def do_run(args):
         aggregator.store_query_and_raw_response(run_id, q, target_res)
         
         # 4. Semantic Evaluation
-        chunk_contents = [ref_target.corpus[rc.chunk_id] for rc in target_res.retrieved_chunks if rc.chunk_id in ref_target.corpus]
+        chunks_dict = {rc.chunk_id: ref_target.corpus[rc.chunk_id] for rc in target_res.retrieved_chunks if rc.chunk_id in ref_target.corpus}
         
-        pass_fail, evidence = aggregator.evaluate_and_store_verdict(q, target_res, chunk_contents)
+        pass_fail, evidence = aggregator.evaluate_and_store_verdict(q, target_res, chunks_dict)
         verdicts_log.append({"query_id": q["id"], "pass_fail": pass_fail, "evidence": evidence})
         
         if target_res.status != TargetStatus.SUCCESS:
@@ -175,8 +175,8 @@ def do_replay(args):
         aggregator.store_query_and_raw_response(replay_run_id, q, target_res)
         
         # 2. Semantic Evaluation
-        chunk_contents = [ref_target.corpus[rc.chunk_id] for rc in target_res.retrieved_chunks if rc.chunk_id in ref_target.corpus]
-        pass_fail, evidence = aggregator.evaluate_and_store_verdict(q, target_res, chunk_contents)
+        chunks_dict = {rc.chunk_id: ref_target.corpus[rc.chunk_id] for rc in target_res.retrieved_chunks if rc.chunk_id in ref_target.corpus}
+        pass_fail, evidence = aggregator.evaluate_and_store_verdict(q, target_res, chunks_dict)
         
         print(f"Replayed {q['id']} - Pass: {pass_fail}")
 

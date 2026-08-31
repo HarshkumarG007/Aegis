@@ -86,16 +86,18 @@ class VerdictAggregator:
 
             session.commit()
 
-    def evaluate_and_store_verdict(self, query: dict, response: AegisTargetResponse, chunk_contents: list) -> tuple:
+    def evaluate_and_store_verdict(self, query: dict, response: AegisTargetResponse, chunks_dict: dict) -> tuple:
         if response.status.value != "SUCCESS":
-            return False, f"Infrastructure failure: {response.status.value}"
+            return False, json.dumps({"reason": f"Infrastructure failure: {response.status.value}"})
 
-        pass_fail, evidence = self.dispatcher.evaluate(
-            query["text"], 
-            query["attack_type"], 
+        verdict_dict = self.dispatcher.evaluate(
+            query, 
             response.answer or "", 
-            chunk_contents
+            chunks_dict
         )
+        
+        pass_fail = verdict_dict.get("pass_fail", False)
+        evidence = json.dumps(verdict_dict)
         
         with self.Session() as session:
             v_id = str(uuid.uuid4())
