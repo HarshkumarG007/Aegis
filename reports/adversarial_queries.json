@@ -1,0 +1,50 @@
+{
+    "contradiction": [
+        "What is the default timeout for the v1 API according to the current configuration?",
+        "What is the default timeout for the PUT /user/update endpoint in the new configuration?",
+        "What is the correct method to update a user profile in the new configuration?",
+        "What is the default timeout for the PUT /user endpoint in the v2 configuration, given that the user profile can be updated via this endpoint?",
+        "What is the default timeout for API requests in the new configuration, as it differs from the default timeout of 30 seconds in the v1 API?",
+        "What is the default timeout for the v2 API, given that the user profile update endpoint is deprecated and requires POST instead of PUT?",
+        "What is the default timeout for the v2 API?",
+        "What is the default timeout for the v1 API in the new configuration, considering the deprecated PUT /user endpoint and the fact that service A connects to the messaging queue hosted on redis-01, which uses the default timeout for the v1 API of 30 seconds?",
+        "What is the default timeout for the v2 API and how does it compare to the 30 seconds for the v1 API?",
+        "What is the default timeout for the v2 API?"
+    ],
+    "out_of_domain": [
+        "What is the maximum time allowed for an API request in the new configuration?",
+        "What is the maximum timeout for API requests in the new configuration?",
+        "What is the recommended method for updating the user profile in version 2 of the API?",
+        "What is the default timeout for the v1 API when using the deprecated PUT /user endpoint instead of the POST /user/update endpoint?",
+        "What is the default timeout for the PUT /user endpoint in the v2 configuration?",
+        "What is the default timeout for the PUT /user endpoint in version v2?",
+        "What is the default timeout for the PUT /user endpoint in the v2 configuration?",
+        "What is the maximum timeout for API requests in the new configuration?",
+        "What is the default timeout for the PUT /user endpoint in the new configuration?",
+        "What is the default time limit for API requests in the new configuration?"
+    ],
+    "multi_hop": [
+        "What is the current default timeout for API requests in the new configuration?",
+        "What is the latest method for updating user profiles in the v2 API configuration?",
+        "What is the current default timeout for API requests connecting to the messaging queue hosted on redis-01?",
+        "What is the default time limit for API requests in the new configuration, and is it also applicable to Service A's connection to the messaging queue?",
+        "How can I update a user profile if the PUT /user endpoint is deprecated in v2 and the service connects to a messaging queue hosted on redis-01?",
+        "What is the recommended method for updating a user profile in API v1 compared to API v2?",
+        "How long is the default timeout for API requests in the new configuration when connecting to the messaging queue hosted on redis-01?",
+        "What is the current default timeout for API requests in the new configuration?",
+        "How can I update the user profile in the new configuration?",
+        "What is the recommended method for updating a user profile when using the v1 API versus the v2 API?"
+    ],
+    "ambiguous": [
+        "How does the user profile update process work when using the API?",
+        "What is the current default timeout for API calls to the user update endpoint?",
+        "How does the user profile update mechanism work for the v2 API?",
+        "Can a user profile be updated through the PUT /user endpoint in version v2 or the deprecated POST /user/update endpoint?",
+        "How can I update my user profile in the system, given that the PUT /user endpoint is deprecated in v2 and I need to use the POST /user/update endpoint instead?",
+        "What is the API endpoint used to update the user profile in the v1 API?",
+        "How can one update their user profile if they are using the default configuration?",
+        "What is the maximum timeout for the PUT /user endpoint in the v1 API configuration?",
+        "What is the correct method to update a user profile in the current configuration?",
+        "What is the recommended method for updating user profiles in version 2 of the API?"
+    ]
+}

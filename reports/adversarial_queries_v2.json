@@ -1,0 +1,50 @@
+{
+    "contradiction": [
+        "How can I update the user profile if the PUT /user endpoint is deprecated in v2?",
+        "According to the documentation, the v1 API uses a 30-second timeout, but the new configuration specifies a 60-second timeout. Which setting should I use for the API requests?",
+        "What is the actual default timeout period for API requests in the new configuration?",
+        "What is the correct default timeout for the v1 API in the new configuration, and which documentation should I refer to for the latest information?",
+        "What is the actual default timeout for API requests in the new configuration, considering the conflicting information in Chunk 1 and Chunk 2?",
+        "How can I determine the correct default timeout for API requests when I have conflicting information about the 30-second and 60-second settings from different chunks?",
+        "Which documentation specifies the default timeout for API requests: 30 seconds or 60 seconds?",
+        "Which timeout setting should I use for API requests: 30 seconds or 60 seconds, considering the conflicting information in Chunk 1 and Chunk 2?",
+        "Is the default timeout for the v1 API 30 seconds as stated in Chunk 1, or is it 60 seconds as mentioned in Chunk 2?",
+        "What is the actual default timeout setting for the new configuration, considering the conflicting information about 30 seconds and 60 seconds from Chunk 1 and Chunk 2, respectively?"
+    ],
+    "out_of_domain": [
+        "Can you provide information on the maintenance schedule for the external IT service provider?",
+        "What is the recommended method for updating user information in the new configuration?",
+        "How does the user experience differ between the v1 and v2 API endpoints?",
+        "What is the encryption protocol used by the messaging queue?",
+        "How often is the external billing system updated and validated?",
+        "What is the typical lifespan of a database record in the v2 configuration?",
+        "How many days is the maximum wait time allowed before a user account expires in the old v1 configuration?",
+        "What is the average waiting time in minutes for a customer to receive a response after submitting a service request online?",
+        "What is the recommended procedure for updating the user experience with a new version of the application?",
+        "How often is the user interface updated for mobile applications in the latest version of the operating system?"
+    ],
+    "multi_hop": [
+        "What is the default timeout for the API request that updates user profiles?",
+        "What is the default timeout for the PUT /user update endpoint that connects to the messaging queue hosted on redis-01?",
+        "If the API request to update user profiles uses the deprecated PUT /user endpoint, what is the maximum allowed timeout in the new configuration?",
+        "What is the maximum allowed timeout for the v1 API request that connects to the messaging queue hosted on redis-01?",
+        "If the service connects to the messaging queue, what is the default timeout it will use?",
+        "What is the default timeout for the PUT /user endpoint that connects to the service hosted on redis-01?",
+        "What is the maximum allowed timeout for the API request to update user profiles that connects to the messaging queue hosted on redis-01?",
+        "What is the default timeout for the v2 API request that connects to the service hosted on redis-01?",
+        "What is the default timeout for the PUT /user update endpoint that uses the deprecated endpoint?",
+        "If the PUT /user endpoint is updated to use POST /user/update, what is the new default timeout in the configuration?"
+    ],
+    "ambiguous": [
+        "Can I update my user profile without using the deprecated PUT /user endpoint?",
+        "How do I update my user profile in the most secure way?",
+        "What is the correct HTTP method to update a user's profile without specifying version or endpoint?",
+        "How should I authenticate to access the user profile update endpoint?",
+        "Should I use PUT or POST to update my user profile?",
+        "Is there a way to update my user profile in such a way that it is not deprecated?",
+        "What are the correct HTTP methods and authentication considerations when updating a user profile across different API versions and configurations?",
+        "What HTTP method should I use to update my profile?",
+        "How do I update my user profile without specifying the version of the API being used?",
+        "How do I update a user's profile?"
+    ]
+}

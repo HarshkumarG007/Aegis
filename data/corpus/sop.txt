@@ -1,0 +1,7 @@
+The default timeout for the v1 API is 30 seconds.
+API requests will time out after 60 seconds by default in the new configuration.
+Service A connects to the messaging queue.
+The messaging queue is hosted on redis-01.
+The user profile can be updated via the PUT /user endpoint.
+The PUT /user endpoint is deprecated in v2, use POST /user/update.
+All database passwords must be rotated every 90 days.

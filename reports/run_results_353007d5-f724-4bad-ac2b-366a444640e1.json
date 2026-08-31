@@ -1,0 +1,21 @@
+{
+    "run_id": "353007d5-f724-4bad-ac2b-366a444640e1",
+    "stats": {
+        "contradiction": {
+            "pass": 1,
+            "fail": 9
+        },
+        "out_of_domain": {
+            "pass": 2,
+            "fail": 8
+        },
+        "multi_hop": {
+            "pass": 10,
+            "fail": 0
+        },
+        "ambiguous": {
+            "pass": 0,
+            "fail": 10
+        }
+    }
+}

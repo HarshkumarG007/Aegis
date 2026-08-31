@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+psycopg2-binary
+sentence-transformers
+torch
+pyyaml
+
+[dev]
+pytest
+pytest-cov
+black
+ruff
