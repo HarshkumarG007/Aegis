@@ -1,9 +1,11 @@
 # Aegis-Eval Release Notes
 
-## V2.2.0-beta (Release Candidate)
-- **Tag:** `v2.2.0-beta`
-- **Commit:** `057484d50986368ac8ac8d725b872347937a1e40`
-- **Focus:** 60-query independent benchmark, local target evaluation, metrics engine.
+## V2.2.0-beta.1 (Release Candidate - Signed Off)
+- **Tag:** `v2.2.0-beta.1`
+- **Commit:** `3ef6a0de`
+- **Focus:** 60-query independent benchmark, exact-match contradiction bounding, calibration gates.
+- **Calibration Sign-off:** Positive 98.3%, Negative 0.0%, Mixed 48.3%.
+- **Independent Baseline:** 46.7% overall (Multi-hop: 91.7%, Contradiction: 16.7%).
 - **Key Validation:** Byte-for-byte offline deterministic replay verified on SQLite backend.
 
 ## [v2.1.0] - Aegis-Eval V2.1 (Implementation and Benchmark Infrastructure Complete)
