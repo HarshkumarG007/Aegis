@@ -12,7 +12,7 @@ def main():
     parser.add_argument("--report", type=str, default="reports/reference_validation.json", help="Report output path")
     args = parser.parse_args()
 
-    os.environ["DATABASE_URL"] = "postgresql://postgres:123456@localhost:5433/postgres"
+    os.environ["DATABASE_URL"] = "postgresql://user:password@localhost:5433/postgres"
     
     with open("reports/adversarial_queries_v2.json", "r") as f:
         query_data = json.load(f)

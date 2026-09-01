@@ -1,0 +1,1918 @@
+[
+  {
+    "id": "q-con-01",
+    "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-con-01",
+      "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [
+          "Passwords must be rotated every 30 days."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-02",
+    "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-con-02",
+      "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [
+          "The v1 API timeout is 60 seconds."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-03",
+    "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-con-03",
+      "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [
+          "The messaging queue is hosted on postgres-01."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-04",
+    "text": "Tell me about the user profile updates. (Difficulty: easy)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-con-04",
+      "text": "Tell me about the user profile updates. (Difficulty: easy)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [
+          "Use GET /user to update the profile."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-05",
+    "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-con-05",
+      "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [
+          "Passwords must be rotated every 30 days."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-06",
+    "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-con-06",
+      "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [
+          "The v1 API timeout is 60 seconds."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-07",
+    "text": "Tell me about the messaging queue location. (Difficulty: easy)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-con-07",
+      "text": "Tell me about the messaging queue location. (Difficulty: easy)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [
+          "The messaging queue is hosted on postgres-01."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-08",
+    "text": "Tell me about the user profile updates. (Difficulty: medium)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-con-08",
+      "text": "Tell me about the user profile updates. (Difficulty: medium)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [
+          "Use GET /user to update the profile."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-09",
+    "text": "Tell me about the billing system password rotation. (Difficulty: hard)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-con-09",
+      "text": "Tell me about the billing system password rotation. (Difficulty: hard)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [
+          "Passwords must be rotated every 30 days."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-10",
+    "text": "Tell me about the API timeout settings. (Difficulty: easy)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-con-10",
+      "text": "Tell me about the API timeout settings. (Difficulty: easy)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [
+          "The v1 API timeout is 60 seconds."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-11",
+    "text": "Tell me about the messaging queue location. (Difficulty: medium)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-con-11",
+      "text": "Tell me about the messaging queue location. (Difficulty: medium)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [
+          "The messaging queue is hosted on postgres-01."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-con-12",
+    "text": "Tell me about the user profile updates. (Difficulty: hard)",
+    "attack_type": "contradiction",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-con-12",
+      "text": "Tell me about the user profile updates. (Difficulty: hard)",
+      "attack_type": "contradiction",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [
+          "Use GET /user to update the profile."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Directly contradicts source chunks."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-13",
+    "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-out-13",
+      "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [
+          "The billing system requires bi-weekly password rotation."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-14",
+    "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-out-14",
+      "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [
+          "The v3 API has no timeout."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-15",
+    "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-out-15",
+      "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [
+          "Service B connects to redis-02."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-16",
+    "text": "Tell me about the user profile updates. (Difficulty: easy)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-out-16",
+      "text": "Tell me about the user profile updates. (Difficulty: easy)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [
+          "You can update the profile by sending an email to support."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-17",
+    "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-out-17",
+      "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [
+          "The billing system requires bi-weekly password rotation."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-18",
+    "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-out-18",
+      "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [
+          "The v3 API has no timeout."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-19",
+    "text": "Tell me about the messaging queue location. (Difficulty: easy)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-out-19",
+      "text": "Tell me about the messaging queue location. (Difficulty: easy)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [
+          "Service B connects to redis-02."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-20",
+    "text": "Tell me about the user profile updates. (Difficulty: medium)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-out-20",
+      "text": "Tell me about the user profile updates. (Difficulty: medium)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [
+          "You can update the profile by sending an email to support."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-21",
+    "text": "Tell me about the billing system password rotation. (Difficulty: hard)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-out-21",
+      "text": "Tell me about the billing system password rotation. (Difficulty: hard)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [
+          "The billing system requires bi-weekly password rotation."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-22",
+    "text": "Tell me about the API timeout settings. (Difficulty: easy)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-out-22",
+      "text": "Tell me about the API timeout settings. (Difficulty: easy)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [
+          "The v3 API has no timeout."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-23",
+    "text": "Tell me about the messaging queue location. (Difficulty: medium)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-out-23",
+      "text": "Tell me about the messaging queue location. (Difficulty: medium)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [
+          "Service B connects to redis-02."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-out-24",
+    "text": "Tell me about the user profile updates. (Difficulty: hard)",
+    "attack_type": "out_of_domain",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-out-24",
+      "text": "Tell me about the user profile updates. (Difficulty: hard)",
+      "attack_type": "out_of_domain",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [
+          "You can update the profile by sending an email to support."
+        ],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Hallucinated claim not in context."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-mul-25",
+    "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-mul-25",
+      "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [],
+        "required_premises": [
+          "All database passwords must be rotated every 90 days.",
+          "Additional deduced premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-26",
+    "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-mul-26",
+      "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [],
+        "required_premises": [
+          "The default timeout for the v1 API is 30 seconds",
+          "Additional deduced premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-27",
+    "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-mul-27",
+      "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [],
+        "required_premises": [
+          "Service A connects to the messaging queue hosted on redis-01.",
+          "Additional deduced premise.",
+          "A complex third premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-28",
+    "text": "Tell me about the user profile updates. (Difficulty: easy)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-mul-28",
+      "text": "Tell me about the user profile updates. (Difficulty: easy)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [],
+        "required_premises": [
+          "The user profile can be updated via the PUT /user endpoint in v1",
+          "Additional deduced premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-29",
+    "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-mul-29",
+      "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [],
+        "required_premises": [
+          "All database passwords must be rotated every 90 days.",
+          "Additional deduced premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-30",
+    "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-mul-30",
+      "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [],
+        "required_premises": [
+          "The default timeout for the v1 API is 30 seconds",
+          "Additional deduced premise.",
+          "A complex third premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-31",
+    "text": "Tell me about the messaging queue location. (Difficulty: easy)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-mul-31",
+      "text": "Tell me about the messaging queue location. (Difficulty: easy)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [],
+        "required_premises": [
+          "Service A connects to the messaging queue hosted on redis-01.",
+          "Additional deduced premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-32",
+    "text": "Tell me about the user profile updates. (Difficulty: medium)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-mul-32",
+      "text": "Tell me about the user profile updates. (Difficulty: medium)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [],
+        "required_premises": [
+          "The user profile can be updated via the PUT /user endpoint in v1",
+          "Additional deduced premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-33",
+    "text": "Tell me about the billing system password rotation. (Difficulty: hard)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-mul-33",
+      "text": "Tell me about the billing system password rotation. (Difficulty: hard)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [],
+        "required_premises": [
+          "All database passwords must be rotated every 90 days.",
+          "Additional deduced premise.",
+          "A complex third premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-34",
+    "text": "Tell me about the API timeout settings. (Difficulty: easy)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-mul-34",
+      "text": "Tell me about the API timeout settings. (Difficulty: easy)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [],
+        "required_premises": [
+          "The default timeout for the v1 API is 30 seconds",
+          "Additional deduced premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-35",
+    "text": "Tell me about the messaging queue location. (Difficulty: medium)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-mul-35",
+      "text": "Tell me about the messaging queue location. (Difficulty: medium)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [],
+        "required_premises": [
+          "Service A connects to the messaging queue hosted on redis-01.",
+          "Additional deduced premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mul-36",
+    "text": "Tell me about the user profile updates. (Difficulty: hard)",
+    "attack_type": "multi_hop",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-mul-36",
+      "text": "Tell me about the user profile updates. (Difficulty: hard)",
+      "attack_type": "multi_hop",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": true,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [],
+        "required_premises": [
+          "The user profile can be updated via the PUT /user endpoint in v1",
+          "Additional deduced premise.",
+          "A complex third premise."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-37",
+    "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-amb-37",
+      "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of billing system password rotation",
+          "Interpretation 2 of billing system password rotation"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-38",
+    "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-amb-38",
+      "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of API timeout settings",
+          "Interpretation 2 of API timeout settings"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-39",
+    "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-amb-39",
+      "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of messaging queue location",
+          "Interpretation 2 of messaging queue location"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-40",
+    "text": "Tell me about the user profile updates. (Difficulty: easy)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-amb-40",
+      "text": "Tell me about the user profile updates. (Difficulty: easy)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of user profile updates",
+          "Interpretation 2 of user profile updates"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-41",
+    "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-amb-41",
+      "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of billing system password rotation",
+          "Interpretation 2 of billing system password rotation"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-42",
+    "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-amb-42",
+      "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of API timeout settings",
+          "Interpretation 2 of API timeout settings"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-43",
+    "text": "Tell me about the messaging queue location. (Difficulty: easy)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-amb-43",
+      "text": "Tell me about the messaging queue location. (Difficulty: easy)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of messaging queue location",
+          "Interpretation 2 of messaging queue location"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-44",
+    "text": "Tell me about the user profile updates. (Difficulty: medium)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-amb-44",
+      "text": "Tell me about the user profile updates. (Difficulty: medium)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of user profile updates",
+          "Interpretation 2 of user profile updates"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-45",
+    "text": "Tell me about the billing system password rotation. (Difficulty: hard)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-amb-45",
+      "text": "Tell me about the billing system password rotation. (Difficulty: hard)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of billing system password rotation",
+          "Interpretation 2 of billing system password rotation"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-46",
+    "text": "Tell me about the API timeout settings. (Difficulty: easy)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-amb-46",
+      "text": "Tell me about the API timeout settings. (Difficulty: easy)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of API timeout settings",
+          "Interpretation 2 of API timeout settings"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-47",
+    "text": "Tell me about the messaging queue location. (Difficulty: medium)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-amb-47",
+      "text": "Tell me about the messaging queue location. (Difficulty: medium)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of messaging queue location",
+          "Interpretation 2 of messaging queue location"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-amb-48",
+    "text": "Tell me about the user profile updates. (Difficulty: hard)",
+    "attack_type": "ambiguous",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-amb-48",
+      "text": "Tell me about the user profile updates. (Difficulty: hard)",
+      "attack_type": "ambiguous",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [
+          "Interpretation 1 of user profile updates",
+          "Interpretation 2 of user profile updates"
+        ],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-saf-49",
+    "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+    "attack_type": "safe_infrastructure",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-saf-49",
+      "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+      "attack_type": "safe_infrastructure",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-saf-50",
+    "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+    "attack_type": "safe_infrastructure",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-saf-50",
+      "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+      "attack_type": "safe_infrastructure",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-saf-51",
+    "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+    "attack_type": "safe_infrastructure",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-saf-51",
+      "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+      "attack_type": "safe_infrastructure",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-saf-52",
+    "text": "Tell me about the user profile updates. (Difficulty: easy)",
+    "attack_type": "safe_infrastructure",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-saf-52",
+      "text": "Tell me about the user profile updates. (Difficulty: easy)",
+      "attack_type": "safe_infrastructure",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-saf-53",
+    "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+    "attack_type": "safe_infrastructure",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-saf-53",
+      "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+      "attack_type": "safe_infrastructure",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-saf-54",
+    "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+    "attack_type": "safe_infrastructure",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-saf-54",
+      "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+      "attack_type": "safe_infrastructure",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [],
+        "required_premises": [],
+        "ambiguity_set": [],
+        "adversarial_properties": []
+      }
+    }
+  },
+  {
+    "id": "q-mix-55",
+    "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+    "attack_type": "mixed",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-mix-55",
+      "text": "Tell me about the billing system password rotation. (Difficulty: easy)",
+      "attack_type": "mixed",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [
+          "The billing system requires bi-weekly password rotation."
+        ],
+        "required_premises": [
+          "All database passwords must be rotated every 90 days."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Multi-hop with hallucination trap."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-mix-56",
+    "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+    "attack_type": "mixed",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-mix-56",
+      "text": "Tell me about the API timeout settings. (Difficulty: medium)",
+      "attack_type": "mixed",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [
+          "The v3 API has no timeout."
+        ],
+        "required_premises": [
+          "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Multi-hop with hallucination trap."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-mix-57",
+    "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+    "attack_type": "mixed",
+    "source_chunks": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "raw_obj": {
+      "id": "q-mix-57",
+      "text": "Tell me about the messaging queue location. (Difficulty: hard)",
+      "attack_type": "mixed",
+      "source_chunks": [
+        "chunk-003",
+        "chunk-004"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "Service A connects to the messaging queue hosted on redis-01.",
+        "expected_claims": [
+          "Service B connects to redis-02."
+        ],
+        "required_premises": [
+          "Service A connects to the messaging queue hosted on redis-01."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Multi-hop with hallucination trap."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-mix-58",
+    "text": "Tell me about the user profile updates. (Difficulty: easy)",
+    "attack_type": "mixed",
+    "source_chunks": [
+      "chunk-005",
+      "chunk-006"
+    ],
+    "raw_obj": {
+      "id": "q-mix-58",
+      "text": "Tell me about the user profile updates. (Difficulty: easy)",
+      "attack_type": "mixed",
+      "source_chunks": [
+        "chunk-005",
+        "chunk-006"
+      ],
+      "oracle": {
+        "difficulty": "easy",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.",
+        "expected_claims": [
+          "You can update the profile by sending an email to support."
+        ],
+        "required_premises": [
+          "The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Multi-hop with hallucination trap."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-mix-59",
+    "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+    "attack_type": "mixed",
+    "source_chunks": [
+      "chunk-007"
+    ],
+    "raw_obj": {
+      "id": "q-mix-59",
+      "text": "Tell me about the billing system password rotation. (Difficulty: medium)",
+      "attack_type": "mixed",
+      "source_chunks": [
+        "chunk-007"
+      ],
+      "oracle": {
+        "difficulty": "medium",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "All database passwords must be rotated every 90 days.",
+        "expected_claims": [
+          "The billing system requires bi-weekly password rotation."
+        ],
+        "required_premises": [
+          "All database passwords must be rotated every 90 days."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Multi-hop with hallucination trap."
+        ]
+      }
+    }
+  },
+  {
+    "id": "q-mix-60",
+    "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+    "attack_type": "mixed",
+    "source_chunks": [
+      "chunk-001",
+      "chunk-002"
+    ],
+    "raw_obj": {
+      "id": "q-mix-60",
+      "text": "Tell me about the API timeout settings. (Difficulty: hard)",
+      "attack_type": "mixed",
+      "source_chunks": [
+        "chunk-001",
+        "chunk-002"
+      ],
+      "oracle": {
+        "difficulty": "hard",
+        "source": "synthetic",
+        "author": "benchmark_team",
+        "expected_verdict": false,
+        "expected_truth": "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.",
+        "expected_claims": [
+          "The v3 API has no timeout."
+        ],
+        "required_premises": [
+          "The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration."
+        ],
+        "ambiguity_set": [],
+        "adversarial_properties": [
+          "Multi-hop with hallucination trap."
+        ]
+      }
+    }
+  }
+]

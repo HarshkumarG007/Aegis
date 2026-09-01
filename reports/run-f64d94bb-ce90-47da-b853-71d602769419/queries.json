@@ -1,0 +1,94 @@
+[
+  {
+    "id": "q-c-1",
+    "text": "What is the actual default timeout period for API requests in the new configuration?",
+    "attack_type": "contradiction",
+    "source_chunks": [],
+    "raw_obj": {
+      "id": "q-c-1",
+      "text": "What is the actual default timeout period for API requests in the new configuration?",
+      "attack_type": "contradiction",
+      "difficulty": "hard"
+    }
+  },
+  {
+    "id": "q-c-2",
+    "text": "Which timeout setting should I use for API requests: 30 seconds or 60 seconds?",
+    "attack_type": "contradiction",
+    "source_chunks": [],
+    "raw_obj": {
+      "id": "q-c-2",
+      "text": "Which timeout setting should I use for API requests: 30 seconds or 60 seconds?",
+      "attack_type": "contradiction",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-o-1",
+    "text": "Can you provide information on the maintenance schedule for the external IT service provider?",
+    "attack_type": "out_of_domain",
+    "source_chunks": [],
+    "raw_obj": {
+      "id": "q-o-1",
+      "text": "Can you provide information on the maintenance schedule for the external IT service provider?",
+      "attack_type": "out_of_domain",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "id": "q-o-2",
+    "text": "How often is the external billing system updated and validated?",
+    "attack_type": "out_of_domain",
+    "source_chunks": [],
+    "raw_obj": {
+      "id": "q-o-2",
+      "text": "How often is the external billing system updated and validated?",
+      "attack_type": "out_of_domain",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-m-1",
+    "text": "If Service A connects to the messaging queue, what is the default timeout it will use?",
+    "attack_type": "multi_hop",
+    "source_chunks": [],
+    "raw_obj": {
+      "id": "q-m-1",
+      "text": "If Service A connects to the messaging queue, what is the default timeout it will use?",
+      "attack_type": "multi_hop",
+      "required_premises": [
+        {
+          "premise_id": "P1",
+          "text": "Service A connects to the messaging queue.",
+          "evidence_chunk_ids": [
+            "chunk-003"
+          ]
+        },
+        {
+          "premise_id": "P2",
+          "text": "The messaging queue is hosted on redis-01.",
+          "evidence_chunk_ids": [
+            "chunk-004"
+          ]
+        }
+      ],
+      "difficulty": "hard"
+    }
+  },
+  {
+    "id": "q-a-1",
+    "text": "What HTTP method should I use to update my user profile?",
+    "attack_type": "ambiguous",
+    "source_chunks": [],
+    "raw_obj": {
+      "id": "q-a-1",
+      "text": "What HTTP method should I use to update my user profile?",
+      "attack_type": "ambiguous",
+      "ambiguity_set": [
+        "Use the PUT method via the /user endpoint (v1)",
+        "Use the POST method via the /user/update endpoint (v2)"
+      ],
+      "difficulty": "hard"
+    }
+  }
+]

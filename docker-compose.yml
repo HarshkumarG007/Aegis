@@ -2,9 +2,9 @@ services:
   postgres:
     image: pgvector/pgvector:pg15
     environment:
-      POSTGRES_USER: aegis
+      POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: aegis_eval
+      POSTGRES_DB: postgres
     ports:
       - "5432:5432"
     volumes:

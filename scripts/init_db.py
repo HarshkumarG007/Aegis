@@ -1,10 +1,10 @@
 import os
 from sqlalchemy import create_engine
 from aegis_eval.data.schema import Base
+from aegis_eval.config import get_db_url
 
 def init_db():
-    # Use environment variable or default local postgres connection
-    db_url = os.environ.get("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/postgres")
+    db_url = get_db_url()
     
     print(f"Connecting to database at {db_url}...")
     engine = create_engine(db_url)

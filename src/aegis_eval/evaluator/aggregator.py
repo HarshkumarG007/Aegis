@@ -7,11 +7,12 @@ from aegis_eval.data.schema import BenchmarkManifest, EvaluationRun, Adversarial
 from aegis_eval.evaluator.dispatcher import EvaluatorDispatcher
 from aegis_eval.targets.integration_contract import AegisTargetResponse
 from aegis_eval.data.manifest import BenchmarkManifest as PydanticManifest
+from aegis_eval.config import get_db_url
 
 class VerdictAggregator:
     def __init__(self, db_url=None):
         if db_url is None:
-            db_url = os.environ.get("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/postgres")
+            db_url = get_db_url()
         self.engine = create_engine(db_url)
         self.Session = sessionmaker(bind=self.engine)
         self.dispatcher = EvaluatorDispatcher()
@@ -51,12 +52,17 @@ class VerdictAggregator:
         with self.Session() as session:
             q_record = session.query(AdversarialQuery).filter_by(query_id=query["id"]).first()
             if not q_record:
+                # Extract all non-standard keys as metadata
+                standard_keys = {"id", "text", "attack_type", "source_chunks", "raw_obj"}
+                query_metadata = {k: v for k, v in query.items() if k not in standard_keys}
+                
                 q_record = AdversarialQuery(
                     query_id=query["id"],
                     run_id=run_id,
                     attack_type=query["attack_type"],
                     query_text=query["text"],
-                    source_chunk_ids=json.dumps(query.get("source_chunks", []))
+                    source_chunk_ids=json.dumps(query.get("source_chunks", [])),
+                    metadata_json=query_metadata if query_metadata else None
                 )
                 session.add(q_record)
 
@@ -91,7 +97,7 @@ class VerdictAggregator:
             return False, json.dumps({"reason": f"Infrastructure failure: {response.status.value}"})
 
         verdict_dict = self.dispatcher.evaluate(
-            query, 
+            query.get("raw_obj", query), 
             response.answer or "", 
             chunks_dict
         )

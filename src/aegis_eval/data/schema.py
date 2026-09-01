@@ -44,6 +44,7 @@ class AdversarialQuery(Base):
     attack_type: Mapped[str] = mapped_column(String)
     query_text: Mapped[str] = mapped_column(Text)
     source_chunk_ids: Mapped[str] = mapped_column(Text)
+    metadata_json: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
     generated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
     run = relationship("EvaluationRun", back_populates="queries")
