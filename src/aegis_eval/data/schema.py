@@ -40,7 +40,7 @@ class AdversarialQuery(Base):
     __tablename__ = "adversarial_queries"
 
     query_id: Mapped[str] = mapped_column(String, primary_key=True)
-    run_id: Mapped[str] = mapped_column(String, ForeignKey("evaluation_runs.run_id"))
+    run_id: Mapped[str] = mapped_column(String, ForeignKey("evaluation_runs.run_id"), primary_key=True)
     attack_type: Mapped[str] = mapped_column(String)
     query_text: Mapped[str] = mapped_column(Text)
     source_chunk_ids: Mapped[str] = mapped_column(Text)
@@ -50,11 +50,21 @@ class AdversarialQuery(Base):
     run = relationship("EvaluationRun", back_populates="queries")
     response = relationship("TargetResponse", back_populates="query", uselist=False)
 
+from sqlalchemy import ForeignKeyConstraint
+
 class TargetResponse(Base):
     __tablename__ = "target_responses"
 
-    response_id: Mapped[str] = mapped_column(String, ForeignKey("adversarial_queries.query_id"), primary_key=True)
+    response_id: Mapped[str] = mapped_column(String, primary_key=True)
+    run_id: Mapped[str] = mapped_column(String, primary_key=True)
     status: Mapped[str] = mapped_column(String) # SUCCESS, TIMEOUT, HTTP_ERROR, DAEMON_CRASH, MALFORMED
+
+    __table_args__ = (
+        ForeignKeyConstraint(
+            ["response_id", "run_id"],
+            ["adversarial_queries.query_id", "adversarial_queries.run_id"]
+        ),
+    )
     answer_text: Mapped[str] = mapped_column(Text, nullable=True)
     latency_ms: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     error: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
@@ -70,7 +80,16 @@ class RetrievedChunk(Base):
     __tablename__ = "retrieved_chunks"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    response_id: Mapped[str] = mapped_column(String, ForeignKey("target_responses.response_id"))
+    response_id: Mapped[str] = mapped_column(String)
+    run_id: Mapped[str] = mapped_column(String)
+    
+    __table_args__ = (
+        ForeignKeyConstraint(
+            ["response_id", "run_id"],
+            ["target_responses.response_id", "target_responses.run_id"]
+        ),
+    )
+    
     chunk_id: Mapped[str] = mapped_column(String)
     rank: Mapped[int] = mapped_column(Integer)
     score: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
@@ -86,7 +105,16 @@ class EvaluationVerdict(Base):
     __tablename__ = "evaluation_verdicts"
 
     verdict_id: Mapped[str] = mapped_column(String, primary_key=True)
-    response_id: Mapped[str] = mapped_column(String, ForeignKey("target_responses.response_id"))
+    response_id: Mapped[str] = mapped_column(String)
+    run_id: Mapped[str] = mapped_column(String)
+    
+    __table_args__ = (
+        ForeignKeyConstraint(
+            ["response_id", "run_id"],
+            ["target_responses.response_id", "target_responses.run_id"]
+        ),
+    )
+    
     mechanism_used: Mapped[str] = mapped_column(String)
     pass_fail: Mapped[bool] = mapped_column(Boolean)
     primary_evidence: Mapped[str] = mapped_column(Text)

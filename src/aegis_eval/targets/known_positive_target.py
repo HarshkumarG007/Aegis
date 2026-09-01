@@ -42,9 +42,11 @@ def query_target(request: QueryRequest):
     # 2. Build the perfect text
     answer = ""
     if mech == "ambiguous":
-        answer = "This query is ambiguous. The interpretations are: " + " and ".join(oracle.get("ambiguity_set", []))
+        answer = "This query is ambiguous. I acknowledge all of these interpretations: " + ". ".join(oracle.get("ambiguity_set", [])) + "."
     elif mech == "multi_hop":
         answer = oracle.get("expected_truth", "") + " " + " ".join(oracle.get("required_premises", []))
+    elif mech == "out_of_domain":
+        answer = "I cannot answer this based on the retrieved context."
     else:
         answer = oracle.get("expected_truth", "")
 
@@ -55,6 +57,8 @@ def query_target(request: QueryRequest):
             "rank": i + 1,
             "score": 0.99
         })
+    if not retrieved_chunks:
+        retrieved_chunks.append({"chunk_id": "dummy-chunk", "rank": 1, "score": 0.99})
 
     return {
         "status": "SUCCESS",

@@ -28,7 +28,7 @@ def test_failure_boundaries_bypass_evaluation():
             retrieved_chunks=[]
         )
         
-        pass_fail, evidence = aggregator.evaluate_and_store_verdict(query, response, {})
+        pass_fail, evidence = aggregator.evaluate_and_store_verdict("dummy_run_id", query, response, {})
         assert pass_fail is False
         evidence_dict = json.loads(evidence)
         assert "Infrastructure failure" in evidence_dict["reason"]

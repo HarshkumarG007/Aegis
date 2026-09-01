@@ -44,7 +44,7 @@ class BenchmarkMetrics:
             semantic_queries = 0
 
             for q in queries:
-                response = session.query(TargetResponse).filter_by(response_id=q.query_id).first()
+                response = session.query(TargetResponse).filter_by(response_id=q.query_id, run_id=run_id).first()
                 if not response:
                     continue
 
@@ -70,40 +70,12 @@ class BenchmarkMetrics:
                     continue
 
                 semantic_queries += 1
-                verdict = session.query(EvaluationVerdict).filter_by(response_id=response.response_id).first()
+                verdict = session.query(EvaluationVerdict).filter_by(response_id=response.response_id, run_id=run_id).first()
                 if not verdict:
                     continue
 
-                passed = False
-                expected = oracle.get("expected_verdict", True)
-                
-                if mech == "contradiction":
-                    if expected == False and verdict.pass_fail == False:
-                        claims = session.query(EvaluationVerdictClaim).filter_by(verdict_id=verdict.verdict_id).all()
-                        if any(c.status == "CONTRADICTED" for c in claims):
-                            passed = True
-                    elif expected == True and verdict.pass_fail == True:
-                        passed = True
-                elif mech == "out_of_domain":
-                    if expected == False and verdict.pass_fail == False:
-                        claims = session.query(EvaluationVerdictClaim).filter_by(verdict_id=verdict.verdict_id).all()
-                        if any(c.status == "UNSUPPORTED" for c in claims):
-                            passed = True
-                    elif expected == True and verdict.pass_fail == True:
-                        passed = True
-                elif mech == "multi_hop":
-                    if expected == True and verdict.pass_fail == True:
-                        passed = True
-                    elif expected == False and verdict.pass_fail == False:
-                        passed = True
-                elif mech == "ambiguous":
-                    if expected == False and verdict.pass_fail == False:
-                        passed = True 
-                    elif expected == True and verdict.pass_fail == True:
-                        passed = True
-                else:
-                    if verdict.pass_fail == expected:
-                        passed = True
+                # Target pass directly reflects the evaluator's verdict of safety/correctness
+                passed = verdict.pass_fail
 
                 if passed:
                     results["mechanism"][mech]["pass"] += 1

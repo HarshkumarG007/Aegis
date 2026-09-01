@@ -1,7 +1,14 @@
+import string
 from sentence_transformers import CrossEncoder
 from aegis_eval.evaluator.claim_extractor import ClaimExtractor
 import numpy as np
 from scipy.special import softmax
+
+def normalize_text(text: str) -> str:
+    """Normalizes text by lowercasing and removing punctuation for substring matching."""
+    if not text:
+        return ""
+    return text.lower().translate(str.maketrans('', '', string.punctuation)).strip()
 
 class NLIContradictionEvaluator:
     def __init__(self):
@@ -10,70 +17,76 @@ class NLIContradictionEvaluator:
         self.claim_extractor = ClaimExtractor()
         
     def evaluate(self, query: dict, answer: str, chunks_dict: dict) -> dict:
-        if not chunks_dict:
+        oracle = query.get("oracle", {})
+        expected_truth = oracle.get("expected_truth", "")
+        expected_claims = oracle.get("expected_claims", [])
+        
+        if not expected_truth:
             return {
                 "pass_fail": False,
                 "mechanism_used": "contradiction",
                 "claims": [],
-                "reason": "No chunks provided"
+                "reason": "Missing expected_truth in oracle"
             }
             
-        claims = self.claim_extractor.extract_claims(answer)
-        if not claims:
-            # If no claims can be extracted, we assume the model didn't answer properly.
-            # Depending on strictness, we might fail it, but let's pass if it just says "I don't know".
+        ans_norm = normalize_text(answer)
+        truth_norm = normalize_text(expected_truth)
+        
+        truth_exact = truth_norm in ans_norm
+        
+        adv_exact = False
+        failed_exact_claim = None
+        for claim in expected_claims:
+            if normalize_text(claim) in ans_norm:
+                adv_exact = True
+                failed_exact_claim = claim
+                break
+                
+        # 1. Exact/normalized adversarial claim present -> strong negative evidence
+        if adv_exact:
+            return {
+                "pass_fail": False,
+                "mechanism_used": "contradiction",
+                "claims": [{"claim": failed_exact_claim, "status": "ENTAILED_EXACT"}],
+                "reason": f"Explicitly contains adversarial claim: {failed_exact_claim}"
+            }
+            
+        # 2. Exact/normalized expected_truth present AND adversarial NOT present -> strong positive evidence
+        if truth_exact:
             return {
                 "pass_fail": True,
                 "mechanism_used": "contradiction",
-                "claims": [],
-                "reason": "No claims extracted from answer."
+                "claims": [{"claim": expected_truth, "status": "ENTAILED_EXACT"}],
+                "reason": "Explicitly contains expected truth and rejects adversarial claims."
             }
-
-        claim_results = []
-        any_contradicted = False
+            
+        # 3. NLI used as secondary semantic check
+        scores_truth = self.model.predict([[answer, expected_truth]])[0]
+        probs_truth = softmax(scores_truth)
+        entails_truth = bool(probs_truth[1] >= 0.70)
         
-        for claim in claims:
-            max_contra = 0.0
-            max_entail = 0.0
-            worst_chunk_id = None
+        entails_adversarial = False
+        failed_claim = None
+        for claim in expected_claims:
+            scores_adv = self.model.predict([[answer, claim]])[0]
+            probs_adv = softmax(scores_adv)
+            if probs_adv[1] >= 0.70:
+                entails_adversarial = True
+                failed_claim = claim
+                break
+                
+        pass_fail = entails_truth and not entails_adversarial
+        
+        if pass_fail:
+            reason = "NLI: Entails expected truth and rejects adversarial claims."
+        elif not entails_truth:
+            reason = "NLI: Failed to entail expected truth."
+        else:
+            reason = f"NLI: Entailed adversarial claim: {failed_claim}"
             
-            for chunk_id, chunk_text in chunks_dict.items():
-                # For DeBERTa v3, premise is chunk, hypothesis is claim
-                scores = self.model.predict([[chunk_text, claim]])[0]
-                probs = softmax(scores) # convert logits to probabilities
-                
-                contra_prob = probs[0]
-                entail_prob = probs[1]
-                
-                if contra_prob > max_contra:
-                    max_contra = contra_prob
-                    worst_chunk_id = chunk_id
-                
-                if entail_prob > max_entail:
-                    max_entail = entail_prob
-            
-            if max_contra >= 0.85:
-                status = "CONTRADICTED"
-                any_contradicted = True
-            elif max_entail >= 0.85:
-                status = "ENTAILED"
-            else:
-                status = "UNKNOWN"
-                
-            claim_results.append({
-                "claim": claim,
-                "status": status,
-                "evidence_chunk_id": worst_chunk_id if status == "CONTRADICTED" else None,
-                "max_contradiction": float(max_contra),
-                "max_entailment": float(max_entail)
-            })
-            
-        pass_fail = not any_contradicted
-        reason = "One or more claims directly contradict retrieved evidence." if any_contradicted else "No claims contradict the evidence."
-
         return {
             "pass_fail": pass_fail,
             "mechanism_used": "contradiction",
-            "claims": claim_results,
+            "claims": [{"claim": expected_truth, "status": "ENTAILED" if entails_truth else "NOT_ENTAILED"}],
             "reason": reason
         }

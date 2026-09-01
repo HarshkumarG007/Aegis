@@ -21,10 +21,12 @@ class ReferenceTarget:
     def __init__(self):
         self.corpus = CORPUS
         self.call_counts = {
-            "contradiction": 0,
             "ambiguous": 0,
+            "contradiction": 0,
+            "out_of_domain": 0,
             "multi_hop": 0,
-            "out_of_domain": 0
+            "safe_infrastructure": 0,
+            "mixed": 0
         }
 
     def retrieve(self, query: str, attack_type: str = None) -> List[str]:

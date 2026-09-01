@@ -63,6 +63,7 @@ def mock_db():
         
         r = TargetResponse(
             response_id=q_id,
+            run_id=run_id,
             status=status,
             latency_ms=100
         )
@@ -73,6 +74,7 @@ def mock_db():
             v = EvaluationVerdict(
                 verdict_id=v_id,
                 response_id=q_id,
+                run_id=run_id,
                 mechanism_used=mech,
                 pass_fail=v_pass,
                 primary_evidence="{}"

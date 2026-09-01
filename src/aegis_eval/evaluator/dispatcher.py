@@ -9,7 +9,8 @@ class EvaluatorDispatcher:
             "contradiction": NLIContradictionEvaluator(),
             "out_of_domain": GroundednessEvaluator(),
             "multi_hop": CoverageEvaluator(),
-            "ambiguous": AmbiguityEvaluator()
+            "ambiguous": AmbiguityEvaluator(),
+            "mixed": GroundednessEvaluator()
         }
         
     def evaluate(self, query: dict, answer: str, chunks_dict: dict) -> dict:

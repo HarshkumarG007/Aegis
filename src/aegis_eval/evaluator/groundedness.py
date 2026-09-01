@@ -17,6 +17,28 @@ class GroundednessEvaluator:
         
     def evaluate(self, query: dict, answer: str, chunks_dict: dict) -> dict:
         ans_lower = answer.lower()
+        oracle = query.get("oracle", {})
+        expected_claims = oracle.get("expected_claims", [])
+        
+        # 1. Did it entail any hallucinated expected claims?
+        entailed_adv = False
+        failed_claim = None
+        for claim in expected_claims:
+            nli_scores = self.nli_model.predict([[answer, claim]])[0]
+            probs = softmax(nli_scores)
+            if probs[1] >= 0.70:
+                entailed_adv = True
+                failed_claim = claim
+                break
+                
+        if entailed_adv:
+            return {
+                "pass_fail": False,
+                "mechanism_used": "out_of_domain",
+                "claims": [{"claim": failed_claim, "status": "ENTAILED"}],
+                "reason": f"Target hallucinated adversarial claim: {failed_claim}"
+            }
+
         for p in self.abstain_phrases:
             if p in ans_lower:
                 return {

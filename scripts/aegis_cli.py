@@ -147,9 +147,6 @@ def do_run(args):
         eval_q = q.copy()
         raw_obj = q["raw_obj"].copy()
         
-        if raw_obj["attack_type"] == "mixed":
-            raw_obj["attack_type"] = "out_of_domain"
-            
         oracle = raw_obj.get("oracle", {})
         if raw_obj["attack_type"] == "multi_hop":
             raw_obj["required_premises"] = [
@@ -162,7 +159,7 @@ def do_run(args):
         eval_q["raw_obj"] = raw_obj
         eval_q["attack_type"] = raw_obj["attack_type"]
             
-        pass_fail, evidence = aggregator.evaluate_and_store_verdict(eval_q, target_res, chunks_dict)
+        pass_fail, evidence = aggregator.evaluate_and_store_verdict(run_id, eval_q, target_res, chunks_dict)
         verdicts_log.append({"query_id": q["id"], "pass_fail": pass_fail, "evidence": evidence})
         
         if target_res.status != TargetStatus.SUCCESS:
@@ -221,9 +218,6 @@ def do_replay(args):
         eval_q = q.copy()
         raw_obj = q.get("raw_obj", q).copy()
         
-        if raw_obj.get("attack_type") == "mixed":
-            raw_obj["attack_type"] = "out_of_domain"
-            
         oracle = raw_obj.get("oracle", {})
         if raw_obj.get("attack_type") == "multi_hop":
             raw_obj["required_premises"] = [
@@ -236,7 +230,7 @@ def do_replay(args):
         eval_q["raw_obj"] = raw_obj
         eval_q["attack_type"] = raw_obj.get("attack_type", q.get("attack_type"))
         
-        pass_fail, evidence = aggregator.evaluate_and_store_verdict(eval_q, target_res, chunks_dict)
+        pass_fail, evidence = aggregator.evaluate_and_store_verdict(replay_run_id, eval_q, target_res, chunks_dict)
         verdicts_log.append({"query_id": q["id"], "pass_fail": pass_fail, "evidence": evidence})
         print(f"Replayed {q['id']} - Pass: {pass_fail}")
 

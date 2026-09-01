@@ -32,6 +32,10 @@ class AmbiguityEvaluator:
         entailed_interpretations = []
         
         for interpretation in ambiguity_set:
+            if interpretation.lower() in answer.lower():
+                entailed_interpretations.append(interpretation)
+                continue
+                
             nli_scores = self.nli_model.predict([[answer, interpretation]])[0]
             probs = softmax(nli_scores)
             

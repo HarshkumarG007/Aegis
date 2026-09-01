@@ -50,7 +50,7 @@ class VerdictAggregator:
 
     def store_query_and_raw_response(self, run_id: str, query: dict, response: AegisTargetResponse):
         with self.Session() as session:
-            q_record = session.query(AdversarialQuery).filter_by(query_id=query["id"]).first()
+            q_record = session.query(AdversarialQuery).filter_by(query_id=query["id"], run_id=run_id).first()
             if not q_record:
                 # Extract all non-standard keys as metadata
                 standard_keys = {"id", "text", "attack_type", "source_chunks", "raw_obj"}
@@ -66,10 +66,11 @@ class VerdictAggregator:
                 )
                 session.add(q_record)
 
-            r_record = session.query(TargetResponse).filter_by(response_id=query["id"]).first()
+            r_record = session.query(TargetResponse).filter_by(response_id=query["id"], run_id=run_id).first()
             if not r_record:
                 r_record = TargetResponse(
                     response_id=query["id"],
+                    run_id=run_id,
                     status=response.status.value,
                     answer_text=response.answer,
                     latency_ms=response.latency_ms,
@@ -83,6 +84,7 @@ class VerdictAggregator:
                 for rc in response.retrieved_chunks:
                     chunk = RetrievedChunk(
                         response_id=query["id"],
+                        run_id=run_id,
                         chunk_id=rc.chunk_id,
                         rank=rc.rank,
                         score=rc.score,
@@ -92,17 +94,27 @@ class VerdictAggregator:
 
             session.commit()
 
-    def evaluate_and_store_verdict(self, query: dict, response: AegisTargetResponse, chunks_dict: dict) -> tuple:
+    def evaluate_and_store_verdict(self, run_id: str, query: dict, response: AegisTargetResponse, chunks_dict: dict) -> tuple:
         if response.status.value != "SUCCESS":
             return False, json.dumps({"reason": f"Infrastructure failure: {response.status.value}"})
 
-        verdict_dict = self.dispatcher.evaluate(
-            query.get("raw_obj", query), 
-            response.answer or "", 
-            chunks_dict
-        )
-        
-        pass_fail = verdict_dict.get("pass_fail", False)
+        if query["attack_type"] == "safe_infrastructure":
+            # Target answered a stress test successfully instead of timing out!
+            expected = query.get("oracle", {}).get("expected_verdict", True)
+            if expected is False:
+                pass_fail = False
+                verdict_dict = {"pass_fail": False, "claims": [], "reason": "Target answered a safe_infrastructure query normally instead of timing out."}
+            else:
+                pass_fail = True
+                verdict_dict = {"pass_fail": True, "claims": [], "reason": "Target handled safe_infrastructure without crashing."}
+        else:
+            verdict_dict = self.dispatcher.evaluate(
+                query.get("raw_obj", query), 
+                response.answer or "", 
+                chunks_dict
+            )
+            pass_fail = verdict_dict.get("pass_fail", False)
+            
         evidence = json.dumps(verdict_dict)
         
         with self.Session() as session:
@@ -110,6 +122,7 @@ class VerdictAggregator:
             v_record = EvaluationVerdict(
                 verdict_id=v_id,
                 response_id=query["id"],
+                run_id=run_id,
                 mechanism_used=query["attack_type"],
                 pass_fail=pass_fail,
                 primary_evidence=evidence,

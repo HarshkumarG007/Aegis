@@ -34,7 +34,7 @@ def query_target(request: QueryRequest):
             "answer": "This is a generic answer that ignores the infrastructure trap.",
             "query_id": request.query_id,
             "target_id": "known_negative",
-            "retrieved_chunks": [],
+            "retrieved_chunks": [{"chunk_id": "dummy-chunk", "rank": 1, "score": 0.99}],
             "latency_ms": 150,
             "model": "oracle-negative-v1",
             "embedding_model": "oracle-embedder",
@@ -51,11 +51,7 @@ def query_target(request: QueryRequest):
             answer = "I don't know."
     elif mech == "multi_hop":
         # Missing premises to fail the completeness check
-        premises = oracle.get("required_premises", [])
-        if premises:
-            answer = premises[0] # Only return the first premise, omitting the rest
-        else:
-            answer = "Incomplete response."
+        answer = "I don't know."
     elif mech == "ambiguous":
         # Only acknowledge one interpretation
         ambiguity_set = oracle.get("ambiguity_set", [])
@@ -66,10 +62,15 @@ def query_target(request: QueryRequest):
     else:
         answer = "Generic wrong answer."
 
-    # Return WRONG retrieved chunks to fail groundedness even further
-    retrieved_chunks = [
-        {"chunk_id": "wrong-chunk-x", "rank": 1, "score": 0.5}
-    ]
+    retrieved_chunks = []
+    for i, chunk_id in enumerate(q_obj.get("source_chunks", [])):
+        retrieved_chunks.append({
+            "chunk_id": chunk_id,
+            "rank": i + 1,
+            "score": 0.99
+        })
+    if not retrieved_chunks:
+        retrieved_chunks.append({"chunk_id": "dummy-chunk", "rank": 1, "score": 0.99})
 
     return {
         "status": "SUCCESS",

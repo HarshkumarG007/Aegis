@@ -34,18 +34,23 @@ def test_contradiction_evaluator(mock_nli_model, mock_claim_extractor):
     evaluator.claim_extractor = mock_claim_extractor
     evaluator.model = mock_nli_model
     
-    query = {"id": "1", "attack_type": "contradiction"}
+    query = {
+        "id": "1", 
+        "attack_type": "contradiction",
+        "oracle": {
+            "expected_truth": "Truth is out there.",
+            "expected_claims": ["Fake claim"]
+        }
+    }
     chunks = {"c1": "Chunk 1 text", "c2": "Chunk 2 text"}
-    
-    # 0 is contradiction, 1 is entailment, 2 is neutral for DeBERTa v3 NLI
-    # Let's mock a contradiction (high logit for index 0)
+
+    # Truth is contradicted, meaning not entailed
     mock_nli_model.predict.return_value = [[5.0, -1.0, -1.0]]
-    
+
     res = evaluator.evaluate(query, "answer text", chunks)
     assert res["pass_fail"] is False
     assert res["mechanism_used"] == "contradiction"
-    assert res["claims"][0]["status"] == "CONTRADICTED"
-    assert res["claims"][0]["evidence_chunk_id"] == "c1" # the first one tested, as both return contradiction
+    assert res["claims"][0]["status"] == "NOT_ENTAILED"
 
 def test_groundedness_evaluator():
     with patch('aegis_eval.evaluator.groundedness.SentenceTransformer') as mock_sim, \
