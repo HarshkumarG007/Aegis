@@ -1,5 +1,11 @@
 # Aegis-Eval Release Notes
 
+## V2.2.0-beta (Release Candidate)
+- **Tag:** `v2.2.0-beta`
+- **Commit:** `057484d50986368ac8ac8d725b872347937a1e40`
+- **Focus:** 60-query independent benchmark, local target evaluation, metrics engine.
+- **Key Validation:** Byte-for-byte offline deterministic replay verified on SQLite backend.
+
 ## [v2.1.0] - Aegis-Eval V2.1 (Implementation and Benchmark Infrastructure Complete)
 
 V2.1 marks a major milestone for Aegis-Eval. We have completed the transition from a simple deterministic evaluator into a reproducible, target-agnostic adversarial RAG benchmark harness with strict provenance and byte-for-byte deterministic replayability.
