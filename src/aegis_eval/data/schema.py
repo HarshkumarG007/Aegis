@@ -34,6 +34,16 @@ class EvaluationRun(Base):
     target_name: Mapped[str] = mapped_column(String)
     started_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
     
+    model: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    model_sha256: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    provider: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    model_version: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    temperature: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    retrieval_config_hash: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    corpus_hash: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    aegis_version: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    responses_sha256: Mapped[Optional[str]] = mapped_column(String, nullable=True)
+    
     queries = relationship("AdversarialQuery", back_populates="run")
 
 class AdversarialQuery(Base):

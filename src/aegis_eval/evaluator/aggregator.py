@@ -40,11 +40,26 @@ class VerdictAggregator:
                 session.commit()
         return sha256
 
-    def start_run(self, run_id: str, manifest_sha256: str, target_name: str):
+    def start_run(self, run_id: str, manifest_sha256: str, target_name: str, metadata: dict = None):
+        if metadata is None:
+            metadata = {}
         with self.Session() as session:
             run = session.query(EvaluationRun).filter_by(run_id=run_id).first()
             if not run:
-                run = EvaluationRun(run_id=run_id, manifest_sha256=manifest_sha256, target_name=target_name)
+                run = EvaluationRun(
+                    run_id=run_id, 
+                    manifest_sha256=manifest_sha256, 
+                    target_name=target_name,
+                    model=metadata.get("model"),
+                    model_sha256=metadata.get("model_sha256"),
+                    provider=metadata.get("provider"),
+                    model_version=metadata.get("model_version"),
+                    temperature=metadata.get("temperature"),
+                    retrieval_config_hash=metadata.get("retrieval_config_hash"),
+                    corpus_hash=metadata.get("corpus_hash"),
+                    aegis_version=metadata.get("aegis_version"),
+                    responses_sha256=metadata.get("responses_sha256")
+                )
                 session.add(run)
                 session.commit()
 
