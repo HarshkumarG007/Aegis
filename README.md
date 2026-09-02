@@ -118,23 +118,31 @@ Syntactic Span Stripping ──> Proposition Binding ──> NLI Verification
 ```text
 Aegis/
 ├── docs/
-│   ├── JOURNAL_V2.3_Llama3_Pilot.md    # The story of escaping 8GB VRAM limits
-│   ├── JOURNAL_V2.4_Hardened_RAG.md    # The discovery of the "Compulsion to Merge/Stitch"
-│   └── JOURNAL_V2.4.1_Calibration.md   # The pristine Holdout results & tradeoff discovery
+│   ├── JOURNAL_V1_The_Foundation.md          # The brittle exact-match evaluator
+│   ├── JOURNAL_V2.1_Benchmark_Infrastructure.md # Immutable artifacts & offline replay
+│   ├── JOURNAL_V2.2_Deterministic_Leap.md    # Hardened NLI & 98.3% positive calibration
+│   ├── JOURNAL_V2.3_Llama3_Pilot.md          # The story of escaping 8GB VRAM limits
+│   ├── JOURNAL_V2.4_Hardened_RAG.md          # The discovery of the "Compulsion to Merge/Stitch"
+│   ├── JOURNAL_V2.4.1_Calibration.md         # The pristine Holdout results & tradeoff discovery
+│   ├── JOURNAL_V2.5_Scientific_Validation.md # Asymmetric verifier & the false abstention crisis
+│   ├── JOURNAL_V2.6_Causal_Diagnosis.md      # Oracle ablation & gate attribution
+│   ├── JOURNAL_V2.7_Conflict_Classifier.md   # The NLI conditional reasoning null result
+│   ├── JOURNAL_V2.8_Structured_Conflict.md   # Syntactic extraction rescuing utility
+│   └── JOURNAL_V2.9_Adversarial_Safety.md    # Proposition-bound extraction crushing ambiguity
 ├── experiments/
 │   └── v2.3/llama3-8b/
-│       └── experiment.json             # Immutable hashes and runtime config
+│       └── experiment.json                   # Immutable hashes and runtime config
 ├── reports/
-│   ├── benchmark-v2.2.0/               # V2.2 adversarial query manifests
-│   └── run-<uuid>/                     # Evaluated run artifacts and SQLite metrics
+│   ├── benchmark-v2.2.0/                     # V2.2 adversarial query manifests
+│   └── run-<uuid>/                           # Evaluated run artifacts and SQLite metrics
 ├── scripts/
-│   └── aegis_cli.py                    # Unified CLI (generate, evaluate, leaderboard)
+│   └── aegis_cli.py                          # Unified CLI (generate, evaluate, leaderboard)
 └── src/
     └── aegis_eval/
-        ├── data/                       # Manifest structures and DB schemas
-        ├── evaluator/                  # NLI Cross-encoders, Aggregators, Metrics
-        ├── hardened_rag/               # V2.4 Evidence & Verification Gates
-        └── targets/                    # Multi-Model target integration contracts
+        ├── data/                             # Manifest structures and DB schemas
+        ├── evaluator/                        # NLI Cross-encoders, Aggregators, Metrics
+        ├── hardened_rag/                     # Evidence Gates & Verification mechanisms
+        └── targets/                          # Multi-Model target integration contracts
 ```
 
 ---
