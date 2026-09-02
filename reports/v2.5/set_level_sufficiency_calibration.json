@@ -1,0 +1,357 @@
+{
+  "selected_threshold": 5.25,
+  "dev_answerable_preservation": 0.45,
+  "dev_ood_recall": 1.0,
+  "raw_scores": [
+    {
+      "query_id": "q-con-dev-e4c4757a",
+      "query": "How long does a request take to time out?",
+      "chunk_ids": [
+        "chunk-004",
+        "chunk-005"
+      ],
+      "individual_scores": [
+        6.281283378601074,
+        2.870854139328003
+      ],
+      "set_score": 7.581356525421143,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-con-dev-2cb68234",
+      "query": "Which HTTP method should I use to update a user's profile?",
+      "chunk_ids": [
+        "chunk-006",
+        "chunk-007"
+      ],
+      "individual_scores": [
+        -4.966461181640625,
+        -9.91923713684082
+      ],
+      "set_score": -6.168983459472656,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-con-dev-5ca78ed8",
+      "query": "Can you explain the API timeout rules?",
+      "chunk_ids": [
+        "chunk-004",
+        "chunk-005"
+      ],
+      "individual_scores": [
+        3.344123125076294,
+        4.310656547546387
+      ],
+      "set_score": 4.931422233581543,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-con-dev-d34c1f87",
+      "query": "What endpoint is used for profile updates?",
+      "chunk_ids": [
+        "chunk-007",
+        "chunk-006"
+      ],
+      "individual_scores": [
+        -1.6075128316879272,
+        0.4886667728424072
+      ],
+      "set_score": 0.419881135225296,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-con-dev-94734ba4",
+      "query": "What happens if a request runs for 45 seconds?",
+      "chunk_ids": [
+        "chunk-004",
+        "chunk-005"
+      ],
+      "individual_scores": [
+        0.45644691586494446,
+        -5.1987128257751465
+      ],
+      "set_score": 1.2302452325820923,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-out-dev-d85c09b4",
+      "query": "What is the password for the redis-01 server?",
+      "chunk_ids": [
+        "chunk-003",
+        "chunk-001"
+      ],
+      "individual_scores": [
+        0.4803823232650757,
+        -8.03676700592041
+      ],
+      "set_score": 5.219790458679199,
+      "gold_answerable": false
+    },
+    {
+      "query_id": "q-out-dev-4aab228f",
+      "query": "How do I update the messaging queue configuration?",
+      "chunk_ids": [
+        "chunk-003",
+        "chunk-002"
+      ],
+      "individual_scores": [
+        -0.8919407725334167,
+        -2.473222494125366
+      ],
+      "set_score": -0.7248812913894653,
+      "gold_answerable": false
+    },
+    {
+      "query_id": "q-out-dev-b45e0568",
+      "query": "What is the penalty for not rotating the database password on time?",
+      "chunk_ids": [
+        "chunk-001",
+        "chunk-005"
+      ],
+      "individual_scores": [
+        3.6874167919158936,
+        -10.293516159057617
+      ],
+      "set_score": 4.2123918533325195,
+      "gold_answerable": false
+    },
+    {
+      "query_id": "q-out-dev-abb026e9",
+      "query": "Does the v2 API have a rate limit?",
+      "chunk_ids": [
+        "chunk-005",
+        "chunk-004"
+      ],
+      "individual_scores": [
+        2.188542127609253,
+        -9.7112398147583
+      ],
+      "set_score": 2.157163143157959,
+      "gold_answerable": false
+    },
+    {
+      "query_id": "q-out-dev-b45494da",
+      "query": "Which database does Service A connect to?",
+      "chunk_ids": [
+        "chunk-002",
+        "chunk-003"
+      ],
+      "individual_scores": [
+        0.5492429733276367,
+        -10.536840438842773
+      ],
+      "set_score": 1.447359561920166,
+      "gold_answerable": false
+    },
+    {
+      "query_id": "q-amb-dev-927ea78e",
+      "query": "What is the default timeout?",
+      "chunk_ids": [
+        "chunk-005",
+        "chunk-004"
+      ],
+      "individual_scores": [
+        1.7611700296401978,
+        -3.364826202392578
+      ],
+      "set_score": 2.408651828765869,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-amb-dev-3a8b8444",
+      "query": "How do I update it?",
+      "chunk_ids": [
+        "chunk-006",
+        "chunk-003"
+      ],
+      "individual_scores": [
+        -5.246029376983643,
+        -11.032105445861816
+      ],
+      "set_score": -5.874302387237549,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-amb-dev-62db53c2",
+      "query": "Is it 30 seconds or 60 seconds?",
+      "chunk_ids": [
+        "chunk-005",
+        "chunk-004"
+      ],
+      "individual_scores": [
+        1.8450347185134888,
+        -0.42931032180786133
+      ],
+      "set_score": 4.720345497131348,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-amb-dev-1007f24b",
+      "query": "Which version is deprecated?",
+      "chunk_ids": [
+        "chunk-007",
+        "chunk-006"
+      ],
+      "individual_scores": [
+        -11.08995246887207,
+        5.918915748596191
+      ],
+      "set_score": 4.435057640075684,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-amb-dev-b82591cd",
+      "query": "What connects to what?",
+      "chunk_ids": [
+        "chunk-002",
+        "chunk-003"
+      ],
+      "individual_scores": [
+        -1.2422419786453247,
+        -10.308220863342285
+      ],
+      "set_score": -3.045877695083618,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-mul-dev-cfc43279",
+      "query": "If Service A needs to connect, where should it route traffic?",
+      "chunk_ids": [
+        "chunk-002",
+        "chunk-003"
+      ],
+      "individual_scores": [
+        -3.2523727416992188,
+        -11.410850524902344
+      ],
+      "set_score": -6.269260406494141,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-mul-dev-747ace8d",
+      "query": "Does Service A connect to redis-01?",
+      "chunk_ids": [
+        "chunk-003",
+        "chunk-002"
+      ],
+      "individual_scores": [
+        1.1268131732940674,
+        -3.3809313774108887
+      ],
+      "set_score": 6.767219066619873,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-mul-dev-1ab559a1",
+      "query": "What is the host of the service that Service A connects to?",
+      "chunk_ids": [
+        "chunk-002",
+        "chunk-003"
+      ],
+      "individual_scores": [
+        4.09894323348999,
+        -9.087675094604492
+      ],
+      "set_score": 5.4757466316223145,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-mul-dev-f24a5d11",
+      "query": "Where does Service A send its messages?",
+      "chunk_ids": [
+        "chunk-002",
+        "chunk-003"
+      ],
+      "individual_scores": [
+        5.514446258544922,
+        -3.8727104663848877
+      ],
+      "set_score": 5.6604228019714355,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-mul-dev-6f63f545",
+      "query": "What hostname is associated with Service A's queue?",
+      "chunk_ids": [
+        "chunk-002",
+        "chunk-003"
+      ],
+      "individual_scores": [
+        2.1209049224853516,
+        -0.8798126578330994
+      ],
+      "set_score": 3.639066696166992,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-saf-dev-ef6acdd8",
+      "query": "How often must database passwords be rotated?",
+      "chunk_ids": [
+        "chunk-001",
+        "chunk-004"
+      ],
+      "individual_scores": [
+        9.943948745727539,
+        -10.155196189880371
+      ],
+      "set_score": 9.856609344482422,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-saf-dev-fcdc8787",
+      "query": "What is the default timeout for the v1 API?",
+      "chunk_ids": [
+        "chunk-005",
+        "chunk-004"
+      ],
+      "individual_scores": [
+        7.474391937255859,
+        1.0784306526184082
+      ],
+      "set_score": 7.778142929077148,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-saf-dev-0532ec02",
+      "query": "Is the PUT /user endpoint deprecated in v2?",
+      "chunk_ids": [
+        "chunk-007",
+        "chunk-006"
+      ],
+      "individual_scores": [
+        2.6653482913970947,
+        10.447135925292969
+      ],
+      "set_score": 10.254283905029297,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-saf-dev-923e2c6b",
+      "query": "On which server is the messaging queue hosted?",
+      "chunk_ids": [
+        "chunk-003",
+        "chunk-002"
+      ],
+      "individual_scores": [
+        8.249565124511719,
+        2.9082107543945312
+      ],
+      "set_score": 8.29470157623291,
+      "gold_answerable": true
+    },
+    {
+      "query_id": "q-saf-dev-a1561a5a",
+      "query": "What connects to the messaging queue?",
+      "chunk_ids": [
+        "chunk-002",
+        "chunk-003"
+      ],
+      "individual_scores": [
+        8.593860626220703,
+        4.552040100097656
+      ],
+      "set_score": 8.263195991516113,
+      "gold_answerable": true
+    }
+  ]
+}

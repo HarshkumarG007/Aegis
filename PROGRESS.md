@@ -124,5 +124,11 @@ Llama 3 8B handles Contradictions **+25.0%** better than Qwen 1.5B, but suffers 
 Pristine Holdout Evaluation across Mistral 7B and Llama 3 8B. 100% OOD Gate-Rescue Rate. 0% Contradiction Merging.
 **Notes:** Pre-registered DEV sweep successfully calibrated threshold to 1.0. The deterministic conflict controller successfully eliminated hallucinated contradiction resolution. However, the rigid verifier caused answerable preservation to collapse (85-90% false abstentions).
 
-## Next Steps (V2.5 - Verifier Tuning)
-The problem is no longer the generator's capability. V2.5 will focus exclusively on softening the post-generation verifier and tuning the retrieval representation to recover the lost utility and preserve answerable queries.
+## Aegis-Eval V2.5 (Asymmetric Verifier & Evidence Calibration) — 2026-09-02
+**Status:** PASS / FROZEN
+**Verification output:**
+6-arm Ablation Matrix executed. 100% OOD safety strictly maintained at a 5.25 Set-Level threshold. Claim-level repair recovered Llama 3's False Abstention rate from 100% to 78%. Answerable queries retained: 22% (Mistral) / 17% (Llama).
+**Notes:** Validated the set-level sufficiency evaluator and asymmetric claim verification. Safety is impeccable, but the baseline utility bottleneck (false abstention) remains the critical inhibitor.
+
+## Next Steps (V2.6 - Utility Recovery)
+The overarching system safely intercepts out-of-domain and contradiction attacks perfectly. V2.6 must diagnose why the LLM continues to excessively abstain ("INSUFFICIENT") even when raw verifiable facts are present in the retrieval context.

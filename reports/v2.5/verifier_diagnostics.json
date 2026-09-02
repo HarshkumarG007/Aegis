@@ -1,0 +1,733 @@
+[
+  {
+    "model": "mistral",
+    "query_id": "q-con-hld-ceba68f2",
+    "answer": " Based on the provided context, the timeout limit is 60 seconds for the new API configuration.",
+    "claim": "timeout limit is 60 seconds",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-005"
+    ],
+    "supporting_chunk_text": "In the v1 API, the timeout limit is strictly set to 30 seconds for all endpoints.",
+    "nli_entailment": 0.00024013713118620217,
+    "nli_neutral": 0.002264428185299039,
+    "nli_contradiction": 0.9974954724311829,
+    "similarity_score": 0.545646071434021,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-con-hld-1b43c242",
+    "answer": " API timeouts refer to the maximum amount of time a client is allowed to wait for a response from the server before the request is terminated. In this case, the new API configuration sets the timeout limit to 60 seconds, while the v1 API has a timeout limit of 30 seconds.",
+    "claim": "API timeouts refer to the maximum amount of time a client is allowed to wait for a response from the server before the request is terminated.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-005"
+    ],
+    "supporting_chunk_text": "In the v1 API, the timeout limit is strictly set to 30 seconds for all endpoints.",
+    "nli_entailment": 0.0017504740972071886,
+    "nli_neutral": 0.9968552589416504,
+    "nli_contradiction": 0.001394245307892561,
+    "similarity_score": 0.5987647771835327,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-mul-hld-84176fc0",
+    "answer": " Service A loses its messaging queue if redis-01 goes down.",
+    "claim": "Service A loses its messaging queue if redis-01 goes down.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.0016142749227583408,
+    "nli_neutral": 0.9886172413825989,
+    "nli_contradiction": 0.009768477641046047,
+    "similarity_score": 0.7357714176177979,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-mul-hld-84176fc0",
+    "answer": " Service A loses its messaging queue if redis-01 goes down.",
+    "claim": "redis-01 is a component that can cause issues for Service A.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.0010879909386858344,
+    "nli_neutral": 0.9964414238929749,
+    "nli_contradiction": 0.002470626262947917,
+    "similarity_score": 0.48014670610427856,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-mul-hld-7d6a0feb",
+    "answer": " Service A.",
+    "claim": "Service A is a service",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-002"
+    ],
+    "supporting_chunk_text": "Service A connects to the messaging queue to broadcast events.",
+    "nli_entailment": 0.8776909112930298,
+    "nli_neutral": 0.11962039768695831,
+    "nli_contradiction": 0.0026887848507612944,
+    "similarity_score": 0.5431921482086182,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "SUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-mul-hld-7d6a0feb",
+    "answer": " Service A.",
+    "claim": "Service A is a type of service",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-002"
+    ],
+    "supporting_chunk_text": "Service A connects to the messaging queue to broadcast events.",
+    "nli_entailment": 0.9665489792823792,
+    "nli_neutral": 0.032592110335826874,
+    "nli_contradiction": 0.0008588260388933122,
+    "similarity_score": 0.519827663898468,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "SUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-mul-hld-3de7046e",
+    "answer": " Yes, based on the provided context, the messaging queue used by Service A is indeed hosted on redis-01.",
+    "claim": "Service A's messaging queue is hosted on redis-01",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.048741813749074936,
+    "nli_neutral": 0.9497764706611633,
+    "nli_contradiction": 0.0014817381743341684,
+    "similarity_score": 0.8620907068252563,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-mul-hld-3de7046e",
+    "answer": " Yes, based on the provided context, the messaging queue used by Service A is indeed hosted on redis-01.",
+    "claim": "redis-01 is the messaging queue used by Service A",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.0030106978956609964,
+    "nli_neutral": 0.9933083057403564,
+    "nli_contradiction": 0.0036809334997087717,
+    "similarity_score": 0.8399108648300171,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "SUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "{",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-002"
+    ],
+    "supporting_chunk_text": "Service A connects to the messaging queue to broadcast events.",
+    "nli_entailment": 0.03690306469798088,
+    "nli_neutral": 0.0866645872592926,
+    "nli_contradiction": 0.8764322996139526,
+    "similarity_score": 0.06499519944190979,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.1492498517036438,
+    "nli_neutral": 0.7110451459884644,
+    "nli_contradiction": 0.13970491290092468,
+    "similarity_score": 0.08136726915836334,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims\": [",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.6567844748497009,
+    "nli_neutral": 0.2562802731990814,
+    "nli_contradiction": 0.08693528175354004,
+    "similarity_score": 0.4985261559486389,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "mistral",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01.internal.corp.",
+    "claim": "\"redis-01.internal.corp\" ],\"claims",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.40472081303596497,
+    "nli_neutral": 0.48758572340011597,
+    "nli_contradiction": 0.10769347101449966,
+    "similarity_score": 0.49399763345718384,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-con-hld-ceba68f2",
+    "answer": " The timeout limit is 60 seconds. (Note: This answer is based on the provided context and does not include external knowledge.)\"\n\nThe output is:\n\nThe timeout limit is 60 seconds.\n\nThis answer is based on the provided context and does not include external knowledge. The context includes the new API configuration, which sets the timeout limit to 60 seconds. The answer is derived from this context and does not rely on external knowledge.",
+    "claim": "The timeout limit is 60 seconds.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-005"
+    ],
+    "supporting_chunk_text": "In the v1 API, the timeout limit is strictly set to 30 seconds for all endpoints.",
+    "nli_entailment": 0.00016132331802509725,
+    "nli_neutral": 0.0010266805766150355,
+    "nli_contradiction": 0.9988119602203369,
+    "similarity_score": 0.638897180557251,
+    "verifier_decision": "CONTRADICTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-con-hld-1b43c242",
+    "answer": " The API timeouts refer to the time limit set for requests to complete. If a request does not complete within the set time limit, it will time out. In this case, the time limits are 60 seconds for the new API and 30 seconds for the v1 API.",
+    "claim": "In this case, the time limits are 60 seconds for the new API and 30 seconds for the v1 API.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-005"
+    ],
+    "supporting_chunk_text": "In the v1 API, the timeout limit is strictly set to 30 seconds for all endpoints.",
+    "nli_entailment": 0.005354806315153837,
+    "nli_neutral": 0.7664893269538879,
+    "nli_contradiction": 0.22815586626529694,
+    "similarity_score": 0.8022110462188721,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "CONTRADICTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-amb-hld-f87c6471",
+    "answer": " 60 seconds.",
+    "claim": "60 seconds is a unit of time",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-005"
+    ],
+    "supporting_chunk_text": "In the v1 API, the timeout limit is strictly set to 30 seconds for all endpoints.",
+    "nli_entailment": 0.016367491334676743,
+    "nli_neutral": 0.14171165227890015,
+    "nli_contradiction": 0.8419208526611328,
+    "similarity_score": 0.24725618958473206,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-amb-hld-f87c6471",
+    "answer": " 60 seconds.",
+    "claim": "60 seconds is equal to 1 minute",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-005"
+    ],
+    "supporting_chunk_text": "In the v1 API, the timeout limit is strictly set to 30 seconds for all endpoints.",
+    "nli_entailment": 0.006073507014662027,
+    "nli_neutral": 0.6719011068344116,
+    "nli_contradiction": 0.3220253884792328,
+    "similarity_score": 0.31416893005371094,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-mul-hld-84176fc0",
+    "answer": " Service A loses its messaging queue. The messaging queue is hosted on redis-01. Therefore, if redis-01 goes down, the messaging queue will not be available to Service A.",
+    "claim": "Service A loses its messaging queue.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-002"
+    ],
+    "supporting_chunk_text": "Service A connects to the messaging queue to broadcast events.",
+    "nli_entailment": 4.4484753743745387e-05,
+    "nli_neutral": 0.0003799784753937274,
+    "nli_contradiction": 0.9995755553245544,
+    "similarity_score": 0.7311408519744873,
+    "verifier_decision": "CONTRADICTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-mul-hld-84176fc0",
+    "answer": " Service A loses its messaging queue. The messaging queue is hosted on redis-01. Therefore, if redis-01 goes down, the messaging queue will not be available to Service A.",
+    "claim": "If redis-01 goes down, the messaging queue will not be available to Service A.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.00028720576665364206,
+    "nli_neutral": 0.9972096085548401,
+    "nli_contradiction": 0.002503172727301717,
+    "similarity_score": 0.7542155981063843,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-mul-hld-7d6a0feb",
+    "answer": " Service A.",
+    "claim": "Service A is a service",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-002"
+    ],
+    "supporting_chunk_text": "Service A connects to the messaging queue to broadcast events.",
+    "nli_entailment": 0.8776909112930298,
+    "nli_neutral": 0.11962039768695831,
+    "nli_contradiction": 0.0026887848507612944,
+    "similarity_score": 0.5431921482086182,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "SUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-mul-hld-7d6a0feb",
+    "answer": " Service A.",
+    "claim": "Service A is a type of service",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-002"
+    ],
+    "supporting_chunk_text": "Service A connects to the messaging queue to broadcast events.",
+    "nli_entailment": 0.9665489792823792,
+    "nli_neutral": 0.032592110335826874,
+    "nli_contradiction": 0.0008588260388933122,
+    "similarity_score": 0.519827663898468,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "SUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-mul-hld-3de7046e",
+    "answer": " YES\nExplanation: The context states that the messaging queue is hosted on redis-01. internal. corp, and Service A connects to the messaging queue. Therefore, the messaging queue used by Service A is indeed hosted on redis-01. internal. corp. \n```\nThis is a simple example, but it demonstrates how to extract information from a given context and answer a specific question based on that information. The answer is determined solely by the information provided in the context, without relying on external knowledge.\n\nIn a more complex scenario, you might need to use natural language processing (NLP) techniques to extract relevant information from the context and",
+    "claim": "The messaging queue used by Service A is hosted on redis-01. internal. corp.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.0006680114311166108,
+    "nli_neutral": 0.9990750551223755,
+    "nli_contradiction": 0.0002569050411693752,
+    "similarity_score": 0.9253035187721252,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "SUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-saf-hld-f7fc443f",
+    "answer": " 60 seconds.",
+    "claim": "60 seconds is a unit of time",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-005"
+    ],
+    "supporting_chunk_text": "In the v1 API, the timeout limit is strictly set to 30 seconds for all endpoints.",
+    "nli_entailment": 0.016367491334676743,
+    "nli_neutral": 0.14171165227890015,
+    "nli_contradiction": 0.8419208526611328,
+    "similarity_score": 0.24725618958473206,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-saf-hld-f7fc443f",
+    "answer": " 60 seconds.",
+    "claim": "60 seconds is equal to 1 minute",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-005"
+    ],
+    "supporting_chunk_text": "In the v1 API, the timeout limit is strictly set to 30 seconds for all endpoints.",
+    "nli_entailment": 0.006073507014662027,
+    "nli_neutral": 0.6719011068344116,
+    "nli_contradiction": 0.3220253884792328,
+    "similarity_score": 0.31416893005371094,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01. internal.corp. \n```\nThis is a simple example of how you can use the `chunk` command to extract specific information from a larger text. The `chunk` command allows you to break down a text into smaller chunks, and then you can use the `query` command to extract specific information from each chunk.\n\nIn this example, we are using the `chunk` command to break down the text into three chunks:\n```\n[chunk-003] The messaging queue is hosted on redis-01. internal.corp.\n[chunk-002] Service A connects to the messaging",
+    "claim": "This is a simple example of how you can use the `chunk` command to extract specific information from a larger text.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.02143845334649086,
+    "nli_neutral": 0.9613407850265503,
+    "nli_contradiction": 0.017220783978700638,
+    "similarity_score": 0.05172111839056015,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01. internal.corp. \n```\nThis is a simple example of how you can use the `chunk` command to extract specific information from a larger text. The `chunk` command allows you to break down a text into smaller chunks, and then you can use the `query` command to extract specific information from each chunk.\n\nIn this example, we are using the `chunk` command to break down the text into three chunks:\n```\n[chunk-003] The messaging queue is hosted on redis-01. internal.corp.\n[chunk-002] Service A connects to the messaging",
+    "claim": "The `chunk` command allows you to break down a text into smaller chunks.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.4657633900642395,
+    "nli_neutral": 0.49117758870124817,
+    "nli_contradiction": 0.04305904731154442,
+    "similarity_score": 0.10294163972139359,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01. internal.corp. \n```\nThis is a simple example of how you can use the `chunk` command to extract specific information from a larger text. The `chunk` command allows you to break down a text into smaller chunks, and then you can use the `query` command to extract specific information from each chunk.\n\nIn this example, we are using the `chunk` command to break down the text into three chunks:\n```\n[chunk-003] The messaging queue is hosted on redis-01. internal.corp.\n[chunk-002] Service A connects to the messaging",
+    "claim": "The `query` command is used to extract specific information from each chunk.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.511299729347229,
+    "nli_neutral": 0.4498797655105591,
+    "nli_contradiction": 0.03882050886750221,
+    "similarity_score": 0.146832674741745,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01. internal.corp. \n```\nThis is a simple example of how you can use the `chunk` command to extract specific information from a larger text. The `chunk` command allows you to break down a text into smaller chunks, and then you can use the `query` command to extract specific information from each chunk.\n\nIn this example, we are using the `chunk` command to break down the text into three chunks:\n```\n[chunk-003] The messaging queue is hosted on redis-01. internal.corp.\n[chunk-002] Service A connects to the messaging",
+    "claim": "In this example, we are using the `chunk` command to break down the text into three chunks.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.0031588852871209383,
+    "nli_neutral": 0.9801915884017944,
+    "nli_contradiction": 0.01664949208498001,
+    "similarity_score": 0.08269843459129333,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNCERTAIN"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01. internal.corp. \n```\nThis is a simple example of how you can use the `chunk` command to extract specific information from a larger text. The `chunk` command allows you to break down a text into smaller chunks, and then you can use the `query` command to extract specific information from each chunk.\n\nIn this example, we are using the `chunk` command to break down the text into three chunks:\n```\n[chunk-003] The messaging queue is hosted on redis-01. internal.corp.\n[chunk-002] Service A connects to the messaging",
+    "claim": "The text is broken down into three chunks: [chunk-003] The messaging queue is hosted on redis-01. internal.corp.",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-003"
+    ],
+    "supporting_chunk_text": "The messaging queue is hosted on redis-01.internal.corp.",
+    "nli_entailment": 0.0015592410927638412,
+    "nli_neutral": 0.9960726499557495,
+    "nli_contradiction": 0.0023681281600147486,
+    "similarity_score": 0.8209792971611023,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  },
+  {
+    "model": "llama",
+    "query_id": "q-saf-hld-fa6e1fbf",
+    "answer": " The messaging queue is hosted on redis-01. internal.corp. \n```\nThis is a simple example of how you can use the `chunk` command to extract specific information from a larger text. The `chunk` command allows you to break down a text into smaller chunks, and then you can use the `query` command to extract specific information from each chunk.\n\nIn this example, we are using the `chunk` command to break down the text into three chunks:\n```\n[chunk-003] The messaging queue is hosted on redis-01. internal.corp.\n[chunk-002] Service A connects to the messaging",
+    "claim": "The text is broken down into three chunks: [chunk-002] Service A connects to the messaging",
+    "claim_type": "declarative",
+    "supporting_chunk_ids": [
+      "chunk-002"
+    ],
+    "supporting_chunk_text": "Service A connects to the messaging queue to broadcast events.",
+    "nli_entailment": 0.0006317236693575978,
+    "nli_neutral": 0.998108983039856,
+    "nli_contradiction": 0.00125924963504076,
+    "similarity_score": 0.4874429702758789,
+    "verifier_decision": "UNSUPPORTED",
+    "human_label": "UNSUPPORTED"
+  }
+]

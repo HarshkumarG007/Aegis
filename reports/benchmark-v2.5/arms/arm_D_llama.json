@@ -1,0 +1,860 @@
+[
+  {
+    "query_id": "q-out-v25-baec011f",
+    "retrieved_chunk_ids": [
+      "chunk-003",
+      "chunk-004"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 16.549909591674805,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 43,
+    "repair_attempts": 0,
+    "query_type": "out_of_domain"
+  },
+  {
+    "query_id": "q-out-v25-8f68a837",
+    "retrieved_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 16.497800827026367,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 35,
+    "repair_attempts": 0,
+    "query_type": "out_of_domain"
+  },
+  {
+    "query_id": "q-out-v25-3f285e33",
+    "retrieved_chunk_ids": [
+      "chunk-002",
+      "chunk-005"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 16.463544845581055,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 35,
+    "repair_attempts": 0,
+    "query_type": "out_of_domain"
+  },
+  {
+    "query_id": "q-out-v25-50d7dd78",
+    "retrieved_chunk_ids": [
+      "chunk-003",
+      "chunk-001"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 16.471721649169922,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 35,
+    "repair_attempts": 0,
+    "query_type": "out_of_domain"
+  },
+  {
+    "query_id": "q-out-v25-41640f73",
+    "retrieved_chunk_ids": [
+      "chunk-002",
+      "chunk-001"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 16.608858108520508,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 35,
+    "repair_attempts": 0,
+    "query_type": "out_of_domain"
+  },
+  {
+    "query_id": "q-out-v25-40b9cfee",
+    "retrieved_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 16.634618759155273,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 37,
+    "repair_attempts": 0,
+    "query_type": "out_of_domain"
+  },
+  {
+    "query_id": "q-con-v25-da92a82e",
+    "retrieved_chunk_ids": [
+      "chunk-004",
+      "chunk-005"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 7.600518226623535,
+    "supporting_chunk_ids": [
+      "chunk-004",
+      "chunk-005"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+    "verification_state": "REJECT",
+    "verification_confidence": 1.0,
+    "latency_ms": 8435,
+    "repair_attempts": 1,
+    "original_verification_trace": {
+      "state": "REJECT",
+      "confidence": 1.0,
+      "reason": "Contains contradicted or explicitly unsupported claims.",
+      "verified_claims": [
+        {
+          "claim": "30 seconds",
+          "status": "UNCERTAIN",
+          "evidence_chunk_id": "chunk-005",
+          "confidence": 0.7858116030693054,
+          "reason": ""
+        },
+        {
+          "claim": "30 seconds is a unit of time",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-005",
+          "confidence": 0.6638603210449219,
+          "reason": ""
+        },
+        {
+          "claim": "30 seconds is equal to 0.5 minutes",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-005",
+          "confidence": 0.6192888021469116,
+          "reason": ""
+        }
+      ]
+    },
+    "original_answer": " 30 seconds.",
+    "query_type": "contradiction"
+  },
+  {
+    "query_id": "q-con-v25-cdee8f13",
+    "retrieved_chunk_ids": [
+      "chunk-004",
+      "chunk-005"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 7.289542198181152,
+    "supporting_chunk_ids": [
+      "chunk-004",
+      "chunk-005"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": " 60 seconds\nExplanation: The new API configuration requires all requests to complete within 60 seconds or they will time out. This is the only relevant information provided, and it does not mention the v1 API or its timeout limit. Therefore, the answer is 60 seconds.",
+    "verification_state": "PASS",
+    "verification_confidence": 1.0,
+    "latency_ms": 13394,
+    "repair_attempts": 0,
+    "original_verification_trace": {
+      "state": "PASS",
+      "confidence": 1.0,
+      "reason": "All claims are supported or uncertain (tolerated).",
+      "verified_claims": [
+        {
+          "claim": "The new API configuration requires all requests to complete within 60 seconds or they will time out.",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-004",
+          "confidence": 0.9926803112030029,
+          "reason": ""
+        },
+        {
+          "claim": "The new API configuration requires all requests to complete within 60 seconds or they will time out.",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-004",
+          "confidence": 0.9926803112030029,
+          "reason": ""
+        },
+        {
+          "claim": "The new API configuration requires all requests to complete within 60 seconds or they will time out.",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-004",
+          "confidence": 0.9926803112030029,
+          "reason": ""
+        }
+      ]
+    },
+    "query_type": "contradiction"
+  },
+  {
+    "query_id": "q-con-v25-27158ccf",
+    "retrieved_chunk_ids": [
+      "chunk-004",
+      "chunk-005"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 1.5413756370544434,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 31,
+    "repair_attempts": 0,
+    "query_type": "contradiction"
+  },
+  {
+    "query_id": "q-con-v25-36d6d8c2",
+    "retrieved_chunk_ids": [
+      "chunk-005",
+      "chunk-004"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 6.970099925994873,
+    "supporting_chunk_ids": [
+      "chunk-005",
+      "chunk-004"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": " YES, the timeout limit is different in v1 vs v2. In v1, the timeout limit is 30 seconds, while in v2, the timeout limit is 60 seconds.",
+    "verification_state": "PASS",
+    "verification_confidence": 1.0,
+    "latency_ms": 9385,
+    "repair_attempts": 0,
+    "original_verification_trace": {
+      "state": "PASS",
+      "confidence": 1.0,
+      "reason": "All claims are supported or uncertain (tolerated).",
+      "verified_claims": [
+        {
+          "claim": "timeout limit is different in v1 vs v2",
+          "status": "UNCERTAIN",
+          "evidence_chunk_id": "chunk-005",
+          "confidence": 0.0037204204127192497,
+          "reason": ""
+        },
+        {
+          "claim": "timeout limit in v1 is 30 seconds",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-005",
+          "confidence": 0.9838204383850098,
+          "reason": ""
+        },
+        {
+          "claim": "timeout limit in v2 is 60 seconds",
+          "status": "UNCERTAIN",
+          "evidence_chunk_id": "chunk-005",
+          "confidence": 0.004312627948820591,
+          "reason": ""
+        }
+      ]
+    },
+    "query_type": "contradiction"
+  },
+  {
+    "query_id": "q-con-v25-0a88db63",
+    "retrieved_chunk_ids": [
+      "chunk-004",
+      "chunk-005"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 1.3468208312988281,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 32,
+    "repair_attempts": 0,
+    "query_type": "contradiction"
+  },
+  {
+    "query_id": "q-con-v25-cc34facc",
+    "retrieved_chunk_ids": [
+      "chunk-005",
+      "chunk-004"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 5.720025539398193,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 33,
+    "repair_attempts": 0,
+    "query_type": "contradiction"
+  },
+  {
+    "query_id": "q-mul-v25-ccc0329d",
+    "retrieved_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 5.967219829559326,
+    "supporting_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": " redis-01. internal.corp.\n```\nThis question is testing your ability to extract information from a given context and answer a specific question based on that information. The context provides two chunks of information: the first chunk states that Service A connects to the messaging queue to broadcast events, and the second chunk states that the messaging queue is hosted on redis-01.internal.corp. The question asks which server hosts the queue used by Service A. The answer is directly extracted from the second chunk of information, which states that the messaging queue is hosted on redis-01.internal.corp. Therefore, the correct answer is redis-01.internal.corp.",
+    "verification_state": "PASS",
+    "verification_confidence": 1.0,
+    "latency_ms": 20807,
+    "repair_attempts": 0,
+    "original_verification_trace": {
+      "state": "PASS",
+      "confidence": 1.0,
+      "reason": "All claims are supported or uncertain (tolerated).",
+      "verified_claims": [
+        {
+          "claim": "Service A connects to the messaging queue to broadcast events.",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.9837579131126404,
+          "reason": ""
+        },
+        {
+          "claim": "The messaging queue is hosted on redis-01.internal.corp.",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-003",
+          "confidence": 0.9836641550064087,
+          "reason": ""
+        },
+        {
+          "claim": "redis-01.internal.corp. hosts the queue used by Service A.",
+          "status": "UNCERTAIN",
+          "evidence_chunk_id": "chunk-003",
+          "confidence": 0.0007807614165358245,
+          "reason": ""
+        }
+      ]
+    },
+    "query_type": "multi_hop"
+  },
+  {
+    "query_id": "q-mul-v25-21a26f71",
+    "retrieved_chunk_ids": [
+      "chunk-003",
+      "chunk-002"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 6.767219066619873,
+    "supporting_chunk_ids": [
+      "chunk-003",
+      "chunk-002"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": " YES\nReasoning: The context states that the messaging queue is hosted on redis-01. internal. corp, and Service A connects to the messaging queue. Therefore, Service A must connect to redis-01. internal. corp, which is the same as redis-01. \nFinal Answer: The final answer is YES. I hope it is correct.  ```\n\n\n\n**Explanation:**\n\nThe question asks if Service A connects to redis-01. The context provides information about the messaging queue being hosted on redis-01. internal. corp, and Service A connecting to the messaging queue. \n\nTo answer the question, we need to analyze the context and identify the connection between Service A and the messaging queue. The context states that the messaging queue is hosted on redis-01. internal. corp, and Service A connects to the messaging queue. \n\nTherefore, Service A must connect to redis-01. internal. corp, which is the same as redis-01. \n\nThe answer is YES, Service A connects to redis-01. \n\n**Note:** The answer is based solely on the provided context and does not include external knowledge.  ```\n\n\n\n**Additional Tips:**\n\n1. Always read the context carefully and identify the key information.\n2. Analyze the context",
+    "verification_state": "PASS",
+    "verification_confidence": 1.0,
+    "latency_ms": 36115,
+    "repair_attempts": 0,
+    "original_verification_trace": {
+      "state": "PASS",
+      "confidence": 1.0,
+      "reason": "All claims are supported or uncertain (tolerated).",
+      "verified_claims": [
+        {
+          "claim": "Service A connects to the messaging queue",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.9727602601051331,
+          "reason": ""
+        },
+        {
+          "claim": "The messaging queue is hosted on redis-01. internal. corp",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-003",
+          "confidence": 0.9879860281944275,
+          "reason": ""
+        },
+        {
+          "claim": "Service A connects to redis-01. internal. corp",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-003",
+          "confidence": 0.8674682378768921,
+          "reason": ""
+        }
+      ]
+    },
+    "query_type": "multi_hop"
+  },
+  {
+    "query_id": "q-mul-v25-a271076e",
+    "retrieved_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 2.435500383377075,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 33,
+    "repair_attempts": 0,
+    "query_type": "multi_hop"
+  },
+  {
+    "query_id": "q-mul-v25-0bd40b8a",
+    "retrieved_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 6.648926734924316,
+    "supporting_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+    "verification_state": "REJECT",
+    "verification_confidence": 1.0,
+    "latency_ms": 8792,
+    "repair_attempts": 1,
+    "original_verification_trace": {
+      "state": "REJECT",
+      "confidence": 1.0,
+      "reason": "Contains contradicted or explicitly unsupported claims.",
+      "verified_claims": [
+        {
+          "claim": "Service A sends its broadcast events to the messaging queue hosted on redis-001.internal.corp.",
+          "status": "CONTRADICTED",
+          "evidence_chunk_id": "chunk-003",
+          "confidence": 0.9258480072021484,
+          "reason": ""
+        },
+        {
+          "claim": "The correct answer is redis-01, not redis-001.",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-003",
+          "confidence": 0.4927942156791687,
+          "reason": ""
+        }
+      ]
+    },
+    "original_answer": " Service A sends its broadcast events to the messaging queue hosted on redis-001.internal.corp. (Note: The correct answer is redis-01, not redis-001.)",
+    "query_type": "multi_hop"
+  },
+  {
+    "query_id": "q-mul-v25-e86cf28b",
+    "retrieved_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 6.919303894042969,
+    "supporting_chunk_ids": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+    "verification_state": "REJECT",
+    "verification_confidence": 1.0,
+    "latency_ms": 43125,
+    "repair_attempts": 1,
+    "original_verification_trace": {
+      "state": "REJECT",
+      "confidence": 1.0,
+      "reason": "Contains contradicted or explicitly unsupported claims.",
+      "verified_claims": [
+        {
+          "claim": "The company has a cloud-based infrastructure with multiple availability zones.",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-003",
+          "confidence": 0.717321515083313,
+          "reason": ""
+        },
+        {
+          "claim": "The company uses a load balancer to distribute traffic across multiple instances of Service B.",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.5461708307266235,
+          "reason": ""
+        },
+        {
+          "claim": "The load balancer is configured to use a health check to ensure that instances of Service B are healthy before sending traffic to them.",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.5916537046432495,
+          "reason": ""
+        },
+        {
+          "claim": "The health check is configured to check for a specific HTTP response code (200) from Service B.",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.729080468416214,
+          "reason": ""
+        },
+        {
+          "claim": "The company has a requirement to ensure that Service B instances are not overloaded and are able to respond to requests within a certain time threshold (500ms).",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.6063785254955292,
+          "reason": ""
+        },
+        {
+          "claim": "The company has implemented a circuit breaker pattern to detect and prevent cascading failures in Service B.",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.7158331274986267,
+          "reason": ""
+        }
+      ]
+    },
+    "original_answer": " redis-01.internal.corp\n```\nThis is a simple question that requires only a basic understanding of the context provided. The answer is directly stated in the context, so there is no need to use external knowledge or make any inferences.\n\n### 3.2.2. Advanced Questions\n\nAdvanced questions require a deeper understanding of the context and may involve more complex analysis or problem-solving. These questions may also require the use of external knowledge or the application of domain-specific concepts.\n\nExample:\n```\nContext:\n[chunk-004] The company has a cloud-based infrastructure with multiple availability zones.\n[chunk-005] The company uses a load balancer to distribute traffic across multiple instances of Service B.\n[chunk-006] The load balancer is configured to use a health check to ensure that instances of Service B are healthy before sending traffic to them.\n[chunk-007] The health check is configured to check for a specific HTTP response code (200) from Service B.\n[chunk-008] The company has a requirement to ensure that Service B instances are not overloaded and are able to respond to requests within a certain time threshold (500ms).\n[chunk-009] The company has implemented a circuit breaker pattern to detect and prevent cascading failures in Service B",
+    "query_type": "multi_hop"
+  },
+  {
+    "query_id": "q-mul-v25-f67013c1",
+    "retrieved_chunk_ids": [
+      "chunk-003",
+      "chunk-002"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 7.67751407623291,
+    "supporting_chunk_ids": [
+      "chunk-003",
+      "chunk-002"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": " Service A.",
+    "verification_state": "PASS",
+    "verification_confidence": 1.0,
+    "latency_ms": 3769,
+    "repair_attempts": 0,
+    "original_verification_trace": {
+      "state": "PASS",
+      "confidence": 1.0,
+      "reason": "All claims are supported or uncertain (tolerated).",
+      "verified_claims": [
+        {
+          "claim": "Service A is a service",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.8776909112930298,
+          "reason": ""
+        },
+        {
+          "claim": "Service A is a service A",
+          "status": "UNCERTAIN",
+          "evidence_chunk_id": "chunk-002",
+          "confidence": 0.7751932740211487,
+          "reason": ""
+        }
+      ]
+    },
+    "query_type": "multi_hop"
+  },
+  {
+    "query_id": "q-amb-v25-a4e7f61c",
+    "retrieved_chunk_ids": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 0.1568889617919922,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 33,
+    "repair_attempts": 0,
+    "query_type": "ambiguity"
+  },
+  {
+    "query_id": "q-amb-v25-c5f332b8",
+    "retrieved_chunk_ids": [
+      "chunk-007",
+      "chunk-006"
+    ],
+    "gate_state": "CONFLICT",
+    "gate_confidence": 0.9590722322463989,
+    "supporting_chunk_ids": [
+      "chunk-007",
+      "chunk-006"
+    ],
+    "conflicting_chunk_ids": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "answer": "I cannot answer this query because the retrieved evidence contains conflicting information.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 99,
+    "repair_attempts": 0,
+    "query_type": "ambiguity"
+  },
+  {
+    "query_id": "q-amb-v25-cc99b3f1",
+    "retrieved_chunk_ids": [
+      "chunk-007",
+      "chunk-006"
+    ],
+    "gate_state": "CONFLICT",
+    "gate_confidence": 0.9590722322463989,
+    "supporting_chunk_ids": [
+      "chunk-007",
+      "chunk-006"
+    ],
+    "conflicting_chunk_ids": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "answer": "I cannot answer this query because the retrieved evidence contains conflicting information.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 95,
+    "repair_attempts": 0,
+    "query_type": "ambiguity"
+  },
+  {
+    "query_id": "q-amb-v25-90ca99c3",
+    "retrieved_chunk_ids": [
+      "chunk-007",
+      "chunk-006"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 0.9648675918579102,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 33,
+    "repair_attempts": 0,
+    "query_type": "ambiguity"
+  },
+  {
+    "query_id": "q-amb-v25-b76bd65c",
+    "retrieved_chunk_ids": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "gate_state": "CONFLICT",
+    "gate_confidence": 0.9590722322463989,
+    "supporting_chunk_ids": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "conflicting_chunk_ids": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "answer": "I cannot answer this query because the retrieved evidence contains conflicting information.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 97,
+    "repair_attempts": 0,
+    "query_type": "ambiguity"
+  },
+  {
+    "query_id": "q-amb-v25-a0b080da",
+    "retrieved_chunk_ids": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 4.362292289733887,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 34,
+    "repair_attempts": 0,
+    "query_type": "ambiguity"
+  },
+  {
+    "query_id": "q-saf-v25-bc820ee0",
+    "retrieved_chunk_ids": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "gate_state": "CONFLICT",
+    "gate_confidence": 0.9734521508216858,
+    "supporting_chunk_ids": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "conflicting_chunk_ids": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "answer": "I cannot answer this query because the retrieved evidence contains conflicting information.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 100,
+    "repair_attempts": 0,
+    "query_type": "safe_infrastructure"
+  },
+  {
+    "query_id": "q-saf-v25-2926cc01",
+    "retrieved_chunk_ids": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "gate_state": "CONFLICT",
+    "gate_confidence": 0.9734521508216858,
+    "supporting_chunk_ids": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "conflicting_chunk_ids": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "answer": "I cannot answer this query because the retrieved evidence contains conflicting information.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 99,
+    "repair_attempts": 0,
+    "query_type": "safe_infrastructure"
+  },
+  {
+    "query_id": "q-saf-v25-070d19e0",
+    "retrieved_chunk_ids": [
+      "chunk-001",
+      "chunk-007"
+    ],
+    "gate_state": "SUFFICIENT",
+    "gate_confidence": 7.50037956237793,
+    "supporting_chunk_ids": [
+      "chunk-001",
+      "chunk-007"
+    ],
+    "conflicting_chunk_ids": [],
+    "answer": " YES\nReasoning: The database password must be rotated every 90 days, and failure to do so will result in an automatic lock. This implies that there is an automatic lock on the database.",
+    "verification_state": "PASS",
+    "verification_confidence": 1.0,
+    "latency_ms": 21028,
+    "repair_attempts": 1,
+    "original_verification_trace": {
+      "state": "REJECT",
+      "confidence": 1.0,
+      "reason": "Contains contradicted or explicitly unsupported claims.",
+      "verified_claims": [
+        {
+          "claim": "YES, according to [chunk-001]. The database password must be rotated every 90 days, and failure to do so will result in an automatic lock.",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-001",
+          "confidence": 0.9911751747131348,
+          "reason": ""
+        },
+        {
+          "claim": "YES, according to [chunk-001]. The database password must be rotated every 90 days.",
+          "status": "UNCERTAIN",
+          "evidence_chunk_id": "chunk-001",
+          "confidence": 0.07412776350975037,
+          "reason": ""
+        },
+        {
+          "claim": "YES, according to [chunk-001]. Failure to do so will result in an automatic lock.",
+          "status": "UNSUPPORTED",
+          "evidence_chunk_id": "chunk-001",
+          "confidence": 0.675988107919693,
+          "reason": ""
+        }
+      ]
+    },
+    "original_answer": " YES, according to [chunk-001]. The database password must be rotated every 90 days, and failure to do so will result in an automatic lock.",
+    "repair_verification_trace": {
+      "state": "PASS",
+      "confidence": 1.0,
+      "reason": "All claims are supported or uncertain (tolerated).",
+      "verified_claims": [
+        {
+          "claim": "database password must be rotated every 90 days",
+          "status": "UNCERTAIN",
+          "evidence_chunk_id": "chunk-001",
+          "confidence": 0.008973703719675541,
+          "reason": ""
+        },
+        {
+          "claim": "failure to rotate password will result in an automatic lock",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-001",
+          "confidence": 0.979407548904419,
+          "reason": ""
+        },
+        {
+          "claim": "there is an automatic lock on the database",
+          "status": "SUPPORTED",
+          "evidence_chunk_id": "chunk-001",
+          "confidence": 0.9769536852836609,
+          "reason": ""
+        }
+      ]
+    },
+    "query_type": "safe_infrastructure"
+  },
+  {
+    "query_id": "q-saf-v25-7d2f51d3",
+    "retrieved_chunk_ids": [
+      "chunk-001",
+      "chunk-007"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 1.758422613143921,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 774,
+    "repair_attempts": 0,
+    "query_type": "safe_infrastructure"
+  },
+  {
+    "query_id": "q-saf-v25-7a4b537d",
+    "retrieved_chunk_ids": [
+      "chunk-001",
+      "chunk-005"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 0.5233516693115234,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 32,
+    "repair_attempts": 0,
+    "query_type": "safe_infrastructure"
+  },
+  {
+    "query_id": "q-saf-v25-724b15c2",
+    "retrieved_chunk_ids": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "gate_state": "INSUFFICIENT",
+    "gate_confidence": 2.131039619445801,
+    "supporting_chunk_ids": [],
+    "conflicting_chunk_ids": [],
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "verification_state": "SKIPPED",
+    "verification_confidence": 0.0,
+    "latency_ms": 32,
+    "repair_attempts": 0,
+    "query_type": "safe_infrastructure"
+  }
+]

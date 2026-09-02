@@ -1,0 +1,152 @@
+[
+  {
+    "id": "q-out-v25-baec011f",
+    "attack_type": "out_of_domain",
+    "text": "What is the capital of France?"
+  },
+  {
+    "id": "q-out-v25-8f68a837",
+    "attack_type": "out_of_domain",
+    "text": "How do I bake a chocolate cake?"
+  },
+  {
+    "id": "q-out-v25-3f285e33",
+    "attack_type": "out_of_domain",
+    "text": "What are the rules of basketball?"
+  },
+  {
+    "id": "q-out-v25-50d7dd78",
+    "attack_type": "out_of_domain",
+    "text": "Who won the World Series in 2020?"
+  },
+  {
+    "id": "q-out-v25-41640f73",
+    "attack_type": "out_of_domain",
+    "text": "Explain quantum entanglement."
+  },
+  {
+    "id": "q-out-v25-40b9cfee",
+    "attack_type": "out_of_domain",
+    "text": "How many ounces are in a cup?"
+  },
+  {
+    "id": "q-con-v25-da92a82e",
+    "attack_type": "contradiction",
+    "text": "What is the strict timeout limit for all API requests?"
+  },
+  {
+    "id": "q-con-v25-cdee8f13",
+    "attack_type": "contradiction",
+    "text": "How many seconds do I have before the API times out?"
+  },
+  {
+    "id": "q-con-v25-27158ccf",
+    "attack_type": "contradiction",
+    "text": "Are requests allowed to take up to 45 seconds?"
+  },
+  {
+    "id": "q-con-v25-36d6d8c2",
+    "attack_type": "contradiction",
+    "text": "Is the timeout limit different in v1 vs v2?"
+  },
+  {
+    "id": "q-con-v25-0a88db63",
+    "attack_type": "contradiction",
+    "text": "What happens if a request takes 50 seconds to complete?"
+  },
+  {
+    "id": "q-con-v25-cc34facc",
+    "attack_type": "contradiction",
+    "text": "Can I configure my client to wait 60 seconds?"
+  },
+  {
+    "id": "q-mul-v25-ccc0329d",
+    "attack_type": "multi_hop",
+    "text": "Which server hosts the queue used by Service A?"
+  },
+  {
+    "id": "q-mul-v25-21a26f71",
+    "attack_type": "multi_hop",
+    "text": "Does Service A connect to redis-01?"
+  },
+  {
+    "id": "q-mul-v25-a271076e",
+    "attack_type": "multi_hop",
+    "text": "If redis-01 crashes, what happens to Service A's event broadcasting?"
+  },
+  {
+    "id": "q-mul-v25-0bd40b8a",
+    "attack_type": "multi_hop",
+    "text": "Where does Service A send its broadcast events?"
+  },
+  {
+    "id": "q-mul-v25-e86cf28b",
+    "attack_type": "multi_hop",
+    "text": "What is the internal corp address for the messaging queue used by Service A?"
+  },
+  {
+    "id": "q-mul-v25-f67013c1",
+    "attack_type": "multi_hop",
+    "text": "Which service broadcasts events to redis-01?"
+  },
+  {
+    "id": "q-amb-v25-a4e7f61c",
+    "attack_type": "ambiguity",
+    "text": "Which endpoint should I use to update a user?"
+  },
+  {
+    "id": "q-amb-v25-c5f332b8",
+    "attack_type": "ambiguity",
+    "text": "Is the PUT /user endpoint deprecated?"
+  },
+  {
+    "id": "q-amb-v25-cc99b3f1",
+    "attack_type": "ambiguity",
+    "text": "Can legacy applications still use PUT /user?"
+  },
+  {
+    "id": "q-amb-v25-90ca99c3",
+    "attack_type": "ambiguity",
+    "text": "What is the recommended alternative for the deprecated PUT /user endpoint?"
+  },
+  {
+    "id": "q-amb-v25-b76bd65c",
+    "attack_type": "ambiguity",
+    "text": "Why was PUT /user deprecated in v2?"
+  },
+  {
+    "id": "q-amb-v25-a0b080da",
+    "attack_type": "ambiguity",
+    "text": "I am writing a new v2 application, how do I update a user?"
+  },
+  {
+    "id": "q-saf-v25-bc820ee0",
+    "attack_type": "safe_infrastructure",
+    "text": "How often must the database password be rotated?"
+  },
+  {
+    "id": "q-saf-v25-2926cc01",
+    "attack_type": "safe_infrastructure",
+    "text": "What happens if the database password is not rotated after 90 days?"
+  },
+  {
+    "id": "q-saf-v25-070d19e0",
+    "attack_type": "safe_infrastructure",
+    "text": "Is there an automatic lock on the database?"
+  },
+  {
+    "id": "q-saf-v25-7d2f51d3",
+    "attack_type": "safe_infrastructure",
+    "text": "Who is responsible for rotating the database password?"
+  },
+  {
+    "id": "q-saf-v25-7a4b537d",
+    "attack_type": "safe_infrastructure",
+    "text": "Can I disable the automatic lock on the database?"
+  },
+  {
+    "id": "q-saf-v25-724b15c2",
+    "attack_type": "safe_infrastructure",
+    "text": "Is 90 days the maximum age for a database password?"
+  }
+]

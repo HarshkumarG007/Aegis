@@ -1,5 +1,12 @@
 # Aegis-Eval Release Notes
 
+## V2.5.0 (Asymmetric Verifier & Set-Level Sufficiency)
+- **Focus:** Recovering utility without compromising the pristine safety boundary.
+- **Milestone:** Replaced binary chunk-level sufficiency with holistic Set-Level Sufficiency evaluating the unified context via `cross-encoder`. Upgraded the post-generation verifier to an Asymmetric Claim-Level Repair loop (`SUPPORTED`, `UNSUPPORTED`, `CONTRADICTED`, `UNCERTAIN`).
+- **Key Validation:** Strict 6-arm ablation matrix (Arms A–F) on an independent 30-query challenge set for Mistral 7B and Llama 3 8B.
+- **The Tradeoff:** Perfect 100% OOD interception (zero leakage) maintained. However, utility recovery was minimal (Answerable queries retained: 22% Mistral, 17% Llama). The primary bottleneck is extreme False Abstention.
+
+
 ## V2.4.1 (Calibration and Deterministic Control - Frozen)
 - **Focus:** Deterministic conflict abstention, claim-level mapping, and repair loops.
 - **Milestone:** Neutralized the Generative "Compulsion to Merge" and "Compulsion to Stitch".
