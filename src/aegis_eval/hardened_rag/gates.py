@@ -5,9 +5,13 @@ import numpy as np
 from scipy.special import softmax
 
 class EvidenceGate:
-    def __init__(self, use_v2_5_sufficiency: bool = False, use_v2_7_conditional_conflict: bool = False):
+    def __init__(self, use_v2_5_sufficiency: bool = False, use_v2_7_conditional_conflict: bool = False, 
+                 conflict_classifier: str = "A", extractor_mode: str = "E0", llm=None):
         self.use_v2_5_sufficiency = use_v2_5_sufficiency
         self.use_v2_7_conditional_conflict = use_v2_7_conditional_conflict
+        self.conflict_classifier = conflict_classifier
+        self.extractor_mode = extractor_mode
+        self.llm = llm
         # QA Relevance/Sufficiency model
         self.qa_model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2', device='cpu')
         # NLI model for pairwise contradiction
@@ -76,6 +80,9 @@ class EvidenceGate:
         conflict_reason = ""
         max_contra_prob = 0.0
         
+        c_i = None
+        c_j = None
+        
         for i in range(len(chunks)):
             for j in range(i + 1, len(chunks)):
                 scores_ab = self.nli_model.predict([[chunks[i]['text'], chunks[j]['text']]])[0]
@@ -88,32 +95,33 @@ class EvidenceGate:
                 if contra_prob >= 0.85: 
                     conflicting_chunks.add(chunks[i]['chunk_id'])
                     conflicting_chunks.add(chunks[j]['chunk_id'])
+                    c_i = chunks[i]['text']
+                    c_j = chunks[j]['text']
                     if contra_prob > max_contra_prob:
                         max_contra_prob = contra_prob
                     conflict_reason = f"Chunk {chunks[i]['chunk_id']} contradicts {chunks[j]['chunk_id']}"
                     
         if conflicting_chunks:
             final_conflict_state = "CONFLICT"
-            if self.use_v2_7_conditional_conflict:
-                # 1. Condition Extraction
+            # We assume self.conflict_classifier handles A, B, C, D.
+            # Backward compatibility with v2.7:
+            mode = getattr(self, "conflict_classifier", "A")
+            if getattr(self, "use_v2_7_conditional_conflict", False) and mode == "A":
+                mode = "B"
+                
+            if mode == "A":
+                final_conflict_state = "CONTRADICTION"
+                
+            elif mode == "B":
+                # V2.7 Compatibility NLI
+                combined_text = c_i + " " + c_j
                 condition_keywords = ["v1", "v2", "version", "legacy", "deprecated", "current", "2am", "4am", "hours", "public", "internal", "vpn", "admin", "guest", "role", "finance"]
-                has_condition = False
-                combined_text = " ".join([c['text'] for c in chunks if c['chunk_id'] in conflicting_chunks])
-                if any(kw in combined_text.lower() for kw in condition_keywords):
-                    has_condition = True
+                has_condition = any(kw in combined_text.lower() for kw in condition_keywords)
                 
-                # 2. Compatibility Test
-                is_compatible = False
                 hypothesis = "These claims can jointly hold under different conditions, versions, scopes, or times."
-                scores_compat = self.nli_model.predict([[combined_text, hypothesis]])[0]
-                probs_compat = softmax(scores_compat)
+                probs_compat = softmax(self.nli_model.predict([[combined_text, hypothesis]])[0])
+                is_compatible = probs_compat[1] >= 0.5
                 
-                # Assuming DeBERTa-v3 output mapping: 0=Contradiction, 1=Entailment, 2=Neutral
-                entailment_prob = probs_compat[1]
-                if entailment_prob >= 0.5:
-                    is_compatible = True
-                    
-                # 3. Deterministic Policy
                 if has_condition and is_compatible:
                     final_conflict_state = "CONDITIONAL_COMPATIBILITY"
                 elif has_condition and not is_compatible:
@@ -123,8 +131,81 @@ class EvidenceGate:
                 else:
                     final_conflict_state = "CONTRADICTION"
                     
+            elif mode in ["C", "D", "E"]:
+                from aegis_eval.hardened_rag.condition_extractor import ConditionExtractor
+                # Determine mode for extraction
+                ext_mode = getattr(self, "extractor_mode", "E0")
+                extractor = ConditionExtractor(llm=getattr(self, "llm", None), mode=ext_mode)
+                
+                cond_a = extractor.extract(c_i)
+                cond_b = extractor.extract(c_j)
+                
+                if mode == "E":
+                    # Proposition binding logic
+                    if cond_a.get("ambiguous") or cond_b.get("ambiguous"):
+                        final_conflict_state = "CONFLICT_UNCERTAIN"
+                    else:
+                        prop_a = cond_a.get("proposition", c_i)
+                        prop_b = cond_b.get("proposition", c_j)
+                        
+                        scores_ab = self.nli_model.predict([[prop_a, prop_b]])[0]
+                        probs_ab = softmax(scores_ab)
+                        scores_ba = self.nli_model.predict([[prop_b, prop_a]])[0]
+                        probs_ba = softmax(scores_ba)
+                        prop_contra = max(probs_ab[0], probs_ba[0])
+                        
+                        if prop_contra < 0.85:
+                            final_conflict_state = "CONFLICT_UNCERTAIN"
+                        elif not (cond_a["conditions"].get("explicit") and cond_b["conditions"].get("explicit")):
+                            final_conflict_state = "CONTRADICTION"
+                        else:
+                            explicit_differentiator = False
+                            for key in ["version", "time", "scope", "role", "environment", "lifecycle"]:
+                                val_a = cond_a["conditions"].get(key)
+                                val_b = cond_b["conditions"].get(key)
+                                if val_a and val_b and val_a != val_b:
+                                    explicit_differentiator = True
+                                    break
+                            
+                            if explicit_differentiator:
+                                final_conflict_state = "CONDITIONAL_COMPATIBILITY"
+                            else:
+                                final_conflict_state = "CONTRADICTION"
+                else:
+                    # Legacy C and D logic
+                    explicit_differentiator = False
+                    # Note: Legacy C/D assumes dict returned directly from extractor in V2.8, 
+                    # but we updated E0 to return {"proposition": ..., "conditions": ...}
+                    # We must adapt C and D to read from ["conditions"] if present.
+                    conds_a = cond_a.get("conditions", cond_a)
+                    conds_b = cond_b.get("conditions", cond_b)
+                    
+                    for key in ["version", "time", "scope", "role", "environment", "lifecycle"]:
+                        val_a = conds_a.get(key)
+                        val_b = conds_b.get(key)
+                        if val_a and val_b and val_a != val_b:
+                            explicit_differentiator = True
+                            break
+                            
+                    if not (conds_a.get("explicit") or conds_b.get("explicit")):
+                        final_conflict_state = "CONTRADICTION"
+                    elif not explicit_differentiator:
+                        final_conflict_state = "CONFLICT_UNCERTAIN"
+                    else:
+                        if mode == "C":
+                            final_conflict_state = "CONDITIONAL_COMPATIBILITY"
+                        elif mode == "D":
+                            combined_text = c_i + " " + c_j
+                            hypothesis = "These claims can jointly hold under different conditions, versions, scopes, or times."
+                            probs_compat = softmax(self.nli_model.predict([[combined_text, hypothesis]])[0])
+                            is_compatible = probs_compat[1] >= 0.5
+                            if is_compatible:
+                                final_conflict_state = "CONDITIONAL_COMPATIBILITY"
+                            else:
+                                final_conflict_state = "CONFLICT_UNCERTAIN"
+                            
             return {
-                "state": final_conflict_state if self.use_v2_7_conditional_conflict else "CONFLICT",
+                "state": final_conflict_state,
                 "answerable": True if final_conflict_state == "CONDITIONAL_COMPATIBILITY" else False,
                 "confidence": float(max_contra_prob),
                 "supporting_chunks": supporting_chunks,

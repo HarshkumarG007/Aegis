@@ -1,0 +1,422 @@
+[
+    {
+        "id": "diag-con-001",
+        "claim_a": "The maximum payload size is 10MB.",
+        "claim_b": "The maximum payload size is strictly 15MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-002",
+        "claim_a": "The maximum payload size is 20MB.",
+        "claim_b": "The maximum payload size is strictly 25MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-003",
+        "claim_a": "The maximum payload size is 30MB.",
+        "claim_b": "The maximum payload size is strictly 35MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-004",
+        "claim_a": "The maximum payload size is 40MB.",
+        "claim_b": "The maximum payload size is strictly 45MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-005",
+        "claim_a": "The maximum payload size is 50MB.",
+        "claim_b": "The maximum payload size is strictly 55MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-006",
+        "claim_a": "The maximum payload size is 60MB.",
+        "claim_b": "The maximum payload size is strictly 65MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-007",
+        "claim_a": "The maximum payload size is 70MB.",
+        "claim_b": "The maximum payload size is strictly 75MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-008",
+        "claim_a": "The maximum payload size is 80MB.",
+        "claim_b": "The maximum payload size is strictly 85MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-009",
+        "claim_a": "The maximum payload size is 90MB.",
+        "claim_b": "The maximum payload size is strictly 95MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-con-010",
+        "claim_a": "The maximum payload size is 100MB.",
+        "claim_b": "The maximum payload size is strictly 105MB.",
+        "label": "CONTRADICTION",
+        "type": "direct_contradiction"
+    },
+    {
+        "id": "diag-ver-001",
+        "claim_a": "The widget API is deprecated in version 1.",
+        "claim_b": "The widget API remains supported for legacy v0 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-002",
+        "claim_a": "The widget API is deprecated in version 2.",
+        "claim_b": "The widget API remains supported for legacy v1 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-003",
+        "claim_a": "The widget API is deprecated in version 3.",
+        "claim_b": "The widget API remains supported for legacy v2 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-004",
+        "claim_a": "The widget API is deprecated in version 4.",
+        "claim_b": "The widget API remains supported for legacy v3 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-005",
+        "claim_a": "The widget API is deprecated in version 5.",
+        "claim_b": "The widget API remains supported for legacy v4 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-006",
+        "claim_a": "The widget API is deprecated in version 6.",
+        "claim_b": "The widget API remains supported for legacy v5 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-007",
+        "claim_a": "The widget API is deprecated in version 7.",
+        "claim_b": "The widget API remains supported for legacy v6 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-008",
+        "claim_a": "The widget API is deprecated in version 8.",
+        "claim_b": "The widget API remains supported for legacy v7 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-009",
+        "claim_a": "The widget API is deprecated in version 9.",
+        "claim_b": "The widget API remains supported for legacy v8 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-ver-010",
+        "claim_a": "The widget API is deprecated in version 10.",
+        "claim_b": "The widget API remains supported for legacy v9 clients.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "version_incompatibility"
+    },
+    {
+        "id": "diag-tem-001",
+        "claim_a": "The system undergoes maintenance at 1 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-002",
+        "claim_a": "The system undergoes maintenance at 2 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-003",
+        "claim_a": "The system undergoes maintenance at 3 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-004",
+        "claim_a": "The system undergoes maintenance at 4 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-005",
+        "claim_a": "The system undergoes maintenance at 5 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-006",
+        "claim_a": "The system undergoes maintenance at 6 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-007",
+        "claim_a": "The system undergoes maintenance at 7 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-008",
+        "claim_a": "The system undergoes maintenance at 8 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-009",
+        "claim_a": "The system undergoes maintenance at 9 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-tem-010",
+        "claim_a": "The system undergoes maintenance at 10 AM daily.",
+        "claim_b": "The system is fully operational during business hours (9 AM - 5 PM).",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "temporal_incompatibility"
+    },
+    {
+        "id": "diag-rol-001",
+        "claim_a": "Only administrators can access the 1th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 1th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-002",
+        "claim_a": "Only administrators can access the 2th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 2th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-003",
+        "claim_a": "Only administrators can access the 3th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 3th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-004",
+        "claim_a": "Only administrators can access the 4th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 4th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-005",
+        "claim_a": "Only administrators can access the 5th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 5th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-006",
+        "claim_a": "Only administrators can access the 6th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 6th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-007",
+        "claim_a": "Only administrators can access the 7th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 7th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-008",
+        "claim_a": "Only administrators can access the 8th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 8th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-009",
+        "claim_a": "Only administrators can access the 9th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 9th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-rol-010",
+        "claim_a": "Only administrators can access the 10th level dashboard.",
+        "claim_b": "Guest users are strictly forbidden from viewing the 10th level dashboard.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "role_incompatibility"
+    },
+    {
+        "id": "diag-env-001",
+        "claim_a": "Debug logging is enabled in the staging environment for module 1.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 1.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-002",
+        "claim_a": "Debug logging is enabled in the staging environment for module 2.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 2.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-003",
+        "claim_a": "Debug logging is enabled in the staging environment for module 3.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 3.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-004",
+        "claim_a": "Debug logging is enabled in the staging environment for module 4.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 4.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-005",
+        "claim_a": "Debug logging is enabled in the staging environment for module 5.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 5.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-006",
+        "claim_a": "Debug logging is enabled in the staging environment for module 6.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 6.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-007",
+        "claim_a": "Debug logging is enabled in the staging environment for module 7.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 7.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-008",
+        "claim_a": "Debug logging is enabled in the staging environment for module 8.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 8.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-009",
+        "claim_a": "Debug logging is enabled in the staging environment for module 9.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 9.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-env-010",
+        "claim_a": "Debug logging is enabled in the staging environment for module 10.",
+        "claim_b": "Debug logging is disabled in production to save disk space for module 10.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "environment_incompatibility"
+    },
+    {
+        "id": "diag-amb-001",
+        "claim_a": "The endpoint returns a 404 error 1 percent of the time.",
+        "claim_b": "The endpoint never returns a 404 error.",
+        "label": "CONTRADICTION",
+        "type": "unresolved_ambiguity"
+    },
+    {
+        "id": "diag-amb-002",
+        "claim_a": "The endpoint returns a 404 error 2 percent of the time.",
+        "claim_b": "The endpoint never returns a 404 error.",
+        "label": "CONTRADICTION",
+        "type": "unresolved_ambiguity"
+    },
+    {
+        "id": "diag-amb-003",
+        "claim_a": "The endpoint returns a 404 error 3 percent of the time.",
+        "claim_b": "The endpoint never returns a 404 error.",
+        "label": "CONTRADICTION",
+        "type": "unresolved_ambiguity"
+    },
+    {
+        "id": "diag-amb-004",
+        "claim_a": "The endpoint returns a 404 error 4 percent of the time.",
+        "claim_b": "The endpoint never returns a 404 error.",
+        "label": "CONTRADICTION",
+        "type": "unresolved_ambiguity"
+    },
+    {
+        "id": "diag-amb-005",
+        "claim_a": "The endpoint returns a 404 error 5 percent of the time.",
+        "claim_b": "The endpoint never returns a 404 error.",
+        "label": "CONTRADICTION",
+        "type": "unresolved_ambiguity"
+    },
+    {
+        "id": "diag-lex-001",
+        "claim_a": "Users can upload photos to the gallery 1.",
+        "claim_b": "Users cannot upload executable files to the gallery 1.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "misleading_lexical"
+    },
+    {
+        "id": "diag-lex-002",
+        "claim_a": "Users can upload photos to the gallery 2.",
+        "claim_b": "Users cannot upload executable files to the gallery 2.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "misleading_lexical"
+    },
+    {
+        "id": "diag-lex-003",
+        "claim_a": "Users can upload photos to the gallery 3.",
+        "claim_b": "Users cannot upload executable files to the gallery 3.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "misleading_lexical"
+    },
+    {
+        "id": "diag-lex-004",
+        "claim_a": "Users can upload photos to the gallery 4.",
+        "claim_b": "Users cannot upload executable files to the gallery 4.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "misleading_lexical"
+    },
+    {
+        "id": "diag-lex-005",
+        "claim_a": "Users can upload photos to the gallery 5.",
+        "claim_b": "Users cannot upload executable files to the gallery 5.",
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "type": "misleading_lexical"
+    }
+]

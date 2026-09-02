@@ -1,0 +1,1322 @@
+[
+  {
+    "claim_a": "The maximum payload size is 0MB.",
+    "claim_b": "The maximum payload size is strictly 5MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 5MB.",
+    "claim_b": "The maximum payload size is strictly 10MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 10MB.",
+    "claim_b": "The maximum payload size is strictly 15MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 15MB.",
+    "claim_b": "The maximum payload size is strictly 20MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 20MB.",
+    "claim_b": "The maximum payload size is strictly 25MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 25MB.",
+    "claim_b": "The maximum payload size is strictly 30MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 30MB.",
+    "claim_b": "The maximum payload size is strictly 35MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 35MB.",
+    "claim_b": "The maximum payload size is strictly 40MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 40MB.",
+    "claim_b": "The maximum payload size is strictly 45MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 45MB.",
+    "claim_b": "The maximum payload size is strictly 50MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 50MB.",
+    "claim_b": "The maximum payload size is strictly 55MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 55MB.",
+    "claim_b": "The maximum payload size is strictly 60MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 60MB.",
+    "claim_b": "The maximum payload size is strictly 65MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 65MB.",
+    "claim_b": "The maximum payload size is strictly 70MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 70MB.",
+    "claim_b": "The maximum payload size is strictly 75MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 75MB.",
+    "claim_b": "The maximum payload size is strictly 80MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 80MB.",
+    "claim_b": "The maximum payload size is strictly 85MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 85MB.",
+    "claim_b": "The maximum payload size is strictly 90MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 90MB.",
+    "claim_b": "The maximum payload size is strictly 95MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 95MB.",
+    "claim_b": "The maximum payload size is strictly 100MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 100MB.",
+    "claim_b": "The maximum payload size is strictly 105MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 105MB.",
+    "claim_b": "The maximum payload size is strictly 110MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 110MB.",
+    "claim_b": "The maximum payload size is strictly 115MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 115MB.",
+    "claim_b": "The maximum payload size is strictly 120MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "The maximum payload size is 120MB.",
+    "claim_b": "The maximum payload size is strictly 125MB.",
+    "category": "direct_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-0.corp.",
+    "claim_b": "The DB host is db-1.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-1.corp.",
+    "claim_b": "The DB host is db-2.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-2.corp.",
+    "claim_b": "The DB host is db-3.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-3.corp.",
+    "claim_b": "The DB host is db-4.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-4.corp.",
+    "claim_b": "The DB host is db-5.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-5.corp.",
+    "claim_b": "The DB host is db-6.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-6.corp.",
+    "claim_b": "The DB host is db-7.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-7.corp.",
+    "claim_b": "The DB host is db-8.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-8.corp.",
+    "claim_b": "The DB host is db-9.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-9.corp.",
+    "claim_b": "The DB host is db-10.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-10.corp.",
+    "claim_b": "The DB host is db-11.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-11.corp.",
+    "claim_b": "The DB host is db-12.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-12.corp.",
+    "claim_b": "The DB host is db-13.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-13.corp.",
+    "claim_b": "The DB host is db-14.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-14.corp.",
+    "claim_b": "The DB host is db-15.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-15.corp.",
+    "claim_b": "The DB host is db-16.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-16.corp.",
+    "claim_b": "The DB host is db-17.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-17.corp.",
+    "claim_b": "The DB host is db-18.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-18.corp.",
+    "claim_b": "The DB host is db-19.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-19.corp.",
+    "claim_b": "The DB host is db-20.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-20.corp.",
+    "claim_b": "The DB host is db-21.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-21.corp.",
+    "claim_b": "The DB host is db-22.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-22.corp.",
+    "claim_b": "The DB host is db-23.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-23.corp.",
+    "claim_b": "The DB host is db-24.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Legacy mode is enabled. The DB host is db-24.corp.",
+    "claim_b": "The DB host is db-25.corp.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 10s.",
+    "claim_b": "In v1, the timeout is strictly 15s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 11s.",
+    "claim_b": "In v1, the timeout is strictly 16s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 12s.",
+    "claim_b": "In v1, the timeout is strictly 17s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 13s.",
+    "claim_b": "In v1, the timeout is strictly 18s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 14s.",
+    "claim_b": "In v1, the timeout is strictly 19s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 15s.",
+    "claim_b": "In v1, the timeout is strictly 20s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 16s.",
+    "claim_b": "In v1, the timeout is strictly 21s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 17s.",
+    "claim_b": "In v1, the timeout is strictly 22s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 18s.",
+    "claim_b": "In v1, the timeout is strictly 23s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 19s.",
+    "claim_b": "In v1, the timeout is strictly 24s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 20s.",
+    "claim_b": "In v1, the timeout is strictly 25s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 21s.",
+    "claim_b": "In v1, the timeout is strictly 26s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 22s.",
+    "claim_b": "In v1, the timeout is strictly 27s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 23s.",
+    "claim_b": "In v1, the timeout is strictly 28s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 24s.",
+    "claim_b": "In v1, the timeout is strictly 29s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 25s.",
+    "claim_b": "In v1, the timeout is strictly 30s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 26s.",
+    "claim_b": "In v1, the timeout is strictly 31s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 27s.",
+    "claim_b": "In v1, the timeout is strictly 32s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 28s.",
+    "claim_b": "In v1, the timeout is strictly 33s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 29s.",
+    "claim_b": "In v1, the timeout is strictly 34s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 30s.",
+    "claim_b": "In v1, the timeout is strictly 35s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 31s.",
+    "claim_b": "In v1, the timeout is strictly 36s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 32s.",
+    "claim_b": "In v1, the timeout is strictly 37s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 33s.",
+    "claim_b": "In v1, the timeout is strictly 38s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1, the timeout is 34s.",
+    "claim_b": "In v1, the timeout is strictly 39s.",
+    "category": "false_conditionality",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8000.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9000.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8001.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9001.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8002.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9002.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8003.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9003.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8004.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9004.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8005.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9005.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8006.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9006.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8007.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9007.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8008.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9008.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8009.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9009.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8010.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9010.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8011.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9011.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8012.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9012.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8013.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9013.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8014.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9014.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8015.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9015.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8016.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9016.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8017.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9017.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8018.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9018.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8019.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9019.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8020.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9020.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8021.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9021.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8022.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9022.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8023.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9023.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For v1 clients, caching is on. The API port is 8024.",
+    "claim_b": "For v2 clients, caching is off. The API port is 9024.",
+    "category": "condition_attached_to_wrong_proposition",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 0GB.",
+    "claim_b": "For environments DEV and TEST, memory is 1GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 1GB.",
+    "claim_b": "For environments DEV and TEST, memory is 2GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 2GB.",
+    "claim_b": "For environments DEV and TEST, memory is 3GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 3GB.",
+    "claim_b": "For environments DEV and TEST, memory is 4GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 4GB.",
+    "claim_b": "For environments DEV and TEST, memory is 5GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 5GB.",
+    "claim_b": "For environments DEV and TEST, memory is 6GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 6GB.",
+    "claim_b": "For environments DEV and TEST, memory is 7GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 7GB.",
+    "claim_b": "For environments DEV and TEST, memory is 8GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 8GB.",
+    "claim_b": "For environments DEV and TEST, memory is 9GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 9GB.",
+    "claim_b": "For environments DEV and TEST, memory is 10GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 10GB.",
+    "claim_b": "For environments DEV and TEST, memory is 11GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 11GB.",
+    "claim_b": "For environments DEV and TEST, memory is 12GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 12GB.",
+    "claim_b": "For environments DEV and TEST, memory is 13GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 13GB.",
+    "claim_b": "For environments DEV and TEST, memory is 14GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 14GB.",
+    "claim_b": "For environments DEV and TEST, memory is 15GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 15GB.",
+    "claim_b": "For environments DEV and TEST, memory is 16GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 16GB.",
+    "claim_b": "For environments DEV and TEST, memory is 17GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 17GB.",
+    "claim_b": "For environments DEV and TEST, memory is 18GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 18GB.",
+    "claim_b": "For environments DEV and TEST, memory is 19GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 19GB.",
+    "claim_b": "For environments DEV and TEST, memory is 20GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 20GB.",
+    "claim_b": "For environments DEV and TEST, memory is 21GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 21GB.",
+    "claim_b": "For environments DEV and TEST, memory is 22GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 22GB.",
+    "claim_b": "For environments DEV and TEST, memory is 23GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 23GB.",
+    "claim_b": "For environments DEV and TEST, memory is 24GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For environments DEV and PROD, memory is 24GB.",
+    "claim_b": "For environments DEV and TEST, memory is 25GB.",
+    "category": "partially_overlapping_conditions",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 0.",
+    "claim_b": "In v1 for guests, the limit is 1.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 1.",
+    "claim_b": "In v1 for guests, the limit is 2.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 2.",
+    "claim_b": "In v1 for guests, the limit is 3.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 3.",
+    "claim_b": "In v1 for guests, the limit is 4.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 4.",
+    "claim_b": "In v1 for guests, the limit is 5.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 5.",
+    "claim_b": "In v1 for guests, the limit is 6.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 6.",
+    "claim_b": "In v1 for guests, the limit is 7.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 7.",
+    "claim_b": "In v1 for guests, the limit is 8.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 8.",
+    "claim_b": "In v1 for guests, the limit is 9.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 9.",
+    "claim_b": "In v1 for guests, the limit is 10.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 10.",
+    "claim_b": "In v1 for guests, the limit is 11.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 11.",
+    "claim_b": "In v1 for guests, the limit is 12.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 12.",
+    "claim_b": "In v1 for guests, the limit is 13.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 13.",
+    "claim_b": "In v1 for guests, the limit is 14.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 14.",
+    "claim_b": "In v1 for guests, the limit is 15.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 15.",
+    "claim_b": "In v1 for guests, the limit is 16.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 16.",
+    "claim_b": "In v1 for guests, the limit is 17.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 17.",
+    "claim_b": "In v1 for guests, the limit is 18.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 18.",
+    "claim_b": "In v1 for guests, the limit is 19.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "In v1 for admins, the limit is 19.",
+    "claim_b": "In v1 for guests, the limit is 20.",
+    "category": "multiple_conditions",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 0.",
+    "claim_b": "Service B connects to Service A over port 0.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 1.",
+    "claim_b": "Service B connects to Service A over port 1.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 2.",
+    "claim_b": "Service B connects to Service A over port 2.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 3.",
+    "claim_b": "Service B connects to Service A over port 3.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 4.",
+    "claim_b": "Service B connects to Service A over port 4.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 5.",
+    "claim_b": "Service B connects to Service A over port 5.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 6.",
+    "claim_b": "Service B connects to Service A over port 6.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 7.",
+    "claim_b": "Service B connects to Service A over port 7.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 8.",
+    "claim_b": "Service B connects to Service A over port 8.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 9.",
+    "claim_b": "Service B connects to Service A over port 9.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 10.",
+    "claim_b": "Service B connects to Service A over port 10.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 11.",
+    "claim_b": "Service B connects to Service A over port 11.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 12.",
+    "claim_b": "Service B connects to Service A over port 12.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 13.",
+    "claim_b": "Service B connects to Service A over port 13.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Service A connects to Service B over port 14.",
+    "claim_b": "Service B connects to Service A over port 14.",
+    "category": "lexical_overlap_traps",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 0.",
+    "claim_b": "For v2, the DB is Postgres 0.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 1.",
+    "claim_b": "For v2, the DB is Postgres 1.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 2.",
+    "claim_b": "For v2, the DB is Postgres 2.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 3.",
+    "claim_b": "For v2, the DB is Postgres 3.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 4.",
+    "claim_b": "For v2, the DB is Postgres 4.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 5.",
+    "claim_b": "For v2, the DB is Postgres 5.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 6.",
+    "claim_b": "For v2, the DB is Postgres 6.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 7.",
+    "claim_b": "For v2, the DB is Postgres 7.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 8.",
+    "claim_b": "For v2, the DB is Postgres 8.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 9.",
+    "claim_b": "For v2, the DB is Postgres 9.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 10.",
+    "claim_b": "For v2, the DB is Postgres 10.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 11.",
+    "claim_b": "For v2, the DB is Postgres 11.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 12.",
+    "claim_b": "For v2, the DB is Postgres 12.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 13.",
+    "claim_b": "For v2, the DB is Postgres 13.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 14.",
+    "claim_b": "For v2, the DB is Postgres 14.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 15.",
+    "claim_b": "For v2, the DB is Postgres 15.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 16.",
+    "claim_b": "For v2, the DB is Postgres 16.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 17.",
+    "claim_b": "For v2, the DB is Postgres 17.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 18.",
+    "claim_b": "For v2, the DB is Postgres 18.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "For version 1.0, the DB is MySQL 19.",
+    "claim_b": "For v2, the DB is Postgres 19.",
+    "category": "version_aliases",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 0.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 0.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 1.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 1.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 2.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 2.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 3.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 3.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 4.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 4.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 5.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 5.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 6.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 6.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 7.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 7.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 8.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 8.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 9.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 9.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 10.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 10.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 11.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 11.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 12.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 12.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 13.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 13.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 14.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 14.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 15.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 15.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 16.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 16.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 17.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 17.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 18.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 18.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 19.",
+    "claim_b": "Formerly, the primary queue was RabbitMQ 19.",
+    "category": "temporal_conflicts",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 0.",
+    "claim_b": "Presently, the primary queue is strictly SQS 0.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 1.",
+    "claim_b": "Presently, the primary queue is strictly SQS 1.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 2.",
+    "claim_b": "Presently, the primary queue is strictly SQS 2.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 3.",
+    "claim_b": "Presently, the primary queue is strictly SQS 3.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 4.",
+    "claim_b": "Presently, the primary queue is strictly SQS 4.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 5.",
+    "claim_b": "Presently, the primary queue is strictly SQS 5.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 6.",
+    "claim_b": "Presently, the primary queue is strictly SQS 6.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 7.",
+    "claim_b": "Presently, the primary queue is strictly SQS 7.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 8.",
+    "claim_b": "Presently, the primary queue is strictly SQS 8.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 9.",
+    "claim_b": "Presently, the primary queue is strictly SQS 9.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 10.",
+    "claim_b": "Presently, the primary queue is strictly SQS 10.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 11.",
+    "claim_b": "Presently, the primary queue is strictly SQS 11.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 12.",
+    "claim_b": "Presently, the primary queue is strictly SQS 12.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 13.",
+    "claim_b": "Presently, the primary queue is strictly SQS 13.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 14.",
+    "claim_b": "Presently, the primary queue is strictly SQS 14.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 15.",
+    "claim_b": "Presently, the primary queue is strictly SQS 15.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 16.",
+    "claim_b": "Presently, the primary queue is strictly SQS 16.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 17.",
+    "claim_b": "Presently, the primary queue is strictly SQS 17.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 18.",
+    "claim_b": "Presently, the primary queue is strictly SQS 18.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  },
+  {
+    "claim_a": "Currently, the primary queue is Kafka 19.",
+    "claim_b": "Presently, the primary queue is strictly SQS 19.",
+    "category": "temporal_conflicts_contradiction",
+    "label": "CONTRADICTION"
+  }
+]

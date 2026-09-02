@@ -99,10 +99,17 @@ Aegis/
 
 ## 📚 Essential Reading (The Aegis Lore)
 
+- [📖 **The MAANG Engineer Journal: V2.9 Adversarial Safety Generalization**](docs/JOURNAL_V2.9_Adversarial_Safety.md)
+  *Stress-testing the new conditional logic against 220 false-conditionality traps. We introduce 'Proposition-Bound' architecture (E+E0) to crush ambiguity and perfectly maintain our 0-tolerance safety boundary.*
+- [📖 **The MAANG Engineer Journal: V2.8 Structured Conditional Evidence**](docs/JOURNAL_V2.8_Structured_Conflict.md)
+  *How explicitly structuring conditional overlap rescued utility from the NLI bottleneck. We prove mathematically that deterministic extraction is safer and more capable than zero-shot NLI for conditional compatibility.*
+- [📖 **The MAANG Engineer Journal: V2.7 Controlled Gate Calibration**](docs/JOURNAL_V2.7_Conflict_Classifier.md)
+  *A controlled factorial experiment that yielded a causal null result. Proving that NLI cannot zero-shot complex conditional compatibility, forcing our pivot to structural extraction.*
+- [📖 **The MAANG Engineer Journal: V2.6 Causal Diagnosis**](docs/JOURNAL_V2.6_Causal_Diagnosis.md)
+  *An Oracle ablation study that isolated the False Abstention bottleneck, proving the Sufficiency Gate was over-conservative and the Conflict Gate was misinterpreting ambiguity.*
 - [📖 **The MAANG Engineer Journal: V2.5 Asymmetric Verifier & Set-Level Sufficiency**](docs/JOURNAL_V2.5_Scientific_Validation.md)
   *How we introduced claim-level repair and set-level sufficiency to recover utility, and the surprising discovery of the False Abstention bottleneck.*
 - [📖 **The MAANG Engineer Journal: V2.4.1 Calibration & Control**](docs/JOURNAL_V2.4.1_Calibration.md)
-
   *The pristine Holdout execution. How deterministic abstention eradicated hallucinations entirely, but collapsed utility.*
 - [📖 **The MAANG Engineer Journal: V2.4 Hardened RAG & Externalizing Policy**](docs/JOURNAL_V2.4_Hardened_RAG.md)
   *How we conquered the Compulsion to Merge and Stitch by ripping grounding out of the LLM and putting it into discrete NLI gates!*
@@ -111,7 +118,7 @@ Aegis/
 - [🚀 **Release Notes**](RELEASE_NOTES.md)
   *The formal, meticulous changelog of our relentless march toward benchmarking perfection.*
 - [📈 **Progress & Roadmap**](PROGRESS.md)
-  *Where we've been, what we've conquered, and the grand vision of where we're going next.*
+  *With V2.9 completing our gate safety optimizations, Aegis is now ready for V3.0: End-to-end bottleneck optimization!*
 
 ---
 

@@ -1,0 +1,62 @@
+[
+    {
+        "query_id": "ood-v28-001",
+        "query": "What is the capital of France?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-002",
+        "query": "What is the capital of Germany?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-003",
+        "query": "What is the capital of Italy?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-004",
+        "query": "What is the capital of Spain?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-005",
+        "query": "What is the capital of Japan?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-006",
+        "query": "What is the capital of China?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-007",
+        "query": "What is the capital of India?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-008",
+        "query": "What is the capital of Brazil?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-009",
+        "query": "What is the capital of Canada?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    },
+    {
+        "query_id": "ood-v28-010",
+        "query": "What is the capital of Australia?",
+        "type": "out_of_domain",
+        "expected": "unanswerable"
+    }
+]

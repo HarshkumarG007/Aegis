@@ -4,14 +4,13 @@ import time
 from llama_index.core import VectorStoreIndex, Settings
 from llama_index.core.schema import TextNode
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from typing import Any
 from aegis_eval.hardened_rag.gates import EvidenceGate, PostGenerationVerifier
 
 class HardenedRAGPipeline:
-    def __init__(self, llm, corpus: dict, ablation_mode: str = "full", sufficiency_threshold: float = 0.0,
-                 use_v2_5_sufficiency: bool = False, use_v2_5_verifier: bool = False, repair_mode: str = "off", use_v2_7_conditional_conflict: bool = False):
+    def __init__(self, llm: Any, corpus: dict, ablation_mode: str = 'full', sufficiency_threshold: float = 0.0, use_v2_5_sufficiency: bool = False, use_v2_5_verifier: bool = False, repair_mode: str = 'old', use_v2_7_conditional_conflict: bool = False, conflict_classifier: str = "A", extractor_mode: str = "E0"):
         """
-        ablation_mode: 'baseline', 'evidence', 'conflict', 'verification', 'full'
-        repair_mode: 'off', 'whole-answer', 'claim-level', 'old'
+        Initializes the Hardened RAG pipeline.
         """
         self.llm = llm
         self.corpus = corpus
@@ -20,6 +19,9 @@ class HardenedRAGPipeline:
         self.use_v2_5_sufficiency = use_v2_5_sufficiency
         self.use_v2_5_verifier = use_v2_5_verifier
         self.repair_mode = repair_mode
+        self.use_v2_7_conditional_conflict = use_v2_7_conditional_conflict
+        self.conflict_classifier = conflict_classifier
+        self.extractor_mode = extractor_mode
         
         # Setup Retrieval
         Settings.embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -27,9 +29,8 @@ class HardenedRAGPipeline:
         self.index = VectorStoreIndex(nodes)
         self.retriever = self.index.as_retriever(similarity_top_k=2)
         
-        self.use_v2_7_conditional_conflict = use_v2_7_conditional_conflict
         # Setup Gates (lazy load to save memory if not needed by ablation)
-        self.evidence_gate = EvidenceGate(use_v2_5_sufficiency=use_v2_5_sufficiency, use_v2_7_conditional_conflict=use_v2_7_conditional_conflict) if ablation_mode in ['evidence', 'conflict', 'full'] else None
+        self.evidence_gate = EvidenceGate(use_v2_5_sufficiency=use_v2_5_sufficiency, use_v2_7_conditional_conflict=use_v2_7_conditional_conflict, conflict_classifier=conflict_classifier, extractor_mode=extractor_mode, llm=llm) if ablation_mode in ['evidence', 'conflict', 'full'] else None
         self.verifier = PostGenerationVerifier(use_v2_5_verifier=use_v2_5_verifier) if ablation_mode in ['verification', 'full'] else None
         
     def _retrieve(self, query: str):
