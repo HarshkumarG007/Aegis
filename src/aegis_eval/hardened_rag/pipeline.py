@@ -8,7 +8,7 @@ from typing import Any
 from aegis_eval.hardened_rag.gates import EvidenceGate, PostGenerationVerifier
 
 class HardenedRAGPipeline:
-    def __init__(self, llm: Any, corpus: dict, ablation_mode: str = 'full', sufficiency_threshold: float = 0.0, use_v2_5_sufficiency: bool = False, use_v2_5_verifier: bool = False, repair_mode: str = 'old', use_v2_7_conditional_conflict: bool = False, conflict_classifier: str = "A", extractor_mode: str = "E0", instruction_mode: str = "G0"):
+    def __init__(self, llm: Any, corpus: dict, ablation_mode: str = 'full', sufficiency_threshold: float = 0.0, use_v2_5_sufficiency: bool = False, verifier_mode: str = "V1", repair_mode: str = 'old', use_v2_7_conditional_conflict: bool = False, conflict_classifier: str = "A", extractor_mode: str = "E0", instruction_mode: str = "G0", trigger_mode: str = "T1"):
         """
         Initializes the Hardened RAG pipeline.
         """
@@ -17,22 +17,14 @@ class HardenedRAGPipeline:
         self.ablation_mode = ablation_mode
         self.sufficiency_threshold = sufficiency_threshold
         self.use_v2_5_sufficiency = use_v2_5_sufficiency
-        self.use_v2_5_verifier = use_v2_5_verifier
+        self.verifier_mode = verifier_mode
         self.repair_mode = repair_mode
         self.use_v2_7_conditional_conflict = use_v2_7_conditional_conflict
         self.conflict_classifier = conflict_classifier
         self.extractor_mode = extractor_mode
         self.instruction_mode = instruction_mode
-        self.llm = llm
-        self.corpus = corpus
-        self.ablation_mode = ablation_mode
-        self.sufficiency_threshold = sufficiency_threshold
-        self.use_v2_5_sufficiency = use_v2_5_sufficiency
-        self.use_v2_5_verifier = use_v2_5_verifier
-        self.repair_mode = repair_mode
-        self.use_v2_7_conditional_conflict = use_v2_7_conditional_conflict
-        self.conflict_classifier = conflict_classifier
-        self.extractor_mode = extractor_mode
+        self.trigger_mode = trigger_mode
+
         
         # Setup Retrieval
         Settings.embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -41,8 +33,8 @@ class HardenedRAGPipeline:
         self.retriever = self.index.as_retriever(similarity_top_k=2)
         
         # Setup Gates (lazy load to save memory if not needed by ablation)
-        self.evidence_gate = EvidenceGate(use_v2_5_sufficiency=use_v2_5_sufficiency, use_v2_7_conditional_conflict=use_v2_7_conditional_conflict, conflict_classifier=conflict_classifier, extractor_mode=extractor_mode, llm=llm) if ablation_mode in ['evidence', 'conflict', 'full'] else None
-        self.verifier = PostGenerationVerifier(use_v2_5_verifier=use_v2_5_verifier) if ablation_mode in ['verification', 'full'] else None
+        self.evidence_gate = EvidenceGate(use_v2_5_sufficiency=use_v2_5_sufficiency, use_v2_7_conditional_conflict=use_v2_7_conditional_conflict, conflict_classifier=conflict_classifier, extractor_mode=extractor_mode, llm=llm, trigger_mode=trigger_mode) if ablation_mode in ['evidence', 'conflict', 'full'] else None
+        self.verifier = PostGenerationVerifier(verifier_mode=verifier_mode) if ablation_mode in ['verification', 'full'] else None
         
     def _retrieve(self, query: str):
         nodes = self.retriever.retrieve(query)
@@ -56,10 +48,11 @@ class HardenedRAGPipeline:
             })
         return chunks
         
-    def execute(self, query_id: str, query_text: str, bypass_sufficiency: bool = False) -> dict:
+    def execute(self, query_id: str, query_text: str, bypass_sufficiency: bool = False, chunks: list = None) -> dict:
         start_time = time.time()
         
-        chunks = self._retrieve(query_text)
+        if chunks is None:
+            chunks = self._retrieve(query_text)
         
         trace = {
             "query_id": query_id,
@@ -82,6 +75,8 @@ class HardenedRAGPipeline:
             trace["gate_confidence"] = gate_decision["confidence"]
             trace["supporting_chunk_ids"] = gate_decision["supporting_chunks"]
             trace["conflicting_chunk_ids"] = gate_decision["conflicting_chunks"]
+            trace["condition_graph"] = gate_decision.get("condition_graph", {})
+            trace["trace_logs"] = gate_decision.get("trace_logs", [])
             
             if bypass_sufficiency and trace["gate_state"] == "INSUFFICIENT":
                 trace["gate_state"] = "SUFFICIENT"
@@ -122,7 +117,7 @@ class HardenedRAGPipeline:
         
         # 3. Post-generation Verification & Repair Loop
         if self.verifier:
-            v_dec = self.verifier.verify(trace["answer"], chunks)
+            v_dec = self.verifier.verify(trace["answer"], chunks, condition_graph=trace.get("condition_graph", {}))
             trace["verification_state"] = v_dec["state"]
             trace["verification_confidence"] = v_dec["confidence"]
             trace["original_verification_trace"] = v_dec
@@ -150,7 +145,7 @@ class HardenedRAGPipeline:
                             repair_response = self.llm.complete(repair_prompt)
                             trace["answer"] = str(repair_response)
                             
-                            repair_v_dec = self.verifier.verify(trace["answer"], chunks)
+                            repair_v_dec = self.verifier.verify(trace["answer"], chunks, condition_graph=trace.get("condition_graph", {}))
                             trace["verification_state"] = repair_v_dec["state"]
                             trace["verification_confidence"] = repair_v_dec["confidence"]
                             trace["repair_verification_trace"] = repair_v_dec
@@ -175,7 +170,7 @@ class HardenedRAGPipeline:
                             repair_response = self.llm.complete(repair_prompt)
                             trace["answer"] = str(repair_response)
                             
-                            repair_v_dec = self.verifier.verify(trace["answer"], filtered_chunks)
+                            repair_v_dec = self.verifier.verify(trace["answer"], filtered_chunks, condition_graph=trace.get("condition_graph", {}))
                             trace["verification_state"] = repair_v_dec["state"]
                             trace["verification_confidence"] = repair_v_dec["confidence"]
                             trace["repair_verification_trace"] = repair_v_dec

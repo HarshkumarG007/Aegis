@@ -20,17 +20,16 @@ class ConditionExtractor:
     def _extract_e0(self, text: str) -> dict:
         text_lower = text.lower().strip()
         result = {
+            "status": "NONE",
             "proposition": text,
-            "condition_spans": [],
             "conditions": {
-                "version": None,
-                "time": None,
-                "scope": None,
-                "role": None,
-                "environment": None,
-                "lifecycle": None,
-                "explicit": False
-            }
+                "version": [],
+                "role": [],
+                "scope": [],
+                "environment": [],
+                "temporal": []
+            },
+            "spans": []
         }
         
         # Syntactic clause patterns
@@ -49,22 +48,22 @@ class ConditionExtractor:
             condition_span = f"{prefix_match.group(1)} {prefix_match.group(2)},"
             prop_text = prefix_match.group(3)
             condition_text = condition_span
-            result["condition_spans"].append(condition_span)
+            result["spans"].append(condition_span)
         elif suffix_match:
             condition_span = f"{suffix_match.group(2)} {suffix_match.group(3)}"
             prop_text = suffix_match.group(1)
             condition_text = condition_span
-            result["condition_spans"].append(condition_span)
+            result["spans"].append(condition_span)
         elif text_lower.startswith("currently, "):
             condition_span = "Currently,"
             prop_text = text[len("Currently, "):]
             condition_text = condition_span
-            result["condition_spans"].append(condition_span)
+            result["spans"].append(condition_span)
         elif text_lower.startswith("formerly, "):
             condition_span = "Formerly,"
             prop_text = text[len("Formerly, "):]
             condition_text = condition_span
-            result["condition_spans"].append(condition_span)
+            result["spans"].append(condition_span)
             
         if condition_text:
             cond_lower = condition_text.lower()
@@ -72,44 +71,40 @@ class ConditionExtractor:
             # Version
             ver_match = re.search(r'\b(v\d+|version \d+(?:\.\d+)?)\b', cond_lower)
             if ver_match:
-                result["conditions"]["version"] = ver_match.group(1)
-                result["conditions"]["explicit"] = True
+                result["conditions"]["version"].append(ver_match.group(1))
+                result["status"] = "EXPLICIT"
                 
-            # Time
+            # Temporal
             time_match = re.search(r'\b(before \d{4}|after \d{4}|since \d{4}|\d+ am|\d+ pm|currently|formerly|presently)\b', cond_lower)
             if time_match:
-                result["conditions"]["time"] = time_match.group(1)
-                result["conditions"]["explicit"] = True
+                result["conditions"]["temporal"].append(time_match.group(1))
+                result["status"] = "EXPLICIT"
                 
-            # Scope / Lifecycle
+            # Scope
             if "legacy" in cond_lower or "deprecated" in cond_lower:
-                result["conditions"]["lifecycle"] = "legacy"
-                result["conditions"]["explicit"] = True
+                result["conditions"]["scope"].append("legacy")
+                result["status"] = "EXPLICIT"
                 
             # Role
             role_match = re.search(r'\b(administrator|admin|guest|user)\b', cond_lower)
             if role_match:
-                result["conditions"]["role"] = role_match.group(1)
-                result["conditions"]["explicit"] = True
+                result["conditions"]["role"].append(role_match.group(1))
+                result["status"] = "EXPLICIT"
                 
             # Environment
             env_match = re.search(r'\b(staging|production|prod|dev|test)\b', cond_lower)
             if env_match:
-                result["conditions"]["environment"] = env_match.group(1)
-                result["conditions"]["explicit"] = True
+                result["conditions"]["environment"].append(env_match.group(1))
+                result["status"] = "EXPLICIT"
 
         result["proposition"] = prop_text.strip()
         
         # If no syntactic clause was found but keywords exist in the text, we fail closed (ambiguous)
-        if not result["conditions"]["explicit"]:
+        if result["status"] == "NONE":
             # Check if keywords exist anyway
             kw_match = re.search(r'\b(v\d+|version \d+|legacy|admin|guest|staging|prod|dev|currently|formerly)\b', text_lower)
             if kw_match:
-                result["ambiguous"] = True # keyword found but no syntactic clause
-            else:
-                result["ambiguous"] = False
-        else:
-            result["ambiguous"] = False
+                result["status"] = "AMBIGUOUS" # keyword found but no syntactic clause
             
         return result
 
@@ -120,18 +115,21 @@ class ConditionExtractor:
         prompt = f"""You are a strict Information Extraction system.
 Extract any explicitly stated conditions from the text into the following JSON schema.
 Do NOT infer conditions. Only extract what is explicitly written.
-If a field is not explicitly present, set it to null.
-If ANY condition is extracted, set "explicit" to true. Otherwise, false.
+Extract values as arrays of strings. If a field is not explicitly present, set it to an empty array.
+If ANY condition is extracted, set "status" to "EXPLICIT". Otherwise, set to "NONE". (Use "AMBIGUOUS" if unclear).
 
 Schema:
 {{
-  "version": "string or null",
-  "time": "string or null",
-  "scope": "string or null",
-  "role": "string or null",
-  "environment": "string or null",
-  "lifecycle": "string or null",
-  "explicit": boolean
+  "status": "EXPLICIT | NONE | AMBIGUOUS",
+  "proposition": "string (the core statement without conditions)",
+  "conditions": {{
+      "version": ["string"],
+      "temporal": ["string"],
+      "scope": ["string"],
+      "role": ["string"],
+      "environment": ["string"]
+  }},
+  "spans": ["string (exact substrings representing conditions)"]
 }}
 
 Text: "{text}"
@@ -151,18 +149,17 @@ Output strictly valid JSON:"""
             
             # Validation
             validated = {
-                "version": data.get("version"),
-                "time": data.get("time"),
-                "scope": data.get("scope"),
-                "role": data.get("role"),
-                "environment": data.get("environment"),
-                "lifecycle": data.get("lifecycle"),
-                "explicit": data.get("explicit", False)
+                "status": data.get("status", "NONE"),
+                "proposition": data.get("proposition", text),
+                "conditions": {
+                    "version": data.get("conditions", {}).get("version", []),
+                    "temporal": data.get("conditions", {}).get("temporal", []),
+                    "scope": data.get("conditions", {}).get("scope", []),
+                    "role": data.get("conditions", {}).get("role", []),
+                    "environment": data.get("conditions", {}).get("environment", [])
+                },
+                "spans": data.get("spans", [])
             }
-            
-            # Ensure "explicit" is accurate based on extracted fields
-            has_any = any(v is not None for k, v in validated.items() if k != "explicit")
-            validated["explicit"] = has_any
             
             return validated
             
