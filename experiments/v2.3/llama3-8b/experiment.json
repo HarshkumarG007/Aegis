@@ -1,0 +1,23 @@
+{
+  "benchmark_version": "2.3.0",
+  "experiment_id": "v2.3-llama3-8b-pilot",
+  "model": {
+    "name": "Meta-Llama-3-8B-Instruct-Q4_K_M.gguf",
+    "provider": "local",
+    "sha256": "ab9e4eec7e80892fd78f74d9a15d0299f1e22121cea44efd68a7a02a3fe9a1da"
+  },
+  "runtime_configuration": {
+    "hardware": "RTX 4060 Laptop (8GB VRAM)",
+    "architecture": "Offline Generation -> Decoupled Evaluation",
+    "n_gpu_layers": -1,
+    "temperature": 0.0,
+    "retrieval_config": {
+      "top_k": 5
+    }
+  },
+  "hashes": {
+    "manifest_sha256": "dd5b23101a6a61603c064491a179fc741b9310af4e3a1b5afae7097068cf985d",
+    "corpus_sha256": "unknown_corpus_hash",
+    "response_artifact_sha256": "3df41cc5753426072017ed832ab3ffa853e37aa0ccbefafdc0e61e519181f326"
+  }
+}
