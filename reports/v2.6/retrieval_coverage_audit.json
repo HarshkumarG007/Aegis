@@ -1,0 +1,194 @@
+{
+  "q-mul-v25-ccc0329d": {
+    "required_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "retrieved_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-mul-v25-21a26f71": {
+    "required_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "retrieved_facts": [
+      "chunk-003",
+      "chunk-002"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-mul-v25-a271076e": {
+    "required_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "retrieved_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-mul-v25-0bd40b8a": {
+    "required_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "retrieved_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-mul-v25-e86cf28b": {
+    "required_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "retrieved_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-mul-v25-f67013c1": {
+    "required_facts": [
+      "chunk-002",
+      "chunk-003"
+    ],
+    "retrieved_facts": [
+      "chunk-003",
+      "chunk-002"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-amb-v25-a4e7f61c": {
+    "required_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "retrieved_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-amb-v25-c5f332b8": {
+    "required_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "retrieved_facts": [
+      "chunk-007",
+      "chunk-006"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-amb-v25-cc99b3f1": {
+    "required_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "retrieved_facts": [
+      "chunk-007",
+      "chunk-006"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-amb-v25-90ca99c3": {
+    "required_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "retrieved_facts": [
+      "chunk-007",
+      "chunk-006"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-amb-v25-b76bd65c": {
+    "required_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "retrieved_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-amb-v25-a0b080da": {
+    "required_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "retrieved_facts": [
+      "chunk-006",
+      "chunk-007"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-saf-v25-bc820ee0": {
+    "required_facts": [
+      "chunk-001"
+    ],
+    "retrieved_facts": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-saf-v25-2926cc01": {
+    "required_facts": [
+      "chunk-001"
+    ],
+    "retrieved_facts": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-saf-v25-070d19e0": {
+    "required_facts": [
+      "chunk-001"
+    ],
+    "retrieved_facts": [
+      "chunk-001",
+      "chunk-007"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-saf-v25-7d2f51d3": {
+    "required_facts": [
+      "chunk-001"
+    ],
+    "retrieved_facts": [
+      "chunk-001",
+      "chunk-007"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-saf-v25-7a4b537d": {
+    "required_facts": [
+      "chunk-001"
+    ],
+    "retrieved_facts": [
+      "chunk-001",
+      "chunk-005"
+    ],
+    "all_required_facts_present": true
+  },
+  "q-saf-v25-724b15c2": {
+    "required_facts": [
+      "chunk-001"
+    ],
+    "retrieved_facts": [
+      "chunk-001",
+      "chunk-004"
+    ],
+    "all_required_facts_present": true
+  }
+}

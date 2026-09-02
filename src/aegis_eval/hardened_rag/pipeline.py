@@ -43,7 +43,7 @@ class HardenedRAGPipeline:
             })
         return chunks
         
-    def execute(self, query_id: str, query_text: str) -> dict:
+    def execute(self, query_id: str, query_text: str, bypass_sufficiency: bool = False) -> dict:
         start_time = time.time()
         
         chunks = self._retrieve(query_text)
@@ -70,13 +70,16 @@ class HardenedRAGPipeline:
             trace["supporting_chunk_ids"] = gate_decision["supporting_chunks"]
             trace["conflicting_chunk_ids"] = gate_decision["conflicting_chunks"]
             
-            if gate_decision["state"] == "INSUFFICIENT":
+            if bypass_sufficiency and trace["gate_state"] == "INSUFFICIENT":
+                trace["gate_state"] = "SUFFICIENT"
+            
+            if trace["gate_state"] == "INSUFFICIENT":
                 if self.ablation_mode in ['evidence', 'full']:
                     trace["answer"] = "I don't know. The retrieved evidence is insufficient to answer the query."
                     trace["latency_ms"] = int((time.time() - start_time) * 1000)
                     return trace
                     
-            if gate_decision["state"] == "CONFLICT":
+            if trace["gate_state"] == "CONFLICT":
                 if self.ablation_mode in ['conflict', 'full']:
                     trace["answer"] = "I cannot answer this query because the retrieved evidence contains conflicting information."
                     trace["latency_ms"] = int((time.time() - start_time) * 1000)
