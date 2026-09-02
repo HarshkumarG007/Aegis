@@ -99,7 +99,10 @@ Aegis/
 
 ## 📚 Essential Reading (The Aegis Lore)
 
+- [📖 **The MAANG Engineer Journal: V2.5 Asymmetric Verifier & Set-Level Sufficiency**](docs/JOURNAL_V2.5_Scientific_Validation.md)
+  *How we introduced claim-level repair and set-level sufficiency to recover utility, and the surprising discovery of the False Abstention bottleneck.*
 - [📖 **The MAANG Engineer Journal: V2.4.1 Calibration & Control**](docs/JOURNAL_V2.4.1_Calibration.md)
+
   *The pristine Holdout execution. How deterministic abstention eradicated hallucinations entirely, but collapsed utility.*
 - [📖 **The MAANG Engineer Journal: V2.4 Hardened RAG & Externalizing Policy**](docs/JOURNAL_V2.4_Hardened_RAG.md)
   *How we conquered the Compulsion to Merge and Stitch by ripping grounding out of the LLM and putting it into discrete NLI gates!*
