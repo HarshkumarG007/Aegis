@@ -113,6 +113,12 @@ Aegis/
   *How we conquered the Compulsion to Merge and Stitch by ripping grounding out of the LLM and putting it into discrete NLI gates!*
 - [📖 **The MAANG Engineer Journal: V2.3 Llama 3 Pilot**](docs/JOURNAL_V2.3_Llama3_Pilot.md) 
   *Discover the technical battle against GPU OOMs and the fascinating scientific differential between 1.5B and 8B models!*
+- [📖 **The MAANG Engineer Journal: V2.2 The Deterministic Leap**](docs/JOURNAL_V2.2_Deterministic_Leap.md)
+  *Hardening the NLI semantic evaluator with exact-substring fallbacks to achieve 98.3% positive calibration and 0.0% capitulation.*
+- [📖 **The MAANG Engineer Journal: V2.1 Benchmark Infrastructure**](docs/JOURNAL_V2.1_Benchmark_Infrastructure.md)
+  *The transition to reproducible, immutable JSON artifacts and byte-for-byte offline deterministic replay.*
+- [📖 **The MAANG Engineer Journal: V1 The Foundation**](docs/JOURNAL_V1_The_Foundation.md)
+  *Our initial attempt at adversarial benchmarking and the discovery of the severe brittleness of exact-match evaluators.*
 - [🚀 **Release Notes**](RELEASE_NOTES.md)
   *The formal, meticulous changelog of our relentless march toward benchmarking perfection.*
 - [📈 **Progress & Roadmap**](PROGRESS.md)
