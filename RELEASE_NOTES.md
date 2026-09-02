@@ -80,10 +80,9 @@ We have established a completely isolated execution and reporting pipeline:
 - Re-architected schema decoupling the payload dictionaries into structured JSON metadata elements for safe offline storage.
 - Full git-history audit confirming all large language model `.gguf` binaries and potential DB credentials have been completely purged from the repository timeline.
 
-### Next Steps (V2.2 - Benchmark Expansion)
-With the V2.1 evaluator baseline frozen and verified, the focus shifts to scaling the benchmark to measure models (without touching the evaluation instrument):
-- Expand the adversarial corpus substantially beyond the baseline 6 queries.
-- Add multiple independently authored cases per mechanism.
-- Setup known-positive and known-negative target fixtures.
-- Test multiple target models under the same immutable manifest.
-- Establish aggregate metrics and publish benchmark artifacts.
+## Next Steps (V3.0 - End-to-End Bottleneck Optimization)
+With V2.9 completing our gate safety optimizations and solidifying the robust structural verification boundaries, the focus shifts to recovering utility end-to-end:
+
+- Optimize the primary bottleneck: Retrieval Sufficiency Thresholding.
+- Resolve the secondary bottleneck: Generator Self-Abstention.
+- Perform a full pipeline sweep to measure true Answerable utility recovery while preserving the 0-tolerance OOD leakage boundary.
