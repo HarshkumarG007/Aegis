@@ -1,5 +1,10 @@
 # Aegis-Eval Release Notes
 
+## V3.1.0 (Deterministic Reconstruction)
+- **Focus:** Re-architecting the trigger and verification systems for perfect determinism.
+- **Milestone:** Replaced the flawed `T0` Raw-NLI trigger with `T1` Unconditional `E0` extraction. Replaced the LLM/NLI verifier with `V1` Deterministic Derivability Verification using exact string matching and condition graph extraction.
+- **Key Validation:** Evaluated on the V3.0 dataset. The trigger successfully caught all conditionally scoped conflicts. The verifier accurately permitted valid meta-claims while rejecting unauthorized causal extensions.
+
 ## V3.0.0 (End-to-End Utility Recovery & The Verifier Illusion)
 - **Focus:** Rescuing utility via retrieval optimization and generator instructions (2x2 Factorial).
 - **Milestone:** Discovered the "Generator Abstention" illusion. The generator successfully synthesizes conditional facts, but the strict Post-Generation Verifier flags bridging meta-statements (e.g., "It depends on the version") as `UNSUPPORTED`, forcing an abstention.

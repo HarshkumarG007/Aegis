@@ -157,5 +157,17 @@ Bypassing the Sufficiency Gate recovered 6 out of 7 blocked Mistral queries, def
 Tested against a 220-pair adversarial suite. Classifier E+E0 (Proposition-Bound) achieved 0 true-contradiction safety breaches, 0 false-conditionality merges, and reduced uncertain fallbacks from 81 to 25 compared to the baseline.
 **Notes:** The gate logic is now fully generalized to resist false-conditionality and overlapping condition traps while still safely recovering utility. 
 
-## Next Steps (V3.0 - End-to-End Bottleneck Optimization)
-With V2.9 completing our gate safety optimizations and solidifying the robust structural verification boundaries, Aegis is now completely ready for V3.0: End-to-end bottleneck optimization!
+## Aegis-Eval V3.0 (End-to-End Utility Recovery & The Verifier Illusion) — 2026-09-02
+**Status:** PASS / DIAGNOSED
+**Verification output:**
+2x2 Factorial Experiment on generation settings.
+**Notes:** Discovered the "Generator Abstention" illusion and the severe flaw in the pipeline trigger logic where the flawless V2.9 `E+E0` extractor was gated behind a raw NLI check.
+
+## Aegis-Eval V3.1 (Deterministic Reconstruction) — 2026-09-02
+**Status:** PASS / SAFE
+**Verification output:**
+Trigger Ablation (T1) and Verifier Diagnostics (V1) passed perfectly with 0 false-compatible merges on 160 adversarial cases.
+**Notes:** Eliminated the NLI trigger (T0) and LLM-based verifier. Established unconditional extraction and deterministic derivability checks.
+
+## Next Steps (V3.2 - End-to-End Capability Recovery)
+With V3.1 completely sealing the deterministic safety envelope, Aegis is now ready for V3.2: End-to-end capability recovery and optimization!

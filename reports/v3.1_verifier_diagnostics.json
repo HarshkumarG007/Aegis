@@ -1,0 +1,32 @@
+{
+  "In v1, the timeout is 30 seconds.": {
+    "V0": "SUPPORTED",
+    "V1": "SUPPORTED",
+    "V2": "SUPPORTED"
+  },
+  "The timeout depends on API version.": {
+    "V0": "UNCERTAIN",
+    "V1": "SUPPORTED",
+    "V2": "SUPPORTED"
+  },
+  "The timeout depends on API version and deployment environment.": {
+    "V0": "UNCERTAIN",
+    "V1": "UNSUPPORTED",
+    "V2": "SUPPORTED"
+  },
+  "The timeout depends on API version because production traffic is higher.": {
+    "V0": "UNSUPPORTED",
+    "V1": "UNSUPPORTED",
+    "V2": "SUPPORTED"
+  },
+  "Version 2 has a longer timeout.": {
+    "V0": "SUPPORTED",
+    "V1": "SUPPORTED",
+    "V2": "SUPPORTED"
+  },
+  "Version 2 is more reliable.": {
+    "V0": "UNSUPPORTED",
+    "V1": "UNSUPPORTED",
+    "V2": "SUPPORTED"
+  }
+}
