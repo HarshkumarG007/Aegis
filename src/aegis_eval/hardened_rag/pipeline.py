@@ -8,10 +8,21 @@ from typing import Any
 from aegis_eval.hardened_rag.gates import EvidenceGate, PostGenerationVerifier
 
 class HardenedRAGPipeline:
-    def __init__(self, llm: Any, corpus: dict, ablation_mode: str = 'full', sufficiency_threshold: float = 0.0, use_v2_5_sufficiency: bool = False, use_v2_5_verifier: bool = False, repair_mode: str = 'old', use_v2_7_conditional_conflict: bool = False, conflict_classifier: str = "A", extractor_mode: str = "E0"):
+    def __init__(self, llm: Any, corpus: dict, ablation_mode: str = 'full', sufficiency_threshold: float = 0.0, use_v2_5_sufficiency: bool = False, use_v2_5_verifier: bool = False, repair_mode: str = 'old', use_v2_7_conditional_conflict: bool = False, conflict_classifier: str = "A", extractor_mode: str = "E0", instruction_mode: str = "G0"):
         """
         Initializes the Hardened RAG pipeline.
         """
+        self.llm = llm
+        self.corpus = corpus
+        self.ablation_mode = ablation_mode
+        self.sufficiency_threshold = sufficiency_threshold
+        self.use_v2_5_sufficiency = use_v2_5_sufficiency
+        self.use_v2_5_verifier = use_v2_5_verifier
+        self.repair_mode = repair_mode
+        self.use_v2_7_conditional_conflict = use_v2_7_conditional_conflict
+        self.conflict_classifier = conflict_classifier
+        self.extractor_mode = extractor_mode
+        self.instruction_mode = instruction_mode
         self.llm = llm
         self.corpus = corpus
         self.ablation_mode = ablation_mode
@@ -100,6 +111,11 @@ class HardenedRAGPipeline:
             prompt = f"Answer ONLY from the accepted evidence provided below. Do not include external knowledge.\n\nContext:\n{context_str}\n\nQuery: {query_text}\nAnswer:"
         else:
             prompt = f"Context information is below.\n---------------------\n{context_str}\n---------------------\nGiven the context information and not prior knowledge, answer the query.\nQuery: {query_text}\nAnswer: "
+            
+        if self.instruction_mode == "G1":
+            instruction = "\n\nCRITICAL INSTRUCTION: Do NOT abstain or claim the information is insufficient if the context provides different answers based on specific conditions (such as version, environment, role, or date). You must synthesize all valid conditionally applicable answers."
+            idx = prompt.rfind("Answer:")
+            prompt = prompt[:idx] + instruction + "\n" + prompt[idx:]
             
         response = self.llm.complete(prompt)
         trace["answer"] = str(response)

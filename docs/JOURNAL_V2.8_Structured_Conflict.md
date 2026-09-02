@@ -34,7 +34,7 @@ Mistral-7B (E1) frequently failed to adhere to the rigid JSON extraction schema 
 ## Safety Validation
 
 Before scaling up, we validated the new `4.25` individual sufficiency threshold on a 10-query adversarial out-of-domain challenge set.
-- **OOD Leakage at 4.25**: 0% (10/10 queries successfully blocked by the gate).
+- **OOD Leakage at 4.25**: 0 observed leakage (0/10 queries successfully blocked by the gate). Note that this does not establish a universal 0% leakage guarantee, but is consistent with the safety boundary.
 
 ## Factorial Experiment Results
 

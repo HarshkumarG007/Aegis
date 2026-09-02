@@ -1,10 +1,15 @@
 # Aegis-Eval Release Notes
 
+## V3.0.0 (End-to-End Utility Recovery & The Verifier Illusion)
+- **Focus:** Rescuing utility via retrieval optimization and generator instructions (2x2 Factorial).
+- **Milestone:** Discovered the "Generator Abstention" illusion. The generator successfully synthesizes conditional facts, but the strict Post-Generation Verifier flags bridging meta-statements (e.g., "It depends on the version") as `UNSUPPORTED`, forcing an abstention.
+- **The Discovery (Safety Flaw):** Identified a severe flaw in the pipeline trigger logic. The flawless V2.9 `E+E0` extractor is gated behind a raw NLI check (`contra_prob >= 0.85`). Because conditional facts ("v1 API" vs "new API") don't trigger raw NLI contradiction, they bypass the gate entirely, leading to a 1/6 false-compatible merge on the challenge set.
+
 ## V2.9.0 (Adversarial Safety Generalization)
 - **Focus:** Stress-testing structural extraction against false-conditionality traps.
 - **Milestone:** Re-architected the deterministic extractor (E0) into a Proposition-Bound architecture (Classifier E). By safely isolating clauses and verifying propositions via NLI before comparing conditions, we completely solved the ambiguity crisis.
 - **Key Validation:** Evaluated against a 220-pair adversarial suite including lexical traps, overlapping conditions, and false conditionality. 
-- **The Tradeoff:** Reduced uncertain fallbacks from 81 to 25 while explicitly maintaining a perfect 0-tolerance boundary for false-compatible merges (0/160 breaches). 
+- **The Tradeoff**: Reduced uncertain fallbacks from 81 to 25 while explicitly maintaining a strict boundary of 0 observed false-compatible merges (0/160 breaches) with a nonzero finite-sample upper confidence bound. 
 
 ## V2.8.0 (Structured Conditional Evidence)
 - **Focus:** Rescuing utility from the NLI bottleneck via structural extraction.

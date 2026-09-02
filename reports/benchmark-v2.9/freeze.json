@@ -1,0 +1,7 @@
+{
+  "version": "v2.9_frozen",
+  "gates.py_sha256": "8a6f21f21c969a7b502ad2b14b1dccb932ca18a937125689ec23582c42d21158",
+  "condition_extractor.py_sha256": "dcd7fa2bc68cac7b34c23a955af9ad4972ff1ce9e79b72b09eae9cfaffe93c07",
+  "policy": "E+E0_proposition_bound",
+  "description": "Frozen safety boundary for V3.0 End-to-End Utility Recovery."
+}

@@ -24,7 +24,7 @@ We evaluated the baseline `Classifier C+E0` against the new proposition-bound `C
 | **E+E0 (Proposition Bound)**| **0/160**                                 | **0**                       | **20/60**                    | **25/220**          |
 
 ### Safety Constraint Met
-**0 Tolerance Met**: Classifier E+E0 achieved exactly 0 false-compatible merges on all true contradiction categories, including direct contradictions, partial overlaps, and lexical traps. Most importantly, it achieved **0 False-Conditionality Merges**. 
+**0 Tolerance Met**: Classifier E+E0 achieved exactly 0 observed false-compatible merges on all true contradiction categories, including direct contradictions, partial overlaps, and lexical traps. Most importantly, it achieved **0 False-Conditionality Merges**. Note that with 0 observed failures in 160 frozen adversarial cases, the observed rate is 0%, but there remains a nonzero finite-sample upper confidence bound (~1.9%).
 
 ### The Tradeoff
 The most compelling result is the sharp reduction in `Uncertain Fallbacks` (from 81 to 25). Because Classifier E structurally isolates the proposition and evaluates it cleanly against NLI, it resolves ambiguities that Classifier C (which naively scans strings) could not safely process. E+E0 proves that proposition binding—not a more capable semantic reasoner—is the correct safety mechanism.

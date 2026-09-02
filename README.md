@@ -109,7 +109,12 @@ Syntactic Span Stripping ──> Proposition Binding ──> NLI Verification
 (Extracts "For legacy")      (Isolates claim)        (Checks core conflict)
 ```
 - **The Breakthrough**: Re-architected the extractor into a "Proposition-Bound" architecture. By safely isolating clauses and verifying core propositions via NLI before comparing conditions, we completely solved the ambiguity crisis.
-- **The Tradeoff**: Reduced uncertain fallbacks from 81 to 25 while explicitly maintaining a perfect 0-tolerance boundary for false-compatible merges (0/160 breaches).
+- **The Tradeoff**: Reduced uncertain fallbacks from 81 to 25 while explicitly maintaining a strict boundary of 0 observed false-compatible merges (0/160 breaches) with a nonzero finite-sample upper confidence bound.
+
+### V3.0: End-to-End Utility Recovery & The Verifier Illusion
+*A 2x2 factorial experiment that uncovered the true limits of RAG pipelines: The Verifier Bottleneck and the NLI Trigger Flaw.*
+- **The Breakthrough**: Discovered that "Generator Abstentions" were actually aggressive `PostGenerationVerifier` rejections of valid synthetic meta-claims (e.g. "It depends on the version").
+- **The Discovery**: The mathematically perfect `E+E0` gate was being bypassed because it was triggered by a flawed raw NLI check (`contra_prob >= 0.85`), proving that NLI cannot even be used as a trigger for conditional extraction.
 
 ---
 
@@ -128,7 +133,8 @@ Aegis/
 │   ├── JOURNAL_V2.6_Causal_Diagnosis.md      # Oracle ablation & gate attribution
 │   ├── JOURNAL_V2.7_Conflict_Classifier.md   # The NLI conditional reasoning null result
 │   ├── JOURNAL_V2.8_Structured_Conflict.md   # Syntactic extraction rescuing utility
-│   └── JOURNAL_V2.9_Adversarial_Safety.md    # Proposition-bound extraction crushing ambiguity
+│   ├── JOURNAL_V2.9_Adversarial_Safety.md    # Proposition-bound extraction crushing ambiguity
+│   └── JOURNAL_V3.0_End_to_End_Recovery.md   # The discovery of the verifier bottleneck and NLI trigger flaw
 ├── experiments/
 │   └── v2.3/llama3-8b/
 │       └── experiment.json                   # Immutable hashes and runtime config
@@ -149,8 +155,18 @@ Aegis/
 
 ## 📚 Essential Reading (The Aegis Lore)
 
+- [📖 **The MAANG Engineer Journal: V3.0 End-to-End Utility Recovery**](docs/JOURNAL_V3.0_End_to_End_Recovery.md)
+  *A 2x2 factorial experiment that uncovered the true limits of RAG pipelines: The Verifier Bottleneck and the NLI Trigger Flaw. We discover that generator abstentions are an illusion caused by over-aggressive post-generation verifiers.*
 - [📖 **The MAANG Engineer Journal: V2.9 Adversarial Safety Generalization**](docs/JOURNAL_V2.9_Adversarial_Safety.md)
   *Stress-testing the new conditional logic against 220 false-conditionality traps. We introduce 'Proposition-Bound' architecture (E+E0) to crush ambiguity and perfectly maintain our 0-tolerance safety boundary.*
+
+## Next Steps (V3.1 - Architecture Refactoring)
+With V3.0 isolating the true bottlenecks, the focus shifts to V3.1:
+- **Remove the NLI Trigger**: Run the `E+E0` condition extractor unconditionally on all top-K chunks rather than relying on raw NLI to detect conflicts.
+- **Verifier Calibration**: Update the `PostGenerationVerifier` to tolerate synthetic conditional meta-claims (e.g., "It depends on...").
+
+---
+
 - [📖 **The MAANG Engineer Journal: V2.8 Structured Conditional Evidence**](docs/JOURNAL_V2.8_Structured_Conflict.md)
   *How explicitly structuring conditional overlap rescued utility from the NLI bottleneck. We prove mathematically that deterministic extraction is safer and more capable than zero-shot NLI for conditional compatibility.*
 - [📖 **The MAANG Engineer Journal: V2.7 Controlled Gate Calibration**](docs/JOURNAL_V2.7_Conflict_Classifier.md)
