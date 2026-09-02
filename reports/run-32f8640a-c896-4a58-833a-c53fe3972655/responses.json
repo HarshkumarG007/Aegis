@@ -1,0 +1,1502 @@
+[
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-con-01",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 176,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-con-02",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 9769,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-con-03",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6071,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-con-04",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 35703,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-con-05",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 27,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-con-06",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 8529,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is hosted on redis-01.",
+    "query_id": "q-con-07",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5403,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-con-08",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 72263,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-con-09",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 19,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-con-10",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7789,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-con-11",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5996,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\n\nThe information provided in the context seems to conflict regarding the endpoint for updating a user profile. According to chunk-005, the update can be done via the PUT /user endpoint. However, chunk-006 states that this endpoint is deprecated in version 2 and should be replaced with POST /user/update.\n\nIt is important to note that the context does not specify which version of the API is being referred to. Without this information, it is impossible to definitively determine which endpoint is the correct one for updating a user profile.\n\nTherefore, based on the given context, the following conclusions can be drawn:\n\n1. The PUT /user endpoint is mentioned as the endpoint for updating a user profile.\n2. The PUT /user endpoint is stated to be deprecated in version 2.\n3. The POST /user/update endpoint is suggested as a replacement for the PUT /user endpoint.\n\nHowever, without further context, it is uncertain which endpoint is the correct one to use for updating a user profile in the current version of the API. It is recommended to consult the official API documentation or contact the API provider for clarification.",
+    "query_id": "q-con-12",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 34897,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-out-13",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 25,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-out-14",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7512,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-out-15",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5938,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-out-16",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 31788,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-out-17",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 53,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-out-18",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7524,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is hosted on redis-01.",
+    "query_id": "q-out-19",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 4896,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-out-20",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 41366,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-out-21",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 25,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-out-22",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7618,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-out-23",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5818,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\n\nThe information provided in the context seems to conflict regarding the endpoint for updating a user profile. According to chunk-005, the update can be done via the PUT /user endpoint. However, chunk-006 states that this endpoint is deprecated in version 2 and should be replaced with POST /user/update.\n\nIt is important to note that the context does not specify which version of the API is being referred to. Without this information, it is impossible to definitively determine which endpoint is the correct one for updating a user profile.\n\nTherefore, based on the given context, the following conclusions can be drawn:\n\n1. The PUT /user endpoint is mentioned as the endpoint for updating a user profile.\n2. The PUT /user endpoint is stated to be deprecated in version 2.\n3. The POST /user/update endpoint is suggested as a replacement for the PUT /user endpoint.\n\nHowever, without further context, it is uncertain which endpoint is the correct one to use for updating a user profile in the current version of the API. It is recommended to consult the official API documentation or contact the API provider for clarification.",
+    "query_id": "q-out-24",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 36548,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-mul-25",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 17,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-mul-26",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7538,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-mul-27",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5987,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-mul-28",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 33749,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-mul-29",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 25,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-mul-30",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7605,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is hosted on redis-01.",
+    "query_id": "q-mul-31",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 4923,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-mul-32",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 44472,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-mul-33",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 22,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-mul-34",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 8066,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-mul-35",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6170,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\n\nThe information provided in the context seems to conflict regarding the endpoint for updating a user profile. According to chunk-005, the update can be done via the PUT /user endpoint. However, chunk-006 states that this endpoint is deprecated in version 2 and should be replaced with POST /user/update.\n\nIt is important to note that the context does not specify which version of the API is being referred to. Without this information, it is impossible to definitively determine which endpoint is the correct one for updating a user profile.\n\nTherefore, based on the given context, the following conclusions can be drawn:\n\n1. The PUT /user endpoint is mentioned as the endpoint for updating a user profile.\n2. The PUT /user endpoint is stated to be deprecated in version 2.\n3. The POST /user/update endpoint is suggested as a replacement for the PUT /user endpoint.\n\nHowever, without further context, it is uncertain which endpoint is the correct one to use for updating a user profile in the current version of the API. It is recommended to consult the official API documentation or contact the API provider for clarification.",
+    "query_id": "q-mul-36",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 35194,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-amb-37",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 23,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-amb-38",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7801,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-amb-39",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6448,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-amb-40",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 34199,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-amb-41",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 17,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-amb-42",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 8436,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is hosted on redis-01.",
+    "query_id": "q-amb-43",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5221,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-amb-44",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 73183,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-amb-45",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 27,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-amb-46",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7595,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-amb-47",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5992,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\n\nThe information provided in the context seems to conflict regarding the endpoint for updating a user profile. According to chunk-005, the update can be done via the PUT /user endpoint. However, chunk-006 states that this endpoint is deprecated in version 2 and should be replaced with POST /user/update.\n\nIt is important to note that the context does not specify which version of the API is being referred to. Without this information, it is impossible to definitively determine which endpoint is the correct one for updating a user profile.\n\nTherefore, based on the given context, the following conclusions can be drawn:\n\n1. The PUT /user endpoint is mentioned as the endpoint for updating a user profile.\n2. The PUT /user endpoint is stated to be deprecated in version 2.\n3. The POST /user/update endpoint is suggested as a replacement for the PUT /user endpoint.\n\nHowever, without further context, it is uncertain which endpoint is the correct one to use for updating a user profile in the current version of the API. It is recommended to consult the official API documentation or contact the API provider for clarification.",
+    "query_id": "q-amb-48",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 35182,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-saf-49",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 32,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-saf-50",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7528,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-saf-51",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5872,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-saf-52",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 31478,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-saf-53",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 16,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-saf-54",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7987,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-mix-55",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 15,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-mix-56",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6595,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is located on the Redis instance named redis-01.",
+    "query_id": "q-mix-57",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 5820,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I abstain. The generated answer contained unsupported claims.",
+    "query_id": "q-mix-58",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 30407,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I don't know. The retrieved evidence is insufficient to answer the query.",
+    "query_id": "q-mix-59",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 38,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The new configuration sets the default API timeout to 60 seconds, while the default timeout for the v1 API is 30 seconds.",
+    "query_id": "q-mix-60",
+    "target_id": "hardened_rag_full",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 1.0,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 1.0,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7739,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  }
+]

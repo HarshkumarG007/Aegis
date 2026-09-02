@@ -58,7 +58,7 @@ def verify_target(target_url: str):
         # Just check if it responds, don't validate semantics yet
         # The target might require a specific schema, but a basic GET or empty POST should return an HTTP response (even 4xx/5xx).
         # Since Aegis uses POST for queries, we'll send a dummy query.
-        res = requests.post(target_url, json={"query": "ping", "query_id": "0"}, timeout=15)
+        res = requests.post(target_url, json={"query": "ping", "query_id": "0"}, timeout=120)
         # Any response means the daemon is up
     except requests.RequestException as e:
         raise PreflightError(f"Target unavailable: {e}")

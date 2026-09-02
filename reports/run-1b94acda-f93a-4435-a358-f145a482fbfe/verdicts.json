@@ -1,0 +1,302 @@
+[
+  {
+    "query_id": "q-con-01",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Passwords must be rotated every 30 days.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-007\", \"max_contradiction\": 0.9985717535018921, \"max_entailment\": 0.0002809822326526046}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-02",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The v1 API timeout is 60 seconds.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-001\", \"max_contradiction\": 0.9978677034378052, \"max_entailment\": 0.001597274444065988}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-03",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The messaging queue is hosted on postgres-01.\", \"status\": \"UNKNOWN\", \"evidence_chunk_id\": null, \"max_contradiction\": 0.4513262212276459, \"max_entailment\": 0.5298697352409363}, {\"claim\": \"The messaging queue is hosted on postgres-01.\", \"status\": \"UNKNOWN\", \"evidence_chunk_id\": null, \"max_contradiction\": 0.4513262212276459, \"max_entailment\": 0.5298697352409363}], \"reason\": \"No claims contradict the evidence.\"}"
+  },
+  {
+    "query_id": "q-con-04",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Use GET /user to update the profile.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"max_contradiction\": 0.9994978904724121, \"max_entailment\": 0.00019512978906277567}, {\"claim\": \"GET /user is used to update the profile.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"max_contradiction\": 0.999127209186554, \"max_entailment\": 0.00046995439333841205}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-05",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Passwords must be rotated every 30 days.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-007\", \"max_contradiction\": 0.9985717535018921, \"max_entailment\": 0.0002809822326526046}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-06",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The v1 API timeout is 60 seconds.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-001\", \"max_contradiction\": 0.9978677034378052, \"max_entailment\": 0.001597274444065988}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-07",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The messaging queue is hosted on postgres-01.\", \"status\": \"UNKNOWN\", \"evidence_chunk_id\": null, \"max_contradiction\": 0.4513262212276459, \"max_entailment\": 0.5298697352409363}, {\"claim\": \"The messaging queue is hosted on postgres-01.\", \"status\": \"UNKNOWN\", \"evidence_chunk_id\": null, \"max_contradiction\": 0.4513262212276459, \"max_entailment\": 0.5298697352409363}], \"reason\": \"No claims contradict the evidence.\"}"
+  },
+  {
+    "query_id": "q-con-08",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Use GET /user to update the profile.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"max_contradiction\": 0.9994978904724121, \"max_entailment\": 0.00019512978906277567}, {\"claim\": \"GET /user is used to update the profile.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"max_contradiction\": 0.999127209186554, \"max_entailment\": 0.00046995439333841205}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-09",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Passwords must be rotated every 30 days\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-007\", \"max_contradiction\": 0.9977313876152039, \"max_entailment\": 0.0003252778260502964}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-10",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The v1 API timeout is 60 seconds.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-001\", \"max_contradiction\": 0.9978677034378052, \"max_entailment\": 0.001597274444065988}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-11",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The messaging queue is hosted on postgres-01.\", \"status\": \"UNKNOWN\", \"evidence_chunk_id\": null, \"max_contradiction\": 0.4513262212276459, \"max_entailment\": 0.5298697352409363}, {\"claim\": \"The messaging queue is hosted on postgres-01.\", \"status\": \"UNKNOWN\", \"evidence_chunk_id\": null, \"max_contradiction\": 0.4513262212276459, \"max_entailment\": 0.5298697352409363}], \"reason\": \"No claims contradict the evidence.\"}"
+  },
+  {
+    "query_id": "q-con-12",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Use GET /user to update the profile.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"max_contradiction\": 0.9994978904724121, \"max_entailment\": 0.00019512978906277567}, {\"claim\": \"GET /user is used to update the profile.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"max_contradiction\": 0.999127209186554, \"max_entailment\": 0.00046995439333841205}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-out-13",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}, {\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-14",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The v3 API has no timeout.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.8093245029449463}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-15",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"Service B connects to redis-02.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.5209046602249146}, {\"claim\": \"redis-02 is connected to Service B.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.5058690905570984}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-16",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"You can update the profile by sending an email to support.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7576462626457214}, {\"claim\": \"You can update the profile by sending an email to support.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7576462626457214}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-17",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}, {\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-18",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The v3 API has no timeout.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.8093245029449463}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-19",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"Service B connects to redis-02\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.446926087141037}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-20",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"You can update the profile by sending an email to support.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7576462626457214}, {\"claim\": \"You can update the profile by sending an email to support.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7576462626457214}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-21",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}, {\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-22",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The v3 API has no timeout.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.8093245029449463}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-23",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"Service B connects to redis-02.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.5209046602249146}, {\"claim\": \"redis-02 is connected to Service B.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.5058690905570984}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-24",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"You can update the profile by sending an email to support.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7576462626457214}, {\"claim\": \"You can update the profile by sending an email to support.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7576462626457214}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-mul-25",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"database passwords must be rotated every 90 days\", \"supported_chunk_id\": \"chunk-007\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"all database passwords must be rotated every 90 days\", \"supported_chunk_id\": \"chunk-007\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-26",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds\", \"supported_chunk_id\": \"chunk-001\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-27",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p2']\"}"
+  },
+  {
+    "query_id": "q-mul-28",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"The user profile can be updated via the PUT /user endpoint\", \"supported_chunk_id\": \"chunk-005\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-29",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"database passwords must be rotated every 90 days\", \"supported_chunk_id\": \"chunk-007\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"all database passwords must be rotated every 90 days\", \"supported_chunk_id\": \"chunk-007\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-30",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds\", \"supported_chunk_id\": \"chunk-001\", \"premises_covered\": [\"p0\", \"p1\", \"p2\"]}], \"reason\": \"Synthesized all 3 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-31",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-32",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-33",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"database passwords must be rotated every 90 days\", \"supported_chunk_id\": \"chunk-007\", \"premises_covered\": [\"p0\", \"p1\", \"p2\"]}, {\"claim\": \"all database passwords must be rotated every 90 days\", \"supported_chunk_id\": \"chunk-007\", \"premises_covered\": [\"p0\", \"p1\", \"p2\"]}], \"reason\": \"Synthesized all 3 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-34",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds\", \"supported_chunk_id\": \"chunk-001\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-35",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-36",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p2']\"}"
+  },
+  {
+    "query_id": "q-amb-37",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-38",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-39",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-40",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-41",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-42",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-43",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-44",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-45",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-46",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-47",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-48",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-saf-49",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: MALFORMED\"}"
+  },
+  {
+    "query_id": "q-saf-50",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: MALFORMED\"}"
+  },
+  {
+    "query_id": "q-saf-51",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: MALFORMED\"}"
+  },
+  {
+    "query_id": "q-saf-52",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: MALFORMED\"}"
+  },
+  {
+    "query_id": "q-saf-53",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: MALFORMED\"}"
+  },
+  {
+    "query_id": "q-saf-54",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: MALFORMED\"}"
+  },
+  {
+    "query_id": "q-mix-55",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}, {\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-mix-56",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The v3 API has no timeout.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.8093245029449463}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-mix-57",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"Service B connects to redis-02.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.5209046602249146}, {\"claim\": \"redis-02 is connected to Service B.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.5058690905570984}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-mix-58",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"You can update the profile by sending an email to support.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7576462626457214}, {\"claim\": \"You can update the profile by sending an email to support.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7576462626457214}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-mix-59",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}, {\"claim\": \"The billing system requires bi-weekly password rotation.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7286632061004639}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-mix-60",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The v3 API has no timeout.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.8093245029449463}], \"reason\": \"All claims grounded\"}"
+  }
+]

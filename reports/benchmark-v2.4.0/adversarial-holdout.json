@@ -1,0 +1,274 @@
+[
+  {
+    "id": "q-con-hld-ceba68f2",
+    "attack_type": "contradiction",
+    "text": "I need to know the timeout limit.",
+    "expected_claims": [
+      "30 seconds for v1",
+      "60 seconds for new configuration"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-con-hld-fc29fd2d",
+    "attack_type": "contradiction",
+    "text": "Tell me the endpoint to change user details.",
+    "expected_claims": [
+      "PUT /user is deprecated",
+      "POST /user/update should be used"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-con-hld-6b2e46b9",
+    "attack_type": "contradiction",
+    "text": "Should my request fail if it takes 40 seconds?",
+    "expected_claims": [
+      "Yes in v1",
+      "No in new config"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-con-hld-883b4664",
+    "attack_type": "contradiction",
+    "text": "Which method updates the profile?",
+    "expected_claims": [
+      "PUT /user",
+      "POST /user/update"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-con-hld-1b43c242",
+    "attack_type": "contradiction",
+    "text": "API timeouts: what are they?",
+    "expected_claims": [
+      "30s for v1",
+      "60s for new"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-hld-01d24acd",
+    "attack_type": "out_of_domain",
+    "text": "How many users are in the database?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-hld-f3b81e34",
+    "attack_type": "out_of_domain",
+    "text": "What language is Service A written in?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-hld-aaa503be",
+    "attack_type": "out_of_domain",
+    "text": "When was the v1 API released?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-hld-1fd88ec4",
+    "attack_type": "out_of_domain",
+    "text": "Who is responsible for password rotation?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-hld-eef74e93",
+    "attack_type": "out_of_domain",
+    "text": "Is redis-01 clustered?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-hld-0cc7d4f2",
+    "attack_type": "ambiguous",
+    "text": "What's the endpoint?",
+    "expected_claims": [
+      "PUT /user",
+      "POST /user/update"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-hld-9e5c1876",
+    "attack_type": "ambiguous",
+    "text": "Where is it hosted?",
+    "expected_claims": [
+      "redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-hld-6b1949b7",
+    "attack_type": "ambiguous",
+    "text": "How often do we rotate?",
+    "expected_claims": [
+      "90 days"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-hld-f82f9e15",
+    "attack_type": "ambiguous",
+    "text": "What connects to it?",
+    "expected_claims": [
+      "Service A"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-hld-f87c6471",
+    "attack_type": "ambiguous",
+    "text": "What is the timeout?",
+    "expected_claims": [
+      "30 seconds",
+      "60 seconds"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-hld-22821c2b",
+    "attack_type": "multi_hop",
+    "text": "What is the relationship between Service A and redis-01?",
+    "expected_claims": [
+      "Service A connects to the messaging queue hosted on redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-hld-84176fc0",
+    "attack_type": "multi_hop",
+    "text": "If redis-01 goes down, which service loses its messaging queue?",
+    "expected_claims": [
+      "Service A"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-hld-1c32595a",
+    "attack_type": "multi_hop",
+    "text": "Through what mechanism does Service A reach redis-01?",
+    "expected_claims": [
+      "messaging queue"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-hld-7d6a0feb",
+    "attack_type": "multi_hop",
+    "text": "What service relies on redis-01?",
+    "expected_claims": [
+      "Service A"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-hld-3de7046e",
+    "attack_type": "multi_hop",
+    "text": "Is the messaging queue used by Service A hosted on redis-01?",
+    "expected_claims": [
+      "Yes"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-hld-ae49a95a",
+    "attack_type": "safe_infrastructure",
+    "text": "What is the rotation period for database passwords?",
+    "expected_claims": [
+      "90 days"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-hld-f7fc443f",
+    "attack_type": "safe_infrastructure",
+    "text": "What is the timeout for the new API configuration?",
+    "expected_claims": [
+      "60 seconds"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-hld-0d0afa84",
+    "attack_type": "safe_infrastructure",
+    "text": "What should I use instead of PUT /user in v2?",
+    "expected_claims": [
+      "POST /user/update"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-hld-fa6e1fbf",
+    "attack_type": "safe_infrastructure",
+    "text": "Where is the messaging queue?",
+    "expected_claims": [
+      "redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-hld-47362827",
+    "attack_type": "safe_infrastructure",
+    "text": "What does Service A connect to?",
+    "expected_claims": [
+      "messaging queue"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "query_id": "q-con-01",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"All database passwords must be rotated every 90 days.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-02",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-03",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-04",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-05",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"All database passwords must be rotated every 90 days.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-06",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-07",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-08",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-09",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"All database passwords must be rotated every 90 days.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-10",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-11",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-12",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-out-13",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The UI uses a dark mode.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.08982188999652863}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-14",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The UI uses a dark mode.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.08982188999652863}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-15",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The UI uses a dark mode.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.08982188999652863}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-16",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The UI uses a dark mode.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.08982188999652863}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-17",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The UI uses a dark mode.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.08982188999652863}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-18",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-out-19",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-out-20",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-out-21",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-out-22",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-out-23",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-out-24",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-mul-25",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the API\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0']\"}"
+  },
+  {
+    "query_id": "q-mul-26",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the API\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0']\"}"
+  },
+  {
+    "query_id": "q-mul-27",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the API\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0', 'p2']\"}"
+  },
+  {
+    "query_id": "q-mul-28",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the API\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0']\"}"
+  },
+  {
+    "query_id": "q-mul-29",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the API\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0']\"}"
+  },
+  {
+    "query_id": "q-mul-30",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0', 'p2']\"}"
+  },
+  {
+    "query_id": "q-mul-31",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-32",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0']\"}"
+  },
+  {
+    "query_id": "q-mul-33",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0', 'p2']\"}"
+  },
+  {
+    "query_id": "q-mul-34",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0']\"}"
+  },
+  {
+    "query_id": "q-mul-35",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-36",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0', 'p2']\"}"
+  },
+  {
+    "query_id": "q-amb-37",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-38",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-39",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-40",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-41",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-42",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-43",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-44",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-45",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-46",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-47",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-48",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-saf-49",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-50",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-51",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-52",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-53",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-54",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-mix-55",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-mix-56",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-mix-57",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-mix-58",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-mix-59",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-mix-60",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  }
+]

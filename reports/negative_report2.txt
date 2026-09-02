@@ -1,0 +1,30 @@
+Aegis-Eval Benchmark 2.0
+Run: 35df1db1-11b1-4185-a169-d889f6121606
+Dataset SHA256: dd5b23101a6a61603c064491a179fc741b9310af4e3a1b5afae7097068cf985d
+Evaluator Revision: c795ff1a9aa3eabfca7f03b3910cb7987f76a547
+
+Overall
+-----------------------------
+Pass rate             21.7%
+Macro mechanism rate  15.0%
+Mean latency          0.15s
+Median latency        0.15s
+Infra failure rate     0.0%
+
+Core Mechanisms
+-----------------------------
+contradiction         25.0%
+out_of_domain         50.0%
+multi_hop             0.0%
+ambiguous             0.0%
+safe_infrastructure   0.0%
+
+Interaction
+-----------------------------
+mixed                 66.7%
+
+Difficulty
+-----------------------------
+easy                  20.0%
+medium                25.0%
+hard                  20.0%

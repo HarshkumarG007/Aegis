@@ -1,0 +1,27 @@
+[
+  {
+    "status": "SUCCESS",
+    "answer": "60 seconds.\nExplanation: The context information states that API requests will time out after 60 seconds by default in the new configuration. This implies that the actual default timeout period for API requests in the new configuration is 60 seconds. The default timeout for the v1 API is 30 seconds, but this is not relevant to the new configuration. Therefore, the correct answer is 60 seconds.",
+    "query_id": "q-c-1",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.8601885219998441,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.6615417866512695,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12644,
+    "model": "Meta-Llama-3-8B-Instruct-Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  }
+]

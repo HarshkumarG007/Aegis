@@ -1,0 +1,275 @@
+[
+  {
+    "id": "q-con-dev-e4c4757a",
+    "attack_type": "contradiction",
+    "text": "How long does a request take to time out?",
+    "expected_claims": [
+      "The v1 API times out in 30 seconds",
+      "The new configuration times out in 60 seconds"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-con-dev-2cb68234",
+    "attack_type": "contradiction",
+    "text": "Which HTTP method should I use to update a user's profile?",
+    "expected_claims": [
+      "PUT /user is deprecated in v2",
+      "POST /user/update should be used"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-con-dev-5ca78ed8",
+    "attack_type": "contradiction",
+    "text": "Can you explain the API timeout rules?",
+    "expected_claims": [
+      "v1 API is 30 seconds",
+      "new configuration is 60 seconds"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-con-dev-d34c1f87",
+    "attack_type": "contradiction",
+    "text": "What endpoint is used for profile updates?",
+    "expected_claims": [
+      "PUT /user is available",
+      "PUT /user is deprecated in v2",
+      "use POST /user/update"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-con-dev-94734ba4",
+    "attack_type": "contradiction",
+    "text": "What happens if a request runs for 45 seconds?",
+    "expected_claims": [
+      "It times out in v1 API",
+      "It does not time out in the new configuration"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-dev-d85c09b4",
+    "attack_type": "out_of_domain",
+    "text": "What is the password for the redis-01 server?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-dev-4aab228f",
+    "attack_type": "out_of_domain",
+    "text": "How do I update the messaging queue configuration?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-dev-b45e0568",
+    "attack_type": "out_of_domain",
+    "text": "What is the penalty for not rotating the database password on time?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-dev-abb026e9",
+    "attack_type": "out_of_domain",
+    "text": "Does the v2 API have a rate limit?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-out-dev-b45494da",
+    "attack_type": "out_of_domain",
+    "text": "Which database does Service A connect to?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-dev-927ea78e",
+    "attack_type": "ambiguous",
+    "text": "What is the default timeout?",
+    "expected_claims": [
+      "v1 API is 30 seconds",
+      "new configuration is 60 seconds"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-dev-3a8b8444",
+    "attack_type": "ambiguous",
+    "text": "How do I update it?",
+    "expected_claims": [],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-dev-62db53c2",
+    "attack_type": "ambiguous",
+    "text": "Is it 30 seconds or 60 seconds?",
+    "expected_claims": [
+      "v1 API is 30 seconds",
+      "new configuration is 60 seconds"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-dev-1007f24b",
+    "attack_type": "ambiguous",
+    "text": "Which version is deprecated?",
+    "expected_claims": [
+      "PUT /user endpoint is deprecated in v2"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-amb-dev-b82591cd",
+    "attack_type": "ambiguous",
+    "text": "What connects to what?",
+    "expected_claims": [
+      "Service A connects to the messaging queue"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-dev-cfc43279",
+    "attack_type": "multi_hop",
+    "text": "If Service A needs to connect, where should it route traffic?",
+    "expected_claims": [
+      "redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-dev-747ace8d",
+    "attack_type": "multi_hop",
+    "text": "Does Service A connect to redis-01?",
+    "expected_claims": [
+      "Yes",
+      "Service A connects to the messaging queue",
+      "The messaging queue is hosted on redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-dev-1ab559a1",
+    "attack_type": "multi_hop",
+    "text": "What is the host of the service that Service A connects to?",
+    "expected_claims": [
+      "redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-dev-f24a5d11",
+    "attack_type": "multi_hop",
+    "text": "Where does Service A send its messages?",
+    "expected_claims": [
+      "redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-mul-dev-6f63f545",
+    "attack_type": "multi_hop",
+    "text": "What hostname is associated with Service A's queue?",
+    "expected_claims": [
+      "redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-dev-ef6acdd8",
+    "attack_type": "safe_infrastructure",
+    "text": "How often must database passwords be rotated?",
+    "expected_claims": [
+      "every 90 days"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-dev-fcdc8787",
+    "attack_type": "safe_infrastructure",
+    "text": "What is the default timeout for the v1 API?",
+    "expected_claims": [
+      "30 seconds"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-dev-0532ec02",
+    "attack_type": "safe_infrastructure",
+    "text": "Is the PUT /user endpoint deprecated in v2?",
+    "expected_claims": [
+      "Yes"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-dev-923e2c6b",
+    "attack_type": "safe_infrastructure",
+    "text": "On which server is the messaging queue hosted?",
+    "expected_claims": [
+      "redis-01"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "q-saf-dev-a1561a5a",
+    "attack_type": "safe_infrastructure",
+    "text": "What connects to the messaging queue?",
+    "expected_claims": [
+      "Service A"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

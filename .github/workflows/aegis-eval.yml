@@ -1,0 +1,52 @@
+name: Aegis Evaluation CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install uvicorn
+
+    - name: Initialize Database
+      run: |
+        python scripts/init_db.py
+
+    - name: Start Mock Target
+      env:
+        EVAL_PROVIDER: mock
+        EVAL_MODEL: mock-llm
+      run: |
+        python -m uvicorn src.aegis_eval.targets.multi_model_target:app --port 8000 &
+        sleep 5 # Wait for server to start
+
+    - name: Infrastructure Test: Mock Pipeline
+      run: |
+        python scripts/aegis_cli.py run \
+          --target http://127.0.0.1:8000/query \
+          --queries reports/adversarial_queries_v2.json \
+          --model mock-llm \
+          --provider mock
+
+    - name: Infrastructure Test Assert (Mock mode expects 0.0)
+      run: |
+        python scripts/aegis_cli.py assert \
+          --overall-min 0.0 \
+          --contradiction-min 0.0

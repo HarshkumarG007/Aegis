@@ -1,0 +1,23 @@
+{
+  "benchmark_version": "2.3.0",
+  "experiment_id": "v2.3-mistral-7b-pilot",
+  "model": {
+    "name": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "provider": "local",
+    "sha256": "3e0039fd0273fcbebb49228943b17831aadd55cbcbf56f0af00499be2040ccf9"
+  },
+  "runtime_configuration": {
+    "hardware": "RTX 4060 Laptop (8GB VRAM)",
+    "architecture": "Offline Generation -> Decoupled Evaluation",
+    "n_gpu_layers": -1,
+    "temperature": 0.0,
+    "retrieval_config": {
+      "top_k": 5
+    }
+  },
+  "hashes": {
+    "manifest_sha256": "dd5b23101a6a61603c064491a179fc741b9310af4e3a1b5afae7097068cf985d",
+    "corpus_sha256": "unknown_corpus_hash",
+    "response_artifact_sha256": "7b1e93d61b890f30c0a9d3780587aea85d230549952c88c924a4c553a491c6f9"
+  }
+}

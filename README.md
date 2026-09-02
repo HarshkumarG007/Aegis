@@ -29,7 +29,7 @@ Adversary Model ──> Target RAG ──> Immutable JSON Bundle ──> Evaluat
 - **Metrics**: Positive Calibration: **98.3%**. Negative Detection: **0.0%** (zero capitulation). 
 - **The Breakthrough**: Patched the DeBERTa NLI cross-encoder with strict `normalize_text` exact substring fallbacks. This solved the semantic bottleneck, driving positive calibration to near 100% and providing mathematically sound evaluation bounds.
 
-### V2.3: The Offline Multi-Model Scientific Pilot (Current)
+### V2.3: The Offline Multi-Model Scientific Pilot
 *Busting the memory wall. Decoupling generation from evaluation for mathematically provable provenance.*
 ```text
 Llama 3 8B (GPU) ──> Raw Responses ──> Immutable JSON (SHA-256)
@@ -40,6 +40,35 @@ DeBERTa-v3 (CPU) <── Evaluator Dispatcher <── Manifest Hash
 - **The Breakthrough**: Bypassed Uvicorn/FastAPI threading instabilities and 8GB VRAM contention constraints via a completely offline architecture.
 - **The Discovery**: Llama 3 8B handles Contradictions **+25.0%** better than Qwen 1.5B, but suffers a **-25.0%** regression in Out-of-Domain robustness due to "confident hallucination" and parametric leakage.
 
+### V2.4: Hardened RAG Pipeline (Externalized Grounding Policy)
+*Separating model capability from grounding policy. Turning opaque hallucinations into explicit, tunable gate states.*
+```text
+                         Query + Evidence
+                                │
+                                ▼
+                        ┌───────────────┐
+                        │ Evidence Gate │ (MS-MARCO + NLI)
+                        └───────┬───────┘
+                                │
+                    ┌───────────┼───────────┐
+                    ▼           ▼           ▼
+               INSUFFICIENT  CONFLICT   SUFFICIENT
+                    │           │           │
+                 ABSTAIN    constrained   grounded
+                            generation    generation
+                                │           │
+                                └─────┬─────┘
+                                      ▼
+                              ┌────────────┐
+                              │  Verifier  │ (DeBERTa-v3)
+                              └─────┬──────┘
+                                    │
+                               PASS/REJECT
+```
+- **The Breakthrough**: By intercepting queries with NLI Cross-Encoders *before* and *after* the LLM, we successfully reduced OOD fabrications significantly, shifting silent generation failures into measurable, observable gate decisions.
+- **The Discovery**: The ablation revealed that detecting a conflict (23%) doesn't mean a 7B LLM can safely resolve it (0% improvement in contradiction). The generator's "Compulsion to Merge" is stronger than prompting constraints.
+- **The Focus**: Next up is V2.4.1 (Calibration), where we redesign the conflict state to be deterministic and introduce a claim-level repair loop.
+
 ---
 
 ## 📂 Repository Git Tree
@@ -47,7 +76,8 @@ DeBERTa-v3 (CPU) <── Evaluator Dispatcher <── Manifest Hash
 ```text
 Aegis/
 ├── docs/
-│   └── JOURNAL_V2.3_Llama3_Pilot.md    # The MAANG-style engineering journal of V2.3
+│   ├── JOURNAL_V2.3_Llama3_Pilot.md    # The story of escaping 8GB VRAM limits
+│   └── JOURNAL_V2.4_Hardened_RAG.md    # The discovery of the "Compulsion to Merge/Stitch"
 ├── experiments/
 │   └── v2.3/llama3-8b/
 │       └── experiment.json             # Immutable hashes and runtime config
@@ -60,6 +90,7 @@ Aegis/
     └── aegis_eval/
         ├── data/                       # Manifest structures and DB schemas
         ├── evaluator/                  # NLI Cross-encoders, Aggregators, Metrics
+        ├── hardened_rag/               # V2.4 Evidence & Verification Gates
         └── targets/                    # Multi-Model target integration contracts
 ```
 
@@ -67,6 +98,8 @@ Aegis/
 
 ## 📚 Essential Reading (The Aegis Lore)
 
+- [📖 **The MAANG Engineer Journal: V2.4 Hardened RAG & Externalizing Policy**](docs/JOURNAL_V2.4_Hardened_RAG.md)
+  *How we conquered the Compulsion to Merge and Stitch by ripping grounding out of the LLM and putting it into discrete NLI gates!*
 - [📖 **The MAANG Engineer Journal: V2.3 Llama 3 Pilot**](docs/JOURNAL_V2.3_Llama3_Pilot.md) 
   *Discover the technical battle against GPU OOMs and the fascinating scientific differential between 1.5B and 8B models!*
 - [🚀 **Release Notes**](RELEASE_NOTES.md)

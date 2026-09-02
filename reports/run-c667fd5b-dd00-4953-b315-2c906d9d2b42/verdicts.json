@@ -1,0 +1,32 @@
+[
+  {
+    "query_id": "q-c-1",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [], \"reason\": \"Missing expected_truth in oracle\"}"
+  },
+  {
+    "query_id": "q-c-2",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [], \"reason\": \"Missing expected_truth in oracle\"}"
+  },
+  {
+    "query_id": "q-o-1",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: TIMEOUT\"}"
+  },
+  {
+    "query_id": "q-o-2",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-m-1",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-a-1",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  }
+]

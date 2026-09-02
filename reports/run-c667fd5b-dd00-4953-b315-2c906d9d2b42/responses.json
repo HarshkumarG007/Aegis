@@ -1,0 +1,100 @@
+[
+  {
+    "status": "SUCCESS",
+    "answer": "60 seconds.\nExplanation: The context information states that API requests will time out after 60 seconds by default in the new configuration. This implies that the actual default timeout period for API requests in the new configuration is 60 seconds. The default timeout for the v1 API is 30 seconds, but this is not relevant to the new configuration. Therefore, the correct answer is 60 seconds.",
+    "query_id": "q-c-1",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.8601885219998441,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.6615417866512695,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12119,
+    "model": "Meta-Llama-3-8B-Instruct-Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "30 seconds. The default timeout for the v1 API is 30 seconds, so it is recommended to use this setting for API requests. The 60-second timeout is the default for the new configuration, but it is not recommended for API requests in this case.",
+    "query_id": "q-c-2",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7490810646223444,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.6240675840214249,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7330,
+    "model": "Meta-Llama-3-8B-Instruct-Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "TIMEOUT",
+    "answer": null,
+    "query_id": "q-o-1",
+    "target_id": "http://127.0.0.1:8000/query",
+    "retrieved_chunks": [],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": "Request timed out",
+    "metadata": null
+  },
+  {
+    "status": "HTTP_ERROR",
+    "answer": null,
+    "query_id": "q-o-2",
+    "target_id": "http://127.0.0.1:8000/query",
+    "retrieved_chunks": [],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
+    "metadata": null
+  },
+  {
+    "status": "HTTP_ERROR",
+    "answer": null,
+    "query_id": "q-m-1",
+    "target_id": "http://127.0.0.1:8000/query",
+    "retrieved_chunks": [],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /query (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+    "metadata": null
+  },
+  {
+    "status": "HTTP_ERROR",
+    "answer": null,
+    "query_id": "q-a-1",
+    "target_id": "http://127.0.0.1:8000/query",
+    "retrieved_chunks": [],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /query (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+    "metadata": null
+  }
+]

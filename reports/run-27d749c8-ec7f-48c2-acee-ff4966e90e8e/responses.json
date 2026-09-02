@@ -1,0 +1,1358 @@
+[
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-01",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-02",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-03",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-04",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-05",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-06",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-07",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-08",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The API timeout is exactly 30 seconds.",
+    "query_id": "q-con-09",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The timeout is 30 seconds for v1 and 60 seconds for the new configuration.",
+    "query_id": "q-con-10",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The timeout is 30 seconds for v1 and 60 seconds for the new configuration.",
+    "query_id": "q-con-11",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The timeout is 30 seconds for v1 and 60 seconds for the new configuration.",
+    "query_id": "q-con-12",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-002",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The UI uses a dark mode.",
+    "query_id": "q-out-13",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The UI uses a dark mode.",
+    "query_id": "q-out-14",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The UI uses a dark mode.",
+    "query_id": "q-out-15",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The UI uses a dark mode.",
+    "query_id": "q-out-16",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "The UI uses a dark mode.",
+    "query_id": "q-out-17",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-out-18",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-out-19",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-out-20",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-out-21",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-out-22",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-out-23",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-out-24",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the API.",
+    "query_id": "q-mul-25",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the API.",
+    "query_id": "q-mul-26",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the API.",
+    "query_id": "q-mul-27",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the API.",
+    "query_id": "q-mul-28",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the API.",
+    "query_id": "q-mul-29",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the messaging queue hosted on redis-01.",
+    "query_id": "q-mul-30",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the messaging queue hosted on redis-01.",
+    "query_id": "q-mul-31",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the messaging queue hosted on redis-01.",
+    "query_id": "q-mul-32",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the messaging queue hosted on redis-01.",
+    "query_id": "q-mul-33",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the messaging queue hosted on redis-01.",
+    "query_id": "q-mul-34",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the messaging queue hosted on redis-01.",
+    "query_id": "q-mul-35",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "Service A connects to the messaging queue hosted on redis-01.",
+    "query_id": "q-mul-36",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "You can update the user profile via the PUT /user endpoint.",
+    "query_id": "q-amb-37",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "You can update the user profile via the PUT /user endpoint.",
+    "query_id": "q-amb-38",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "You can update the user profile via the PUT /user endpoint.",
+    "query_id": "q-amb-39",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "You can update the user profile via the PUT /user endpoint.",
+    "query_id": "q-amb-40",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "You can update the user profile via the PUT /user endpoint.",
+    "query_id": "q-amb-41",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "It depends on the version. Use PUT for v1 or POST for v2.",
+    "query_id": "q-amb-42",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "It depends on the version. Use PUT for v1 or POST for v2.",
+    "query_id": "q-amb-43",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "It depends on the version. Use PUT for v1 or POST for v2.",
+    "query_id": "q-amb-44",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "It depends on the version. Use PUT for v1 or POST for v2.",
+    "query_id": "q-amb-45",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "It depends on the version. Use PUT for v1 or POST for v2.",
+    "query_id": "q-amb-46",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "It depends on the version. Use PUT for v1 or POST for v2.",
+    "query_id": "q-amb-47",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "It depends on the version. Use PUT for v1 or POST for v2.",
+    "query_id": "q-amb-48",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-saf-49",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-saf-50",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-saf-51",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-saf-52",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-saf-53",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-saf-54",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-mix-55",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-mix-56",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-mix-57",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-mix-58",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-mix-59",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "I am not sure.",
+    "query_id": "q-mix-60",
+    "target_id": "reference_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-001",
+        "rank": 1,
+        "score": null,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": null,
+    "model": null,
+    "embedding_model": null,
+    "error": null,
+    "metadata": null
+  }
+]

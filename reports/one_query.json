@@ -1,0 +1,8 @@
+[
+  {
+    "id": "q-c-1",
+    "text": "What is the actual default timeout period for API requests in the new configuration?",
+    "attack_type": "contradiction",
+    "difficulty": "hard"
+  }
+]

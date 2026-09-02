@@ -1,0 +1,302 @@
+[
+  {
+    "query_id": "q-con-01",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Passwords must be rotated every 30 days.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-007\", \"max_contradiction\": 0.9985717535018921, \"max_entailment\": 0.0002809822326526046}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-02",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The v1 API timeout is 60 seconds.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-001\", \"max_contradiction\": 0.9978677034378052, \"max_entailment\": 0.001597274444065988}], \"reason\": \"One or more claims directly contradict retrieved evidence.\"}"
+  },
+  {
+    "query_id": "q-con-03",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The messaging queue is hosted on postgres-01.\", \"status\": \"UNKNOWN\", \"evidence_chunk_id\": null, \"max_contradiction\": 0.4513262212276459, \"max_entailment\": 0.5298697352409363}, {\"claim\": \"The messaging queue is hosted on postgres-01.\", \"status\": \"UNKNOWN\", \"evidence_chunk_id\": null, \"max_contradiction\": 0.4513262212276459, \"max_entailment\": 0.5298697352409363}], \"reason\": \"No claims contradict the evidence.\"}"
+  },
+  {
+    "query_id": "q-con-04",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-con-05",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-con-06",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-con-07",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-con-08",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-con-09",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-con-10",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-con-11",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-con-12",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-13",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-14",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-15",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-16",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-17",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-18",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-19",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-20",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-21",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-22",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-23",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-out-24",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-25",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-26",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-27",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-28",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-29",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-30",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-31",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-32",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-33",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-34",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-35",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mul-36",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-37",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-38",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-39",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-40",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-41",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-42",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-43",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-44",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-45",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-46",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-47",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-amb-48",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-saf-49",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-saf-50",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-saf-51",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-saf-52",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-saf-53",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-saf-54",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mix-55",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mix-56",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mix-57",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mix-58",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mix-59",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  },
+  {
+    "query_id": "q-mix-60",
+    "pass_fail": false,
+    "evidence": "{\"reason\": \"Infrastructure failure: HTTP_ERROR\"}"
+  }
+]

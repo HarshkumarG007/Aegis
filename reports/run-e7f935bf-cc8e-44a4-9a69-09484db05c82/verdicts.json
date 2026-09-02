@@ -1,0 +1,7 @@
+[
+  {
+    "query_id": "q-c-1",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [], \"reason\": \"Missing expected_truth in oracle\"}"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "status": "SUCCESS",
+    "answer": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text",
+    "query_id": "q-c-1",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.8601885219998441,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.6615417866512695,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7,
+    "model": "mock-llm",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text",
+    "query_id": "q-c-2",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7490810646223444,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.6240675840214249,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6,
+    "model": "mock-llm",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text",
+    "query_id": "q-o-1",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.28425053880117884,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.2507051007196428,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6,
+    "model": "mock-llm",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text",
+    "query_id": "q-o-2",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.2573582042198571,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-007",
+        "rank": 2,
+        "score": 0.2514269658992847,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7,
+    "model": "mock-llm",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text",
+    "query_id": "q-m-1",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-003",
+        "rank": 1,
+        "score": 0.7642459933163714,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-004",
+        "rank": 2,
+        "score": 0.552971833751774,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 14,
+    "model": "mock-llm",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text",
+    "query_id": "q-a-1",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.7127166604565908,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.45231425670976305,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12,
+    "model": "mock-llm",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  }
+]

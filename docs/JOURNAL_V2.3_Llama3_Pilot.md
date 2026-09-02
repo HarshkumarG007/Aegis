@@ -37,12 +37,25 @@ With the architecture stabilized, we ran the full 60-query adversarial manifest.
 | **Ambiguous** | 33.3% | 58.3% | **+25.0%** |
 | **Multi-hop** | 91.7% | 83.3% | -8.4% |
 
-### Observations & Hypotheses
+### 1. Empirical Results
 
-* **Observation (Nuance & Contradiction)**: Llama 3 8B exhibited a massive +25.0% improvement in resolving contradictions and navigating ambiguous queries.
-* **Hypothesis**: The increased parameter count provides the reasoning capacity necessary to compare contradictory corpus chunks and identify nuance that the 1.5B model simply lacked.
-* **Observation (OOD Robustness)**: Llama 3 8B exhibited significantly *lower* OOD robustness under the Aegis protocol (-25.0%).
-* **Hypothesis**: We hypothesize that this is caused by greater "parametric leakage" or "confident hallucination". Highly capable, instruct-tuned models are eager to fulfill the user's prompt. When the retrieval context is irrelevant, rather than safely hedging ("I don't know"), the 8B model confidently synthesizes an answer using its own parametric memory.
+*   **Overall Accuracy**: Qwen (46.7%, 28/60) outperformed Llama 3 8B (51.7%, 31/60) and Mistral 7B (36.7%, 22/60). Capability does not strictly correlate with Aegis score.
+*   **Contradiction Resilience**: Replicated improvement across both larger models. Qwen 16.7% (2/12) → Llama 41.7% (5/12) and Mistral 41.7% (5/12). (+25 percentage points / +3 queries).
+*   **Out-of-Domain (OOD) Grounding**: Both larger models are below Qwen. Qwen 66.7% (8/12) → Llama 41.7% (5/12) and Mistral 50.0% (6/12).
+*   **Ambiguity Resolution**: Not a general capability improvement. Llama 3 achieved 58.3% (7/12), but Mistral dropped to 0.0% (0/12).
+
+### 2. Failure Taxonomy Analysis
+
+The raw evidence reveals that the OOD degradation is primarily driven by:
+*   **Unsupported Fabrication**: The model attempts to stitch together unrelated retrieved facts (e.g., assuming "billing system password" is the same as "database password") rather than refusing to answer.
+*   **Evaluator Disagreement**: The strict evaluator penalizes correct synthesis.
+*   The models consistently fail to recognize retrieval insufficiency, preferentially producing a plausible answer instead of a grounded refusal.
+
+For contradictions, the models consistently attempt to **merge incompatible claims** by hallucinating reconciliations (e.g., treating conflicting facts as version history or injecting external context like "OpenAPI Petstore").
+
+## Limitations
+
+Each adversarial category currently contains 12 queries, meaning individual query outcomes can produce large changes in category-level percentages (approx. 8.3 percentage points per query). Additionally, this comparison involves different model families (Qwen vs Llama) rather than a controlled, intra-family parameter-scaling experiment. These results therefore establish an empirical model comparison under the Aegis protocol, rather than a causal estimate of parameter scaling.
 
 ## Run Provenance
 

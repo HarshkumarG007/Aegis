@@ -1,0 +1,1502 @@
+[
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days to maintain security. This means that the current password must be updated with a new one every three months. This can be done by updating the user profile via the PUT /user endpoint.",
+    "query_id": "q-con-01",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6132910698375853,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.20554005291473126,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7845,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated due to timeout.",
+    "query_id": "q-con-02",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7592058192403667,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7100235549525902,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 11230,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01. This information is provided in the context. Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries, and streams. In this context, it is being used as a message broker. The exact location or IP address of the Redis instance is not mentioned in the context, so it would require additional information to access it directly. However, since Service A is already connected to the messaging queue, it can communicate with it through the connection established.",
+    "query_id": "q-con-03",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7167354941061589,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.696175869272596,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 21742,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated using the POST /user/update endpoint. This is the recommended method in the newer version. The previous method using the PUT /user endpoint is deprecated.",
+    "query_id": "q-con-04",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6504675484342435,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3384397072733702,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6814,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days for security purposes. This means that the current password must be updated with a new one every three months. This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password. It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.",
+    "query_id": "q-con-05",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6180787789212282,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.2043516396521434,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 14345,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time. However, it is important to note that longer request times can impact the overall performance and responsiveness of the API, so it is recommended to optimize requests to complete within the specified time.",
+    "query_id": "q-con-06",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7472017924820149,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7114186374971541,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 18432,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is hosted on redis-01.",
+    "query_id": "q-con-07",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7280661935189714,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.7082161732564661,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 2770,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated by sending a request to the POST /user/update endpoint. This endpoint is the recommended way to update user profiles in the latest version of the API. The deprecated method using the PUT /user endpoint is no longer supported. To update a user profile, you need to send a JSON payload containing the new user information. The API will return the updated user profile with the response.",
+    "query_id": "q-con-08",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.643119754911159,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.33035635749383724,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 13082,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system, like all other systems in the organization, follows the security policy of rotating database passwords every 90 days. This means that the password for the billing system database must be updated every three months to maintain security. The user responsible for managing the billing system should use the PUT /user endpoint to update their profile with the new password. It is important to note that this process should be carried out in a secure and timely manner to minimize any potential disruption to the billing system and the business as a whole. Additionally, it is recommended that the new password is strong and follows best practices for password security.",
+    "query_id": "q-con-09",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6113053226523896,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.19671687795257162,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 19535,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds.",
+    "query_id": "q-con-10",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7438668810447138,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7155277696950658,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 8992,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01.",
+    "query_id": "q-con-11",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7231280727009475,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.7083111773836915,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 3641,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\n\nThe user profile can be updated in the OpenAPI Petstore using either the PUT /user or the POST /user/update endpoints. However, it is important to note that the PUT /user endpoint is deprecated in version 2 of the OpenAPI Petstore specification. Instead, the recommended method for updating a user profile is to use the POST /user/update endpoint.\n\nWhen using the POST /user/update endpoint, the user can send a JSON body containing the updated fields, such as name, email, or password. The server will then return the updated user profile in the response.\n\nHere's an example of a request body for updating a user's email address:\n\n```json\n{\n  \"name\": {\n    \"first\": \"John\",\n    \"last\": \"Doe\"\n  },\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"newpassword\"\n}\n```\n\nAnd here's an example of a successful response:\n\n```json\n{\n  \"id\": 0,\n  \"username\": \"john_doe\",\n ",
+    "query_id": "q-con-12",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6497465420242515,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3342823498948656,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 36667,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days to maintain security. This means that the passwords must be updated and new ones generated every three months. This is a common security practice to prevent unauthorized access to sensitive data. The user profile can be updated with the new password via the PUT /user endpoint.",
+    "query_id": "q-out-13",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6132910698375853,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.20554005291473126,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 11155,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated due to timeout.",
+    "query_id": "q-out-14",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7592058192403667,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7100235549525902,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12115,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01. This information is provided in the context. Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries, and streams. In this context, it is being used as a message broker. The exact location or IP address of the Redis instance is not mentioned in the context, so it would require additional information to access it directly. However, since Service A is already connected to the messaging queue, it can communicate with it through the connection established.",
+    "query_id": "q-out-15",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7167354941061589,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.696175869272596,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 22973,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated using the POST /user/update endpoint. This is the recommended method in the newer version. The previous method using the PUT /user endpoint is deprecated.",
+    "query_id": "q-out-16",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6504675484342435,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3384397072733702,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6839,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days for security purposes. This means that the current password must be updated with a new one every three months. This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password. It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.",
+    "query_id": "q-out-17",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6180787789212282,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.2043516396521434,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 14021,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time. However, it is important to note that longer request times can impact the overall performance and responsiveness of the API, so it is recommended to optimize requests to complete within the specified time.",
+    "query_id": "q-out-18",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7472017924820149,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7114186374971541,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 18211,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is hosted on redis-01.",
+    "query_id": "q-out-19",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7280661935189714,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.7082161732564661,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 2531,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated by sending a request to the POST /user/update endpoint. This endpoint is the recommended way to update user profiles in the latest version of the API. The deprecated method using the PUT /user endpoint is no longer supported. To update a user profile, you need to send a JSON payload containing the new user information. The API will return the updated user profile with the response.",
+    "query_id": "q-out-20",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.643119754911159,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.33035635749383724,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 11393,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system, like all other systems in the organization, follows the security policy of rotating database passwords every 90 days. This means that the password for the billing system database must be updated every three months to maintain security. The user responsible for managing the billing system should use the PUT /user endpoint to update their profile with the new password. It is important to note that this process should be carried out in a secure and timely manner to minimize any potential disruption to the billing system and the business as a whole. Additionally, it is recommended that the new password is strong and follows best practices for password security.",
+    "query_id": "q-out-21",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6113053226523896,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.19671687795257162,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 19588,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds.",
+    "query_id": "q-out-22",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7438668810447138,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7155277696950658,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 9010,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01.",
+    "query_id": "q-out-23",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7231280727009475,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.7083111773836915,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 3773,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\n\nThe user profile can be updated in the OpenAPI Petstore using either the PUT /user or the POST /user/update endpoints. However, it is important to note that the PUT /user endpoint is deprecated in version 2 of the OpenAPI Petstore specification. Instead, the recommended method for updating a user profile is to use the POST /user/update endpoint.\n\nWhen using the POST /user/update endpoint, the user can send a JSON body containing the updated fields, such as name, email, or password. The server will then return the updated user profile in the response.\n\nHere's an example of a request body for updating a user's email address:\n\n```json\n{\n  \"name\": {\n    \"first\": \"John\",\n    \"last\": \"Doe\"\n  },\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"newpassword\"\n}\n```\n\nAnd here's an example of a successful response:\n\n```json\n{\n  \"id\": 0,\n  \"username\": \"john_doe\",\n ",
+    "query_id": "q-out-24",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6497465420242515,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3342823498948656,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 36862,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days to maintain security. This means that the passwords must be updated and new ones generated every three months. This is a common security practice to prevent unauthorized access to sensitive data. The user profile can be updated with the new password via the PUT /user endpoint.",
+    "query_id": "q-mul-25",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6132910698375853,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.20554005291473126,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 9885,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated due to timeout.",
+    "query_id": "q-mul-26",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7592058192403667,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7100235549525902,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 10240,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01. This information is provided in the context. Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries, and streams. In this context, it is being used as a message broker. The exact location or IP address of the Redis instance is not mentioned in the context, so it would require additional information to access it directly. However, since Service A is already connected to the messaging queue, it can communicate with it through the connection established.",
+    "query_id": "q-mul-27",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7167354941061589,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.696175869272596,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 19779,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated using the POST /user/update endpoint. This is the recommended method in the newer version. The previous method using the PUT /user endpoint is deprecated.",
+    "query_id": "q-mul-28",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6504675484342435,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3384397072733702,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 7499,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days for security purposes. This means that the current password must be updated with a new one every three months. This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password. It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.",
+    "query_id": "q-mul-29",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6180787789212282,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.2043516396521434,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 11820,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time. However, it is important to note that longer request times can impact the overall performance and responsiveness of the API, so it is recommended to optimize requests to complete within the specified time.",
+    "query_id": "q-mul-30",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7472017924820149,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7114186374971541,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 16722,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is hosted on redis-01.",
+    "query_id": "q-mul-31",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7280661935189714,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.7082161732564661,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 2841,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated by sending a request to the POST /user/update endpoint. This endpoint is the recommended way to update user profiles in the latest version of the API. The deprecated method using the PUT /user endpoint is no longer supported. To update a user profile, you need to send a JSON payload containing the new user information. The API will return the updated user profile with the response.",
+    "query_id": "q-mul-32",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.643119754911159,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.33035635749383724,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12978,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system, like all other systems in the organization, follows the security policy of rotating database passwords every 90 days. This means that the password for the billing system database must be updated every three months to maintain security. The user responsible for managing the billing system should use the PUT /user endpoint to update their profile with the new password. It is important to note that this process should be carried out in a secure and timely manner to minimize any potential disruption to the billing system and the business as a whole. Additionally, it is recommended that the new password is strong and follows best practices for password security.",
+    "query_id": "q-mul-33",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6113053226523896,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.19671687795257162,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 19385,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds.",
+    "query_id": "q-mul-34",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7438668810447138,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7155277696950658,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 9008,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01.",
+    "query_id": "q-mul-35",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7231280727009475,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.7083111773836915,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 3620,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\n\nThe user profile can be updated in the OpenAPI Petstore using either the PUT /user or the POST /user/update endpoints. However, it is important to note that the PUT /user endpoint is deprecated in version 2 of the OpenAPI Petstore specification. Instead, the recommended method for updating a user profile is to use the POST /user/update endpoint.\n\nWhen using the POST /user/update endpoint, the user can send a JSON body containing the updated fields, such as name, email, or password. The server will then return the updated user profile in the response.\n\nHere's an example of a request body for updating a user's email address:\n\n```json\n{\n  \"name\": {\n    \"first\": \"John\",\n    \"last\": \"Doe\"\n  },\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"newpassword\"\n}\n```\n\nAnd here's an example of a successful response:\n\n```json\n{\n  \"id\": 0,\n  \"username\": \"john_doe\",\n ",
+    "query_id": "q-mul-36",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6497465420242515,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3342823498948656,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 36445,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days to maintain security. This means that the passwords must be updated and new ones generated every three months. This is a common security practice to prevent unauthorized access to sensitive data. The user profile can be updated with the new password via the PUT /user endpoint.",
+    "query_id": "q-amb-37",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6132910698375853,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.20554005291473126,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 11172,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated due to timeout.",
+    "query_id": "q-amb-38",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7592058192403667,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7100235549525902,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12222,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01. This information is provided in the context. Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries, and streams. In this context, it is being used as a message broker. The exact location or IP address of the Redis instance is not mentioned in the context, so it would require additional information to access it directly. However, since Service A is already connected to the messaging queue, it can communicate with it through the connection established.",
+    "query_id": "q-amb-39",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7167354941061589,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.696175869272596,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 22963,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated using the POST /user/update endpoint. This is the recommended method in the newer version. The previous method using the PUT /user endpoint is deprecated.",
+    "query_id": "q-amb-40",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6504675484342435,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3384397072733702,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6777,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days for security purposes. This means that the current password must be updated with a new one every three months. This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password. It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.",
+    "query_id": "q-amb-41",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6180787789212282,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.2043516396521434,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 13923,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time. However, it is important to note that longer request times can impact the overall performance and responsiveness of the API, so it is recommended to optimize requests to complete within the specified time.",
+    "query_id": "q-amb-42",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7472017924820149,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7114186374971541,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 18365,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": " The messaging queue is hosted on redis-01.",
+    "query_id": "q-amb-43",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7280661935189714,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.7082161732564661,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 2801,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated by sending a request to the POST /user/update endpoint. This endpoint is the recommended way to update user profiles in the latest version of the API. The deprecated method using the PUT /user endpoint is no longer supported. To update a user profile, you need to send a JSON payload containing the new user information. The API will return the updated user profile with the response.",
+    "query_id": "q-amb-44",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.643119754911159,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.33035635749383724,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12940,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system, like all other systems in the organization, follows the security policy of rotating database passwords every 90 days. This means that the password for the billing system database must be updated every three months to maintain security. The user responsible for managing the billing system should use the PUT /user endpoint to update their profile with the new password. It is important to note that this process should be carried out in a secure and timely manner to minimize any potential disruption to the billing system and the business as a whole. Additionally, it is recommended that the new password is strong and follows best practices for password security.",
+    "query_id": "q-amb-45",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6113053226523896,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.19671687795257162,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 19345,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds.",
+    "query_id": "q-amb-46",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7438668810447138,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7155277696950658,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 8943,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01.",
+    "query_id": "q-amb-47",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7231280727009475,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.7083111773836915,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 3617,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\n\nThe user profile can be updated in the OpenAPI Petstore using either the PUT /user or the POST /user/update endpoints. However, it is important to note that the PUT /user endpoint is deprecated in version 2 of the OpenAPI Petstore specification. Instead, the recommended method for updating a user profile is to use the POST /user/update endpoint.\n\nWhen using the POST /user/update endpoint, the user can send a JSON body containing the updated fields, such as name, email, or password. The server will then return the updated user profile in the response.\n\nHere's an example of a request body for updating a user's email address:\n\n```json\n{\n  \"name\": {\n    \"first\": \"John\",\n    \"last\": \"Doe\"\n  },\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"newpassword\"\n}\n```\n\nAnd here's an example of a successful response:\n\n```json\n{\n  \"id\": 0,\n  \"username\": \"john_doe\",\n ",
+    "query_id": "q-amb-48",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6497465420242515,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3342823498948656,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 36326,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days to maintain security. This means that the passwords must be updated and new ones generated every three months. This is a common security practice to prevent unauthorized access to sensitive data. The user profile can be updated with the new password via the PUT /user endpoint.",
+    "query_id": "q-saf-49",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6132910698375853,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.20554005291473126,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 11086,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated due to timeout.",
+    "query_id": "q-saf-50",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7592058192403667,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7100235549525902,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12091,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01. This information is provided in the context. Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries, and streams. In this context, it is being used as a message broker. The exact location or IP address of the Redis instance is not mentioned in the context, so it would require additional information to access it directly. However, since Service A is already connected to the messaging queue, it can communicate with it through the connection established.",
+    "query_id": "q-saf-51",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7167354941061589,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.696175869272596,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 22512,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated using the POST /user/update endpoint. This is the recommended method in the newer version. The previous method using the PUT /user endpoint is deprecated.",
+    "query_id": "q-saf-52",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6504675484342435,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3384397072733702,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6765,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days for security purposes. This means that the current password must be updated with a new one every three months. This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password. It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.",
+    "query_id": "q-saf-53",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6180787789212282,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.2043516396521434,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 14000,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time. However, it is important to note that longer request times can impact the overall performance and responsiveness of the API, so it is recommended to optimize requests to complete within the specified time.",
+    "query_id": "q-saf-54",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7472017924820149,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7114186374971541,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 18329,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days to maintain security. This means that the passwords must be updated and new ones generated every three months. This is a common security practice to prevent unauthorized access to sensitive data. The user profile can be updated with the new password via the PUT /user endpoint.",
+    "query_id": "q-mix-55",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6132910698375853,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.20554005291473126,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 11071,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated due to timeout.",
+    "query_id": "q-mix-56",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7592058192403667,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7100235549525902,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 12035,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe messaging queue is hosted on a Redis instance named redis-01. This information is provided in the context. Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker. It supports various data structures like strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries, and streams. In this context, it is being used as a message broker. The exact location or IP address of the Redis instance is not mentioned in the context, so it would require additional information to access it directly. However, since Service A is already connected to the messaging queue, it can communicate with it through the connection established.",
+    "query_id": "q-mix-57",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-004",
+        "rank": 1,
+        "score": 0.7167354941061589,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-003",
+        "rank": 2,
+        "score": 0.696175869272596,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 22901,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe user profile can be updated using the POST /user/update endpoint. This is the recommended method in the newer version. The previous method using the PUT /user endpoint is deprecated.",
+    "query_id": "q-mix-58",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-005",
+        "rank": 1,
+        "score": 0.6504675484342435,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-006",
+        "rank": 2,
+        "score": 0.3384397072733702,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 6774,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe billing system requires all database passwords to be rotated every 90 days for security purposes. This means that the current password must be updated with a new one every three months. This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password. It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.",
+    "query_id": "q-mix-59",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-007",
+        "rank": 1,
+        "score": 0.6180787789212282,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-005",
+        "rank": 2,
+        "score": 0.2043516396521434,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 13964,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  },
+  {
+    "status": "SUCCESS",
+    "answer": "\nThe API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server. In the new configuration, the default timeout for API requests is 60 seconds, while in the v1 API, the default timeout is 30 seconds. This means that a request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time. However, it is important to note that longer request times can impact the overall performance and responsiveness of the API, so it is recommended to optimize requests to complete within the specified time.",
+    "query_id": "q-mix-60",
+    "target_id": "multi_model_target",
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk-002",
+        "rank": 1,
+        "score": 0.7472017924820149,
+        "text_hash": null
+      },
+      {
+        "chunk_id": "chunk-001",
+        "rank": 2,
+        "score": 0.7114186374971541,
+        "text_hash": null
+      }
+    ],
+    "latency_ms": 18406,
+    "model": "mistral-7b-instruct-v0.2.Q4_K_M.gguf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null,
+    "metadata": null
+  }
+]

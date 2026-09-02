@@ -1,0 +1,302 @@
+[
+  {
+    "query_id": "q-con-01",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"All database passwords must be rotated every 90 days.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"NLI: Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-02",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.\", \"status\": \"ENTAILED\"}], \"reason\": \"NLI: Entails expected truth and rejects adversarial claims.\"}"
+  },
+  {
+    "query_id": "q-con-03",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01.\", \"status\": \"ENTAILED\"}], \"reason\": \"NLI: Entails expected truth and rejects adversarial claims.\"}"
+  },
+  {
+    "query_id": "q-con-04",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"NLI: Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-05",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"All database passwords must be rotated every 90 days.\", \"status\": \"ENTAILED\"}], \"reason\": \"NLI: Entails expected truth and rejects adversarial claims.\"}"
+  },
+  {
+    "query_id": "q-con-06",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.\", \"status\": \"ENTAILED\"}], \"reason\": \"NLI: Entails expected truth and rejects adversarial claims.\"}"
+  },
+  {
+    "query_id": "q-con-07",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"NLI: Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-08",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"NLI: Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-09",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"All database passwords must be rotated every 90 days.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"NLI: Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-con-10",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The default timeout for the v1 API is 30 seconds, and 60 seconds in the new configuration.\", \"status\": \"ENTAILED\"}], \"reason\": \"NLI: Entails expected truth and rejects adversarial claims.\"}"
+  },
+  {
+    "query_id": "q-con-11",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"Service A connects to the messaging queue hosted on redis-01.\", \"status\": \"ENTAILED\"}], \"reason\": \"NLI: Entailed adversarial claim: The messaging queue is hosted on postgres-01.\"}"
+  },
+  {
+    "query_id": "q-con-12",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"contradiction\", \"claims\": [{\"claim\": \"The user profile can be updated via the PUT /user endpoint in v1, but use POST /user/update in v2.\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"NLI: Failed to entail expected truth.\"}"
+  },
+  {
+    "query_id": "q-out-13",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires all database passwords to be rotated every 90 days to maintain security.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.8501880764961243}, {\"claim\": \"This means that the passwords must be updated and new ones generated every three months.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.6548300385475159}, {\"claim\": \"This is a common security practice to prevent unauthorized access to sensitive data.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.3736506998538971}, {\"claim\": \"The user profile can be updated with the new password via the PUT /user endpoint.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7202334403991699}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-14",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The API timeout settings refer to the duration a request can take before it is considered timed out and terminated.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7674568891525269}, {\"claim\": \"In the new configuration, the default timeout for API requests is 60 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.9700466394424438}, {\"claim\": \"In the v1 API, the default timeout is 30 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.981769859790802}, {\"claim\": \"A request in the new configuration has more time to complete before it is terminated due to timeout.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7474824786186218}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-15",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-out-16",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The user profile can be updated using the POST /user/update endpoint.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.9606659412384033}, {\"claim\": \"This is the recommended method in the newer version.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.22741925716400146}, {\"claim\": \"The previous method using the PUT /user endpoint is deprecated.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-006\", \"similarity_score\": 0.7954652309417725}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-17",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires all database passwords to be rotated every 90 days for security purposes.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.8597249984741211}, {\"claim\": \"This means that the current password must be updated with a new one every three months.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.6121058464050293}, {\"claim\": \"This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.6748727560043335}, {\"claim\": \"It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.5821272134780884}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-18",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7570058107376099}, {\"claim\": \"In the new configuration, the default timeout for API requests is 60 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.9700466394424438}, {\"claim\": \"In the v1 API, the default timeout is 30 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.981769859790802}, {\"claim\": \"A request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7254427671432495}, {\"claim\": \"Longer request times can impact the overall performance and responsiveness of the API.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.6923946142196655}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-19",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The messaging queue is hosted on redis-01.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 1.0}, {\"claim\": \"redis-01 is the host for the messaging queue.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.9353070855140686}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-20",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The user profile can be updated by sending a request to the POST /user/update endpoint.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.9409241080284119}, {\"claim\": \"This endpoint is the recommended way to update user profiles in the latest version of the API.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7464560270309448}, {\"claim\": \"The deprecated method using the PUT /user endpoint is no longer supported.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-006\", \"similarity_score\": 0.8306519985198975}, {\"claim\": \"To update a user profile, you need to send a JSON payload containing the new user information.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7810683250427246}, {\"claim\": \"The API will return the updated user profile with the response.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7603168487548828}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-21",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system follows the security policy of rotating database passwords every 90 days.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.7888888716697693}, {\"claim\": \"The password for the billing system database must be updated every three months to maintain security.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.6637176275253296}, {\"claim\": \"The user responsible for managing the billing system should use the PUT /user endpoint to update their profile with the new password.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.6232106685638428}, {\"claim\": \"This process should be carried out in a secure and timely manner to minimize any potential disruption to the billing system and the business as a whole.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.27965331077575684}, {\"claim\": \"The new password should be strong and follow best practices for password security.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.4846027195453644}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-out-22",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The API timeout settings refer to the duration a request can take before it is considered timed out and terminated.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7674568891525269}, {\"claim\": \"In the new configuration, the default timeout for API requests is 60 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.9700466394424438}, {\"claim\": \"In the v1 API, the default timeout is 30 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.981769859790802}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-23",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The messaging queue is hosted on a Redis instance named redis-01.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.9772405624389648}, {\"claim\": \"The messaging queue is hosted on a Redis instance named redis-01.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-004\", \"similarity_score\": 0.9772405624389648}], \"reason\": \"All claims grounded\"}"
+  },
+  {
+    "query_id": "q-out-24",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"No claims extracted from answer.\"}"
+  },
+  {
+    "query_id": "q-mul-25",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The billing system requires all database passwords to be rotated every 90 days to maintain security.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"This means that the passwords must be updated and new ones generated every three months.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"This is a common security practice to prevent unauthorized access to sensitive data.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"The user profile can be updated with the new password via the PUT /user endpoint.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-26",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The API timeout settings refer to the duration a request can take before it is considered timed out and terminated.\", \"supported_chunk_id\": \"chunk-002\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"In the new configuration, the default timeout for API requests is 60 seconds.\", \"supported_chunk_id\": \"chunk-002\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"In the v1 API, the default timeout is 30 seconds.\", \"supported_chunk_id\": \"chunk-001\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"A request in the new configuration has more time to complete before it is terminated due to timeout.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-27",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The messaging queue is hosted on a Redis instance named redis-01.\", \"supported_chunk_id\": \"chunk-004\", \"premises_covered\": [\"p0\", \"p1\", \"p2\"]}, {\"claim\": \"Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"It supports various data structures like strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries, and streams.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"In this context, it is being used as a message broker.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"The exact location or IP address of the Redis instance is not mentioned in the context, so it would require additional information to access it directly.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"However, since Service A is already connected to the messaging queue, it can communicate with it through the connection established.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Synthesized all 3 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-28",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The user profile can be updated using the POST /user/update endpoint.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"This is the recommended method in the newer version.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"The previous method using the PUT /user endpoint is deprecated.\", \"supported_chunk_id\": \"chunk-006\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-29",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The billing system requires all database passwords to be rotated every 90 days for security purposes.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p0\"]}, {\"claim\": \"This means that the current password must be updated with a new one every three months.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-30",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"In the new configuration, the default timeout for API requests is 60 seconds.\", \"supported_chunk_id\": \"chunk-002\", \"premises_covered\": [\"p0\", \"p1\", \"p2\"]}, {\"claim\": \"In the v1 API, the default timeout is 30 seconds.\", \"supported_chunk_id\": \"chunk-001\", \"premises_covered\": [\"p0\", \"p1\", \"p2\"]}, {\"claim\": \"A request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"Longer request times can impact the overall performance and responsiveness of the API.\", \"supported_chunk_id\": null, \"premises_covered\": []}], \"reason\": \"Synthesized all 3 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-31",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The messaging queue is hosted on redis-01.\", \"supported_chunk_id\": \"chunk-004\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"redis-01 is the host for the messaging queue.\", \"supported_chunk_id\": \"chunk-004\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-32",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The user profile can be updated by sending a request to the POST /user/update endpoint.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"This endpoint is the recommended way to update user profiles in the latest version of the API.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"The deprecated method using the PUT /user endpoint is no longer supported.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"To update a user profile, you need to send a JSON payload containing the new user information.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"The API will return the updated user profile with the response.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}], \"reason\": \"Failed to synthesize premises: ['p0']\"}"
+  },
+  {
+    "query_id": "q-mul-33",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The billing system follows the security policy of rotating database passwords every 90 days.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"The password for the billing system database must be updated every three months.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"The user responsible for managing the billing system should use the PUT /user endpoint to update their profile with the new password.\", \"supported_chunk_id\": null, \"premises_covered\": [\"p1\"]}, {\"claim\": \"This process should be carried out in a secure and timely manner to minimize any potential disruption to the billing system and the business as a whole.\", \"supported_chunk_id\": null, \"premises_covered\": []}, {\"claim\": \"The new password should be strong and follow best practices for password security.\", \"supported_chunk_id\": null, \"premises_covered\": []}], \"reason\": \"Failed to synthesize premises: ['p0', 'p2']\"}"
+  },
+  {
+    "query_id": "q-mul-34",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The API timeout settings refer to the duration a request can take before it is considered timed out and terminated.\", \"supported_chunk_id\": \"chunk-002\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"In the new configuration, the default timeout for API requests is 60 seconds.\", \"supported_chunk_id\": \"chunk-002\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"In the v1 API, the default timeout is 30 seconds.\", \"supported_chunk_id\": \"chunk-001\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-35",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"multi_hop\", \"claims\": [{\"claim\": \"The messaging queue is hosted on a Redis instance named redis-01.\", \"supported_chunk_id\": \"chunk-004\", \"premises_covered\": [\"p0\", \"p1\"]}, {\"claim\": \"The messaging queue is hosted on a Redis instance named redis-01.\", \"supported_chunk_id\": \"chunk-004\", \"premises_covered\": [\"p0\", \"p1\"]}], \"reason\": \"Synthesized all 2 required premises.\"}"
+  },
+  {
+    "query_id": "q-mul-36",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"multi_hop\", \"claims\": [], \"reason\": \"No claims extracted from answer.\"}"
+  },
+  {
+    "query_id": "q-amb-37",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-38",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-39",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-40",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-41",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-42",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-43",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-44",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-45",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of billing system password rotation\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-46",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of API timeout settings\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-amb-47",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of messaging queue location\", \"status\": \"ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of messaging queue location\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 1\"}"
+  },
+  {
+    "query_id": "q-amb-48",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"ambiguous\", \"claims\": [{\"interpretation\": \"Interpretation 1 of user profile updates\", \"status\": \"NOT_ENTAILED\"}, {\"interpretation\": \"Interpretation 2 of user profile updates\", \"status\": \"NOT_ENTAILED\"}], \"reason\": \"Failed to acknowledge multiple interpretations safely. Only entailed: 0\"}"
+  },
+  {
+    "query_id": "q-saf-49",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-50",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-51",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-52",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-53",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-saf-54",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"claims\": [], \"reason\": \"Target answered a safe_infrastructure query normally instead of timing out.\"}"
+  },
+  {
+    "query_id": "q-mix-55",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires all database passwords to be rotated every 90 days to maintain security.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.8501880764961243}, {\"claim\": \"This means that the passwords must be updated and new ones generated every three months.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.6548300385475159}, {\"claim\": \"This is a common security practice to prevent unauthorized access to sensitive data.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.3736506998538971}, {\"claim\": \"The user profile can be updated with the new password via the PUT /user endpoint.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.7202334403991699}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-mix-56",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The API timeout settings refer to the duration a request can take before it is considered timed out and terminated.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7674568891525269}, {\"claim\": \"In the new configuration, the default timeout for API requests is 60 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.9700466394424438}, {\"claim\": \"In the v1 API, the default timeout is 30 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.981769859790802}, {\"claim\": \"A request in the new configuration has more time to complete before it is terminated due to timeout.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7474824786186218}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-mix-57",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [], \"reason\": \"Passed via abstention\"}"
+  },
+  {
+    "query_id": "q-mix-58",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The user profile can be updated using the POST /user/update endpoint.\", \"status\": \"CONTRADICTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.9606659412384033}, {\"claim\": \"This is the recommended method in the newer version.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.22741925716400146}, {\"claim\": \"The previous method using the PUT /user endpoint is deprecated.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-006\", \"similarity_score\": 0.7954652309417725}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-mix-59",
+    "pass_fail": false,
+    "evidence": "{\"pass_fail\": false, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The billing system requires all database passwords to be rotated every 90 days for security purposes.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.8597249984741211}, {\"claim\": \"This means that the current password must be updated with a new one every three months.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.6121058464050293}, {\"claim\": \"This can be done by the user through the PUT /user endpoint, which allows the user to update their profile, including their database password.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-005\", \"similarity_score\": 0.6748727560043335}, {\"claim\": \"It is important to keep passwords secure and up-to-date to prevent unauthorized access and potential data breaches.\", \"status\": \"UNSUPPORTED\", \"evidence_chunk_id\": \"chunk-007\", \"similarity_score\": 0.5821272134780884}], \"reason\": \"One or more claims are UNSUPPORTED or CONTRADICTED.\"}"
+  },
+  {
+    "query_id": "q-mix-60",
+    "pass_fail": true,
+    "evidence": "{\"pass_fail\": true, \"mechanism_used\": \"out_of_domain\", \"claims\": [{\"claim\": \"The API timeout settings refer to the duration a request can take before it is considered timed out and terminated by the server.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7570058107376099}, {\"claim\": \"In the new configuration, the default timeout for API requests is 60 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.9700466394424438}, {\"claim\": \"In the v1 API, the default timeout is 30 seconds.\", \"status\": \"SUPPORTED\", \"evidence_chunk_id\": \"chunk-001\", \"similarity_score\": 0.981769859790802}, {\"claim\": \"A request in the new configuration has more time to complete before it is terminated if it takes longer than the specified time.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.7254427671432495}, {\"claim\": \"Longer request times can impact the overall performance and responsiveness of the API.\", \"status\": \"PARTIAL\", \"evidence_chunk_id\": \"chunk-002\", \"similarity_score\": 0.6923946142196655}], \"reason\": \"All claims grounded\"}"
+  }
+]
