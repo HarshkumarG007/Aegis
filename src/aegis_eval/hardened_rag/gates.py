@@ -5,8 +5,9 @@ import numpy as np
 from scipy.special import softmax
 
 class EvidenceGate:
-    def __init__(self, use_v2_5_sufficiency: bool = False):
+    def __init__(self, use_v2_5_sufficiency: bool = False, use_v2_7_conditional_conflict: bool = False):
         self.use_v2_5_sufficiency = use_v2_5_sufficiency
+        self.use_v2_7_conditional_conflict = use_v2_7_conditional_conflict
         # QA Relevance/Sufficiency model
         self.qa_model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2', device='cpu')
         # NLI model for pairwise contradiction
@@ -92,14 +93,44 @@ class EvidenceGate:
                     conflict_reason = f"Chunk {chunks[i]['chunk_id']} contradicts {chunks[j]['chunk_id']}"
                     
         if conflicting_chunks:
+            final_conflict_state = "CONFLICT"
+            if self.use_v2_7_conditional_conflict:
+                # 1. Condition Extraction
+                condition_keywords = ["v1", "v2", "version", "legacy", "deprecated", "current", "2am", "4am", "hours", "public", "internal", "vpn", "admin", "guest", "role", "finance"]
+                has_condition = False
+                combined_text = " ".join([c['text'] for c in chunks if c['chunk_id'] in conflicting_chunks])
+                if any(kw in combined_text.lower() for kw in condition_keywords):
+                    has_condition = True
+                
+                # 2. Compatibility Test
+                is_compatible = False
+                hypothesis = "These claims can jointly hold under different conditions, versions, scopes, or times."
+                scores_compat = self.nli_model.predict([[combined_text, hypothesis]])[0]
+                probs_compat = softmax(scores_compat)
+                
+                # Assuming DeBERTa-v3 output mapping: 0=Contradiction, 1=Entailment, 2=Neutral
+                entailment_prob = probs_compat[1]
+                if entailment_prob >= 0.5:
+                    is_compatible = True
+                    
+                # 3. Deterministic Policy
+                if has_condition and is_compatible:
+                    final_conflict_state = "CONDITIONAL_COMPATIBILITY"
+                elif has_condition and not is_compatible:
+                    final_conflict_state = "CONFLICT_UNCERTAIN"
+                elif not has_condition and is_compatible:
+                    final_conflict_state = "CONFLICT_UNCERTAIN"
+                else:
+                    final_conflict_state = "CONTRADICTION"
+                    
             return {
-                "state": "CONFLICT",
-                "answerable": False,
+                "state": final_conflict_state if self.use_v2_7_conditional_conflict else "CONFLICT",
+                "answerable": True if final_conflict_state == "CONDITIONAL_COMPATIBILITY" else False,
                 "confidence": float(max_contra_prob),
                 "supporting_chunks": supporting_chunks,
                 "conflicting_chunks": list(conflicting_chunks),
                 "reason": conflict_reason,
-                "gate_version": "2.5.0" if self.use_v2_5_sufficiency else "2.4.1",
+                "gate_version": "2.7.0" if self.use_v2_7_conditional_conflict else ("2.5.0" if self.use_v2_5_sufficiency else "2.4.1"),
                 "set_score": float(set_score) if self.use_v2_5_sufficiency else float(max(individual_scores)) if individual_scores else 0.0,
                 "individual_scores": individual_scores
             }

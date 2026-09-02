@@ -1,0 +1,65 @@
+[
+  {
+    "id": "diag-con-001",
+    "category": "genuine contradiction",
+    "chunk_a": "The maximum payload size for the API is strictly 5MB.",
+    "chunk_b": "Clients can upload files up to 10MB using the API.",
+    "label": "CONTRADICTION"
+  },
+  {
+    "id": "diag-ver-002",
+    "category": "version-dependent compatibility",
+    "chunk_a": "The v1 API only supports XML payloads.",
+    "chunk_b": "JSON payloads are fully supported in the v2 API.",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "id": "diag-tem-003",
+    "category": "temporal compatibility",
+    "chunk_a": "During the maintenance window from 2AM to 4AM, the database is locked.",
+    "chunk_b": "The database accepts read and write traffic during standard business hours.",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "id": "diag-sco-004",
+    "category": "scope-dependent compatibility",
+    "chunk_a": "The /admin endpoints are blocked on the public network.",
+    "chunk_b": "Administrators can access the /admin endpoints via the internal VPN.",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "id": "diag-rol-005",
+    "category": "role-dependent compatibility",
+    "chunk_a": "Guest users cannot view the billing dashboard.",
+    "chunk_b": "Users with the 'finance' role have full access to the billing dashboard.",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "id": "diag-com-006",
+    "category": "complementary facts",
+    "chunk_a": "The PUT /user endpoint is deprecated.",
+    "chunk_b": "The PUT /user endpoint is available for legacy applications.",
+    "label": "CONDITIONAL_COMPATIBILITY"
+  },
+  {
+    "id": "diag-unc-007",
+    "category": "genuinely uncertain cases",
+    "chunk_a": "The firewall blocks all port 80 traffic.",
+    "chunk_b": "The web server listens on port 80 for incoming connections.",
+    "label": "UNCERTAIN"
+  },
+  {
+    "id": "diag-con-008",
+    "category": "genuine contradiction",
+    "chunk_a": "The server automatically restarts after a crash.",
+    "chunk_b": "If the server crashes, manual intervention is required to restart it.",
+    "label": "CONTRADICTION"
+  },
+  {
+    "id": "diag-con-009",
+    "category": "genuine contradiction",
+    "chunk_a": "All passwords must be exactly 8 characters long.",
+    "chunk_b": "Passwords can be any length between 8 and 16 characters.",
+    "label": "CONTRADICTION"
+  }
+]

@@ -8,7 +8,7 @@ from aegis_eval.hardened_rag.gates import EvidenceGate, PostGenerationVerifier
 
 class HardenedRAGPipeline:
     def __init__(self, llm, corpus: dict, ablation_mode: str = "full", sufficiency_threshold: float = 0.0,
-                 use_v2_5_sufficiency: bool = False, use_v2_5_verifier: bool = False, repair_mode: str = "off"):
+                 use_v2_5_sufficiency: bool = False, use_v2_5_verifier: bool = False, repair_mode: str = "off", use_v2_7_conditional_conflict: bool = False):
         """
         ablation_mode: 'baseline', 'evidence', 'conflict', 'verification', 'full'
         repair_mode: 'off', 'whole-answer', 'claim-level', 'old'
@@ -27,8 +27,9 @@ class HardenedRAGPipeline:
         self.index = VectorStoreIndex(nodes)
         self.retriever = self.index.as_retriever(similarity_top_k=2)
         
+        self.use_v2_7_conditional_conflict = use_v2_7_conditional_conflict
         # Setup Gates (lazy load to save memory if not needed by ablation)
-        self.evidence_gate = EvidenceGate(use_v2_5_sufficiency=use_v2_5_sufficiency) if ablation_mode in ['evidence', 'conflict', 'full'] else None
+        self.evidence_gate = EvidenceGate(use_v2_5_sufficiency=use_v2_5_sufficiency, use_v2_7_conditional_conflict=use_v2_7_conditional_conflict) if ablation_mode in ['evidence', 'conflict', 'full'] else None
         self.verifier = PostGenerationVerifier(use_v2_5_verifier=use_v2_5_verifier) if ablation_mode in ['verification', 'full'] else None
         
     def _retrieve(self, query: str):
@@ -79,15 +80,22 @@ class HardenedRAGPipeline:
                     trace["latency_ms"] = int((time.time() - start_time) * 1000)
                     return trace
                     
-            if trace["gate_state"] == "CONFLICT":
+            if trace["gate_state"] == "CONFLICT" or trace["gate_state"] == "CONTRADICTION" or trace["gate_state"] == "CONFLICT_UNCERTAIN":
                 if self.ablation_mode in ['conflict', 'full']:
                     trace["answer"] = "I cannot answer this query because the retrieved evidence contains conflicting information."
                     trace["latency_ms"] = int((time.time() - start_time) * 1000)
                     return trace
+                    
+            if trace["gate_state"] == "CONDITIONAL_COMPATIBILITY":
+                # We do NOT return early; we allow generation to proceed.
+                # However, we must explicitly instruct the generator to preserve conditions.
+                pass
         
         # 2. Normal Generation
         context_str = "\n".join([f"[{c['chunk_id']}] {c['text']}" for c in chunks])
-        if self.ablation_mode in ['evidence', 'full'] and trace["gate_state"] == "SUFFICIENT":
+        if trace["gate_state"] == "CONDITIONAL_COMPATIBILITY":
+            prompt = f"The provided evidence contains claims that are conditionally compatible. You MUST explicitly state the conditions (e.g. version, scope, time) under which each claim holds. Do not attempt to merge them into a single unconditional statement.\n\nContext:\n{context_str}\n\nQuery: {query_text}\nAnswer:"
+        elif self.ablation_mode in ['evidence', 'full'] and trace["gate_state"] == "SUFFICIENT":
             prompt = f"Answer ONLY from the accepted evidence provided below. Do not include external knowledge.\n\nContext:\n{context_str}\n\nQuery: {query_text}\nAnswer:"
         else:
             prompt = f"Context information is below.\n---------------------\n{context_str}\n---------------------\nGiven the context information and not prior knowledge, answer the query.\nQuery: {query_text}\nAnswer: "
