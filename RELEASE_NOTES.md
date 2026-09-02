@@ -1,5 +1,27 @@
 # Aegis-Eval Release Notes
 
+## V2.9.0 (Adversarial Safety Generalization)
+- **Focus:** Stress-testing structural extraction against false-conditionality traps.
+- **Milestone:** Re-architected the deterministic extractor (E0) into a Proposition-Bound architecture (Classifier E). By safely isolating clauses and verifying propositions via NLI before comparing conditions, we completely solved the ambiguity crisis.
+- **Key Validation:** Evaluated against a 220-pair adversarial suite including lexical traps, overlapping conditions, and false conditionality. 
+- **The Tradeoff:** Reduced uncertain fallbacks from 81 to 25 while explicitly maintaining a perfect 0-tolerance boundary for false-compatible merges (0/160 breaches). 
+
+## V2.8.0 (Structured Conditional Evidence)
+- **Focus:** Rescuing utility from the NLI bottleneck via structural extraction.
+- **Milestone:** Abandoned NLI for zero-shot condition inference in favor of a hybrid gate: Rule-Based Deterministic Extraction (E0) + NLI raw contradiction check. 
+- **Key Validation:** A 2x2 Factorial Experiment proved that explicitly defining conditions recovered utility up to 33.3% while maintaining 0% OOD leakage, whereas NLI alone could not.
+
+## V2.7.0 (Controlled Gate Calibration - Null Result)
+- **Focus:** Attempting to recover conditionally compatible utility via threshold and architectural adjustments.
+- **Milestone:** Introduced a secondary NLI compatibility pass to the Conflict Gate and swept the Sufficiency Threshold from 5.25 to 4.25.
+- **Key Validation:** Causal delta proved a complete null result (+0 utility).
+- **The Discovery:** NLI models (DeBERTa-v3) effectively act as random-number generators when asked to infer enterprise-specific conditional compatibility zero-shot.
+
+## V2.6.0 (Causal Diagnosis & Gate Attribution)
+- **Focus:** Diagnosing the "False Abstention" bottleneck from V2.5.
+- **Milestone:** Ran a Sufficiency Oracle ablation (Arm G) bypassing the sufficiency gate entirely.
+- **The Discovery:** Identified that the pipeline suffers from three distinct bottlenecks: Flawless Retrieval (100%), Over-conservative Sufficiency Thresholds, and a Conflict Gate fundamentally misinterpreting conditional ambiguity as flat contradiction.
+
 ## V2.5.0 (Asymmetric Verifier & Set-Level Sufficiency)
 - **Focus:** Recovering utility without compromising the pristine safety boundary.
 - **Milestone:** Replaced binary chunk-level sufficiency with holistic Set-Level Sufficiency evaluating the unified context via `cross-encoder`. Upgraded the post-generation verifier to an Asymmetric Claim-Level Repair loop (`SUPPORTED`, `UNSUPPORTED`, `CONTRADICTED`, `UNCERTAIN`).

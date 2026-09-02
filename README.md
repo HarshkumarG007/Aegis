@@ -1,10 +1,8 @@
 # Aegis-Eval: The Evolution of Adversarial RAG Evaluation 🛡️
 
-Aegis-Eval is a rigorous, open-source evaluation framework designed to test Retrieval-Augmented Generation (RAG) pipelines against deterministic, type-matched adversarial attacks. 
+Aegis-Eval is a rigorous, open-source evaluation framework designed to test Retrieval-Augmented Generation (RAG) pipelines against deterministic, type-matched adversarial attacks.
 
 We are pushing the boundaries of scientific benchmarking. Instead of relying on unreliable self-grading "LLM-as-a-judge" patterns, Aegis-Eval pairs generation-time adversarial query classification with decoupled, non-LLM gating mechanisms (NLI cross-encoders, groundedness bounds, and exact-match safety checks).
-
----
 
 ## 🚀 The Aegis Journey (Evolution & Architectures)
 
