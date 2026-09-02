@@ -1,0 +1,112 @@
+[
+  {
+    "threshold": -2.0,
+    "ood_recall": 0.4,
+    "false_abstention_rate": 0.5,
+    "overall_pass_rate": 0.52,
+    "multi_hop_pass_rate": 0.6,
+    "ambiguity_pass_rate": 0.3,
+    "ood_rescue_rate": 0.0,
+    "answerable_preservation_rate": 0.5
+  },
+  {
+    "threshold": -1.5,
+    "ood_recall": 0.4,
+    "false_abstention_rate": 0.5,
+    "overall_pass_rate": 0.52,
+    "multi_hop_pass_rate": 0.6,
+    "ambiguity_pass_rate": 0.3,
+    "ood_rescue_rate": 0.0,
+    "answerable_preservation_rate": 0.5
+  },
+  {
+    "threshold": -1.0,
+    "ood_recall": 0.4,
+    "false_abstention_rate": 0.55,
+    "overall_pass_rate": 0.48,
+    "multi_hop_pass_rate": 0.6,
+    "ambiguity_pass_rate": 0.2,
+    "ood_rescue_rate": 0.0,
+    "answerable_preservation_rate": 0.45
+  },
+  {
+    "threshold": -0.5,
+    "ood_recall": 0.4,
+    "false_abstention_rate": 0.55,
+    "overall_pass_rate": 0.48,
+    "multi_hop_pass_rate": 0.6,
+    "ambiguity_pass_rate": 0.2,
+    "ood_rescue_rate": 0.2,
+    "answerable_preservation_rate": 0.45
+  },
+  {
+    "threshold": 0.0,
+    "ood_recall": 0.4,
+    "false_abstention_rate": 0.55,
+    "overall_pass_rate": 0.48,
+    "multi_hop_pass_rate": 0.6,
+    "ambiguity_pass_rate": 0.2,
+    "ood_rescue_rate": 0.2,
+    "answerable_preservation_rate": 0.45
+  },
+  {
+    "threshold": 0.5,
+    "ood_recall": 0.6,
+    "false_abstention_rate": 0.55,
+    "overall_pass_rate": 0.44,
+    "multi_hop_pass_rate": 0.6,
+    "ambiguity_pass_rate": 0.2,
+    "ood_rescue_rate": 0.4,
+    "answerable_preservation_rate": 0.45
+  },
+  {
+    "threshold": 1.0,
+    "ood_recall": 0.6,
+    "false_abstention_rate": 0.55,
+    "overall_pass_rate": 0.44,
+    "multi_hop_pass_rate": 0.6,
+    "ambiguity_pass_rate": 0.2,
+    "ood_rescue_rate": 0.6,
+    "answerable_preservation_rate": 0.45
+  },
+  {
+    "threshold": 1.5,
+    "ood_recall": 0.6,
+    "false_abstention_rate": 0.6,
+    "overall_pass_rate": 0.4,
+    "multi_hop_pass_rate": 0.4,
+    "ambiguity_pass_rate": 0.2,
+    "ood_rescue_rate": 0.6,
+    "answerable_preservation_rate": 0.4
+  },
+  {
+    "threshold": 2.0,
+    "ood_recall": 0.6,
+    "false_abstention_rate": 0.7,
+    "overall_pass_rate": 0.32,
+    "multi_hop_pass_rate": 0.4,
+    "ambiguity_pass_rate": 0.0,
+    "ood_rescue_rate": 0.6,
+    "answerable_preservation_rate": 0.3
+  },
+  {
+    "threshold": 2.5,
+    "ood_recall": 0.8,
+    "false_abstention_rate": 0.75,
+    "overall_pass_rate": 0.24,
+    "multi_hop_pass_rate": 0.2,
+    "ambiguity_pass_rate": 0.0,
+    "ood_rescue_rate": 0.8,
+    "answerable_preservation_rate": 0.25
+  },
+  {
+    "threshold": 3.0,
+    "ood_recall": 0.8,
+    "false_abstention_rate": 0.75,
+    "overall_pass_rate": 0.24,
+    "multi_hop_pass_rate": 0.2,
+    "ambiguity_pass_rate": 0.0,
+    "ood_rescue_rate": 0.8,
+    "answerable_preservation_rate": 0.25
+  }
+]

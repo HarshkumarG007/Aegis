@@ -1,5 +1,21 @@
 # Aegis-Eval Release Notes
 
+## V2.4.1 (Calibration and Deterministic Control - Frozen)
+- **Focus:** Deterministic conflict abstention, claim-level mapping, and repair loops.
+- **Milestone:** Neutralized the Generative "Compulsion to Merge" and "Compulsion to Stitch".
+- **Key Validation:** Unseen Holdout validation across Mistral 7B and Llama 3 8B. 100% OOD safety (median latency 0.08s).
+- **The Tradeoff:** Answerable preservation collapsed to 10-15%. Verifier rigidity is the next boundary.
+
+## V2.4.0 (Hardened RAG Pipeline - Mechanism Validated)
+- **Focus:** Externalizing grounding policy.
+- **Milestone:** Introduced MS-MARCO sufficiency gate and DeBERTa-v3 post-generation verifier.
+- **Key Validation:** Strict 5-way paired ablation isolating the failures of LLM prompting against external gates.
+
+## V2.3.0 (The Offline Multi-Model Scientific Pilot)
+- **Focus:** Decoupling generation from evaluation for mathematically provable provenance.
+- **Milestone:** Bypassed Uvicorn/FastAPI threading instabilities and 8GB VRAM contention limits.
+- **Discovery:** 7B+ models demonstrate severe "confident hallucination" regression compared to 1.5B models on OOD data.
+
 ## V2.2.0-beta.1 (Release Candidate - Signed Off)
 - **Tag:** `v2.2.0-beta.1`
 - **Commit:** `3ef6a0de`

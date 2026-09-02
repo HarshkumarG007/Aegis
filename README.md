@@ -77,7 +77,8 @@ DeBERTa-v3 (CPU) <── Evaluator Dispatcher <── Manifest Hash
 Aegis/
 ├── docs/
 │   ├── JOURNAL_V2.3_Llama3_Pilot.md    # The story of escaping 8GB VRAM limits
-│   └── JOURNAL_V2.4_Hardened_RAG.md    # The discovery of the "Compulsion to Merge/Stitch"
+│   ├── JOURNAL_V2.4_Hardened_RAG.md    # The discovery of the "Compulsion to Merge/Stitch"
+│   └── JOURNAL_V2.4.1_Calibration.md   # The pristine Holdout results & tradeoff discovery
 ├── experiments/
 │   └── v2.3/llama3-8b/
 │       └── experiment.json             # Immutable hashes and runtime config
@@ -98,6 +99,8 @@ Aegis/
 
 ## 📚 Essential Reading (The Aegis Lore)
 
+- [📖 **The MAANG Engineer Journal: V2.4.1 Calibration & Control**](docs/JOURNAL_V2.4.1_Calibration.md)
+  *The pristine Holdout execution. How deterministic abstention eradicated hallucinations entirely, but collapsed utility.*
 - [📖 **The MAANG Engineer Journal: V2.4 Hardened RAG & Externalizing Policy**](docs/JOURNAL_V2.4_Hardened_RAG.md)
   *How we conquered the Compulsion to Merge and Stitch by ripping grounding out of the LLM and putting it into discrete NLI gates!*
 - [📖 **The MAANG Engineer Journal: V2.3 Llama 3 Pilot**](docs/JOURNAL_V2.3_Llama3_Pilot.md) 

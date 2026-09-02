@@ -11,10 +11,11 @@ class EvidenceGate:
         # NLI model for pairwise contradiction
         self.nli_model = CrossEncoder('cross-encoder/nli-deberta-v3-small', device='cpu')
         
-    def evaluate(self, query_text: str, chunks: list) -> dict:
+    def evaluate(self, query_text: str, chunks: list, sufficiency_threshold: float = 0.0) -> dict:
         """
         Evaluate chunks for sufficiency and pairwise contradiction.
         chunks: list of dicts with 'chunk_id' and 'text'
+        sufficiency_threshold: MS-MARCO score threshold for answerability
         Returns structured decision.
         """
         if not chunks:
@@ -25,28 +26,27 @@ class EvidenceGate:
                 "supporting_chunks": [],
                 "conflicting_chunks": [],
                 "reason": "No evidence retrieved.",
-                "gate_version": "2.4.0"
+                "gate_version": "2.4.1"
             }
             
         # 1. Sufficiency Check (Answerability)
-        # Using MS-MARCO CrossEncoder: scores > 0 generally indicate relevance/answerability
         qa_pairs = [[query_text, c['text']] for c in chunks]
         qa_scores = self.qa_model.predict(qa_pairs)
         
         supporting_chunks = []
         for i, score in enumerate(qa_scores):
-            if score > 0.0:  # Threshold for answerability
+            if score > sufficiency_threshold:
                 supporting_chunks.append(chunks[i]['chunk_id'])
                 
         if not supporting_chunks:
             return {
                 "state": "INSUFFICIENT",
                 "answerable": False,
-                "confidence": float(abs(min(qa_scores))),
+                "confidence": float(abs(min(qa_scores) - sufficiency_threshold)),
                 "supporting_chunks": [],
                 "conflicting_chunks": [],
                 "reason": "Retrieved material does not sufficiently answer the requested query.",
-                "gate_version": "2.4.0"
+                "gate_version": "2.4.1"
             }
             
         # 2. Contradiction Check (Pairwise among supporting chunks, or all chunks)
@@ -83,7 +83,7 @@ class EvidenceGate:
                 "supporting_chunks": supporting_chunks,
                 "conflicting_chunks": list(conflicting_chunks),
                 "reason": conflict_reason,
-                "gate_version": "2.4.0"
+                "gate_version": "2.4.1"
             }
             
         return {
@@ -93,7 +93,7 @@ class EvidenceGate:
             "supporting_chunks": supporting_chunks,
             "conflicting_chunks": [],
             "reason": "Evidence is sufficient and free of contradiction.",
-            "gate_version": "2.4.0"
+            "gate_version": "2.4.1"
         }
 
 from aegis_eval.evaluator.claim_extractor import ClaimExtractor
@@ -145,21 +145,32 @@ class PostGenerationVerifier:
         chunk_ids = [c['chunk_id'] for c in chunks]
         chunk_embeddings = self.sim_model.encode(chunk_texts)
         
+        verified_claims = []
         any_failed = False
-        rejection_reason = ""
         max_fail_confidence = 0.0
         
         for claim in claims:
+            claim_result = {
+                "claim": claim,
+                "status": "UNCERTAIN",
+                "evidence_chunk_id": None,
+                "confidence": 0.0,
+                "reason": ""
+            }
+            
             claim_emb = self.sim_model.encode([claim])
             scores = util.cos_sim(claim_emb, chunk_embeddings)[0].tolist()
             
             best_idx = np.argmax(scores)
             best_score = scores[best_idx]
+            claim_result["evidence_chunk_id"] = chunk_ids[best_idx]
             
             if best_score < 0.60:
+                claim_result["status"] = "UNSUPPORTED"
+                claim_result["reason"] = "Lacks semantic match in evidence."
+                claim_result["confidence"] = 1.0 - best_score
                 any_failed = True
-                rejection_reason = f"Claim lacks semantic match in evidence: '{claim}'"
-                max_fail_confidence = max(max_fail_confidence, 1.0 - best_score)
+                max_fail_confidence = max(max_fail_confidence, claim_result["confidence"])
             else:
                 best_text = chunk_texts[best_idx]
                 nli_scores = self.nli_model.predict([[best_text, claim]])[0]
@@ -169,23 +180,35 @@ class PostGenerationVerifier:
                 entail_prob = probs[1]
                 
                 if contra_prob >= 0.85:
+                    claim_result["status"] = "CONTRADICTED"
+                    claim_result["reason"] = "Contradicted by best-matching evidence."
+                    claim_result["confidence"] = float(contra_prob)
                     any_failed = True
-                    rejection_reason = f"Claim contradicted by evidence: '{claim}'"
                     max_fail_confidence = max(max_fail_confidence, contra_prob)
                 elif entail_prob < 0.70:
+                    claim_result["status"] = "UNSUPPORTED"
+                    claim_result["reason"] = "Semantic match found, but not entailed."
+                    claim_result["confidence"] = float(1.0 - entail_prob)
                     any_failed = True
-                    rejection_reason = f"Claim unsupported by evidence: '{claim}'"
-                    max_fail_confidence = max(max_fail_confidence, 1.0 - entail_prob)
+                    max_fail_confidence = max(max_fail_confidence, claim_result["confidence"])
+                else:
+                    claim_result["status"] = "SUPPORTED"
+                    claim_result["reason"] = "Entailed by best-matching evidence."
+                    claim_result["confidence"] = float(entail_prob)
                     
+            verified_claims.append(claim_result)
+            
         if any_failed:
             return {
                 "state": "REJECT",
                 "confidence": float(max_fail_confidence),
-                "reason": rejection_reason
+                "reason": "One or more claims are UNSUPPORTED or CONTRADICTED.",
+                "verified_claims": verified_claims
             }
             
         return {
             "state": "PASS",
             "confidence": 1.0,
-            "reason": "All claims are supported by the evidence."
+            "reason": "All claims are supported by the evidence.",
+            "verified_claims": verified_claims
         }

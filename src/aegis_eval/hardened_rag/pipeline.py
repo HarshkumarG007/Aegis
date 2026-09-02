@@ -6,13 +6,14 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from aegis_eval.hardened_rag.gates import EvidenceGate, PostGenerationVerifier
 
 class HardenedRAGPipeline:
-    def __init__(self, llm, corpus: dict, ablation_mode: str = "full"):
+    def __init__(self, llm, corpus: dict, ablation_mode: str = "full", sufficiency_threshold: float = 0.0):
         """
         ablation_mode: 'baseline', 'evidence', 'conflict', 'verification', 'full'
         """
         self.llm = llm
         self.corpus = corpus
         self.ablation_mode = ablation_mode
+        self.sufficiency_threshold = sufficiency_threshold
         
         # Setup Retrieval
         Settings.embed_model = HuggingFaceEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -58,7 +59,7 @@ class HardenedRAGPipeline:
         
         # 1. Evidence / Conflict Gate
         if self.evidence_gate:
-            gate_decision = self.evidence_gate.evaluate(query_text, chunks)
+            gate_decision = self.evidence_gate.evaluate(query_text, chunks, self.sufficiency_threshold)
             trace["gate_state"] = gate_decision["state"]
             trace["gate_confidence"] = gate_decision["confidence"]
             trace["supporting_chunk_ids"] = gate_decision["supporting_chunks"]
@@ -73,20 +74,8 @@ class HardenedRAGPipeline:
                     
             if gate_decision["state"] == "CONFLICT":
                 if self.ablation_mode in ['conflict', 'full']:
-                    # Explicit conflict constraint prompt
-                    context_str = "\n".join([f"[{c['chunk_id']}] {c['text']}" for c in chunks])
-                    prompt = f"Evidence contains conflicting claims. Do not reconcile them unless the evidence provides a basis for doing so. Identify the conflict and state what can and cannot be concluded.\n\nContext:\n{context_str}\n\nQuery: {query_text}\nAnswer:"
-                    response = self.llm.complete(prompt)
-                    trace["answer"] = str(response)
-                    
-                    # Verify?
-                    if self.verifier:
-                        v_dec = self.verifier.verify(trace["answer"], chunks)
-                        trace["verification_state"] = v_dec["state"]
-                        trace["verification_confidence"] = v_dec["confidence"]
-                        if v_dec["state"] == "REJECT":
-                            trace["answer"] = "I abstain. The generated answer contained unsupported claims."
-                            
+                    # Deterministic Conflict Policy (No heuristic inference, no prompt reconciliation)
+                    trace["answer"] = "I cannot answer this query because the retrieved evidence contains conflicting information."
                     trace["latency_ms"] = int((time.time() - start_time) * 1000)
                     return trace
         
@@ -102,14 +91,46 @@ class HardenedRAGPipeline:
         response = self.llm.complete(prompt)
         trace["answer"] = str(response)
         
-        # 3. Post-generation Verification
+        # 3. Post-generation Verification & Repair Loop
+        trace["repair_attempts"] = 0
         if self.verifier:
             v_dec = self.verifier.verify(trace["answer"], chunks)
             trace["verification_state"] = v_dec["state"]
             trace["verification_confidence"] = v_dec["confidence"]
             
             if v_dec["state"] == "REJECT":
-                trace["answer"] = "I abstain. The generated answer contained unsupported claims."
+                # Repair Loop (depth=1)
+                trace["repair_attempts"] = 1
+                trace["original_answer"] = trace["answer"]
+                trace["original_verification_trace"] = v_dec
+                
+                # Filter context to ONLY chunks that actively grounded SUPPORTED claims
+                supported_chunk_ids = set()
+                for claim_res in v_dec.get("verified_claims", []):
+                    if claim_res["status"] == "SUPPORTED" and claim_res["evidence_chunk_id"]:
+                        supported_chunk_ids.add(claim_res["evidence_chunk_id"])
+                        
+                if not supported_chunk_ids:
+                    # If absolutely nothing was supported, fail immediately
+                    trace["answer"] = "I abstain. The generated answer contained entirely unsupported claims."
+                    trace["verification_state"] = "REJECT"
+                else:
+                    filtered_chunks = [c for c in chunks if c["chunk_id"] in supported_chunk_ids]
+                    filtered_context_str = "\n".join([f"[{c['chunk_id']}] {c['text']}" for c in filtered_chunks])
+                    
+                    repair_prompt = f"Answer ONLY from the verified evidence provided below. Do not include external knowledge or unsupported claims.\n\nContext:\n{filtered_context_str}\n\nQuery: {query_text}\nAnswer:"
+                    repair_response = self.llm.complete(repair_prompt)
+                    trace["answer"] = str(repair_response)
+                    
+                    # Verify the repair
+                    repair_v_dec = self.verifier.verify(trace["answer"], filtered_chunks)
+                    trace["verification_state"] = repair_v_dec["state"]
+                    trace["verification_confidence"] = repair_v_dec["confidence"]
+                    trace["repair_verification_trace"] = repair_v_dec
+                    
+                    if repair_v_dec["state"] == "REJECT":
+                        trace["answer"] = "I abstain. The generator could not produce a supported answer even with filtered evidence."
+                        trace["verification_state"] = "REJECT"
                 
         trace["latency_ms"] = int((time.time() - start_time) * 1000)
         return trace

@@ -104,4 +104,25 @@ Safe Infrastructure: 0.0%
 ```
 **Notes:** Evaluator logic hardened with exact substring matching to bypass small NLI false positives on adversarial claims. Calibration gates perfectly bounded. Independent replay is 100% byte-for-byte deterministic. Tagged `v2.2.0-beta.1`.
 
-**--- PROJECT COMPLETE ---**
+**--- V2.2 PROJECT COMPLETE ---**
+
+## Aegis-Eval V2.3 (Offline Multi-Model Scientific Pilot) — 2026-09-02
+**Status:** PASS / FROZEN
+**Verification output:**
+Llama 3 8B handles Contradictions **+25.0%** better than Qwen 1.5B, but suffers a **-25.0%** regression in Out-of-Domain robustness.
+**Notes:** Decoupled generation from evaluation for offline processing, entirely busting the 8GB VRAM constraint.
+
+## Aegis-Eval V2.4 (Hardened RAG Pipeline) — 2026-09-02
+**Status:** PASS / FROZEN
+**Verification output:**
+5-way ablation proven. OOD performance improved 41.7% -> 83.3%.
+**Notes:** Externalized grounding policy into discrete NLI gates (MS-MARCO and DeBERTa). Identified the "Compulsion to Stitch" and "Compulsion to Merge".
+
+## Aegis-Eval V2.4.1 (Calibration & Deterministic Control) — 2026-09-02
+**Status:** PASS / FROZEN
+**Verification output:**
+Pristine Holdout Evaluation across Mistral 7B and Llama 3 8B. 100% OOD Gate-Rescue Rate. 0% Contradiction Merging.
+**Notes:** Pre-registered DEV sweep successfully calibrated threshold to 1.0. The deterministic conflict controller successfully eliminated hallucinated contradiction resolution. However, the rigid verifier caused answerable preservation to collapse (85-90% false abstentions).
+
+## Next Steps (V2.5 - Verifier Tuning)
+The problem is no longer the generator's capability. V2.5 will focus exclusively on softening the post-generation verifier and tuning the retrieval representation to recover the lost utility and preserve answerable queries.
