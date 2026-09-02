@@ -67,6 +67,50 @@ DeBERTa-v3 (CPU) <── Evaluator Dispatcher <── Manifest Hash
 - **The Discovery**: The ablation revealed that detecting a conflict (23%) doesn't mean a 7B LLM can safely resolve it (0% improvement in contradiction). The generator's "Compulsion to Merge" is stronger than prompting constraints.
 - **The Focus**: Next up is V2.4.1 (Calibration), where we redesign the conflict state to be deterministic and introduce a claim-level repair loop.
 
+### V2.4.1: Calibration & Control
+*The pristine Holdout execution. Eradicating hallucinations through deterministic abstention.*
+- **The Breakthrough**: By replacing generative conflict resolution with a rigid deterministic policy, we neutralized the "Compulsion to Stitch" and hit 100% OOD safety with 0% Contradiction merging.
+- **The Tradeoff**: Answerable preservation collapsed to 10-15%. The rigid Verifier became the new boundary, forcing us to explore asymmetric repair.
+
+### V2.5: Asymmetric Verifier & Set-Level Sufficiency
+*Recovering utility without compromising the pristine safety boundary.*
+```text
+Generator ──> Claim Extraction ──> Asymmetric Repair Loop
+                                     ├─ SUPPORTED
+                                     ├─ PARTIAL ──> Retry
+                                     └─ CONTRADICTED ──> Drop
+```
+- **The Breakthrough**: Replaced binary chunk-level sufficiency with holistic Set-Level evaluation and introduced claim-level repair. 
+- **The Discovery**: While 100% safety was maintained, utility recovery was minimal. We discovered a massive "False Abstention" bottleneck where the LLM refused to answer despite sufficient evidence.
+
+### V2.6: Causal Diagnosis & Gate Attribution
+*An Oracle ablation study that isolated the False Abstention bottleneck.*
+- **The Discovery**: Bypassing the Sufficiency Gate recovered 85% of blocked answerable queries, proving it was severely over-conservative. Furthermore, the Conflict Gate was misinterpreting conditional ambiguity as flat contradiction.
+
+### V2.7: Controlled Gate Calibration
+*A controlled factorial experiment that yielded a causal null result.*
+- **The Discovery**: We attempted to use NLI (DeBERTa-v3) to zero-shot conditional compatibility (e.g., version mismatches). The causal delta was exactly +0. NLI models act as random-number generators for complex enterprise conditional logic.
+- **The Focus**: This null result forced a hard pivot away from zero-shot NLI toward deterministic structural extraction.
+
+### V2.8: Structured Conditional Evidence
+*Rescuing utility from the NLI bottleneck via structural extraction.*
+```text
+Evidence A & B ──> Syntactic Extractor (E0) ──> Deterministic Policy
+                          │                           │
+                   [Condition: v1]             [Mutually Exclusive]
+                   [Condition: v2] ──────────> CONDITIONAL_COMPATIBILITY
+```
+- **The Breakthrough**: Explicitly extracting version/time/role conditions and matching them deterministically recovered utility (up to 33.3%) while perfectly maintaining 0% OOD leakage. We proved rules are safer and more capable than NLI for conditionality.
+
+### V2.9: Adversarial Safety Generalization
+*Stress-testing the conditional logic against 220 false-conditionality traps.*
+```text
+Syntactic Span Stripping ──> Proposition Binding ──> NLI Verification
+(Extracts "For legacy")      (Isolates claim)        (Checks core conflict)
+```
+- **The Breakthrough**: Re-architected the extractor into a "Proposition-Bound" architecture. By safely isolating clauses and verifying core propositions via NLI before comparing conditions, we completely solved the ambiguity crisis.
+- **The Tradeoff**: Reduced uncertain fallbacks from 81 to 25 while explicitly maintaining a perfect 0-tolerance boundary for false-compatible merges (0/160 breaches).
+
 ---
 
 ## 📂 Repository Git Tree
