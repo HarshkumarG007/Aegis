@@ -111,6 +111,10 @@ class HardenedRAGPipeline:
             instruction = "\n\nCRITICAL INSTRUCTION: Do NOT abstain or claim the information is insufficient if the context provides different answers based on specific conditions (such as version, environment, role, or date). You must synthesize all valid conditionally applicable answers."
             idx = prompt.rfind("Answer:")
             prompt = prompt[:idx] + instruction + "\n" + prompt[idx:]
+        elif self.instruction_mode == "G2":
+            instruction = "\n\nCRITICAL INSTRUCTION: Adhere strictly to the following semantic contract:\n- If evidence supports one unconditional proposition, answer it.\n- If evidence supports mutually exclusive conditional propositions, explicitly state the condition split.\n- If evidence is insufficient, abstain.\n- Never invent a condition, relationship, value, or causal dependency merely to satisfy the requested format.\nEvery derived/meta-claim must remain strictly reconstructible from the provided context."
+            idx = prompt.rfind("Answer:")
+            prompt = prompt[:idx] + instruction + "\n" + prompt[idx:]
             
         response = self.llm.complete(prompt)
         trace["answer"] = str(response)

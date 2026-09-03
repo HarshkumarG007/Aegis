@@ -119,7 +119,7 @@ Syntactic Span Stripping ──> Proposition Binding ──> NLI Verification
 ### V3.1: Deterministic Reconstruction
 *Eliminating the NLI trigger and the probabilistic verifier.*
 - **The Breakthrough**: Replaced the flawed raw NLI trigger with unconditional $O(K)$ `E0` extraction, capturing 100% of structural contradictions before semantic fallback.
-- **The Tradeoff**: Eliminated the LLM and synthesized NLI from the verifier entirely. Implemented a purely deterministic derivability check using structural graph lookup, perfectly isolating unauthorized causal extensions from valid conditional meta-claims.
+- **The Tradeoff**: Eliminated the LLM and synthesized NLI from the verifier entirely. Implemented a purely deterministic derivability check using structural graph lookup, which deterministically rejects unsupported derived claims within the validated structural representation and tested adversarial suites.
 
 ---
 
@@ -169,10 +169,16 @@ Aegis/
 - [📖 **The MAANG Engineer Journal: V3.1 Deterministic Reconstruction**](docs/JOURNAL_V3.1_Deterministic_Reconstruction.md)
   *Eliminating the NLI trigger and LLM verifier to establish a perfectly deterministic structural safety envelope.*
 
-## Next Steps (V3.2 - End-to-End Capability Recovery)
-With V3.1 perfectly establishing the deterministic safety envelope, the focus shifts to V3.2:
-- Optimize the generator instructions and context thresholding.
-- Recover the end-to-end utility that was masked by the strict V2.x pipeline.
+- [📖 **The MAANG Engineer Journal: V3.2 Factorial Capability Recovery**](docs/JOURNAL_V3.2_Factorial_Recovery.md)
+  *Testing the G2 Semantic Contract vs. the V1 Deterministic Verifier. We proved that 7B generators ignore safety constraints under pressure, validating our deterministic architecture as the ultimate guardrail.*
+
+## Next Steps (V3.3 - Representation Boundary)
+The V3.2 results definitively proved that our deterministic verifier safely absorbs aggressive hallucinations, and the generator cannot be trusted.
+The focus now shifts to attacking the representation boundary itself:
+- **V3.3 (Representation Boundary)**: Attack the `E0` extraction logic. Can adversarial natural language force a misrepresentation of evidence?
+- **V3.4 (Compositional Stress)**: Unseen combinations, nested conditions, and ontology holdout.
+- **V3.5 (Independent Attack)**: External adversarial attacks, frozen Aegis, and no post-hoc benchmark tuning.
+- **V4 (Validation, not more intelligence)**: External benchmarks, human adjudication, and reproducibility.
 
 ---
 

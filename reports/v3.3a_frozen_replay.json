@@ -1,0 +1,2706 @@
+{
+  "suite_sha256": {
+    "v2.9": "24d19424bf83d87348bcad18a0c8749ff46409288ff23ed1d07bedb451265989",
+    "v3.2": "dcc1e7724ee8e1b68dff98a98453ce75da32c14741e3c49f1a454aff7970f886"
+  },
+  "config_sha256": {
+    "R1": "f1f0f4882ee22ff760878ef39cb565c168c85b3b65e25cf8c3c10cafd0ae1541",
+    "R2": "2bcb14ece0e5bc7d7431a2ebafc451b1cab12e6a648374e405112271c1c262b9"
+  },
+  "aggregates": {
+    "R1_V2.9": {
+      "N": 220,
+      "unsafe": 0,
+      "pass": 20,
+      "abstain": 200
+    },
+    "R2_V2.9": {
+      "N": 220,
+      "unsafe": 0,
+      "pass": 0,
+      "abstain": 220
+    },
+    "R2_V3.2": {
+      "N": 6,
+      "unsafe": 2
+    }
+  },
+  "per_case_manifests": {
+    "R1_V2.9": [
+      {
+        "id": 0,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 1,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 2,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 3,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 4,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 5,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 6,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 7,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 8,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 9,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 10,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 11,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 12,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 13,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 14,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 15,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 16,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 17,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 18,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 19,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 20,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 21,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 22,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 23,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 24,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 25,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 26,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 27,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 28,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 29,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 30,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 31,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 32,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 33,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 34,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 35,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 36,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 37,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 38,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 39,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 40,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 41,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 42,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 43,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 44,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 45,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 46,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 47,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 48,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 49,
+        "label": "CONTRADICTION",
+        "gate_state": "CONFLICT_UNCERTAIN",
+        "unsafe": false
+      },
+      {
+        "id": 50,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 51,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 52,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 53,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 54,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 55,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 56,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 57,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 58,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 59,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 60,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 61,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 62,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 63,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 64,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 65,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 66,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 67,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 68,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 69,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 70,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 71,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 72,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 73,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 74,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 75,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 76,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 77,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 78,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 79,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 80,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 81,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 82,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 83,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 84,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 85,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 86,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 87,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 88,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 89,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 90,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 91,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 92,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 93,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 94,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 95,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 96,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 97,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 98,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 99,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 100,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 101,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 102,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 103,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 104,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 105,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 106,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 107,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 108,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 109,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 110,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 111,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 112,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 113,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 114,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 115,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 116,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 117,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 118,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 119,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 120,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 121,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 122,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 123,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 124,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 125,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 126,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 127,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 128,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 129,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 130,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 131,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 132,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 133,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 134,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 135,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 136,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 137,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 138,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 139,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 140,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 141,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 142,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 143,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 144,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 145,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 146,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 147,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 148,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 149,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 150,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 151,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 152,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 153,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 154,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 155,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 156,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 157,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 158,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 159,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 160,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 161,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 162,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 163,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 164,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 165,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 166,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 167,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 168,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 169,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 170,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 171,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 172,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 173,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 174,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 175,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 176,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 177,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 178,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 179,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 180,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 181,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 182,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 183,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 184,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 185,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 186,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 187,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 188,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 189,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 190,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 191,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 192,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 193,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 194,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 195,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 196,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 197,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 198,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 199,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "CONDITIONAL_COMPATIBILITY",
+        "unsafe": false
+      },
+      {
+        "id": 200,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 201,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 202,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 203,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 204,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 205,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 206,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 207,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 208,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 209,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 210,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 211,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 212,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 213,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 214,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 215,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 216,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 217,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 218,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      },
+      {
+        "id": 219,
+        "label": "CONTRADICTION",
+        "gate_state": "CONTRADICTION",
+        "unsafe": false
+      }
+    ],
+    "R2_V2.9": [
+      {
+        "id": 0,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 1,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 2,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 3,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 4,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 5,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 6,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 7,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 8,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 9,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 10,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 11,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 12,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 13,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 14,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 15,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 16,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 17,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 18,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 19,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 20,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 21,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 22,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 23,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 24,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 25,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 26,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 27,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 28,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 29,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 30,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 31,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 32,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 33,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 34,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 35,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 36,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 37,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 38,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 39,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 40,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 41,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 42,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 43,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 44,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 45,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 46,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 47,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 48,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 49,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 50,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 51,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 52,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 53,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 54,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 55,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 56,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 57,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 58,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 59,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 60,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 61,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 62,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 63,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 64,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 65,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 66,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 67,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 68,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 69,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 70,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 71,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 72,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 73,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 74,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 75,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 76,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 77,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 78,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 79,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 80,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 81,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 82,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 83,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 84,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 85,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 86,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 87,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 88,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 89,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 90,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 91,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 92,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 93,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 94,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 95,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 96,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 97,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 98,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 99,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 100,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 101,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 102,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 103,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 104,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 105,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 106,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 107,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 108,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 109,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 110,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 111,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 112,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 113,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 114,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 115,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 116,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 117,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 118,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 119,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 120,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 121,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 122,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 123,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 124,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 125,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 126,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 127,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 128,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 129,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 130,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 131,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 132,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 133,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 134,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 135,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 136,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 137,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 138,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 139,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 140,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 141,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 142,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 143,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 144,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 145,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 146,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 147,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 148,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 149,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 150,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 151,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 152,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 153,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 154,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 155,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 156,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 157,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 158,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 159,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 160,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 161,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 162,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 163,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 164,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 165,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 166,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 167,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 168,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 169,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 170,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 171,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 172,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 173,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 174,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 175,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 176,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 177,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 178,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 179,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 180,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 181,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 182,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 183,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 184,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 185,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 186,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 187,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 188,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 189,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 190,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 191,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 192,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 193,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 194,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 195,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 196,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 197,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 198,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 199,
+        "label": "CONDITIONAL_COMPATIBILITY",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 200,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 201,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 202,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 203,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 204,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 205,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 206,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 207,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 208,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 209,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 210,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 211,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 212,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 213,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 214,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 215,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 216,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 217,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 218,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      },
+      {
+        "id": 219,
+        "label": "CONTRADICTION",
+        "gate_state": "SUFFICIENT",
+        "unsafe": false
+      }
+    ],
+    "R2_V3.2": [
+      {
+        "id": "g2-adv-001",
+        "verification_state": "REJECT",
+        "unsafe": false
+      },
+      {
+        "id": "g2-adv-002",
+        "verification_state": "REJECT",
+        "unsafe": false
+      },
+      {
+        "id": "g2-adv-003",
+        "verification_state": "SKIPPED",
+        "unsafe": false
+      },
+      {
+        "id": "g2-adv-004",
+        "verification_state": "PASS",
+        "unsafe": true
+      },
+      {
+        "id": "g2-adv-005",
+        "verification_state": "REJECT",
+        "unsafe": false
+      },
+      {
+        "id": "g2-adv-006",
+        "verification_state": "PASS",
+        "unsafe": true
+      }
+    ]
+  }
+}
