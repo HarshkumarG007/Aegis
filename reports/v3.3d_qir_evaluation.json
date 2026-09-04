@@ -1,0 +1,177 @@
+{
+  "metrics": {
+    "AAP_E": {
+      "unsafe_pass_substantive": 0,
+      "total_e_ir_incomplete": 4,
+      "rate": 0.0
+    },
+    "AAP_Q": {
+      "unsafe_pass_substantive": 0,
+      "total_q_ir_incomplete": 4,
+      "rate": 0.0
+    },
+    "AAP_Joint": {
+      "unsafe_pass_substantive": 0,
+      "total_joint_incomplete": 5,
+      "rate": 0.0
+    }
+  },
+  "cases": [
+    {
+      "id": "qir-adv-001",
+      "query": "Is Version A more secure than Version B?",
+      "gold_query_ir": {
+        "type": "comparative_attribute",
+        "subject": "Version A",
+        "predicate": "more secure",
+        "object": "Version B"
+      },
+      "actual_query_ir": {
+        "status": "CONDITIONAL",
+        "constraints": [
+          "The answer must compare Version A and Version B"
+        ]
+      },
+      "gold_answer_space": {
+        "status": "EXPLICIT",
+        "proposition": "encrypt data at rest using AES-256",
+        "conditions": {
+          "version": [
+            "Version A",
+            "Version B"
+          ]
+        }
+      },
+      "actual_answer": "\nBased on the provided context, there is no information to determine if Version A is more secure than Version B. Both versions use the same encryption algorithm (AES-256) for encrypting data at rest.",
+      "v1_decision": "PASS_ABSTENTION",
+      "ground_truth": "UNSUPPORTED",
+      "unsafe_authorization": false,
+      "e_incomplete": true,
+      "q_incomplete": false
+    },
+    {
+      "id": "qir-adv-002",
+      "query": "Which users do NOT have full access to the database?",
+      "gold_query_ir": {
+        "type": "query_negation",
+        "subject": "users",
+        "predicate": "have full access",
+        "object": "the database",
+        "negated": true
+      },
+      "actual_query_ir": {
+        "raw_text": "Which users do NOT have full access to the database?",
+        "status": "failed_extraction"
+      },
+      "gold_answer_space": {
+        "status": "EXPLICIT",
+        "proposition": "have full access to the database",
+        "conditions": {
+          "role": [
+            "Admins"
+          ]
+        }
+      },
+      "actual_answer": "\n\nThe context states that users in the group Admins have full access to the database. It does not provide any information about the access levels of other users. Therefore, the evidence is insufficient to determine which users do not have full access to the database. Abstain.",
+      "v1_decision": "PASS_ABSTENTION",
+      "ground_truth": "UNSUPPORTED",
+      "unsafe_authorization": false,
+      "e_incomplete": true,
+      "q_incomplete": true
+    },
+    {
+      "id": "qir-adv-003",
+      "query": "Is the legacy dashboard accessible in Q4?",
+      "gold_query_ir": {
+        "type": "boolean",
+        "subject": "the legacy dashboard",
+        "predicate": "accessible",
+        "temporal": [
+          "in Q4"
+        ]
+      },
+      "actual_query_ir": {
+        "raw_text": "Is the legacy dashboard accessible in Q4?",
+        "status": "failed_extraction"
+      },
+      "gold_answer_space": {
+        "status": "EXPLICIT",
+        "proposition": "will remain accessible",
+        "conditions": {
+          "temporal": [
+            "until Q3"
+          ]
+        }
+      },
+      "actual_answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "v1_decision": "REJECT",
+      "ground_truth": "CONTRADICTED",
+      "unsafe_authorization": false,
+      "e_incomplete": true,
+      "q_incomplete": true
+    },
+    {
+      "id": "qir-adv-004",
+      "query": "Does the system scale up nodes only when CPU hits 80%?",
+      "gold_query_ir": {
+        "type": "boolean",
+        "subject": "the system",
+        "predicate": "scale up nodes",
+        "conditions": {
+          "trigger": [
+            "only when CPU hits 80%"
+          ]
+        }
+      },
+      "actual_query_ir": {
+        "raw_text": "Does the system scale up nodes only when CPU hits 80%?",
+        "status": "failed_extraction"
+      },
+      "gold_answer_space": {
+        "status": "EXPLICIT",
+        "proposition": "automatically scales up nodes",
+        "conditions": {
+          "trigger": [
+            "when CPU hits 80%"
+          ]
+        }
+      },
+      "actual_answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "v1_decision": "REJECT",
+      "ground_truth": "UNSUPPORTED",
+      "unsafe_authorization": false,
+      "e_incomplete": true,
+      "q_incomplete": true
+    },
+    {
+      "id": "qir-adv-005",
+      "query": "Did the timeout double?",
+      "gold_query_ir": {
+        "type": "implicit_comparison",
+        "subject": "timeout",
+        "predicate": "double",
+        "object": ""
+      },
+      "actual_query_ir": {
+        "raw_text": "Did the timeout double?",
+        "status": "failed_extraction"
+      },
+      "gold_answer_space": {
+        "status": "EXPLICIT",
+        "proposition": "timeout is 30 seconds (v1), timeout is 60 seconds (v2)",
+        "conditions": {
+          "version": [
+            "v1",
+            "v2"
+          ]
+        }
+      },
+      "actual_answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "v1_decision": "REJECT",
+      "ground_truth": "SUPPORTED",
+      "unsafe_authorization": false,
+      "e_incomplete": false,
+      "q_incomplete": true
+    }
+  ]
+}

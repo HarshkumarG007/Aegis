@@ -167,3 +167,34 @@ Output strictly valid JSON:"""
             # Fallback to E0 if LLM fails (malformed JSON, etc)
             print(f"[E1 Extractor Error] Falling back to E0: {e}")
             return self._extract_e0(text)
+
+
+class QueryExtractor:
+    def __init__(self, llm=None):
+        self.llm = llm
+        
+    def extract_ir(self, query: str) -> dict:
+        if not self.llm:
+            return {"raw_text": query, "status": "failed_extraction"}
+            
+        prompt = f"""You are a strict query constraint extractor.
+Extract all structural, conditional, and comparative constraints from the query.
+Output a JSON object with exactly two fields:
+- "status": "EXPLICIT" if there are constraints, "NONE" if unconditional, or "AMBIGUOUS" if unclear.
+- "constraints": a list of string statements that MUST be true for an answer to fully address the query's constraints. (e.g. ["The answer must specify if this applies ONLY when CPU hits 80%", "The answer must compare Version A and Version B"])
+
+Query: "{query}"
+JSON:"""
+        try:
+            response = self.llm.complete(prompt).text
+            if "```json" in response:
+                response = response.split("```json")[1].split("```")[0].strip()
+            elif "{" in response:
+                response = response[response.find("{"):response.rfind("}")+1]
+            data = __import__('json').loads(response)
+            if "status" not in data:
+                data["status"] = "failed_extraction"
+            return data
+        except Exception:
+            pass
+        return {"raw_text": query, "status": "failed_extraction"}

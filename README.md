@@ -172,13 +172,16 @@ Aegis/
 - [📖 **The MAANG Engineer Journal: V3.2 Factorial Capability Recovery**](docs/JOURNAL_V3.2_Factorial_Recovery.md)
   *Testing the G2 Semantic Contract vs. the V1 Deterministic Verifier. We proved that 7B generators ignore safety constraints under pressure, validating our deterministic architecture as the ultimate guardrail.*
 
-## Next Steps (V3.3 - Representation Boundary)
-The V3.2 results definitively proved that our deterministic verifier safely absorbs aggressive hallucinations, and the generator cannot be trusted.
-The focus now shifts to attacking the representation boundary itself:
-- **V3.3 (Representation Boundary)**: Attack the `E0` extraction logic. Can adversarial natural language force a misrepresentation of evidence?
-- **V3.4 (Compositional Stress)**: Unseen combinations, nested conditions, and ontology holdout.
-- **V3.5 (Independent Attack)**: External adversarial attacks, frozen Aegis, and no post-hoc benchmark tuning.
-- **V4 (Validation, not more intelligence)**: External benchmarks, human adjudication, and reproducibility.
+- [📖 **The MAANG Engineer Journal: V3.3 Representation Boundary Attacks**](docs/JOURNAL_V3.3_Representation_Attacks.md)
+  *Attacking the intermediate representation ($Q_{IR}$) itself and discovering that abstraction loss combined with pipeline repair bypasses leads directly to authorization amplification.*
+
+- [📖 **The MAANG Engineer Journal: V3.4 Independent Black-Box Red Teaming**](docs/JOURNAL_V3.4_BlackBox_RedTeam.md)
+  *Subjecting the system to 80 valid, independent, adjudicated adversarial traps. Exposing 19 bypasses and 4 repair state monotonicity violations, proving that perfect representation is impossible and we must design for state monotonicity.*
+
+## Next Steps (V4 - Authorization-State Monotonicity)
+The V3.x progression proved that relying on perfect semantic extraction is brittle. The representation boundary will always suffer from information loss. 
+V4 will redesign the core architecture around an explicit security invariant: **Authorization-State Monotonicity**. 
+A repair operation must never possess the authority to increase the authorization level (`REJECT/ABSTAIN ↛ PASS_SUBSTANTIVE`) unless new, independently validated semantic evidence is acquired.
 
 ---
 

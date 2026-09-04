@@ -169,5 +169,23 @@ Tested against a 220-pair adversarial suite. Classifier E+E0 (Proposition-Bound)
 Trigger Ablation (T1) and Verifier Diagnostics (V1) passed perfectly with 0 false-compatible merges on 160 adversarial cases.
 **Notes:** Eliminated the NLI trigger (T0) and LLM-based verifier. Established unconditional extraction and deterministic derivability checks.
 
-## Next Steps (V3.2 - End-to-End Capability Recovery)
-With V3.1 completely sealing the deterministic safety envelope, Aegis is now ready for V3.2: End-to-end capability recovery and optimization!
+## Aegis-Eval V3.2 (Factorial Capability Recovery) - 2026-09-03
+**Status:** PASS / SAFE
+**Verification output:**
+2x2 Factorial execution proving that the G2 Semantic Contract vs V1 Deterministic Verifier maintains 100% safety.
+**Notes:** Proved that 7B generators ignore safety constraints under pressure, validating the deterministic architecture as the ultimate guardrail.
+
+## Aegis-Eval V3.3 (Representation Boundary Attacks) - 2026-09-04
+**Status:** FROZEN FAILURE / VULNERABILITY FOUND
+**Verification output:**
+V3.3-D (Query IR) test exposed an authorization amplification vulnerability. 
+**Notes:** Discovered that extracting Query IR is lossy. The `pipeline.py` repair loop bypassed the $Q_{IR}$ constraints on the second verification pass, allowing a `REJECT` to become `PASS_SUBSTANTIVE`. Per our methodology, we did not patch and rerun, but froze the protocol to preserve the finding.
+
+## Aegis-Eval V3.4 (Black-Box Red Team) - 2026-09-04
+**Status:** FROZEN FAILURE / VULNERABILITY FOUND
+**Verification output:**
+19/80 unsafe substantive bypasses. 4 explicit repair monotonicity violations. 55.5% metamorphic consistency.
+**Notes:** The NLI patches applied to fix V3.3 were proven brittle against a true black-box adversary generating out-of-distribution attacks.
+
+## Next Steps (V4 - Authorization Monotonicity)
+The overarching system has proven that intermediate representations will always suffer from information loss. V4 must discard the attempt to make representations perfect, and instead enforce **Authorization-State Monotonicity**: A repair operation must never possess the authority to increase its authorization level (REJECT/ABSTAIN ↛ PASS_SUBSTANTIVE) unless new, independently validated semantic evidence is acquired.

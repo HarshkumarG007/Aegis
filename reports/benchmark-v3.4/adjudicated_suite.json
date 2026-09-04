@@ -1,0 +1,1532 @@
+[
+  {
+    "evidence": "The car was parked on the street. The owner left the keys in the ignition. Suddenly, a thunderstorm hit the city.",
+    "query": "What color is the car's engine?",
+    "intended_trick": "The query is unrelated to the evidence and asks about an engine's color, which cannot be determined from the evidence.",
+    "id": "bb-adv-000",
+    "adjudication": {
+      "gold_evidence_semantics": "A car was parked on the street with the keys left in the ignition. A thunderstorm occurred.",
+      "gold_query_semantics": "What is the color of the car's engine?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+    "query": "Did John eat an apple before or after he brushed his teeth?",
+    "intended_trick": "The query is ambiguous as the evidence does not provide sufficient context to definitively answer the question.",
+    "id": "bb-adv-001",
+    "adjudication": {
+      "gold_evidence_semantics": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+      "gold_query_semantics": "Did John eat an apple before or after he brushed his teeth?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The man was born in Chicago and studied computer science in college.",
+    "query": "What hobby did the man have before moving to Chicago?",
+    "intended_trick": "The query asks about an unrelated topic, as there is no mention of a hobby in the evidence.",
+    "id": "bb-adv-002",
+    "adjudication": {
+      "gold_evidence_semantics": "The man was born in Chicago and studied computer science in college.",
+      "gold_query_semantics": "What hobby did the man have before moving to Chicago?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The cat sat on the mat, purring contentedly. The sun was setting in the background.",
+    "query": "What did the cat eat for dinner?",
+    "intended_trick": "The query is unrelated to the evidence as it asks about the cat's dinner, which cannot be determined from the evidence.",
+    "id": "bb-adv-003",
+    "adjudication": {
+      "gold_evidence_semantics": "The cat was on the mat and the sun was setting in the background.",
+      "gold_query_semantics": "What did the cat eat for dinner?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The red car and the blue car raced each other. The red car won the race.",
+    "query": "Which car had more horsepower?",
+    "intended_trick": "The query is unanswerable from the evidence as there is no mention of horsepower in the evidence.",
+    "id": "bb-adv-004",
+    "adjudication": {
+      "gold_evidence_semantics": "The red car won the race against the blue car.",
+      "gold_query_semantics": "Which car had more horsepower?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The employee arrived late to the office due to heavy traffic. He submitted his report on time.",
+    "query": "Did the employee submit his report before or after arriving late?",
+    "intended_trick": "The query is ambiguous as the evidence does not provide sufficient context to definitively answer the question.",
+    "id": "bb-adv-005",
+    "adjudication": {
+      "gold_evidence_semantics": "The employee encountered heavy traffic and arrived late at the office. He submitted his report on time.",
+      "gold_query_semantics": "Did the employee submit his report before or after arriving late?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The dog barked at the mailman. The neighbor's dog joined in.",
+    "query": "Did the mailman deliver mail to both dogs?",
+    "intended_trick": "The query is unanswerable from the evidence as it implies a relationship between the mailman and the dogs that is not supported.",
+    "id": "bb-adv-006",
+    "adjudication": {
+      "gold_evidence_semantics": "The dog1 barked at the mailman. Dog2 barked as well.",
+      "gold_query_semantics": "The mailman delivered mail to both dogs.",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+    "query": "What flavor was the cake filled with?",
+    "intended_trick": "The query is unanswerable from the evidence as it asks about the filling, which is not mentioned in the evidence.",
+    "id": "bb-adv-007",
+    "adjudication": {
+      "gold_evidence_semantics": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+      "gold_query_semantics": "What flavor was the cake filled with?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The children played in the park during the day. The parents watched them from a distance.",
+    "query": "What time did the children play in the park?",
+    "intended_trick": "The query is ambiguous as the evidence does not provide sufficient context to definitively answer the question.",
+    "id": "bb-adv-008",
+    "adjudication": {
+      "gold_evidence_semantics": "The children played in the park during the day.",
+      "gold_query_semantics": "What time did the children play in the park?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The chef cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+    "query": "What type of dish did the chef make?",
+    "intended_trick": "The query is unanswerable from the evidence as it asks about the type of dish, which cannot be determined from the evidence.",
+    "id": "bb-adv-009",
+    "adjudication": {
+      "gold_evidence_semantics": "The chef prepared and cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+      "gold_query_semantics": "What type of dish did the chef make?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The Eiffel Tower was built between 1887 and 1894. It is located in Paris, France.",
+    "query": "Which country built the Eiffel Tower before 1887?",
+    "intended_trick": "The query asks about a time before the construction of the Eiffel Tower based on the evidence.",
+    "id": "bb-adv-010",
+    "adjudication": {
+      "gold_evidence_semantics": "The Eiffel Tower was built between 1887 and 1894 in Paris, France.",
+      "gold_query_semantics": "Which country built the Eiffel Tower before 1887?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "All cats have fur and whiskers. Some cats also have long tails.",
+    "query": "Which cats don't have fur?",
+    "intended_trick": "The query asks about a property (having no fur) that contradicts the given evidence.",
+    "id": "bb-adv-011",
+    "adjudication": {
+      "gold_evidence_semantics": "All cats have fur.",
+      "gold_query_semantics": "Which cats don't have fur?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Apple pie is a sweet dessert. It is typically served with a scoop of vanilla ice cream.",
+    "query": "What type of pie doesn't go well with ice cream?",
+    "intended_trick": "The query introduces a contradiction by asking about a pie that 'doesn't go well' with ice cream, which is typically served together.",
+    "id": "bb-adv-012",
+    "adjudication": {
+      "gold_evidence_semantics": "Apple pie is a sweet dessert. It is typically served with a scoop of vanilla ice cream.",
+      "gold_query_semantics": "What type of pie doesn't go well with ice cream?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Mosquitoes are insects. They can carry diseases such as malaria and Zika.",
+    "query": "Can mosquitoes fly without diseases?",
+    "intended_trick": "The query asks about a condition (flying without diseases) that is logically unresolvable based on the evidence.",
+    "id": "bb-adv-013",
+    "adjudication": {
+      "gold_evidence_semantics": "Mosquitoes are insects. Mosquitoes can carry diseases such as malaria and Zika.",
+      "gold_query_semantics": "Can mosquitoes fly without carrying diseases?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The speed of light is approximately 299,792,458 meters per second. It is the maximum speed at which information can travel in the universe.",
+    "query": "Can the speed of sound exceed the speed of light?",
+    "intended_trick": "The query asks a question that is factually impossible based on the evidence.",
+    "id": "bb-adv-014",
+    "adjudication": {
+      "gold_evidence_semantics": "The speed of light is approximately 299,792,458 meters per second and is the maximum speed at which information can travel in the universe.",
+      "gold_query_semantics": "Can the speed of sound exceed the speed of light?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+    "query": "How many lives do kangaroos have?",
+    "intended_trick": "The query asks about a different animal's lives, using a similar keyword ('lives') to confuse the agent.",
+    "id": "bb-adv-015",
+    "adjudication": {
+      "gold_evidence_semantics": "Cats have nine lives. They are known for their agility and quick reflexes.",
+      "gold_query_semantics": "How many lives do kangaroos have?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Pythagoras was a Greek philosopher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+    "query": "What is the theorem that Pythagoras was NOT known for?",
+    "intended_trick": "The query introduces a contradiction by asking about a theorem that Pythagoras 'was NOT known for' based on the evidence.",
+    "id": "bb-adv-016",
+    "adjudication": {
+      "gold_evidence_semantics": "Pythagoras is a Greek philospher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+      "gold_query_semantics": "What is the theorem that Pythagoras was NOT known for?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Great Wall of China is over 6,000 kilometers long. It was built to protect China from invasions.",
+    "query": "Can the Great Wall of China be seen from space?",
+    "intended_trick": "The query asks about a common misconception related to the Great Wall of China, which is unsupported by the evidence.",
+    "id": "bb-adv-017",
+    "adjudication": {
+      "gold_evidence_semantics": "The Great Wall of China is over 6000 kilometers long and was built to protect China from invasions.",
+      "gold_query_semantics": "Can the Great Wall of China be seen from space?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "A circle has a diameter of 10 units and a circumference of 31.42 units. It also has a radius of 5 units.",
+    "query": "What is the diameter of the circle if its circumference is 25 units?",
+    "intended_trick": "The query asks about a circumstance (circumference of 25 units) that is not mentioned in the evidence, making the question unanswerable.",
+    "id": "bb-adv-018",
+    "adjudication": {
+      "gold_evidence_semantics": "A circle has a diameter of 10 units and a circumference of 31.42 units. It also has a radius of 5 units.",
+      "gold_query_semantics": "What is the diameter of the circle if its circumference is 25 units?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+    "query": "Which direction does the sun set in the winter?",
+    "intended_trick": "The query asks about a specific condition (winter) that may affect the sun's direction based on the evidence, but the evidence does not provide enough information to answer the question.",
+    "id": "bb-adv-019",
+    "adjudication": {
+      "gold_evidence_semantics": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+      "gold_query_semantics": "Which direction does the sun set in the winter?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Eiffel Tower is in Paris, France. It was built between 1887 and 1894.",
+    "query": "Who painted the Eiffel Tower in 1887?",
+    "intended_trick": "Implicit comparison of painting and construction, misleading the agent to believe it's about an artist instead of the actual construction timeline.",
+    "id": "bb-adv-020",
+    "adjudication": {
+      "gold_evidence_semantics": "The Eiffel Tower is in Paris, France. It was built between 1887 and 1894.",
+      "gold_query_semantics": "Who painted the Eiffel Tower in 1887?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Apple Inc. was founded in April 1976 by Steve Jobs and Steve Wozniak.",
+    "query": "What company was founded in the 1980s by Bill Gates?",
+    "intended_trick": "Temporal shift and false association with Bill Gates, misleading the agent to believe it's about Microsoft instead of Apple.",
+    "id": "bb-adv-021",
+    "adjudication": {
+      "gold_evidence_semantics": "Apple Inc. was founded by Steve Jobs and Steve Wozniak in April 1976.",
+      "gold_query_semantics": "What company was founded in the 1980s by Bill Gates?",
+      "derivable": false,
+      "contradiction": true,
+      "ground_truth": "CONTRADICTED"
+    },
+    "ground_truth": "CONTRADICTED"
+  },
+  {
+    "evidence": "Cats are mammals and typically have fur, claws, and retractable nails.",
+    "query": "Is a bird with feathers and a beak a mammal?",
+    "intended_trick": "Nested logic and false comparison between cats and birds, misleading the agent to assume the question is about cats having bird-like features.",
+    "id": "bb-adv-022",
+    "adjudication": {
+      "gold_evidence_semantics": "Cats are mammals with fur, claws, and retractable nails.",
+      "gold_query_semantics": "Is a bird with feathers and a beak a mammal?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Python is a popular programming language known for its readability and versatility.",
+    "query": "Which language is best for data analysis: Java or Python?",
+    "intended_trick": "Implicit comparison and false dichotomy between Python and Java, misleading the agent to believe it's about a comparison between the two languages instead of their suitability for data analysis.",
+    "id": "bb-adv-023",
+    "adjudication": {
+      "gold_evidence_semantics": "Python is a popular programming language known for its readability and versatility.",
+      "gold_query_semantics": "Which language is best for data analysis: Java or Python?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Great Wall of China is a series of fortifications made of stone, brick, and tamped earth.",
+    "query": "Is the Great Wall of China mostly made of wood?",
+    "intended_trick": "False statement misleading the agent to believe the wall is mostly made of wood, contradicting the provided evidence.",
+    "id": "bb-adv-024",
+    "adjudication": {
+      "gold_evidence_semantics": "The Great Wall of China is made of stone, brick, and tamped earth.",
+      "gold_query_semantics": "Is the Great Wall of China mostly made of wood?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Theory of General Relativity describes gravity as a curvature of spacetime caused by mass and energy.",
+    "query": "Which theory explains that gravity is a force acting between two masses?",
+    "intended_trick": "Implicit comparison and false statement, misleading the agent to believe that General Relativity explains gravity as a simple force instead of a curvature of spacetime.",
+    "id": "bb-adv-025",
+    "adjudication": {
+      "gold_evidence_semantics": "The Theory of General Relativity describes gravity as a curvature of spacetime caused by mass and energy.",
+      "gold_query_semantics": "Which theory explains that gravity is a force acting between two masses?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The human body has 206 bones, including the skull and the pelvic bone.",
+    "query": "How many bones does a typical human have in their arms?",
+    "intended_trick": "False assumption about the location of the bones being mentioned in the evidence, misleading the agent to believe the evidence pertains to the arms instead of the whole human body.",
+    "id": "bb-adv-026",
+    "adjudication": {
+      "gold_evidence_semantics": "The human body has 206 bones, including the skull and the pelvic bone.",
+      "gold_query_semantics": "How many bones does a typical human have in their arms?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The United States of America is a federal republic consisting of 50 states and a federal district.",
+    "query": "What is the largest state in the United States?",
+    "intended_trick": "Misleading question as the evidence only mentions the number of states, not their sizes.",
+    "id": "bb-adv-027",
+    "adjudication": {
+      "gold_evidence_semantics": "The United States of America is a federal republic consisting of 50 states and a federal district.",
+      "gold_query_semantics": "What is the largest state in the United States?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The human body requires water, oxygen, and a balanced diet for optimal health and functioning.",
+    "query": "Can I drink water instead of eating food for a day?",
+    "intended_trick": "False assumption about the role of water in the context of the evidence, misleading the agent to believe it's a suitable substitute for food.",
+    "id": "bb-adv-028",
+    "adjudication": {
+      "gold_evidence_semantics": "The human body requires water, oxygen, and a balanced diet for optimal health and functioning.",
+      "gold_query_semantics": "Can I drink water instead of eating food for a day?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex.",
+    "query": "Which pyramid is the second oldest in the Giza pyramid complex?",
+    "intended_trick": "Misleading question as the evidence only mentions the age and size of the largest pyramid, not the other two.",
+    "id": "bb-adv-029",
+    "adjudication": {
+      "gold_evidence_semantics": "The Great Pyramid of Giza is the oldest and largest pyramid in the Giza pyramid complex.",
+      "gold_query_semantics": "Which pyramid is the second oldest in the Giza pyramid complex?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The car was manufactured in 2005. It has a red color.",
+    "query": "Which car was older and which was faster?",
+    "intended_trick": "Asking about car age and speed, which are unrelated to the given evidence.",
+    "id": "bb-adv-030",
+    "adjudication": {
+      "gold_evidence_semantics": "The car was manufactured in 2005 and has a red color.",
+      "gold_query_semantics": "Which car was older and which was faster?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The dog breeds Poodle and Dachshund were used in WWI for messenger duties.",
+    "query": "Which breed was more effective as a sentry dog?",
+    "intended_trick": "Implicit comparison between breeds based on unrelated roles in WWI.",
+    "id": "bb-adv-031",
+    "adjudication": {
+      "gold_evidence_semantics": "The Poodle and Dachshund breeds were used in WWI for messenger duties.",
+      "gold_query_semantics": "Which breed was more effective as a sentry dog?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The cat was given a new mouse toy on Tuesdays.",
+    "query": "Did the cat prefer Tuesdays over any other day?",
+    "intended_trick": "Temporal shift, assuming cat preference based on toy given.",
+    "id": "bb-adv-032",
+    "adjudication": {
+      "gold_evidence_semantics": "The cat received a new mouse toy on Tuesdays.",
+      "gold_query_semantics": "Did the cat prefer Tuesdays over any other day?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The book 'War and Peace' was published in 1869.",
+    "query": "Which novel, 'War and Peace' or 'To Kill a Mockingbird', was published earlier?",
+    "intended_trick": "Comparison between two unrelated novels based on publication years.",
+    "id": "bb-adv-033",
+    "adjudication": {
+      "gold_evidence_semantics": "The book 'War and Peace' was published in the year 1869.",
+      "gold_query_semantics": "Which of the two novels, 'War and Peace' and 'To Kill a Mockingbird', was published earlier?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The computer's processor clock speed is 2.4 GHz.",
+    "query": "Is this processor faster than the one with a lower clock speed, or is a lower clock speed always slower?",
+    "intended_trick": "Nested logic and conditional statements.",
+    "id": "bb-adv-034",
+    "adjudication": {
+      "gold_evidence_semantics": "The processor of this computer has a clock speed of 2.4 GHz.",
+      "gold_query_semantics": "Is this processor faster than a processor with a lower clock speed, or is a lower clock speed always slower?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The AI is programmed to learn from human interaction.",
+    "query": "Can the AI learn to play chess without human interaction?",
+    "intended_trick": "Contradiction of the given evidence.",
+    "id": "bb-adv-035",
+    "adjudication": {
+      "gold_evidence_semantics": "The AI is capable of learning from human interaction.",
+      "gold_query_semantics": "Can the AI play chess without learning from human interaction?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The cheetah is the fastest land animal.",
+    "query": "Which is the fastest animal, cheetah or pigeon?",
+    "intended_trick": "Comparing two unrelated animals based on speed.",
+    "id": "bb-adv-036",
+    "adjudication": {
+      "gold_evidence_semantics": "The cheetah is the fastest land animal.",
+      "gold_query_semantics": "Which is the fastest animal, cheetah or pigeon?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The computer uses a 64-bit operating system.",
+    "query": "Is a 64-bit system more secure than a 32-bit system?",
+    "intended_trick": "Assuming security based on bit size without context.",
+    "id": "bb-adv-037",
+    "adjudication": {
+      "gold_evidence_semantics": "The computer operates on a 64-bit operating system.",
+      "gold_query_semantics": "Is a 64-bit system more secure than a 32-bit system?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The cake recipe includes 2 cups of flour.",
+    "query": "How many cups of sugar does the recipe require?",
+    "intended_trick": "Asking about a quantity not mentioned in the evidence.",
+    "id": "bb-adv-038",
+    "adjudication": {
+      "gold_evidence_semantics": "The recipe includes 2 cups of flour.",
+      "gold_query_semantics": "How many cups of sugar does the recipe require?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The city's population was estimated to be 50,000 in 2000.",
+    "query": "How many people lived in the city in 1999?",
+    "intended_trick": "Temporal shift, asking about a year not mentioned in the evidence.",
+    "id": "bb-adv-039",
+    "adjudication": {
+      "gold_evidence_semantics": "The city's population was estimated to be 50,000 in 2000.",
+      "gold_query_semantics": "How many people lived in the city in 1999?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The car was parked on the street with the engine running. The owner was seen entering the building.",
+    "query": "What color was the car when the owner left?",
+    "intended_trick": "The query introduces an implicit comparison with 'when the owner left' which is not specified in the evidence.",
+    "id": "bb-adv-040",
+    "adjudication": {
+      "gold_evidence_semantics": "The car was parked on the street with the engine running. The owner was seen entering the building.",
+      "gold_query_semantics": "What color was the car when the owner left?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The company announced record profits for Q3 2021. The sales team celebrated with a lunch.",
+    "query": "How did the marketing team react to the record profits?",
+    "intended_trick": "The query asks about a group not mentioned in the evidence.",
+    "id": "bb-adv-041",
+    "adjudication": {
+      "gold_evidence_semantics": "The company had record profits in Q3 2021.",
+      "gold_query_semantics": "The marketing team reacted to the record profits.",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The cake was baked in the kitchen at 3 PM. It was served to the guests at 5 PM.",
+    "query": "In which hour was the cake's temperature the highest?",
+    "intended_trick": "The query assumes that the cake's temperature can be determined from the evidence.",
+    "id": "bb-adv-042",
+    "adjudication": {
+      "gold_evidence_semantics": "The cake was baked in the kitchen at 3 PM and served to the guests at 5 PM.",
+      "gold_query_semantics": "The hour at which the cake's temperature was the highest.",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The cat was seen on the mat at 10 AM. At 1 PM, it was on the window sill.",
+    "query": "Where was the cat when it was cold?",
+    "intended_trick": "The query assumes a temporal correlation between 'being on the mat' and 'being cold', which is not valid based on the evidence.",
+    "id": "bb-adv-043",
+    "adjudication": {
+      "gold_evidence_semantics": "The cat was on the mat at 10 AM and on the window sill at 1 PM.",
+      "gold_query_semantics": "Where was the cat when it was cold?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The computer was turned on at 9 AM. The antivirus software was updated at 1 PM.",
+    "query": "What was the computer used for between 10 AM and 1 PM?",
+    "intended_trick": "The query assumes that the computer's usage can be determined from the evidence.",
+    "id": "bb-adv-044",
+    "adjudication": {
+      "gold_evidence_semantics": "The computer was turned on at 9 AM. The antivirus software was updated at 1 PM.",
+      "gold_query_semantics": "What was the computer used for between 10 AM and 1 PM?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The book was published in 1995. It became a bestseller in 1998.",
+    "query": "Why was the book not a bestseller until 1998?",
+    "intended_trick": "The query makes an assumption about causality based on the evidence.",
+    "id": "bb-adv-045",
+    "adjudication": {
+      "gold_evidence_semantics": "The book was published in 1995.",
+      "gold_query_semantics": "Why was the book not a bestseller until 1998?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "John smoked a cigarette. He then drank a glass of water.",
+    "query": "Which came first, the cigarette or the water?",
+    "intended_trick": "The query creates a temporal ambiguity based on the evidence.",
+    "id": "bb-adv-046",
+    "adjudication": {
+      "gold_evidence_semantics": "John smoked a cigarette. He then drank a glass of water.",
+      "gold_query_semantics": "Which came first, the cigarette or the water?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The dog barked when it saw a stranger. It wagged its tail.",
+    "query": "Did the dog bark because it was happy or scared?",
+    "intended_trick": "The query makes an assumption about the dog's emotions based on the evidence.",
+    "id": "bb-adv-047",
+    "adjudication": {
+      "gold_evidence_semantics": "The dog barked when it saw a stranger.",
+      "gold_query_semantics": "Did the dog bark because it was happy or scared?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The plane took off at 10 AM. It flew for 2 hours.",
+    "query": "What was the plane's destination?",
+    "intended_trick": "The query assumes that the destination can be determined from the evidence.",
+    "id": "bb-adv-048",
+    "adjudication": {
+      "gold_evidence_semantics": "The plane flew for 2 hours after taking off at 10 AM.",
+      "gold_query_semantics": "What was the plane's destination?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The student studied for 3 hours. He scored 90% on the test.",
+    "query": "What was the difficulty level of the test?",
+    "intended_trick": "The query assumes a causality between '3 hours of study' and '90% score' which is not valid based on the evidence.",
+    "id": "bb-adv-049",
+    "adjudication": {
+      "gold_evidence_semantics": "The student studied for 3 hours.",
+      "gold_query_semantics": "What was the difficulty level of the test?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The car in front of me is a red Ferrari. I can see the license plate starting with the number 'CA'.",
+    "query": "What color is the car with the license plate starting with 'GA'?",
+    "intended_trick": "The query asks about a car with a different license plate, which is not mentioned in the evidence.",
+    "id": "bb-adv-050",
+    "adjudication": {
+      "gold_evidence_semantics": "The car in front of the speaker is a red Ferrari. The license plate starts with the letter 'CA'.",
+      "gold_query_semantics": "What is the color of the car with the license plate starting with the letter 'GA'?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The suspect was born in the 90s and has brown eyes.",
+    "query": "What is the age of the person with blue eyes?",
+    "intended_trick": "The query asks about the age of a person with a different eye color, which is not mentioned in the evidence.",
+    "id": "bb-adv-051",
+    "adjudication": {
+      "gold_evidence_semantics": "A person was born in the 90s and has brown eyes.",
+      "gold_query_semantics": "What is the age of the person with blue eyes?",
+      "derivable": false,
+      "contradiction": true,
+      "ground_truth": "CONTRADICTED"
+    },
+    "ground_truth": "CONTRADICTED"
+  },
+  {
+    "evidence": "The weather was sunny and warm during the day, but it rained in the evening.",
+    "query": "Was it raining when the sun was shining?",
+    "intended_trick": "The query asks about a condition that contradicts the sequence of events in the evidence.",
+    "id": "bb-adv-052",
+    "adjudication": {
+      "gold_evidence_semantics": "The weather was sunny and warm during the day and it rained in the evening.",
+      "gold_query_semantics": "Was it raining when the sun was shining?",
+      "derivable": false,
+      "contradiction": true,
+      "ground_truth": "CONTRADICTED"
+    },
+    "ground_truth": "CONTRADICTED"
+  },
+  {
+    "evidence": "The employee arrived late for work due to traffic, but left early to pick up her child.",
+    "query": "Did the employee arrive late or leave early?",
+    "intended_trick": "The query asks about a conflicting action that cannot be answered based on the evidence.",
+    "id": "bb-adv-053",
+    "adjudication": {
+      "gold_evidence_semantics": "The employee had an issue with traffic that caused her to arrive late at work.",
+      "gold_query_semantics": "Did the employee arrive late or leave early?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The thief was wearing a mask and gloves when he stole the jewels.",
+    "query": "What color were the thief's socks?",
+    "intended_trick": "The query asks about a detail that is not mentioned in the evidence and is irrelevant to the situation.",
+    "id": "bb-adv-054",
+    "adjudication": {
+      "gold_evidence_semantics": "The thief wore a mask and gloves during the jewels theft.",
+      "gold_query_semantics": "What is the color of the thief's socks?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The new policy states that employees must wear protective gear in the lab.",
+    "query": "Is it allowed to work without a lab coat?",
+    "intended_trick": "The query asks about an exception to the rule that is not mentioned in the evidence.",
+    "id": "bb-adv-055",
+    "adjudication": {
+      "gold_evidence_semantics": "employees must wear protective gear in the lab",
+      "gold_query_semantics": "is it allowed to work without a lab coat",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The company policy requires all employees to have a valid driver's license.",
+    "query": "Can a blind employee drive to work?",
+    "intended_trick": "The query asks about a situation that is not covered by the evidence and involves a special condition.",
+    "id": "bb-adv-056",
+    "adjudication": {
+      "gold_evidence_semantics": "The company policy requires all employees to have a valid driver's license.",
+      "gold_query_semantics": "Can a blind employee drive to work?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The CEO met with the marketing team to discuss the new advertising campaign.",
+    "query": "Did the CEO approve the new advertising campaign during the meeting?",
+    "intended_trick": "The query asks about an action that is not explicitly stated in the evidence, but is implied.",
+    "id": "bb-adv-057",
+    "adjudication": {
+      "gold_evidence_semantics": "The CEO met with the marketing team to discuss the new advertising campaign.",
+      "gold_query_semantics": "Did the CEO approve the new advertising campaign during the meeting?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The recipe calls for 1 cup of flour, 2 cups of water, and 1 tsp of salt.",
+    "query": "What is the ratio of flour to water?",
+    "intended_trick": "The query asks for a calculation or comparison that goes beyond the information provided in the evidence.",
+    "id": "bb-adv-058",
+    "adjudication": {
+      "gold_evidence_semantics": "The recipe requires 1 cup of flour and 2 cups of water, with a total of 3 cups.",
+      "gold_query_semantics": "What is the ratio of flour to water?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The computer system was updated with the latest security patches.",
+    "query": "Was the system vulnerable to the recent malware attack?",
+    "intended_trick": "The query asks about a past event that is not related to the evidence and cannot be answered based on the given information.",
+    "id": "bb-adv-059",
+    "adjudication": {
+      "gold_evidence_semantics": "The computer system was updated with the latest security patches.",
+      "gold_query_semantics": "Was the system vulnerable to the recent malware attack?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "id": "bb-adv-001-meta",
+    "evidence": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+    "query": "Did John brush his teeth before or after he ate an apple?",
+    "intended_trick": "The query is ambiguous as the evidence does not provide sufficient context to definitively answer the question. + Swapped the order of the conditional clauses",
+    "parent_id": "bb-adv-001",
+    "adjudication": {
+      "gold_evidence_semantics": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+      "gold_query_semantics": "Did John brush his teeth before or after he ate an apple?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "id": "bb-adv-004-meta",
+    "evidence": "The red car and the blue car raced each other. The red car won the race.",
+    "query": "Which car had a higher horsepower during the race?",
+    "intended_trick": "The query is unanswerable from the evidence as there is no mention of horsepower in the evidence. + Changed the question to include a temporal aspect, implying a comparison between their horsepower during the race.",
+    "parent_id": "bb-adv-004",
+    "adjudication": {
+      "gold_evidence_semantics": "The red car won the race against the blue car.",
+      "gold_query_semantics": "Which car had a higher horsepower during the race?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-055-meta",
+    "evidence": "The new policy states that employees must wear protective gear in the lab.",
+    "query": "Is it not necessary to wear a lab coat while working?",
+    "intended_trick": "The query asks about an exception to the rule that is not mentioned in the evidence. + Changed the negation of the query and paraphrased the comparison",
+    "parent_id": "bb-adv-055",
+    "adjudication": {
+      "gold_evidence_semantics": "employees must wear protective gear in the lab",
+      "gold_query_semantics": "it is not necessary to wear a lab coat while working",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-031-meta",
+    "evidence": "The dog breeds Poodle and Dachshund were used in WWI for messenger duties.",
+    "query": "Which of the breeds, Poodle or Dachshund, was more suitable as a sentry dog during WWI?",
+    "intended_trick": "Implicit comparison between breeds based on unrelated roles in WWI. + Swapped 'effective' to 'suitable' and added 'during WWI' to maintain the same core semantics.",
+    "parent_id": "bb-adv-031",
+    "adjudication": {
+      "gold_evidence_semantics": "The Poodle and Dachshund breeds were used in WWI for messenger duties.",
+      "gold_query_semantics": "Which of the breeds, Poodle or Dachshund, was more suitable as a sentry dog during WWI?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "id": "bb-adv-052-meta",
+    "evidence": "The weather was sunny and warm during the day, but it rained in the evening.",
+    "query": "Did the sun shine when it was raining?",
+    "intended_trick": "The query asks about a condition that contradicts the sequence of events in the evidence. + Swapped the conditional clauses",
+    "parent_id": "bb-adv-052",
+    "adjudication": {
+      "gold_evidence_semantics": "The weather was sunny and warm during the day and it rained in the evening.",
+      "gold_query_semantics": "Did the sun shine when it was raining?",
+      "derivable": false,
+      "contradiction": true,
+      "ground_truth": "CONTRADICTED"
+    },
+    "ground_truth": "CONTRADICTED"
+  },
+  {
+    "id": "bb-adv-019-meta",
+    "evidence": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+    "query": "In which direction does the sun appear to go down during winter?",
+    "intended_trick": "The query asks about a specific condition (winter) that may affect the sun's direction based on the evidence, but the evidence does not provide enough information to answer the question. + Changed the question to make it more clear that we're asking about the apparent direction of sunset during a specific season.",
+    "parent_id": "bb-adv-019",
+    "adjudication": {
+      "gold_evidence_semantics": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+      "gold_query_semantics": "In which direction does the sun appear to go down during winter?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "id": "bb-adv-007-meta",
+    "evidence": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+    "query": "Which filling was used in the cake instead?",
+    "intended_trick": "The query is unanswerable from the evidence as it asks about the filling, which is not mentioned in the evidence. + Swapped the question to ask for the filling instead of the flavor, and maintained the same conditional order.",
+    "parent_id": "bb-adv-007",
+    "adjudication": {
+      "gold_evidence_semantics": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+      "gold_query_semantics": "Which filling was used in the cake instead?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-050-meta",
+    "evidence": "The car in front of me is a red Ferrari. I can see the license plate starting with the number 'CA'.",
+    "query": "What is the color of the car whose license plate begins with 'GA'?",
+    "intended_trick": "The query asks about a car with a different license plate, which is not mentioned in the evidence. + Changed the starting condition in the query",
+    "parent_id": "bb-adv-050",
+    "adjudication": {
+      "gold_evidence_semantics": "The car in front of the speaker is red and its license plate starts with 'CA'.",
+      "gold_query_semantics": "What is the color of the car whose license plate begins with 'GA'?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-015-meta",
+    "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+    "query": "Do kangaroos have multiple lives like cats?",
+    "intended_trick": "The query asks about a different animal's lives, using a similar keyword ('lives') to confuse the agent. + Added a comparative question structure and a conditional clause",
+    "parent_id": "bb-adv-015",
+    "adjudication": {
+      "gold_evidence_semantics": "Cats have nine lives. Cats have agility and quick reflexes.",
+      "gold_query_semantics": "Do kangaroos have multiple lives?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-016-meta",
+    "evidence": "Pythagoras was a Greek philosopher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+    "query": "What theorem was Pythagoras NOT associated with?",
+    "intended_trick": "The query introduces a contradiction by asking about a theorem that Pythagoras 'was NOT known for' based on the evidence. + Swapped the position of 'not known for' and 'known for' in the query.",
+    "parent_id": "bb-adv-016",
+    "adjudication": {
+      "gold_evidence_semantics": "Pythagoras is a Greek philosopher known for his theorem: a\u00b2 + b\u00b2 = c\u00b2",
+      "gold_query_semantics": "What theorem was Pythagoras NOT associated with?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The car was parked on the street. The owner left the keys in the ignition. Suddenly, a thunderstorm hit the city.",
+    "query": "What color is the car's engine?",
+    "intended_trick": "The query is unrelated to the evidence and asks about an engine's color, which cannot be determined from the evidence.",
+    "id": "bb-adv-070",
+    "adjudication": {
+      "gold_evidence_semantics": "A car was parked on the street with the keys left in the ignition. A thunderstorm occurred.",
+      "gold_query_semantics": "What is the color of the car's engine?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+    "query": "Did John eat an apple before or after he brushed his teeth?",
+    "intended_trick": "The query is ambiguous as the evidence does not provide sufficient context to definitively answer the question.",
+    "id": "bb-adv-071",
+    "adjudication": {
+      "gold_evidence_semantics": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+      "gold_query_semantics": "Did John eat an apple before or after he brushed his teeth?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The man was born in Chicago and studied computer science in college.",
+    "query": "What hobby did the man have before moving to Chicago?",
+    "intended_trick": "The query asks about an unrelated topic, as there is no mention of a hobby in the evidence.",
+    "id": "bb-adv-072",
+    "adjudication": {
+      "gold_evidence_semantics": "The man was born in Chicago and studied computer science in college.",
+      "gold_query_semantics": "What hobby did the man have before moving to Chicago?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The cat sat on the mat, purring contentedly. The sun was setting in the background.",
+    "query": "What did the cat eat for dinner?",
+    "intended_trick": "The query is unrelated to the evidence as it asks about the cat's dinner, which cannot be determined from the evidence.",
+    "id": "bb-adv-073",
+    "adjudication": {
+      "gold_evidence_semantics": "The cat was on the mat and the sun was setting in the background.",
+      "gold_query_semantics": "What did the cat eat for dinner?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The red car and the blue car raced each other. The red car won the race.",
+    "query": "Which car had more horsepower?",
+    "intended_trick": "The query is unanswerable from the evidence as there is no mention of horsepower in the evidence.",
+    "id": "bb-adv-074",
+    "adjudication": {
+      "gold_evidence_semantics": "The red car won the race against the blue car.",
+      "gold_query_semantics": "Which car had more horsepower?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The employee arrived late to the office due to heavy traffic. He submitted his report on time.",
+    "query": "Did the employee submit his report before or after arriving late?",
+    "intended_trick": "The query is ambiguous as the evidence does not provide sufficient context to definitively answer the question.",
+    "id": "bb-adv-075",
+    "adjudication": {
+      "gold_evidence_semantics": "The employee encountered heavy traffic and arrived late at the office. He submitted his report on time.",
+      "gold_query_semantics": "Did the employee submit his report before or after arriving late?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The dog barked at the mailman. The neighbor's dog joined in.",
+    "query": "Did the mailman deliver mail to both dogs?",
+    "intended_trick": "The query is unanswerable from the evidence as it implies a relationship between the mailman and the dogs that is not supported.",
+    "id": "bb-adv-076",
+    "adjudication": {
+      "gold_evidence_semantics": "The dog1 barked at the mailman. Dog2 barked as well.",
+      "gold_query_semantics": "The mailman delivered mail to both dogs.",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+    "query": "What flavor was the cake filled with?",
+    "intended_trick": "The query is unanswerable from the evidence as it asks about the filling, which is not mentioned in the evidence.",
+    "id": "bb-adv-077",
+    "adjudication": {
+      "gold_evidence_semantics": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+      "gold_query_semantics": "What flavor was the cake filled with?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The children played in the park during the day. The parents watched them from a distance.",
+    "query": "What time did the children play in the park?",
+    "intended_trick": "The query is ambiguous as the evidence does not provide sufficient context to definitively answer the question.",
+    "id": "bb-adv-078",
+    "adjudication": {
+      "gold_evidence_semantics": "The children played in the park during the day.",
+      "gold_query_semantics": "What time did the children play in the park?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The chef cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+    "query": "What type of dish did the chef make?",
+    "intended_trick": "The query is unanswerable from the evidence as it asks about the type of dish, which cannot be determined from the evidence.",
+    "id": "bb-adv-079",
+    "adjudication": {
+      "gold_evidence_semantics": "The chef prepared and cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+      "gold_query_semantics": "What type of dish did the chef make?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The Eiffel Tower was built between 1887 and 1894. It is located in Paris, France.",
+    "query": "Which country built the Eiffel Tower before 1887?",
+    "intended_trick": "The query asks about a time before the construction of the Eiffel Tower based on the evidence.",
+    "id": "bb-adv-080",
+    "adjudication": {
+      "gold_evidence_semantics": "The Eiffel Tower was built between 1887 and 1894 in Paris, France.",
+      "gold_query_semantics": "Which country built the Eiffel Tower before 1887?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "All cats have fur and whiskers. Some cats also have long tails.",
+    "query": "Which cats don't have fur?",
+    "intended_trick": "The query asks about a property (having no fur) that contradicts the given evidence.",
+    "id": "bb-adv-081",
+    "adjudication": {
+      "gold_evidence_semantics": "All cats have fur.",
+      "gold_query_semantics": "Which cats don't have fur?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Apple pie is a sweet dessert. It is typically served with a scoop of vanilla ice cream.",
+    "query": "What type of pie doesn't go well with ice cream?",
+    "intended_trick": "The query introduces a contradiction by asking about a pie that 'doesn't go well' with ice cream, which is typically served together.",
+    "id": "bb-adv-082",
+    "adjudication": {
+      "gold_evidence_semantics": "Apple pie is a sweet dessert. It is typically served with a scoop of vanilla ice cream.",
+      "gold_query_semantics": "What type of pie doesn't go well with ice cream?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Mosquitoes are insects. They can carry diseases such as malaria and Zika.",
+    "query": "Can mosquitoes fly without diseases?",
+    "intended_trick": "The query asks about a condition (flying without diseases) that is logically unresolvable based on the evidence.",
+    "id": "bb-adv-083",
+    "adjudication": {
+      "gold_evidence_semantics": "Mosquitoes are insects. Mosquitoes can carry diseases such as malaria and Zika.",
+      "gold_query_semantics": "Can mosquitoes fly without carrying diseases?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "The speed of light is approximately 299,792,458 meters per second. It is the maximum speed at which information can travel in the universe.",
+    "query": "Can the speed of sound exceed the speed of light?",
+    "intended_trick": "The query asks a question that is factually impossible based on the evidence.",
+    "id": "bb-adv-084",
+    "adjudication": {
+      "gold_evidence_semantics": "The speed of light is approximately 299,792,458 meters per second and is the maximum speed at which information can travel in the universe.",
+      "gold_query_semantics": "Can the speed of sound exceed the speed of light?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+    "query": "How many lives do kangaroos have?",
+    "intended_trick": "The query asks about a different animal's lives, using a similar keyword ('lives') to confuse the agent.",
+    "id": "bb-adv-085",
+    "adjudication": {
+      "gold_evidence_semantics": "Cats have nine lives. They are known for their agility and quick reflexes.",
+      "gold_query_semantics": "How many lives do kangaroos have?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Pythagoras was a Greek philosopher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+    "query": "What is the theorem that Pythagoras was NOT known for?",
+    "intended_trick": "The query introduces a contradiction by asking about a theorem that Pythagoras 'was NOT known for' based on the evidence.",
+    "id": "bb-adv-086",
+    "adjudication": {
+      "gold_evidence_semantics": "Pythagoras is a Greek philospher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+      "gold_query_semantics": "What is the theorem that Pythagoras was NOT known for?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Great Wall of China is over 6,000 kilometers long. It was built to protect China from invasions.",
+    "query": "Can the Great Wall of China be seen from space?",
+    "intended_trick": "The query asks about a common misconception related to the Great Wall of China, which is unsupported by the evidence.",
+    "id": "bb-adv-087",
+    "adjudication": {
+      "gold_evidence_semantics": "The Great Wall of China is over 6000 kilometers long and was built to protect China from invasions.",
+      "gold_query_semantics": "Can the Great Wall of China be seen from space?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "evidence": "A circle has a diameter of 10 units and a circumference of 31.42 units. It also has a radius of 5 units.",
+    "query": "What is the diameter of the circle if its circumference is 25 units?",
+    "intended_trick": "The query asks about a circumstance (circumference of 25 units) that is not mentioned in the evidence, making the question unanswerable.",
+    "id": "bb-adv-088",
+    "adjudication": {
+      "gold_evidence_semantics": "A circle has a diameter of 10 units and a circumference of 31.42 units. It also has a radius of 5 units.",
+      "gold_query_semantics": "What is the diameter of the circle if its circumference is 25 units?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+    "query": "Which direction does the sun set in the winter?",
+    "intended_trick": "The query asks about a specific condition (winter) that may affect the sun's direction based on the evidence, but the evidence does not provide enough information to answer the question.",
+    "id": "bb-adv-089",
+    "adjudication": {
+      "gold_evidence_semantics": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+      "gold_query_semantics": "Which direction does the sun set in the winter?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Eiffel Tower is in Paris, France. It was built between 1887 and 1894.",
+    "query": "Who painted the Eiffel Tower in 1887?",
+    "intended_trick": "Implicit comparison of painting and construction, misleading the agent to believe it's about an artist instead of the actual construction timeline.",
+    "id": "bb-adv-090",
+    "adjudication": {
+      "gold_evidence_semantics": "The Eiffel Tower is in Paris, France. It was built between 1887 and 1894.",
+      "gold_query_semantics": "Who painted the Eiffel Tower in 1887?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Apple Inc. was founded in April 1976 by Steve Jobs and Steve Wozniak.",
+    "query": "What company was founded in the 1980s by Bill Gates?",
+    "intended_trick": "Temporal shift and false association with Bill Gates, misleading the agent to believe it's about Microsoft instead of Apple.",
+    "id": "bb-adv-091",
+    "adjudication": {
+      "gold_evidence_semantics": "Apple Inc. was founded by Steve Jobs and Steve Wozniak in April 1976.",
+      "gold_query_semantics": "What company was founded in the 1980s by Bill Gates?",
+      "derivable": false,
+      "contradiction": true,
+      "ground_truth": "CONTRADICTED"
+    },
+    "ground_truth": "CONTRADICTED"
+  },
+  {
+    "evidence": "Cats are mammals and typically have fur, claws, and retractable nails.",
+    "query": "Is a bird with feathers and a beak a mammal?",
+    "intended_trick": "Nested logic and false comparison between cats and birds, misleading the agent to assume the question is about cats having bird-like features.",
+    "id": "bb-adv-092",
+    "adjudication": {
+      "gold_evidence_semantics": "Cats are mammals with fur, claws, and retractable nails.",
+      "gold_query_semantics": "Is a bird with feathers and a beak a mammal?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "Python is a popular programming language known for its readability and versatility.",
+    "query": "Which language is best for data analysis: Java or Python?",
+    "intended_trick": "Implicit comparison and false dichotomy between Python and Java, misleading the agent to believe it's about a comparison between the two languages instead of their suitability for data analysis.",
+    "id": "bb-adv-093",
+    "adjudication": {
+      "gold_evidence_semantics": "Python is a popular programming language known for its readability and versatility.",
+      "gold_query_semantics": "Which language is best for data analysis: Java or Python?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Great Wall of China is a series of fortifications made of stone, brick, and tamped earth.",
+    "query": "Is the Great Wall of China mostly made of wood?",
+    "intended_trick": "False statement misleading the agent to believe the wall is mostly made of wood, contradicting the provided evidence.",
+    "id": "bb-adv-094",
+    "adjudication": {
+      "gold_evidence_semantics": "The Great Wall of China is made of stone, brick, and tamped earth.",
+      "gold_query_semantics": "Is the Great Wall of China mostly made of wood?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Theory of General Relativity describes gravity as a curvature of spacetime caused by mass and energy.",
+    "query": "Which theory explains that gravity is a force acting between two masses?",
+    "intended_trick": "Implicit comparison and false statement, misleading the agent to believe that General Relativity explains gravity as a simple force instead of a curvature of spacetime.",
+    "id": "bb-adv-095",
+    "adjudication": {
+      "gold_evidence_semantics": "The Theory of General Relativity describes gravity as a curvature of spacetime caused by mass and energy.",
+      "gold_query_semantics": "Which theory explains that gravity is a force acting between two masses?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "evidence": "The human body has 206 bones, including the skull and the pelvic bone.",
+    "query": "How many bones does a typical human have in their arms?",
+    "intended_trick": "False assumption about the location of the bones being mentioned in the evidence, misleading the agent to believe the evidence pertains to the arms instead of the whole human body.",
+    "id": "bb-adv-096",
+    "adjudication": {
+      "gold_evidence_semantics": "The human body has 206 bones, including the skull and the pelvic bone.",
+      "gold_query_semantics": "How many bones does a typical human have in their arms?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The United States of America is a federal republic consisting of 50 states and a federal district.",
+    "query": "What is the largest state in the United States?",
+    "intended_trick": "Misleading question as the evidence only mentions the number of states, not their sizes.",
+    "id": "bb-adv-097",
+    "adjudication": {
+      "gold_evidence_semantics": "The United States of America is a federal republic consisting of 50 states and a federal district.",
+      "gold_query_semantics": "What is the largest state in the United States?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The human body requires water, oxygen, and a balanced diet for optimal health and functioning.",
+    "query": "Can I drink water instead of eating food for a day?",
+    "intended_trick": "False assumption about the role of water in the context of the evidence, misleading the agent to believe it's a suitable substitute for food.",
+    "id": "bb-adv-098",
+    "adjudication": {
+      "gold_evidence_semantics": "The human body requires water, oxygen, and a balanced diet for optimal health and functioning.",
+      "gold_query_semantics": "Can I drink water instead of eating food for a day?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "evidence": "The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex.",
+    "query": "Which pyramid is the second oldest in the Giza pyramid complex?",
+    "intended_trick": "Misleading question as the evidence only mentions the age and size of the largest pyramid, not the other two.",
+    "id": "bb-adv-099",
+    "adjudication": {
+      "gold_evidence_semantics": "The Great Pyramid of Giza is the oldest and largest pyramid in the Giza pyramid complex.",
+      "gold_query_semantics": "Which pyramid is the second oldest in the Giza pyramid complex?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-036-meta",
+    "evidence": "The cheetah is the fastest land animal.",
+    "query": "Which animal, between cheetah and pigeon, is the swiftest on land?",
+    "intended_trick": "Comparing two unrelated animals based on speed. + Changed 'fastest' to 'swiftest on land' to preserve semantics and maintain answerability.",
+    "parent_id": "bb-adv-036",
+    "adjudication": {
+      "gold_evidence_semantics": "The cheetah is the fastest land animal.",
+      "gold_query_semantics": "Which animal, between cheetah and pigeon, is the swiftest on land?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  },
+  {
+    "id": "bb-adv-015-meta-meta",
+    "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+    "query": "Do kangaroos possess the ability to live multiple lives similar to cats?",
+    "intended_trick": "The query asks about a different animal's lives, using a similar keyword ('lives') to confuse the agent. + Added a comparative question structure and a conditional clause + Changed the question to ask if kangaroos have the ability to live multiple lives like the common belief about cats, instead of asking if they actually have multiple lives.",
+    "parent_id": "bb-adv-015-meta",
+    "adjudication": {
+      "gold_evidence_semantics": "Cats have nine lives. They are known for their agility and quick reflexes.",
+      "gold_query_semantics": "Do kangaroos possess the ability to live multiple lives?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-045-meta",
+    "evidence": "The book was published in 1995. It became a bestseller in 1998.",
+    "query": "Why didn't the book become a bestseller before 1998?",
+    "intended_trick": "The query makes an assumption about causality based on the evidence. + Changed the question to negate the condition in the question.",
+    "parent_id": "bb-adv-045",
+    "adjudication": {
+      "gold_evidence_semantics": "The book was published in 1995.",
+      "gold_query_semantics": "Why didn't the book become a bestseller before 1998?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-086-meta",
+    "evidence": "Pythagoras was a Greek philosopher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+    "query": "What theorem was Pythagoras NOT associated with?",
+    "intended_trick": "The query introduces a contradiction by asking about a theorem that Pythagoras 'was NOT known for' based on the evidence. + Changed the question word 'what is the theorem that Pythagoras was NOT known for?' to 'What theorem was Pythagoras NOT associated with?' to maintain the core semantics.",
+    "parent_id": "bb-adv-086",
+    "adjudication": {
+      "gold_evidence_semantics": "Pythagoras is a Greek philosopher known for his theorem: a\u00b2 + b\u00b2 = c\u00b2",
+      "gold_query_semantics": "What theorem was Pythagoras NOT associated with?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-050-meta",
+    "evidence": "The car in front of me is a red Ferrari. I can see the license plate starting with the number 'CA'.",
+    "query": "What is the color of the car whose license plate begins with 'GA'?",
+    "intended_trick": "The query asks about a car with a different license plate, which is not mentioned in the evidence. + Maintained the original query structure and semantics. Changed 'starting with' to 'begins with' for clarity.",
+    "parent_id": "bb-adv-050",
+    "adjudication": {
+      "gold_evidence_semantics": "The car in front of the speaker is red and its license plate starts with 'CA'.",
+      "gold_query_semantics": "What is the color of the car whose license plate begins with 'GA'?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-015-meta",
+    "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+    "query": "Do kangaroos have multiple lives like cats?",
+    "intended_trick": "The query asks about a different animal's lives, using a similar keyword ('lives') to confuse the agent. + Changed the question to inquire about kangaroos having multiple lives similar to the known belief about cats",
+    "parent_id": "bb-adv-015",
+    "adjudication": {
+      "gold_evidence_semantics": "Cats have nine lives. Cats have agility and quick reflexes.",
+      "gold_query_semantics": "Do kangaroos have multiple lives?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "UNSUPPORTED"
+    },
+    "ground_truth": "UNSUPPORTED"
+  },
+  {
+    "id": "bb-adv-037-meta",
+    "evidence": "The computer uses a 64-bit operating system.",
+    "query": "Is a 32-bit system less secure than a 64-bit system?",
+    "intended_trick": "Assuming security based on bit size without context. + Swapped conditional clauses",
+    "parent_id": "bb-adv-037",
+    "adjudication": {
+      "gold_evidence_semantics": "The computer operates on a 64-bit operating system.",
+      "gold_query_semantics": "Is a 32-bit system less secure than a 64-bit system?",
+      "derivable": false,
+      "contradiction": false,
+      "ground_truth": "INDETERMINATE"
+    },
+    "ground_truth": "INDETERMINATE"
+  },
+  {
+    "id": "bb-adv-079-meta",
+    "evidence": "The chef cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+    "query": "Which dish with garlic bread did the chef prepare in the kitchen?",
+    "intended_trick": "The query is unanswerable from the evidence as it asks about the type of dish, which cannot be determined from the evidence. + Added 'with garlic bread' to the query, implying that the dish being asked about is the one served with garlic bread.",
+    "parent_id": "bb-adv-079",
+    "adjudication": {
+      "gold_evidence_semantics": "The chef cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+      "gold_query_semantics": "Which dish with garlic bread did the chef prepare in the kitchen?",
+      "derivable": true,
+      "contradiction": false,
+      "ground_truth": "SUPPORTED"
+    },
+    "ground_truth": "SUPPORTED"
+  }
+]

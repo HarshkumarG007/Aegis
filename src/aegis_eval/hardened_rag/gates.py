@@ -268,7 +268,7 @@ class PostGenerationVerifier:
         self.nli_model = CrossEncoder('cross-encoder/nli-deberta-v3-small', device='cpu')
         self.claim_extractor = ClaimExtractor()
         
-    def verify(self, answer: str, chunks: list, condition_graph: dict = None) -> dict:
+    def verify(self, answer: str, chunks: list, condition_graph: dict = None, query_text: str = None, query_ir: dict = None) -> dict:
         """
         Verify claims based on ablation mode.
         """
@@ -408,9 +408,43 @@ class PostGenerationVerifier:
                 return {
                     "state": "REJECT",
                     "confidence": 1.0,
-                    "reason": "Contains contradicted or explicitly unsupported claims.",
+                            "reason": "Contains contradicted or explicitly unsupported claims.",
                     "verified_claims": verified_claims
                 }
+            
+            # --- General Fix: Conservative Authorization Invariant ---
+            # Enforce that the substantive answer satisfies Q_IR constraints
+            if query_ir:
+                q_status = query_ir.get("status")
+                # If Q_IR extraction failed or is ambiguous, we cannot safely authorize a substantive answer.
+                if q_status in ["failed_extraction", "UNKNOWN", "AMBIGUOUS", "NONE"]:
+                    return {
+                        "state": "REJECT",
+                        "confidence": 1.0,
+                        "reason": "Q_IR uncertainty: Cannot safely authorize answer against unknown query constraints.",
+                        "verified_claims": verified_claims
+                    }
+                
+                # Verify that the structural constraints from Q_IR are entailed by the answer
+                constraint_claims = query_ir.get("constraints", [])
+                if not constraint_claims:
+                    # No constraints found, it's unconditional
+                    pass
+                else:
+                    for c_claim in constraint_claims:
+                        scores = self.nli_model.predict([[answer, c_claim]])
+                        # softmax
+                        exp_scores = np.exp(scores[0])
+                        probs = exp_scores / np.sum(exp_scores)
+                        entail_prob = probs[1]
+                        if entail_prob < 0.50:
+                            return {
+                                "state": "REJECT",
+                                "confidence": float(1.0 - entail_prob),
+                                "reason": f"Answer does not satisfy query constraint: {c_claim}",
+                                "verified_claims": verified_claims
+                            }
+            
             return {
                 "state": "PASS",
                 "confidence": 1.0,

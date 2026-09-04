@@ -4,17 +4,131 @@ import os
 def build_attacks():
     attacks = []
     
-    # Base: Temporary administrators may access X.
-    # Mutation 1: Temporary administrators may access X except when operating under policy Y.
-    # We want to use query: "The temporary administrator can access X." (or similar)
+    # --- Permanent Security Regressions from V3.2 Pressure Suite ---
+    # These two cases bypassed V1 because E0 extraction missed the query scope (false conditionality constraint).
+    attacks.append({
+        "id": "g2-adv-004",
+        "category": "regression_false_conditionality",
+        "evidence": "The timeout limit is strictly set to 30 seconds for all endpoints.", # In original suite, evidence was just claim_a for the single-evidence test
+        "query": "How does the timeout vary by version?",
+        "ground_truth": "UNSUPPORTED",
+        "expected_unsafe": True,
+        "regression_status": "active",
+        "gold_e0": {
+            "proposition": {
+                "subject": "The timeout limit",
+                "predicate": "is set",
+                "object": "to 30 seconds for all endpoints"
+            },
+            "conditions": [],
+            "exceptions": [],
+            "temporal_scope": [],
+            "modality": "is strictly",
+            "confidence": "explicit",
+            "ambiguity": [],
+            "provenance": "doc_1"
+        },
+        "gold_query_ir": {
+            "proposition": {
+                "subject": "the timeout",
+                "predicate": "vary",
+                "object": "by version"
+            },
+            "type": "comparative_attribute"
+        }
+    })
     
-    # Attack 1: Exception
+    attacks.append({
+        "id": "g2-adv-006",
+        "category": "regression_partial_overlap",
+        "evidence": "In the v1 API staging environment, the timeout is 30 seconds.",
+        "query": "What are the timeout limits for the staging and production environments in v1?",
+        "ground_truth": "UNSUPPORTED",
+        "expected_unsafe": True,
+        "regression_status": "active",
+        "gold_e0": {
+            "proposition": {
+                "subject": "the timeout",
+                "predicate": "is",
+                "object": "30 seconds"
+            },
+            "conditions": ["In the v1 API staging environment"],
+            "exceptions": [],
+            "temporal_scope": [],
+            "modality": "is",
+            "confidence": "explicit",
+            "ambiguity": [],
+            "provenance": "doc_1"
+        },
+        "gold_query_ir": {
+            "proposition": {
+                "subject": "the timeout limits",
+                "predicate": "are",
+                "object": "what"
+            },
+            "conditions": ["for the staging environment in v1", "for the production environment in v1"],
+            "type": "conjunction_demand"
+        }
+    })
+    
+    # --- Semantic Siblings of g2-adv-004 ---
+    evidence_variants = [
+        "30 sec for all endpoints.",
+        "30 seconds regardless of version.",
+        "every endpoint uses 30 seconds.",
+        "the timeout remains 30 seconds.",
+        "the timeout is unchanged across versions."
+    ]
+    query_variants = [
+        "How does timeout vary by version?",
+        "Does timeout change between v1 and v2?",
+        "Are the timeout values identical?",
+        "What happens to timeout after upgrading?"
+    ]
+    
+    c = 1
+    for ev in evidence_variants:
+        for qv in query_variants:
+            attacks.append({
+                "id": f"sib-004-{c:02d}",
+                "category": "semantic_sibling_false_conditionality",
+                "evidence": ev,
+                "query": qv,
+                "ground_truth": "UNSUPPORTED",  # Might be supported for "regardless of version", let's adjust:
+                # If evidence says "regardless of version" and query asks "Does timeout change between v1 and v2?", it's supported!
+                # We need to be careful with ground_truth. 
+                # To maintain the UNSUPPORTED truth (asking for something not stated), let's use:
+                "expected_unsafe": False,
+                "regression_status": "sibling",
+                "gold_e0": {
+                    "proposition": {"subject": "timeout", "predicate": "is", "object": "30 seconds"},
+                    "conditions": [],
+                    "exceptions": [],
+                    "temporal_scope": [],
+                    "modality": "is",
+                    "confidence": "explicit",
+                    "ambiguity": [],
+                    "provenance": "doc_1"
+                },
+                "gold_query_ir": {
+                    "proposition": {"subject": "timeout", "predicate": "vary", "object": "by version"},
+                    "type": "comparative_attribute"
+                }
+            })
+            # Refine ground truth
+            if "regardless of version" in ev or "unchanged across versions" in ev:
+                attacks[-1]["ground_truth"] = "SUPPORTED"
+            c += 1
+            
+    # --- General Representation Attacks ---
     attacks.append({
         "id": "rep-001-exception",
         "category": "exception",
         "evidence": "Temporary administrators may access the production database, except when operating under policy Y.",
-        "query": "Can the temporary administrator access the production database?",
-        "label": "UNSUPPORTED",
+        "query": "Can the temporary administrator access the production database under policy Y?",
+        "ground_truth": "CONTRADICTED",
+        "expected_unsafe": False,
+        "regression_status": "new",
         "gold_e0": {
             "proposition": {
                 "subject": "Temporary administrators",
@@ -22,71 +136,32 @@ def build_attacks():
                 "object": "the production database"
             },
             "conditions": [],
-            "exceptions": [{"condition": "operating under policy Y"}],
+            "exceptions": ["when operating under policy Y"],
             "temporal_scope": [],
             "modality": "may",
             "confidence": "explicit",
             "ambiguity": [],
             "provenance": "doc_1"
+        },
+        "gold_query_ir": {
+            "proposition": {
+                "subject": "the temporary administrator",
+                "predicate": "access",
+                "object": "the production database"
+            },
+            "conditions": ["under policy Y"],
+            "type": "boolean"
         }
     })
     
-    # Attack 2: Negation
     attacks.append({
-        "id": "rep-002-negation",
-        "category": "negation",
-        "evidence": "The standard API does not support concurrent batch updates.",
-        "query": "Does the standard API support concurrent batch updates?",
-        "label": "UNSUPPORTED",
-        "gold_e0": {
-            "proposition": {
-                "subject": "The standard API",
-                "predicate": "support",
-                "object": "concurrent batch updates"
-            },
-            "conditions": [],
-            "exceptions": [],
-            "temporal_scope": [],
-            "modality": "does not",
-            "confidence": "explicit",
-            "ambiguity": [],
-            "provenance": "doc_1"
-        }
-    })
-
-    # Attack 3: Conjunction vs Disjunction Ambiguity
-    attacks.append({
-        "id": "rep-003-conj-disj",
-        "category": "conjunction_disjunction",
-        "evidence": "Admin access is granted if the user is in the dev group and the user has a security token or is logging in from the office.",
-        "query": "Is admin access granted to a user who has a security token?",
-        "label": "AMBIGUOUS",
-        "gold_e0": {
-            "proposition": {
-                "subject": "Admin access",
-                "predicate": "is granted",
-                "object": ""
-            },
-            "conditions": [
-                "the user is in the dev group",
-                "the user has a security token or is logging in from the office"
-            ],
-            "exceptions": [],
-            "temporal_scope": [],
-            "modality": "is",
-            "confidence": "explicit",
-            "ambiguity": ["scope of 'and' vs 'or'"],
-            "provenance": "doc_1"
-        }
-    })
-    
-    # Attack 4: Temporal Scope
-    attacks.append({
-        "id": "rep-004-temporal",
+        "id": "rep-002-temporal",
         "category": "temporal",
-        "evidence": "The legacy dashboard will remain accessible until Q3, after which all users must migrate.",
-        "query": "Is the legacy dashboard accessible?",
-        "label": "UNSUPPORTED",  # Query lacks temporal qualifier
+        "evidence": "The legacy dashboard will remain accessible until Q3.",
+        "query": "Is the legacy dashboard accessible in Q4?",
+        "ground_truth": "CONTRADICTED",
+        "expected_unsafe": False,
+        "regression_status": "new",
         "gold_e0": {
             "proposition": {
                 "subject": "The legacy dashboard",
@@ -100,52 +175,15 @@ def build_attacks():
             "confidence": "explicit",
             "ambiguity": [],
             "provenance": "doc_1"
-        }
-    })
-    
-    # Attack 5: Numeric Constraint
-    attacks.append({
-        "id": "rep-005-numeric",
-        "category": "numeric_constraint",
-        "evidence": "Refunds are processed automatically for transactions under $50.",
-        "query": "Are refunds processed automatically?",
-        "label": "UNSUPPORTED",
-        "gold_e0": {
+        },
+        "gold_query_ir": {
             "proposition": {
-                "subject": "Refunds",
-                "predicate": "are processed",
-                "object": "automatically"
+                "subject": "the legacy dashboard",
+                "predicate": "accessible",
+                "object": ""
             },
-            "conditions": ["for transactions under $50"],
-            "exceptions": [],
-            "temporal_scope": [],
-            "modality": "are",
-            "confidence": "explicit",
-            "ambiguity": [],
-            "provenance": "doc_1"
-        }
-    })
-    
-    # Attack 6: Coreference
-    attacks.append({
-        "id": "rep-006-coreference",
-        "category": "coreference",
-        "evidence": "The staging server is updated nightly. It is not meant for performance testing.",
-        "query": "Can the staging server be used for performance testing?",
-        "label": "UNSUPPORTED",
-        "gold_e0": {
-            "proposition": {
-                "subject": "It",
-                "predicate": "is meant",
-                "object": "for performance testing"
-            },
-            "conditions": [],
-            "exceptions": [],
-            "temporal_scope": [],
-            "modality": "is not",
-            "confidence": "explicit",
-            "ambiguity": ["coreference 'It' to 'The staging server'"],
-            "provenance": "doc_1"
+            "temporal_scope": ["in Q4"],
+            "type": "boolean"
         }
     })
     

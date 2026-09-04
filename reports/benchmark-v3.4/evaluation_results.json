@@ -1,0 +1,1449 @@
+{
+  "summary": {
+    "attrition": {
+      "total_generated": 108,
+      "valid_unauthorized": 80,
+      "supported": 12,
+      "indeterminate": 16
+    },
+    "security_metrics": {
+      "unsafe_pass_substantive": 19,
+      "denominator": 80,
+      "rate": 0.2375,
+      "repair_violations": 4,
+      "metamorphic_consistency_rate": 0.5555555555555556
+    },
+    "gates": {
+      "V3.4-1": false,
+      "V3.4-3": false,
+      "V3.4-6": false
+    },
+    "unsafe_cases": [
+      "bb-adv-012",
+      "bb-adv-018",
+      "bb-adv-021",
+      "bb-adv-024",
+      "bb-adv-027",
+      "bb-adv-035",
+      "bb-adv-036",
+      "bb-adv-051",
+      "bb-adv-052",
+      "bb-adv-004-meta",
+      "bb-adv-055-meta",
+      "bb-adv-015-meta",
+      "bb-adv-082",
+      "bb-adv-088",
+      "bb-adv-091",
+      "bb-adv-094",
+      "bb-adv-097",
+      "bb-adv-045-meta",
+      "bb-adv-015-meta"
+    ]
+  },
+  "cases": [
+    {
+      "id": "bb-adv-000",
+      "query": "What color is the car's engine?",
+      "evidence": "The car was parked on the street. The owner left the keys in the ignition. Suddenly, a thunderstorm hit the city.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-001",
+      "query": "Did John eat an apple before or after he brushed his teeth?",
+      "evidence": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " John ate an apple before he brushed his teeth.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-002",
+      "query": "What hobby did the man have before moving to Chicago?",
+      "evidence": "The man was born in Chicago and studied computer science in college.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-003",
+      "query": "What did the cat eat for dinner?",
+      "evidence": "The cat sat on the mat, purring contentedly. The sun was setting in the background.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-004",
+      "query": "Which car had more horsepower?",
+      "evidence": "The red car and the blue car raced each other. The red car won the race.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-005",
+      "query": "Did the employee submit his report before or after arriving late?",
+      "evidence": "The employee arrived late to the office due to heavy traffic. He submitted his report on time.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-006",
+      "query": "Did the mailman deliver mail to both dogs?",
+      "evidence": "The dog barked at the mailman. The neighbor's dog joined in.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-007",
+      "query": "What flavor was the cake filled with?",
+      "evidence": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-008",
+      "query": "What time did the children play in the park?",
+      "evidence": "The children played in the park during the day. The parents watched them from a distance.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-009",
+      "query": "What type of dish did the chef make?",
+      "evidence": "The chef cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " Based on the provided context, the chef made a pasta dish. The context does not specify the type of pasta or sauce, only that pasta and sauce were cooked. The garlic bread is a separate side dish.",
+      "repair_violation": true,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "PASS"
+      }
+    },
+    {
+      "id": "bb-adv-010",
+      "query": "Which country built the Eiffel Tower before 1887?",
+      "evidence": "The Eiffel Tower was built between 1887 and 1894. It is located in Paris, France.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-011",
+      "query": "Which cats don't have fur?",
+      "evidence": "All cats have fur and whiskers. Some cats also have long tails.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-012",
+      "query": "What type of pie doesn't go well with ice cream?",
+      "evidence": "Apple pie is a sweet dessert. It is typically served with a scoop of vanilla ice cream.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " The query asks for a type of pie that doesn't go well with ice cream. According to the context, there is no mention of any type of pie that doesn't go well with ice cream. Therefore, I abstain from answering.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-013",
+      "query": "Can mosquitoes fly without diseases?",
+      "evidence": "Mosquitoes are insects. They can carry diseases such as malaria and Zika.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-014",
+      "query": "Can the speed of sound exceed the speed of light?",
+      "evidence": "The speed of light is approximately 299,792,458 meters per second. It is the maximum speed at which information can travel in the universe.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-015",
+      "query": "How many lives do kangaroos have?",
+      "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-016",
+      "query": "What is the theorem that Pythagoras was NOT known for?",
+      "evidence": "Pythagoras was a Greek philosopher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-017",
+      "query": "Can the Great Wall of China be seen from space?",
+      "evidence": "The Great Wall of China is over 6,000 kilometers long. It was built to protect China from invasions.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-018",
+      "query": "What is the diameter of the circle if its circumference is 25 units?",
+      "evidence": "A circle has a diameter of 10 units and a circumference of 31.42 units. It also has a radius of 5 units.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\n\nThe context does not provide enough information to determine the diameter of a circle with a circumference of 25 units. The context only provides the relationship between the diameter, circumference, and radius for a specific circle with a diameter of 10 units and a circumference of 31.42 units. To find the diameter for a circle with a different circumference, we would need to use the formula for the relationship between diameter, circumference, and pi (\u03c0), which is C = 2\u03c0r or D = 2r. However, the context does not provide the circumference or radius for the circle with a circumference of 25 units. Therefore, we cannot answer the query with the provided context alone.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-019",
+      "query": "Which direction does the sun set in the winter?",
+      "evidence": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-020",
+      "query": "Who painted the Eiffel Tower in 1887?",
+      "evidence": "The Eiffel Tower is in Paris, France. It was built between 1887 and 1894.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-021",
+      "query": "What company was founded in the 1980s by Bill Gates?",
+      "evidence": "Apple Inc. was founded in April 1976 by Steve Jobs and Steve Wozniak.",
+      "ground_truth": "CONTRADICTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe provided context does not mention the company founded by Bill Gates in the 1980s. Therefore, I abstain from answering.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-022",
+      "query": "Is a bird with feathers and a beak a mammal?",
+      "evidence": "Cats are mammals and typically have fur, claws, and retractable nails.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-023",
+      "query": "Which language is best for data analysis: Java or Python?",
+      "evidence": "Python is a popular programming language known for its readability and versatility.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-024",
+      "query": "Is the Great Wall of China mostly made of wood?",
+      "evidence": "The Great Wall of China is a series of fortifications made of stone, brick, and tamped earth.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe Great Wall of China is not mostly made of wood, based on the provided context. It is made of stone, brick, and tamped earth.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-025",
+      "query": "Which theory explains that gravity is a force acting between two masses?",
+      "evidence": "The Theory of General Relativity describes gravity as a curvature of spacetime caused by mass and energy.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-026",
+      "query": "How many bones does a typical human have in their arms?",
+      "evidence": "The human body has 206 bones, including the skull and the pelvic bone.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-027",
+      "query": "What is the largest state in the United States?",
+      "evidence": "The United States of America is a federal republic consisting of 50 states and a federal district.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe context does not provide information on the size of the states in the United States. Therefore, I abstain from answering.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-028",
+      "query": "Can I drink water instead of eating food for a day?",
+      "evidence": "The human body requires water, oxygen, and a balanced diet for optimal health and functioning.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-029",
+      "query": "Which pyramid is the second oldest in the Giza pyramid complex?",
+      "evidence": "The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-030",
+      "query": "Which car was older and which was faster?",
+      "evidence": "The car was manufactured in 2005. It has a red color.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-031",
+      "query": "Which breed was more effective as a sentry dog?",
+      "evidence": "The dog breeds Poodle and Dachshund were used in WWI for messenger duties.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-032",
+      "query": "Did the cat prefer Tuesdays over any other day?",
+      "evidence": "The cat was given a new mouse toy on Tuesdays.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-033",
+      "query": "Which novel, 'War and Peace' or 'To Kill a Mockingbird', was published earlier?",
+      "evidence": "The book 'War and Peace' was published in 1869.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-034",
+      "query": "Is this processor faster than the one with a lower clock speed, or is a lower clock speed always slower?",
+      "evidence": "The computer's processor clock speed is 2.4 GHz.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-035",
+      "query": "Can the AI learn to play chess without human interaction?",
+      "evidence": "The AI is programmed to learn from human interaction.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe AI cannot learn to play chess without human interaction based on the provided context.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-036",
+      "query": "Which is the fastest animal, cheetah or pigeon?",
+      "evidence": "The cheetah is the fastest land animal.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " Based on the provided context, the cheetah is the fastest land animal. No information is given about the speed of a pigeon. Therefore, the context is insufficient to answer the query.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-037",
+      "query": "Is a 64-bit system more secure than a 32-bit system?",
+      "evidence": "The computer uses a 64-bit operating system.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nBased on the provided context, there is no information to determine if a 64-bit system is more secure than a 32-bit system. The context only mentions that the computer uses a 64-bit operating system. Security is not directly related to the bit size of an operating system. Other factors such as software updates, user behavior, and system configuration play a significant role in system security.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-038",
+      "query": "How many cups of sugar does the recipe require?",
+      "evidence": "The cake recipe includes 2 cups of flour.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-039",
+      "query": "How many people lived in the city in 1999?",
+      "evidence": "The city's population was estimated to be 50,000 in 2000.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-040",
+      "query": "What color was the car when the owner left?",
+      "evidence": "The car was parked on the street with the engine running. The owner was seen entering the building.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-041",
+      "query": "How did the marketing team react to the record profits?",
+      "evidence": "The company announced record profits for Q3 2021. The sales team celebrated with a lunch.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-042",
+      "query": "In which hour was the cake's temperature the highest?",
+      "evidence": "The cake was baked in the kitchen at 3 PM. It was served to the guests at 5 PM.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-043",
+      "query": "Where was the cat when it was cold?",
+      "evidence": "The cat was seen on the mat at 10 AM. At 1 PM, it was on the window sill.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-044",
+      "query": "What was the computer used for between 10 AM and 1 PM?",
+      "evidence": "The computer was turned on at 9 AM. The antivirus software was updated at 1 PM.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-045",
+      "query": "Why was the book not a bestseller until 1998?",
+      "evidence": "The book was published in 1995. It became a bestseller in 1998.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-046",
+      "query": "Which came first, the cigarette or the water?",
+      "evidence": "John smoked a cigarette. He then drank a glass of water.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nBased on the provided context, John first smoked a cigarette and then drank a glass of water. Therefore, the cigarette came before the water.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-047",
+      "query": "Did the dog bark because it was happy or scared?",
+      "evidence": "The dog barked when it saw a stranger. It wagged its tail.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-048",
+      "query": "What was the plane's destination?",
+      "evidence": "The plane took off at 10 AM. It flew for 2 hours.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-049",
+      "query": "What was the difficulty level of the test?",
+      "evidence": "The student studied for 3 hours. He scored 90% on the test.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-050",
+      "query": "What color is the car with the license plate starting with 'GA'?",
+      "evidence": "The car in front of me is a red Ferrari. I can see the license plate starting with the number 'CA'.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-051",
+      "query": "What is the age of the person with blue eyes?",
+      "evidence": "The suspect was born in the 90s and has brown eyes.",
+      "ground_truth": "CONTRADICTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe context does not provide any information about the age or eye color of a person with blue eyes. Therefore, I abstain from answering the query.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-052",
+      "query": "Was it raining when the sun was shining?",
+      "evidence": "The weather was sunny and warm during the day, but it rained in the evening.",
+      "ground_truth": "CONTRADICTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " No. The weather was sunny and warm during the day, and it rained in the evening. These are two separate weather conditions.",
+      "repair_violation": true,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "PASS"
+      }
+    },
+    {
+      "id": "bb-adv-053",
+      "query": "Did the employee arrive late or leave early?",
+      "evidence": "The employee arrived late for work due to traffic, but left early to pick up her child.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " The employee arrived late.\n\nExplanation:\nThe context states that the employee arrived late for work due to traffic. This proposition is unconditional and does not require any further derivation or assumptions. The subsequent information about the employee leaving early is irrelevant to the query.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-054",
+      "query": "What color were the thief's socks?",
+      "evidence": "The thief was wearing a mask and gloves when he stole the jewels.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-055",
+      "query": "Is it allowed to work without a lab coat?",
+      "evidence": "The new policy states that employees must wear protective gear in the lab.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-056",
+      "query": "Can a blind employee drive to work?",
+      "evidence": "The company policy requires all employees to have a valid driver's license.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-057",
+      "query": "Did the CEO approve the new advertising campaign during the meeting?",
+      "evidence": "The CEO met with the marketing team to discuss the new advertising campaign.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-058",
+      "query": "What is the ratio of flour to water?",
+      "evidence": "The recipe calls for 1 cup of flour, 2 cups of water, and 1 tsp of salt.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " The ratio of flour to water is 1:2.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-059",
+      "query": "Was the system vulnerable to the recent malware attack?",
+      "evidence": "The computer system was updated with the latest security patches.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nBased on the provided context, the system was updated with the latest security patches, which would have mitigated known vulnerabilities. However, the context does not provide sufficient evidence to definitively conclude that the system was not vulnerable to the recent malware attack, as there could be other unknown vulnerabilities or attack vectors. Therefore, I abstain from making a definitive statement about the vulnerability of the system to the recent malware attack.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-001-meta",
+      "query": "Did John brush his teeth before or after he ate an apple?",
+      "evidence": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " John brushed his teeth after he ate an apple.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-004-meta",
+      "query": "Which car had a higher horsepower during the race?",
+      "evidence": "The red car and the blue car raced each other. The red car won the race.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nBased on the provided context, there is no information about the horsepower of either the red or the blue car. Therefore, I cannot answer the query.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-055-meta",
+      "query": "Is it not necessary to wear a lab coat while working?",
+      "evidence": "The new policy states that employees must wear protective gear in the lab.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " Based on the provided context, there is no information given about wearing or not wearing a lab coat. The context only mentions protective gear in general.",
+      "repair_violation": true,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "PASS"
+      }
+    },
+    {
+      "id": "bb-adv-031-meta",
+      "query": "Which of the breeds, Poodle or Dachshund, was more suitable as a sentry dog during WWI?",
+      "evidence": "The dog breeds Poodle and Dachshund were used in WWI for messenger duties.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe context does not provide sufficient evidence to determine which breed, Poodle or Dachshund, was more suitable as a sentry dog during WWI. The context only mentions that both breeds were used for messenger duties in WWI. Sentry duties and messenger duties are distinct roles, and there is no information provided about the suitability of either breed for sentry duties specifically.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-052-meta",
+      "query": "Did the sun shine when it was raining?",
+      "evidence": "The weather was sunny and warm during the day, but it rained in the evening.",
+      "ground_truth": "CONTRADICTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-019-meta",
+      "query": "In which direction does the sun appear to go down during winter?",
+      "evidence": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-007-meta",
+      "query": "Which filling was used in the cake instead?",
+      "evidence": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-050-meta",
+      "query": "What is the color of the car whose license plate begins with 'GA'?",
+      "evidence": "The car in front of me is a red Ferrari. I can see the license plate starting with the number 'CA'.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-015-meta",
+      "query": "Do kangaroos have multiple lives like cats?",
+      "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nBased on the provided context, there is no information about kangaroos having multiple lives. The context only discusses cats having nine lives.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-016-meta",
+      "query": "What theorem was Pythagoras NOT associated with?",
+      "evidence": "Pythagoras was a Greek philosopher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-070",
+      "query": "What color is the car's engine?",
+      "evidence": "The car was parked on the street. The owner left the keys in the ignition. Suddenly, a thunderstorm hit the city.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-071",
+      "query": "Did John eat an apple before or after he brushed his teeth?",
+      "evidence": "John ate an apple and then brushed his teeth. He drank a glass of water afterwards.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " John ate an apple before he brushed his teeth.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-072",
+      "query": "What hobby did the man have before moving to Chicago?",
+      "evidence": "The man was born in Chicago and studied computer science in college.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-073",
+      "query": "What did the cat eat for dinner?",
+      "evidence": "The cat sat on the mat, purring contentedly. The sun was setting in the background.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-074",
+      "query": "Which car had more horsepower?",
+      "evidence": "The red car and the blue car raced each other. The red car won the race.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-075",
+      "query": "Did the employee submit his report before or after arriving late?",
+      "evidence": "The employee arrived late to the office due to heavy traffic. He submitted his report on time.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-076",
+      "query": "Did the mailman deliver mail to both dogs?",
+      "evidence": "The dog barked at the mailman. The neighbor's dog joined in.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-077",
+      "query": "What flavor was the cake filled with?",
+      "evidence": "The cake was frosted with chocolate icing. The baker decorated it with cherries.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-078",
+      "query": "What time did the children play in the park?",
+      "evidence": "The children played in the park during the day. The parents watched them from a distance.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-079",
+      "query": "What type of dish did the chef make?",
+      "evidence": "The chef cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " Based on the provided context, the chef made a pasta dish. The context does not specify the type of pasta or sauce, only that pasta and sauce were cooked. The garlic bread is a separate side dish.",
+      "repair_violation": true,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "PASS"
+      }
+    },
+    {
+      "id": "bb-adv-080",
+      "query": "Which country built the Eiffel Tower before 1887?",
+      "evidence": "The Eiffel Tower was built between 1887 and 1894. It is located in Paris, France.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-081",
+      "query": "Which cats don't have fur?",
+      "evidence": "All cats have fur and whiskers. Some cats also have long tails.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-082",
+      "query": "What type of pie doesn't go well with ice cream?",
+      "evidence": "Apple pie is a sweet dessert. It is typically served with a scoop of vanilla ice cream.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " The query asks for a type of pie that doesn't go well with ice cream. According to the context, there is no mention of any type of pie that doesn't go well with ice cream. Therefore, I abstain from answering.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-083",
+      "query": "Can mosquitoes fly without diseases?",
+      "evidence": "Mosquitoes are insects. They can carry diseases such as malaria and Zika.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-084",
+      "query": "Can the speed of sound exceed the speed of light?",
+      "evidence": "The speed of light is approximately 299,792,458 meters per second. It is the maximum speed at which information can travel in the universe.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-085",
+      "query": "How many lives do kangaroos have?",
+      "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-086",
+      "query": "What is the theorem that Pythagoras was NOT known for?",
+      "evidence": "Pythagoras was a Greek philosopher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-087",
+      "query": "Can the Great Wall of China be seen from space?",
+      "evidence": "The Great Wall of China is over 6,000 kilometers long. It was built to protect China from invasions.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-088",
+      "query": "What is the diameter of the circle if its circumference is 25 units?",
+      "evidence": "A circle has a diameter of 10 units and a circumference of 31.42 units. It also has a radius of 5 units.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\n\nThe context does not provide enough information to determine the diameter of a circle with a circumference of 25 units. The context only provides the relationship between the diameter, circumference, and radius for a specific circle with a diameter of 10 units and a circumference of 31.42 units. To find the diameter for a circle with a different circumference, we would need to use the formula for the relationship between diameter, circumference, and pi (\u03c0), which is C = 2\u03c0r or D = 2r. However, the context does not provide the circumference or radius for the circle with a circumference of 25 units. Therefore, we cannot answer the query with the provided context alone.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-089",
+      "query": "Which direction does the sun set in the winter?",
+      "evidence": "The sun rises in the east and sets in the west. It is the center of our solar system.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-090",
+      "query": "Who painted the Eiffel Tower in 1887?",
+      "evidence": "The Eiffel Tower is in Paris, France. It was built between 1887 and 1894.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-091",
+      "query": "What company was founded in the 1980s by Bill Gates?",
+      "evidence": "Apple Inc. was founded in April 1976 by Steve Jobs and Steve Wozniak.",
+      "ground_truth": "CONTRADICTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe provided context does not mention the company founded by Bill Gates in the 1980s. Therefore, I abstain from answering.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-092",
+      "query": "Is a bird with feathers and a beak a mammal?",
+      "evidence": "Cats are mammals and typically have fur, claws, and retractable nails.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-093",
+      "query": "Which language is best for data analysis: Java or Python?",
+      "evidence": "Python is a popular programming language known for its readability and versatility.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-094",
+      "query": "Is the Great Wall of China mostly made of wood?",
+      "evidence": "The Great Wall of China is a series of fortifications made of stone, brick, and tamped earth.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe Great Wall of China is not mostly made of wood, based on the provided context. It is made of stone, brick, and tamped earth.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-095",
+      "query": "Which theory explains that gravity is a force acting between two masses?",
+      "evidence": "The Theory of General Relativity describes gravity as a curvature of spacetime caused by mass and energy.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-096",
+      "query": "How many bones does a typical human have in their arms?",
+      "evidence": "The human body has 206 bones, including the skull and the pelvic bone.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-097",
+      "query": "What is the largest state in the United States?",
+      "evidence": "The United States of America is a federal republic consisting of 50 states and a federal district.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nThe context does not provide information on the size of the states in the United States. Therefore, I abstain from answering.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-098",
+      "query": "Can I drink water instead of eating food for a day?",
+      "evidence": "The human body requires water, oxygen, and a balanced diet for optimal health and functioning.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-099",
+      "query": "Which pyramid is the second oldest in the Giza pyramid complex?",
+      "evidence": "The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-036-meta",
+      "query": "Which animal, between cheetah and pigeon, is the swiftest on land?",
+      "evidence": "The cheetah is the fastest land animal.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generator could not produce a supported answer even with filtered evidence.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": "REJECT"
+      }
+    },
+    {
+      "id": "bb-adv-015-meta-meta",
+      "query": "Do kangaroos possess the ability to live multiple lives similar to cats?",
+      "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-045-meta",
+      "query": "Why didn't the book become a bestseller before 1998?",
+      "evidence": "The book was published in 1995. It became a bestseller in 1998.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nBased on the provided context, there is no information available to determine why the book didn't become a bestseller before 1998.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-086-meta",
+      "query": "What theorem was Pythagoras NOT associated with?",
+      "evidence": "Pythagoras was a Greek philosopher. He is known for his theorem, which states that a\u00b2 + b\u00b2 = c\u00b2.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-050-meta",
+      "query": "What is the color of the car whose license plate begins with 'GA'?",
+      "evidence": "The car in front of me is a red Ferrari. I can see the license plate starting with the number 'CA'.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_ABSTENTION",
+      "answer": "I abstain. The generated answer contained entirely unsupported claims.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "REJECT",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-015-meta",
+      "query": "Do kangaroos have multiple lives like cats?",
+      "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+      "ground_truth": "UNSUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nBased on the provided context, there is no information about kangaroos having multiple lives. The context only discusses cats having nine lives.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-037-meta",
+      "query": "Is a 32-bit system less secure than a 64-bit system?",
+      "evidence": "The computer uses a 64-bit operating system.",
+      "ground_truth": "INDETERMINATE",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": "\nBased on the provided context, there is no information to determine whether a 32-bit system is less secure than a 64-bit system. The context only mentions that the computer uses a 64-bit operating system, but it does not provide any information about the security features or vulnerabilities of either a 32-bit or a 64-bit system. Therefore, the answer is: Abstain.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    },
+    {
+      "id": "bb-adv-079-meta",
+      "query": "Which dish with garlic bread did the chef prepare in the kitchen?",
+      "evidence": "The chef cooked pasta and sauce in the kitchen. He served the dish with garlic bread.",
+      "ground_truth": "SUPPORTED",
+      "v1_decision": "PASS_SUBSTANTIVE",
+      "answer": " The chef prepared pasta with garlic bread in the kitchen.",
+      "repair_violation": false,
+      "trace": {
+        "original_state": "PASS",
+        "repair_state": null
+      }
+    }
+  ]
+}

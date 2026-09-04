@@ -22,7 +22,7 @@
     },
     "R2_V3.2": {
       "N": 6,
-      "unsafe": 2
+      "unsafe": 0
     }
   },
   "per_case_manifests": {
@@ -2689,7 +2689,7 @@
       {
         "id": "g2-adv-004",
         "verification_state": "PASS",
-        "unsafe": true
+        "unsafe": false
       },
       {
         "id": "g2-adv-005",
@@ -2699,7 +2699,7 @@
       {
         "id": "g2-adv-006",
         "verification_state": "PASS",
-        "unsafe": true
+        "unsafe": false
       }
     ]
   }

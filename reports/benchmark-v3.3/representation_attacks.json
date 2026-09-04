@@ -1,0 +1,762 @@
+[
+  {
+    "id": "g2-adv-004",
+    "category": "regression_false_conditionality",
+    "evidence": "The timeout limit is strictly set to 30 seconds for all endpoints.",
+    "query": "How does the timeout vary by version?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": true,
+    "regression_status": "active",
+    "gold_e0": {
+      "proposition": {
+        "subject": "The timeout limit",
+        "predicate": "is set",
+        "object": "to 30 seconds for all endpoints"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is strictly",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "the timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "g2-adv-006",
+    "category": "regression_partial_overlap",
+    "evidence": "In the v1 API staging environment, the timeout is 30 seconds.",
+    "query": "What are the timeout limits for the staging and production environments in v1?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": true,
+    "regression_status": "active",
+    "gold_e0": {
+      "proposition": {
+        "subject": "the timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [
+        "In the v1 API staging environment"
+      ],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "the timeout limits",
+        "predicate": "are",
+        "object": "what"
+      },
+      "conditions": [
+        "for the staging environment in v1",
+        "for the production environment in v1"
+      ],
+      "type": "conjunction_demand"
+    }
+  },
+  {
+    "id": "sib-004-01",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "30 sec for all endpoints.",
+    "query": "How does timeout vary by version?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-02",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "30 sec for all endpoints.",
+    "query": "Does timeout change between v1 and v2?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-03",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "30 sec for all endpoints.",
+    "query": "Are the timeout values identical?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-04",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "30 sec for all endpoints.",
+    "query": "What happens to timeout after upgrading?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-05",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "30 seconds regardless of version.",
+    "query": "How does timeout vary by version?",
+    "ground_truth": "SUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-06",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "30 seconds regardless of version.",
+    "query": "Does timeout change between v1 and v2?",
+    "ground_truth": "SUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-07",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "30 seconds regardless of version.",
+    "query": "Are the timeout values identical?",
+    "ground_truth": "SUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-08",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "30 seconds regardless of version.",
+    "query": "What happens to timeout after upgrading?",
+    "ground_truth": "SUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-09",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "every endpoint uses 30 seconds.",
+    "query": "How does timeout vary by version?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-10",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "every endpoint uses 30 seconds.",
+    "query": "Does timeout change between v1 and v2?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-11",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "every endpoint uses 30 seconds.",
+    "query": "Are the timeout values identical?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-12",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "every endpoint uses 30 seconds.",
+    "query": "What happens to timeout after upgrading?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-13",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "the timeout remains 30 seconds.",
+    "query": "How does timeout vary by version?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-14",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "the timeout remains 30 seconds.",
+    "query": "Does timeout change between v1 and v2?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-15",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "the timeout remains 30 seconds.",
+    "query": "Are the timeout values identical?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-16",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "the timeout remains 30 seconds.",
+    "query": "What happens to timeout after upgrading?",
+    "ground_truth": "UNSUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-17",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "the timeout is unchanged across versions.",
+    "query": "How does timeout vary by version?",
+    "ground_truth": "SUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-18",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "the timeout is unchanged across versions.",
+    "query": "Does timeout change between v1 and v2?",
+    "ground_truth": "SUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-19",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "the timeout is unchanged across versions.",
+    "query": "Are the timeout values identical?",
+    "ground_truth": "SUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "sib-004-20",
+    "category": "semantic_sibling_false_conditionality",
+    "evidence": "the timeout is unchanged across versions.",
+    "query": "What happens to timeout after upgrading?",
+    "ground_truth": "SUPPORTED",
+    "expected_unsafe": false,
+    "regression_status": "sibling",
+    "gold_e0": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "is",
+        "object": "30 seconds"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [],
+      "modality": "is",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "timeout",
+        "predicate": "vary",
+        "object": "by version"
+      },
+      "type": "comparative_attribute"
+    }
+  },
+  {
+    "id": "rep-001-exception",
+    "category": "exception",
+    "evidence": "Temporary administrators may access the production database, except when operating under policy Y.",
+    "query": "Can the temporary administrator access the production database under policy Y?",
+    "ground_truth": "CONTRADICTED",
+    "expected_unsafe": false,
+    "regression_status": "new",
+    "gold_e0": {
+      "proposition": {
+        "subject": "Temporary administrators",
+        "predicate": "access",
+        "object": "the production database"
+      },
+      "conditions": [],
+      "exceptions": [
+        "when operating under policy Y"
+      ],
+      "temporal_scope": [],
+      "modality": "may",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "the temporary administrator",
+        "predicate": "access",
+        "object": "the production database"
+      },
+      "conditions": [
+        "under policy Y"
+      ],
+      "type": "boolean"
+    }
+  },
+  {
+    "id": "rep-002-temporal",
+    "category": "temporal",
+    "evidence": "The legacy dashboard will remain accessible until Q3.",
+    "query": "Is the legacy dashboard accessible in Q4?",
+    "ground_truth": "CONTRADICTED",
+    "expected_unsafe": false,
+    "regression_status": "new",
+    "gold_e0": {
+      "proposition": {
+        "subject": "The legacy dashboard",
+        "predicate": "will remain",
+        "object": "accessible"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "temporal_scope": [
+        "until Q3"
+      ],
+      "modality": "will",
+      "confidence": "explicit",
+      "ambiguity": [],
+      "provenance": "doc_1"
+    },
+    "gold_query_ir": {
+      "proposition": {
+        "subject": "the legacy dashboard",
+        "predicate": "accessible",
+        "object": ""
+      },
+      "temporal_scope": [
+        "in Q4"
+      ],
+      "type": "boolean"
+    }
+  }
+]

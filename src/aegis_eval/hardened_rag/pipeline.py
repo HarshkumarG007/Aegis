@@ -48,7 +48,7 @@ class HardenedRAGPipeline:
             })
         return chunks
         
-    def execute(self, query_id: str, query_text: str, bypass_sufficiency: bool = False, chunks: list = None) -> dict:
+    def execute(self, query_id: str, query_text: str, bypass_sufficiency: bool = False, chunks: list = None, query_ir: dict = None) -> dict:
         start_time = time.time()
         
         if chunks is None:
@@ -121,7 +121,7 @@ class HardenedRAGPipeline:
         
         # 3. Post-generation Verification & Repair Loop
         if self.verifier:
-            v_dec = self.verifier.verify(trace["answer"], chunks, condition_graph=trace.get("condition_graph", {}))
+            v_dec = self.verifier.verify(trace["answer"], chunks, condition_graph=trace.get("condition_graph", {}), query_text=query_text, query_ir=query_ir)
             trace["verification_state"] = v_dec["state"]
             trace["verification_confidence"] = v_dec["confidence"]
             trace["original_verification_trace"] = v_dec
@@ -149,7 +149,7 @@ class HardenedRAGPipeline:
                             repair_response = self.llm.complete(repair_prompt)
                             trace["answer"] = str(repair_response)
                             
-                            repair_v_dec = self.verifier.verify(trace["answer"], chunks, condition_graph=trace.get("condition_graph", {}))
+                            repair_v_dec = self.verifier.verify(trace["answer"], chunks, condition_graph=trace.get("condition_graph", {}), query_text=query_text, query_ir=query_ir)
                             trace["verification_state"] = repair_v_dec["state"]
                             trace["verification_confidence"] = repair_v_dec["confidence"]
                             trace["repair_verification_trace"] = repair_v_dec
@@ -174,7 +174,7 @@ class HardenedRAGPipeline:
                             repair_response = self.llm.complete(repair_prompt)
                             trace["answer"] = str(repair_response)
                             
-                            repair_v_dec = self.verifier.verify(trace["answer"], filtered_chunks, condition_graph=trace.get("condition_graph", {}))
+                            repair_v_dec = self.verifier.verify(trace["answer"], filtered_chunks, condition_graph=trace.get("condition_graph", {}), query_text=query_text, query_ir=query_ir)
                             trace["verification_state"] = repair_v_dec["state"]
                             trace["verification_confidence"] = repair_v_dec["confidence"]
                             trace["repair_verification_trace"] = repair_v_dec

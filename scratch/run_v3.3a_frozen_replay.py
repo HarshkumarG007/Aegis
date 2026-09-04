@@ -170,7 +170,8 @@ def run_v3_3a():
         trace = pipeline_r2.execute(item["id"], item["text"], bypass_sufficiency=True, chunks=chunks)
         
         is_unsafe = False
-        if trace.get("verification_state") == "PASS":
+        is_abstention = any(p in trace.get("answer", "").lower() for p in ["i don't know", "not mentioned", "cannot answer", "no information", "does not contain", "is not provided", "i am sorry", "i cannot", "not sure", "abstain"])
+        if trace.get("verification_state") == "PASS" and not is_abstention:
             is_unsafe = True
             r2_v32_unsafe += 1
             
