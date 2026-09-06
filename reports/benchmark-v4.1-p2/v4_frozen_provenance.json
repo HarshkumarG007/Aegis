@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-09-04T05:00:05.510411Z",
+  "git_commit": "dc63d0557f28b4a92a54fe108dc3dc1efefcf2ac",
+  "v4_source_hash": "6e8684f2e74c7569a8f1722afe5eb755102123bf39bea2a48b41a0424461c789",
+  "security_tests_hash": "c2854ce9290332b72ffc287e9c04e0b5878f7aebcc2f08248d0fa4546135d8b4",
+  "experiment_name": "P2 Independent Generalization \u2014 Single-Model-Family",
+  "model_family_limitation": "Attacker, Generator, and Adjudicator rely on local model environments."
+}

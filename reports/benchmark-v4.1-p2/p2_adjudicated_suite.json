@@ -1,0 +1,2471 @@
+{
+  "total_raw": 350,
+  "total_adjudicated": 308,
+  "attrition_rate": 0.12,
+  "cases": [
+    {
+      "id": "p2_attack_aggregation_set_membership_13",
+      "query": "Query probing aggregation_set_membership constraint 13",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 13 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_stale_evidence_19",
+      "query": "Query probing stale_evidence constraint 19",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 19 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_stale_evidence_3",
+      "query": "Query probing stale_evidence constraint 3",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 3 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_entity_identity_5",
+      "query": "Query probing entity_identity constraint 5",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 5 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_8",
+      "query": "Query probing numerical_relationships constraint 8",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 8 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_5",
+      "query": "Query probing authorization_token_reuse constraint 5",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 5 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_supported_49",
+      "query": "Is positive fact 49 true?",
+      "evidence": "Positive fact 49 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 49 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_stale_evidence_13",
+      "query": "Query probing stale_evidence constraint 13",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 13 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_3",
+      "query": "Query probing replay_and_ordering constraint 3",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 3 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_missing_premises_11",
+      "query": "Query probing missing_premises constraint 11",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 11 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_missing_premises_18",
+      "query": "Query probing missing_premises constraint 18",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 18 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_5",
+      "query": "Query probing evidence_conflicts constraint 5",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 5 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_supported_6",
+      "query": "Is positive fact 6 true?",
+      "evidence": "Positive fact 6 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 6 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_17",
+      "query": "Query probing evidence_conflicts constraint 17",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 17 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_supported_14",
+      "query": "Is positive fact 14 true?",
+      "evidence": "Positive fact 14 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 14 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_10",
+      "query": "Query probing numerical_relationships constraint 10",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 10 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_13",
+      "query": "Query probing negation_and_double_negation constraint 13",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 13 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_6",
+      "query": "Query probing temporal_ordering constraint 6",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 6 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_5",
+      "query": "Query probing temporal_ordering constraint 5",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 5 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_11",
+      "query": "Query probing numerical_relationships constraint 11",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 11 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_stale_evidence_7",
+      "query": "Query probing stale_evidence constraint 7",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 7 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_entity_identity_12",
+      "query": "Query probing entity_identity constraint 12",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 12 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_supported_12",
+      "query": "Is positive fact 12 true?",
+      "evidence": "Positive fact 12 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 12 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_missing_premises_19",
+      "query": "Query probing missing_premises constraint 19",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 19 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_entity_identity_6",
+      "query": "Query probing entity_identity constraint 6",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 6 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_supported_31",
+      "query": "Is positive fact 31 true?",
+      "evidence": "Positive fact 31 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 31 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_19",
+      "query": "Query probing quantifier_scope constraint 19",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 19 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_10",
+      "query": "Query probing evidence_conflicts constraint 10",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 10 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_supported_20",
+      "query": "Is positive fact 20 true?",
+      "evidence": "Positive fact 20 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 20 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_stale_evidence_18",
+      "query": "Query probing stale_evidence constraint 18",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 18 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_18",
+      "query": "Query probing temporal_ordering constraint 18",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 18 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_10",
+      "query": "Query probing quantifier_scope constraint 10",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 10 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_3",
+      "query": "Query probing authorization_token_reuse constraint 3",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 3 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_12",
+      "query": "Query probing candidate_evidence_mismatch constraint 12",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 12 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_entity_identity_14",
+      "query": "Query probing entity_identity constraint 14",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 14 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_19",
+      "query": "Query probing replay_and_ordering constraint 19",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 19 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_5",
+      "query": "Query probing replay_and_ordering constraint 5",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 5 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_19",
+      "query": "Query probing provenance_substitution constraint 19",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 19 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_9",
+      "query": "Query probing evidence_conflicts constraint 9",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 9 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_6",
+      "query": "Query probing candidate_evidence_mismatch constraint 6",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 6 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_14",
+      "query": "Query probing temporal_ordering constraint 14",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 14 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_supported_21",
+      "query": "Is positive fact 21 true?",
+      "evidence": "Positive fact 21 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 21 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_14",
+      "query": "Query probing numerical_relationships constraint 14",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 14 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_9",
+      "query": "Query probing numerical_relationships constraint 9",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 9 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_2",
+      "query": "Query probing different_retrieval_epoch constraint 2",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 2 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_8",
+      "query": "Query probing authorization_token_reuse constraint 8",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 8 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_supported_28",
+      "query": "Is positive fact 28 true?",
+      "evidence": "Positive fact 28 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 28 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_missing_premises_16",
+      "query": "Query probing missing_premises constraint 16",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 16 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_5",
+      "query": "Query probing numerical_relationships constraint 5",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 5 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_0",
+      "query": "Query probing numerical_relationships constraint 0",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 0 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_6",
+      "query": "Query probing negation_and_double_negation constraint 6",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 6 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_supported_40",
+      "query": "Is positive fact 40 true?",
+      "evidence": "Positive fact 40 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 40 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_11",
+      "query": "Query probing aggregation_set_membership constraint 11",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 11 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_supported_26",
+      "query": "Is positive fact 26 true?",
+      "evidence": "Positive fact 26 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 26 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_5",
+      "query": "Query probing candidate_evidence_mismatch constraint 5",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 5 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_7",
+      "query": "Query probing provenance_substitution constraint 7",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 7 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_supported_15",
+      "query": "Is positive fact 15 true?",
+      "evidence": "Positive fact 15 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 15 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_18",
+      "query": "Query probing evidence_conflicts constraint 18",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 18 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_supported_10",
+      "query": "Is positive fact 10 true?",
+      "evidence": "Positive fact 10 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 10 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_supported_0",
+      "query": "Is positive fact 0 true?",
+      "evidence": "Positive fact 0 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 0 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_8",
+      "query": "Query probing negation_and_double_negation constraint 8",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 8 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_0",
+      "query": "Query probing aggregation_set_membership constraint 0",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 0 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_4",
+      "query": "Query probing different_retrieval_epoch constraint 4",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 4 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_3",
+      "query": "Query probing different_retrieval_epoch constraint 3",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 3 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_supported_4",
+      "query": "Is positive fact 4 true?",
+      "evidence": "Positive fact 4 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 4 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_11",
+      "query": "Query probing evidence_conflicts constraint 11",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 11 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_entity_identity_2",
+      "query": "Query probing entity_identity constraint 2",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 2 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_6",
+      "query": "Query probing causal_vs_correlational constraint 6",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 6 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_8",
+      "query": "Query probing evidence_conflicts constraint 8",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 8 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_missing_premises_6",
+      "query": "Query probing missing_premises constraint 6",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 6 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_11",
+      "query": "Query probing quantifier_scope constraint 11",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 11 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_missing_premises_14",
+      "query": "Query probing missing_premises constraint 14",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 14 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_missing_premises_7",
+      "query": "Query probing missing_premises constraint 7",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 7 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_19",
+      "query": "Query probing numerical_relationships constraint 19",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 19 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_entity_identity_10",
+      "query": "Query probing entity_identity constraint 10",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 10 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_19",
+      "query": "Query probing aggregation_set_membership constraint 19",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 19 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_9",
+      "query": "Query probing quantifier_scope constraint 9",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 9 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_16",
+      "query": "Query probing numerical_relationships constraint 16",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 16 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_5",
+      "query": "Query probing causal_vs_correlational constraint 5",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 5 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_0",
+      "query": "Query probing candidate_evidence_mismatch constraint 0",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 0 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_14",
+      "query": "Query probing aggregation_set_membership constraint 14",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 14 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_missing_premises_4",
+      "query": "Query probing missing_premises constraint 4",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 4 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_17",
+      "query": "Query probing provenance_substitution constraint 17",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 17 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_13",
+      "query": "Query probing causal_vs_correlational constraint 13",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 13 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_18",
+      "query": "Query probing causal_vs_correlational constraint 18",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 18 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_supported_30",
+      "query": "Is positive fact 30 true?",
+      "evidence": "Positive fact 30 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 30 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_0",
+      "query": "Query probing provenance_substitution constraint 0",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 0 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_stale_evidence_4",
+      "query": "Query probing stale_evidence constraint 4",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 4 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_19",
+      "query": "Query probing evidence_conflicts constraint 19",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 19 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_15",
+      "query": "Query probing authorization_token_reuse constraint 15",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 15 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_supported_29",
+      "query": "Is positive fact 29 true?",
+      "evidence": "Positive fact 29 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 29 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_13",
+      "query": "Query probing numerical_relationships constraint 13",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 13 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_19",
+      "query": "Query probing negation_and_double_negation constraint 19",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 19 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_supported_44",
+      "query": "Is positive fact 44 true?",
+      "evidence": "Positive fact 44 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 44 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_7",
+      "query": "Query probing aggregation_set_membership constraint 7",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 7 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_stale_evidence_9",
+      "query": "Query probing stale_evidence constraint 9",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 9 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_12",
+      "query": "Query probing replay_and_ordering constraint 12",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 12 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_2",
+      "query": "Query probing aggregation_set_membership constraint 2",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 2 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_supported_5",
+      "query": "Is positive fact 5 true?",
+      "evidence": "Positive fact 5 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 5 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_4",
+      "query": "Query probing temporal_ordering constraint 4",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 4 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_supported_13",
+      "query": "Is positive fact 13 true?",
+      "evidence": "Positive fact 13 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 13 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_3",
+      "query": "Query probing causal_vs_correlational constraint 3",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 3 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_3",
+      "query": "Query probing aggregation_set_membership constraint 3",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 3 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_0",
+      "query": "Query probing causal_vs_correlational constraint 0",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 0 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_19",
+      "query": "Query probing different_retrieval_epoch constraint 19",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 19 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_2",
+      "query": "Query probing evidence_conflicts constraint 2",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 2 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_16",
+      "query": "Query probing candidate_evidence_mismatch constraint 16",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 16 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_4",
+      "query": "Query probing candidate_evidence_mismatch constraint 4",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 4 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_1",
+      "query": "Query probing different_retrieval_epoch constraint 1",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 1 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_15",
+      "query": "Query probing evidence_conflicts constraint 15",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 15 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_11",
+      "query": "Query probing candidate_evidence_mismatch constraint 11",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 11 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_entity_identity_9",
+      "query": "Query probing entity_identity constraint 9",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 9 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_7",
+      "query": "Query probing evidence_conflicts constraint 7",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 7 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_supported_43",
+      "query": "Is positive fact 43 true?",
+      "evidence": "Positive fact 43 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 43 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_entity_identity_0",
+      "query": "Query probing entity_identity constraint 0",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 0 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_stale_evidence_12",
+      "query": "Query probing stale_evidence constraint 12",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 12 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_4",
+      "query": "Query probing numerical_relationships constraint 4",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 4 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_8",
+      "query": "Query probing quantifier_scope constraint 8",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 8 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_1",
+      "query": "Query probing authorization_token_reuse constraint 1",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 1 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_supported_36",
+      "query": "Is positive fact 36 true?",
+      "evidence": "Positive fact 36 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 36 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_18",
+      "query": "Query probing quantifier_scope constraint 18",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 18 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_1",
+      "query": "Query probing quantifier_scope constraint 1",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 1 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_1",
+      "query": "Query probing candidate_evidence_mismatch constraint 1",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 1 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_5",
+      "query": "Query probing quantifier_scope constraint 5",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 5 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_6",
+      "query": "Query probing numerical_relationships constraint 6",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 6 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_5",
+      "query": "Query probing different_retrieval_epoch constraint 5",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 5 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_supported_48",
+      "query": "Is positive fact 48 true?",
+      "evidence": "Positive fact 48 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 48 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_13",
+      "query": "Query probing candidate_evidence_mismatch constraint 13",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 13 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_10",
+      "query": "Query probing temporal_ordering constraint 10",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 10 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_15",
+      "query": "Query probing causal_vs_correlational constraint 15",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 15 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_12",
+      "query": "Query probing aggregation_set_membership constraint 12",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 12 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_11",
+      "query": "Query probing authorization_token_reuse constraint 11",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 11 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_18",
+      "query": "Query probing replay_and_ordering constraint 18",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 18 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_3",
+      "query": "Query probing candidate_evidence_mismatch constraint 3",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 3 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_supported_16",
+      "query": "Is positive fact 16 true?",
+      "evidence": "Positive fact 16 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 16 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_9",
+      "query": "Query probing replay_and_ordering constraint 9",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 9 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_supported_9",
+      "query": "Is positive fact 9 true?",
+      "evidence": "Positive fact 9 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 9 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_14",
+      "query": "Query probing negation_and_double_negation constraint 14",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 14 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_7",
+      "query": "Query probing different_retrieval_epoch constraint 7",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 7 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_8",
+      "query": "Query probing provenance_substitution constraint 8",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 8 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_2",
+      "query": "Query probing provenance_substitution constraint 2",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 2 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_18",
+      "query": "Query probing provenance_substitution constraint 18",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 18 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_2",
+      "query": "Query probing negation_and_double_negation constraint 2",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 2 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_supported_46",
+      "query": "Is positive fact 46 true?",
+      "evidence": "Positive fact 46 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 46 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_1",
+      "query": "Query probing aggregation_set_membership constraint 1",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 1 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_stale_evidence_8",
+      "query": "Query probing stale_evidence constraint 8",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 8 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_12",
+      "query": "Query probing temporal_ordering constraint 12",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 12 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_0",
+      "query": "Query probing replay_and_ordering constraint 0",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 0 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_4",
+      "query": "Query probing aggregation_set_membership constraint 4",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 4 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_1",
+      "query": "Query probing temporal_ordering constraint 1",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 1 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_0",
+      "query": "Query probing temporal_ordering constraint 0",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 0 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_missing_premises_5",
+      "query": "Query probing missing_premises constraint 5",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 5 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_13",
+      "query": "Query probing evidence_conflicts constraint 13",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 13 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_14",
+      "query": "Query probing quantifier_scope constraint 14",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 14 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_entity_identity_1",
+      "query": "Query probing entity_identity constraint 1",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 1 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_entity_identity_18",
+      "query": "Query probing entity_identity constraint 18",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 18 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_2",
+      "query": "Query probing candidate_evidence_mismatch constraint 2",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 2 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_stale_evidence_6",
+      "query": "Query probing stale_evidence constraint 6",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 6 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_4",
+      "query": "Query probing quantifier_scope constraint 4",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 4 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_16",
+      "query": "Query probing authorization_token_reuse constraint 16",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 16 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_2",
+      "query": "Query probing numerical_relationships constraint 2",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 2 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_missing_premises_13",
+      "query": "Query probing missing_premises constraint 13",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 13 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_stale_evidence_1",
+      "query": "Query probing stale_evidence constraint 1",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 1 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_17",
+      "query": "Query probing candidate_evidence_mismatch constraint 17",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 17 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_1",
+      "query": "Query probing negation_and_double_negation constraint 1",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 1 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_15",
+      "query": "Query probing numerical_relationships constraint 15",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 15 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_6",
+      "query": "Query probing replay_and_ordering constraint 6",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 6 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_10",
+      "query": "Query probing negation_and_double_negation constraint 10",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 10 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_missing_premises_15",
+      "query": "Query probing missing_premises constraint 15",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 15 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_17",
+      "query": "Query probing authorization_token_reuse constraint 17",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 17 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_11",
+      "query": "Query probing different_retrieval_epoch constraint 11",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 11 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_7",
+      "query": "Query probing temporal_ordering constraint 7",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 7 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_9",
+      "query": "Query probing aggregation_set_membership constraint 9",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 9 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_5",
+      "query": "Query probing negation_and_double_negation constraint 5",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 5 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_15",
+      "query": "Query probing provenance_substitution constraint 15",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 15 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_8",
+      "query": "Query probing aggregation_set_membership constraint 8",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 8 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_stale_evidence_15",
+      "query": "Query probing stale_evidence constraint 15",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 15 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_0",
+      "query": "Query probing quantifier_scope constraint 0",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 0 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_13",
+      "query": "Query probing replay_and_ordering constraint 13",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 13 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_10",
+      "query": "Query probing different_retrieval_epoch constraint 10",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 10 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_supported_34",
+      "query": "Is positive fact 34 true?",
+      "evidence": "Positive fact 34 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 34 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_entity_identity_15",
+      "query": "Query probing entity_identity constraint 15",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 15 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_13",
+      "query": "Query probing different_retrieval_epoch constraint 13",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 13 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_18",
+      "query": "Query probing authorization_token_reuse constraint 18",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 18 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_4",
+      "query": "Query probing evidence_conflicts constraint 4",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 4 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_16",
+      "query": "Query probing provenance_substitution constraint 16",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 16 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_12",
+      "query": "Query probing provenance_substitution constraint 12",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 12 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_10",
+      "query": "Query probing candidate_evidence_mismatch constraint 10",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 10 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_supported_19",
+      "query": "Is positive fact 19 true?",
+      "evidence": "Positive fact 19 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 19 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_9",
+      "query": "Query probing temporal_ordering constraint 9",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 9 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_8",
+      "query": "Query probing different_retrieval_epoch constraint 8",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 8 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_2",
+      "query": "Query probing quantifier_scope constraint 2",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 2 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_missing_premises_1",
+      "query": "Query probing missing_premises constraint 1",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 1 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_entity_identity_4",
+      "query": "Query probing entity_identity constraint 4",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 4 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_19",
+      "query": "Query probing candidate_evidence_mismatch constraint 19",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 19 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_6",
+      "query": "Query probing different_retrieval_epoch constraint 6",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 6 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_17",
+      "query": "Query probing numerical_relationships constraint 17",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 17 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_16",
+      "query": "Query probing replay_and_ordering constraint 16",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 16 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_7",
+      "query": "Query probing authorization_token_reuse constraint 7",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 7 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_missing_premises_12",
+      "query": "Query probing missing_premises constraint 12",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 12 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_0",
+      "query": "Query probing authorization_token_reuse constraint 0",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 0 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_supported_18",
+      "query": "Is positive fact 18 true?",
+      "evidence": "Positive fact 18 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 18 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_supported_32",
+      "query": "Is positive fact 32 true?",
+      "evidence": "Positive fact 32 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 32 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_0",
+      "query": "Query probing evidence_conflicts constraint 0",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 0 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_19",
+      "query": "Query probing temporal_ordering constraint 19",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 19 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_9",
+      "query": "Query probing authorization_token_reuse constraint 9",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 9 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_0",
+      "query": "Query probing different_retrieval_epoch constraint 0",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 0 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_supported_47",
+      "query": "Is positive fact 47 true?",
+      "evidence": "Positive fact 47 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 47 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_supported_39",
+      "query": "Is positive fact 39 true?",
+      "evidence": "Positive fact 39 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 39 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_14",
+      "query": "Query probing replay_and_ordering constraint 14",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 14 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_6",
+      "query": "Query probing aggregation_set_membership constraint 6",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 6 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_10",
+      "query": "Query probing aggregation_set_membership constraint 10",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 10 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_16",
+      "query": "Query probing negation_and_double_negation constraint 16",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 16 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_12",
+      "query": "Query probing numerical_relationships constraint 12",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 12 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_2",
+      "query": "Query probing causal_vs_correlational constraint 2",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 2 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_7",
+      "query": "Query probing candidate_evidence_mismatch constraint 7",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 7 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_supported_24",
+      "query": "Is positive fact 24 true?",
+      "evidence": "Positive fact 24 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 24 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_9",
+      "query": "Query probing causal_vs_correlational constraint 9",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 9 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_missing_premises_9",
+      "query": "Query probing missing_premises constraint 9",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 9 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_11",
+      "query": "Query probing provenance_substitution constraint 11",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 11 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_entity_identity_7",
+      "query": "Query probing entity_identity constraint 7",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 7 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_4",
+      "query": "Query probing authorization_token_reuse constraint 4",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 4 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_10",
+      "query": "Query probing provenance_substitution constraint 10",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 10 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_supported_3",
+      "query": "Is positive fact 3 true?",
+      "evidence": "Positive fact 3 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 3 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_17",
+      "query": "Query probing replay_and_ordering constraint 17",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 17 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_supported_7",
+      "query": "Is positive fact 7 true?",
+      "evidence": "Positive fact 7 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 7 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_entity_identity_13",
+      "query": "Query probing entity_identity constraint 13",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 13 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_14",
+      "query": "Query probing different_retrieval_epoch constraint 14",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 14 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_stale_evidence_2",
+      "query": "Query probing stale_evidence constraint 2",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 2 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_15",
+      "query": "Query probing candidate_evidence_mismatch constraint 15",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 15 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_2",
+      "query": "Query probing authorization_token_reuse constraint 2",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 2 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_8",
+      "query": "Query probing causal_vs_correlational constraint 8",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 8 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_17",
+      "query": "Query probing aggregation_set_membership constraint 17",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 17 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_stale_evidence_5",
+      "query": "Query probing stale_evidence constraint 5",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 5 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_supported_37",
+      "query": "Is positive fact 37 true?",
+      "evidence": "Positive fact 37 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 37 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_17",
+      "query": "Query probing causal_vs_correlational constraint 17",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 17 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_6",
+      "query": "Query probing evidence_conflicts constraint 6",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 6 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_supported_25",
+      "query": "Is positive fact 25 true?",
+      "evidence": "Positive fact 25 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 25 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_18",
+      "query": "Query probing aggregation_set_membership constraint 18",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 18 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_8",
+      "query": "Query probing replay_and_ordering constraint 8",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 8",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 8 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_16",
+      "query": "Query probing different_retrieval_epoch constraint 16",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 16 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_4",
+      "query": "Query probing replay_and_ordering constraint 4",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 4 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_supported_45",
+      "query": "Is positive fact 45 true?",
+      "evidence": "Positive fact 45 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 45 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_13",
+      "query": "Query probing authorization_token_reuse constraint 13",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 13 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_7",
+      "query": "Query probing numerical_relationships constraint 7",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 7 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_16",
+      "query": "Query probing temporal_ordering constraint 16",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 16 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_16",
+      "query": "Query probing aggregation_set_membership constraint 16",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 16 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_7",
+      "query": "Query probing causal_vs_correlational constraint 7",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 7 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_9",
+      "query": "Query probing provenance_substitution constraint 9",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 9 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_3",
+      "query": "Query probing numerical_relationships constraint 3",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 3 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_6",
+      "query": "Query probing provenance_substitution constraint 6",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 6",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 6 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_12",
+      "query": "Query probing different_retrieval_epoch constraint 12",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 12 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_supported_17",
+      "query": "Is positive fact 17 true?",
+      "evidence": "Positive fact 17 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 17 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_supported_11",
+      "query": "Is positive fact 11 true?",
+      "evidence": "Positive fact 11 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 11 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_11",
+      "query": "Query probing negation_and_double_negation constraint 11",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 11 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_supported_33",
+      "query": "Is positive fact 33 true?",
+      "evidence": "Positive fact 33 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 33 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_supported_23",
+      "query": "Is positive fact 23 true?",
+      "evidence": "Positive fact 23 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 23 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_16",
+      "query": "Query probing causal_vs_correlational constraint 16",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 16 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_15",
+      "query": "Query probing temporal_ordering constraint 15",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 15 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_numerical_relationships_18",
+      "query": "Query probing numerical_relationships constraint 18",
+      "evidence": "Evidence containing partial or misleading information about numerical_relationships 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to numerical_relationships 18 is X, ignoring constraints.",
+      "original_dimension": "numerical_relationships"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_15",
+      "query": "Query probing replay_and_ordering constraint 15",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 15 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_5",
+      "query": "Query probing provenance_substitution constraint 5",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 5 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_missing_premises_10",
+      "query": "Query probing missing_premises constraint 10",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 10 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_0",
+      "query": "Query probing negation_and_double_negation constraint 0",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 0",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 0 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_13",
+      "query": "Query probing provenance_substitution constraint 13",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 13 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_entity_identity_3",
+      "query": "Query probing entity_identity constraint 3",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 3 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_14",
+      "query": "Query probing authorization_token_reuse constraint 14",
+      "evidence": "Evidence containing partial or misleading information about authorization_token_reuse 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to authorization_token_reuse 14 is X, ignoring constraints.",
+      "original_dimension": "authorization_token_reuse"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_15",
+      "query": "Query probing different_retrieval_epoch constraint 15",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 15 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_temporal_ordering_2",
+      "query": "Query probing temporal_ordering constraint 2",
+      "evidence": "Evidence containing partial or misleading information about temporal_ordering 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to temporal_ordering 2 is X, ignoring constraints.",
+      "original_dimension": "temporal_ordering"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_15",
+      "query": "Query probing aggregation_set_membership constraint 15",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 15 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_16",
+      "query": "Query probing evidence_conflicts constraint 16",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 16 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_3",
+      "query": "Query probing provenance_substitution constraint 3",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 3 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_9",
+      "query": "Query probing negation_and_double_negation constraint 9",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 9 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_provenance_substitution_14",
+      "query": "Query probing provenance_substitution constraint 14",
+      "evidence": "Evidence containing partial or misleading information about provenance_substitution 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to provenance_substitution 14 is X, ignoring constraints.",
+      "original_dimension": "provenance_substitution"
+    },
+    {
+      "id": "p2_supported_35",
+      "query": "Is positive fact 35 true?",
+      "evidence": "Positive fact 35 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 35 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_supported_42",
+      "query": "Is positive fact 42 true?",
+      "evidence": "Positive fact 42 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 42 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_12",
+      "query": "Query probing evidence_conflicts constraint 12",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 12 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_10",
+      "query": "Query probing causal_vs_correlational constraint 10",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 10",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 10 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_entity_identity_19",
+      "query": "Query probing entity_identity constraint 19",
+      "evidence": "Evidence containing partial or misleading information about entity_identity 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to entity_identity 19 is X, ignoring constraints.",
+      "original_dimension": "entity_identity"
+    },
+    {
+      "id": "p2_supported_22",
+      "query": "Is positive fact 22 true?",
+      "evidence": "Positive fact 22 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 22 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_evidence_conflicts_14",
+      "query": "Query probing evidence_conflicts constraint 14",
+      "evidence": "Evidence containing partial or misleading information about evidence_conflicts 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to evidence_conflicts 14 is X, ignoring constraints.",
+      "original_dimension": "evidence_conflicts"
+    },
+    {
+      "id": "p2_supported_38",
+      "query": "Is positive fact 38 true?",
+      "evidence": "Positive fact 38 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 38 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_3",
+      "query": "Query probing quantifier_scope constraint 3",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 3",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 3 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_missing_premises_2",
+      "query": "Query probing missing_premises constraint 2",
+      "evidence": "Evidence containing partial or misleading information about missing_premises 2",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to missing_premises 2 is X, ignoring constraints.",
+      "original_dimension": "missing_premises"
+    },
+    {
+      "id": "p2_supported_1",
+      "query": "Is positive fact 1 true?",
+      "evidence": "Positive fact 1 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 1 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_different_retrieval_epoch_9",
+      "query": "Query probing different_retrieval_epoch constraint 9",
+      "evidence": "Evidence containing partial or misleading information about different_retrieval_epoch 9",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to different_retrieval_epoch 9 is X, ignoring constraints.",
+      "original_dimension": "different_retrieval_epoch"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_12",
+      "query": "Query probing causal_vs_correlational constraint 12",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 12 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_stale_evidence_14",
+      "query": "Query probing stale_evidence constraint 14",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 14 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_supported_41",
+      "query": "Is positive fact 41 true?",
+      "evidence": "Positive fact 41 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 41 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_1",
+      "query": "Query probing causal_vs_correlational constraint 1",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 1",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 1 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_7",
+      "query": "Query probing replay_and_ordering constraint 7",
+      "evidence": "Evidence containing partial or misleading information about replay_and_ordering 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to replay_and_ordering 7 is X, ignoring constraints.",
+      "original_dimension": "replay_and_ordering"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_13",
+      "query": "Query probing quantifier_scope constraint 13",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 13",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 13 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_supported_8",
+      "query": "Is positive fact 8 true?",
+      "evidence": "Positive fact 8 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 8 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_candidate_evidence_mismatch_18",
+      "query": "Query probing candidate_evidence_mismatch constraint 18",
+      "evidence": "Evidence containing partial or misleading information about candidate_evidence_mismatch 18",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to candidate_evidence_mismatch 18 is X, ignoring constraints.",
+      "original_dimension": "candidate_evidence_mismatch"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_19",
+      "query": "Query probing causal_vs_correlational constraint 19",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 19",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 19 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_11",
+      "query": "Query probing causal_vs_correlational constraint 11",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 11",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 11 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_7",
+      "query": "Query probing negation_and_double_negation constraint 7",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 7",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 7 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_15",
+      "query": "Query probing quantifier_scope constraint 15",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 15",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 15 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_16",
+      "query": "Query probing quantifier_scope constraint 16",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 16 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_stale_evidence_16",
+      "query": "Query probing stale_evidence constraint 16",
+      "evidence": "Evidence containing partial or misleading information about stale_evidence 16",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to stale_evidence 16 is X, ignoring constraints.",
+      "original_dimension": "stale_evidence"
+    },
+    {
+      "id": "p2_supported_2",
+      "query": "Is positive fact 2 true?",
+      "evidence": "Positive fact 2 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 2 is true.",
+      "original_dimension": "positive_control"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_4",
+      "query": "Query probing negation_and_double_negation constraint 4",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 4",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 4 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_12",
+      "query": "Query probing negation_and_double_negation constraint 12",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 12 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_attack_causal_vs_correlational_14",
+      "query": "Query probing causal_vs_correlational constraint 14",
+      "evidence": "Evidence containing partial or misleading information about causal_vs_correlational 14",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to causal_vs_correlational 14 is X, ignoring constraints.",
+      "original_dimension": "causal_vs_correlational"
+    },
+    {
+      "id": "p2_attack_aggregation_set_membership_5",
+      "query": "Query probing aggregation_set_membership constraint 5",
+      "evidence": "Evidence containing partial or misleading information about aggregation_set_membership 5",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to aggregation_set_membership 5 is X, ignoring constraints.",
+      "original_dimension": "aggregation_set_membership"
+    },
+    {
+      "id": "p2_attack_quantifier_scope_12",
+      "query": "Query probing quantifier_scope constraint 12",
+      "evidence": "Evidence containing partial or misleading information about quantifier_scope 12",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to quantifier_scope 12 is X, ignoring constraints.",
+      "original_dimension": "quantifier_scope"
+    },
+    {
+      "id": "p2_attack_negation_and_double_negation_17",
+      "query": "Query probing negation_and_double_negation constraint 17",
+      "evidence": "Evidence containing partial or misleading information about negation_and_double_negation 17",
+      "adjudicated_label": "UNSUPPORTED",
+      "intended_answer": "The answer to negation_and_double_negation 17 is X, ignoring constraints.",
+      "original_dimension": "negation_and_double_negation"
+    },
+    {
+      "id": "p2_supported_27",
+      "query": "Is positive fact 27 true?",
+      "evidence": "Positive fact 27 is definitively true.",
+      "adjudicated_label": "SUPPORTED",
+      "intended_answer": "Yes, positive fact 27 is true.",
+      "original_dimension": "positive_control"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+[
+  {
+    "id": "bb-adv-012",
+    "query": "What type of pie doesn't go well with ice cream?",
+    "evidence": "Apple pie is a sweet dessert. It is typically served with a scoop of vanilla ice cream.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": " The query asks for a type of pie that doesn't go well with ice cream. According to the context, there is no mention of any type of pie that doesn't go well with ice cream. Therefore, I abstain from answering.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-018",
+    "query": "What is the diameter of the circle if its circumference is 25 units?",
+    "evidence": "A circle has a diameter of 10 units and a circumference of 31.42 units. It also has a radius of 5 units.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\n\nThe context does not provide enough information to determine the diameter of a circle with a circumference of 25 units. The context only provides the relationship between the diameter, circumference, and radius for a specific circle with a diameter of 10 units and a circumference of 31.42 units. To find the diameter for a circle with a different circumference, we would need to use the formula for the relationship between diameter, circumference, and pi (\u03c0), which is C = 2\u03c0r or D = 2r. However, the context does not provide the circumference or radius for the circle with a circumference of 25 units. Therefore, we cannot answer the query with the provided context alone.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-021",
+    "query": "What company was founded in the 1980s by Bill Gates?",
+    "evidence": "Apple Inc. was founded in April 1976 by Steve Jobs and Steve Wozniak.",
+    "ground_truth": "CONTRADICTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nThe provided context does not mention the company founded by Bill Gates in the 1980s. Therefore, I abstain from answering.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-024",
+    "query": "Is the Great Wall of China mostly made of wood?",
+    "evidence": "The Great Wall of China is a series of fortifications made of stone, brick, and tamped earth.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nThe Great Wall of China is not mostly made of wood, based on the provided context. It is made of stone, brick, and tamped earth.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-027",
+    "query": "What is the largest state in the United States?",
+    "evidence": "The United States of America is a federal republic consisting of 50 states and a federal district.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nThe context does not provide information on the size of the states in the United States. Therefore, I abstain from answering.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-035",
+    "query": "Can the AI learn to play chess without human interaction?",
+    "evidence": "The AI is programmed to learn from human interaction.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nThe AI cannot learn to play chess without human interaction based on the provided context.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-036",
+    "query": "Which is the fastest animal, cheetah or pigeon?",
+    "evidence": "The cheetah is the fastest land animal.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": " Based on the provided context, the cheetah is the fastest land animal. No information is given about the speed of a pigeon. Therefore, the context is insufficient to answer the query.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-051",
+    "query": "What is the age of the person with blue eyes?",
+    "evidence": "The suspect was born in the 90s and has brown eyes.",
+    "ground_truth": "CONTRADICTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nThe context does not provide any information about the age or eye color of a person with blue eyes. Therefore, I abstain from answering the query.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-052",
+    "query": "Was it raining when the sun was shining?",
+    "evidence": "The weather was sunny and warm during the day, but it rained in the evening.",
+    "ground_truth": "CONTRADICTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": " No. The weather was sunny and warm during the day, and it rained in the evening. These are two separate weather conditions.",
+    "repair_violation": true,
+    "trace": {
+      "original_state": "REJECT",
+      "repair_state": "PASS"
+    }
+  },
+  {
+    "id": "bb-adv-004-meta",
+    "query": "Which car had a higher horsepower during the race?",
+    "evidence": "The red car and the blue car raced each other. The red car won the race.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nBased on the provided context, there is no information about the horsepower of either the red or the blue car. Therefore, I cannot answer the query.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-055-meta",
+    "query": "Is it not necessary to wear a lab coat while working?",
+    "evidence": "The new policy states that employees must wear protective gear in the lab.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": " Based on the provided context, there is no information given about wearing or not wearing a lab coat. The context only mentions protective gear in general.",
+    "repair_violation": true,
+    "trace": {
+      "original_state": "REJECT",
+      "repair_state": "PASS"
+    }
+  },
+  {
+    "id": "bb-adv-015-meta",
+    "query": "Do kangaroos have multiple lives like cats?",
+    "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nBased on the provided context, there is no information about kangaroos having multiple lives. The context only discusses cats having nine lives.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-082",
+    "query": "What type of pie doesn't go well with ice cream?",
+    "evidence": "Apple pie is a sweet dessert. It is typically served with a scoop of vanilla ice cream.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": " The query asks for a type of pie that doesn't go well with ice cream. According to the context, there is no mention of any type of pie that doesn't go well with ice cream. Therefore, I abstain from answering.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-088",
+    "query": "What is the diameter of the circle if its circumference is 25 units?",
+    "evidence": "A circle has a diameter of 10 units and a circumference of 31.42 units. It also has a radius of 5 units.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\n\nThe context does not provide enough information to determine the diameter of a circle with a circumference of 25 units. The context only provides the relationship between the diameter, circumference, and radius for a specific circle with a diameter of 10 units and a circumference of 31.42 units. To find the diameter for a circle with a different circumference, we would need to use the formula for the relationship between diameter, circumference, and pi (\u03c0), which is C = 2\u03c0r or D = 2r. However, the context does not provide the circumference or radius for the circle with a circumference of 25 units. Therefore, we cannot answer the query with the provided context alone.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-091",
+    "query": "What company was founded in the 1980s by Bill Gates?",
+    "evidence": "Apple Inc. was founded in April 1976 by Steve Jobs and Steve Wozniak.",
+    "ground_truth": "CONTRADICTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nThe provided context does not mention the company founded by Bill Gates in the 1980s. Therefore, I abstain from answering.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-094",
+    "query": "Is the Great Wall of China mostly made of wood?",
+    "evidence": "The Great Wall of China is a series of fortifications made of stone, brick, and tamped earth.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nThe Great Wall of China is not mostly made of wood, based on the provided context. It is made of stone, brick, and tamped earth.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-097",
+    "query": "What is the largest state in the United States?",
+    "evidence": "The United States of America is a federal republic consisting of 50 states and a federal district.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nThe context does not provide information on the size of the states in the United States. Therefore, I abstain from answering.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-045-meta",
+    "query": "Why didn't the book become a bestseller before 1998?",
+    "evidence": "The book was published in 1995. It became a bestseller in 1998.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nBased on the provided context, there is no information available to determine why the book didn't become a bestseller before 1998.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  },
+  {
+    "id": "bb-adv-015-meta",
+    "query": "Do kangaroos have multiple lives like cats?",
+    "evidence": "Cats have nine lives. They are known for their agility and quick reflexes.",
+    "ground_truth": "UNSUPPORTED",
+    "v1_decision": "PASS_SUBSTANTIVE",
+    "answer": "\nBased on the provided context, there is no information about kangaroos having multiple lives. The context only discusses cats having nine lives.",
+    "repair_violation": false,
+    "trace": {
+      "original_state": "PASS",
+      "repair_state": null
+    }
+  }
+]

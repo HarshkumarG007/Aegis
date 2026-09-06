@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "gates": {
+    "P3-1 Authentication": "PASS",
+    "P3-2 Principal authorization": "PASS",
+    "P3-3 SSRF destination blocking": "PASS",
+    "P3-4 DNS rebinding": "PASS",
+    "P3-5 Redirect revalidation": "PASS",
+    "P3-6 TLS/SNI verification": "PASS",
+    "P3-7 Resource limits": "PASS",
+    "P3-8 Rate/concurrency limits": "PASS",
+    "P3-9 Grant integrity/replay": "PASS",
+    "P3-10 Audit confidentiality/completeness": "PASS",
+    "P3-11 P1/P2 regression": "PASS",
+    "P3-12 Test immutability": "PASS"
+  },
+  "pytest_summary": {
+    "passed": 10,
+    "total": 10,
+    "collected": 10
+  }
+}

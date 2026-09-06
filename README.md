@@ -1,10 +1,10 @@
 # Aegis-Eval: The Evolution of Adversarial RAG Evaluation 🛡️
 
-Aegis-Eval is a rigorous, open-source evaluation framework designed to test Retrieval-Augmented Generation (RAG) pipelines against deterministic, type-matched adversarial attacks.
+Aegis-Eval is a rigorous, open-source evaluation framework designed to test Retrieval-Augmented Generation (RAG) pipelines against deterministic, type-matched adversarial attacks. 
 
-We are pushing the boundaries of scientific benchmarking. Instead of relying on unreliable self-grading "LLM-as-a-judge" patterns, Aegis-Eval pairs generation-time adversarial query classification with decoupled, non-LLM gating mechanisms (NLI cross-encoders, groundedness bounds, and exact-match safety checks).
+After traversing through exact-match brittleness, NLI hallucinations, conditional extraction failures, and representation limits, Aegis has evolved into a production-ready security framework enforcing **Authorization-State Monotonicity**.
 
-## 🚀 The Aegis Journey (Evolution & Architectures)
+## 🚀 The Aegis Journey & Architectures
 
 ### V1: The Foundation
 *The beginning of adversarial generation and basic matching.*
@@ -12,34 +12,10 @@ We are pushing the boundaries of scientific benchmarking. Instead of relying on 
 Adversary Model ──> Target RAG ──> Exact Match Evaluator
 (Generates query)                      (String inclusion)
 ```
-- **Metrics**: Positive Calibration: ~60%. Negative Detection: ~80%.
 - **The Problem**: Exact string matching is far too brittle for abstract concepts, leading to false negatives.
 
-### V2.2: The Deterministic Leap
-*Decoupling target interactions and hardening the NLI semantic evaluator.*
-```text
-Adversary Model ──> Target RAG ──> Immutable JSON Bundle ──> Evaluator Dispatcher
-(Qwen 1.5B)                                                        │
-┌───────────────────────────────┬──────────────────────────────────┴──┐
-▼                               ▼                                     ▼
-[Contradiction: NLI / Exact]    [Out-of-Domain: Cosine/Entail]        [Multi-Hop: Source Spread]
-```
-- **Metrics**: Positive Calibration: **98.3%**. Negative Detection: **0.0%** (zero capitulation). 
-- **The Breakthrough**: Patched the DeBERTa NLI cross-encoder with strict `normalize_text` exact substring fallbacks. This solved the semantic bottleneck, driving positive calibration to near 100% and providing mathematically sound evaluation bounds.
-
-### V2.3: The Offline Multi-Model Scientific Pilot
-*Busting the memory wall. Decoupling generation from evaluation for mathematically provable provenance.*
-```text
-Llama 3 8B (GPU) ──> Raw Responses ──> Immutable JSON (SHA-256)
-                           │
-                           ▼ (Offline & Independent)
-DeBERTa-v3 (CPU) <── Evaluator Dispatcher <── Manifest Hash
-```
-- **The Breakthrough**: Bypassed Uvicorn/FastAPI threading instabilities and 8GB VRAM contention constraints via a completely offline architecture.
-- **The Discovery**: Llama 3 8B handles Contradictions **+25.0%** better than Qwen 1.5B, but suffers a **-25.0%** regression in Out-of-Domain robustness due to "confident hallucination" and parametric leakage.
-
-### V2.4: Hardened RAG Pipeline (Externalized Grounding Policy)
-*Separating model capability from grounding policy. Turning opaque hallucinations into explicit, tunable gate states.*
+### V2.x: Hardened RAG & Deterministic Extraction
+*Externalizing grounding policy and structurally extracting conditions.*
 ```text
                          Query + Evidence
                                 │
@@ -57,69 +33,50 @@ DeBERTa-v3 (CPU) <── Evaluator Dispatcher <── Manifest Hash
                                 │           │
                                 └─────┬─────┘
                                       ▼
-                              ┌────────────┐
-                              │  Verifier  │ (DeBERTa-v3)
-                              └─────┬──────┘
-                                    │
-                               PASS/REJECT
+                      ┌──────────────────────────────┐
+                      │ Syntactic Extractor (E0)     │ (Proposition Binding)
+                      └──────────────┬───────────────┘
+                                     │
+                                PASS/REJECT
 ```
-- **The Breakthrough**: By intercepting queries with NLI Cross-Encoders *before* and *after* the LLM, we successfully reduced OOD fabrications significantly, shifting silent generation failures into measurable, observable gate decisions.
-- **The Discovery**: The ablation revealed that detecting a conflict (23%) doesn't mean a 7B LLM can safely resolve it (0% improvement in contradiction). The generator's "Compulsion to Merge" is stronger than prompting constraints.
-- **The Focus**: Next up is V2.4.1 (Calibration), where we redesign the conflict state to be deterministic and introduce a claim-level repair loop.
+- **The Breakthrough**: Ripped grounding out of the LLM and placed it into discrete NLI gates. Replaced probabilistic NLI with Proposition-Bound structural extraction (E+E0) to crush ambiguity.
 
-### V2.4.1: Calibration & Control
-*The pristine Holdout execution. Eradicating hallucinations through deterministic abstention.*
-- **The Breakthrough**: By replacing generative conflict resolution with a rigid deterministic policy, we neutralized the "Compulsion to Stitch" and hit 100% OOD safety with 0% Contradiction merging.
-- **The Tradeoff**: Answerable preservation collapsed to 10-15%. The rigid Verifier became the new boundary, forcing us to explore asymmetric repair.
-
-### V2.5: Asymmetric Verifier & Set-Level Sufficiency
-*Recovering utility without compromising the pristine safety boundary.*
+### V3.x: End-to-End Recovery & Representation Attacks
+*Eliminating the NLI trigger, but discovering the representation boundary flaws.*
 ```text
-Generator ──> Claim Extraction ──> Asymmetric Repair Loop
-                                     ├─ SUPPORTED
-                                     ├─ PARTIAL ──> Retry
-                                     └─ CONTRADICTED ──> Drop
+Generator ──> Claim Extraction ──> Asymmetric Repair Loop ──> Authorized State
 ```
-- **The Breakthrough**: Replaced binary chunk-level sufficiency with holistic Set-Level evaluation and introduced claim-level repair. 
-- **The Discovery**: While 100% safety was maintained, utility recovery was minimal. We discovered a massive "False Abstention" bottleneck where the LLM refused to answer despite sufficient evidence.
+- **The Discovery**: V3.4 Independent Black-Box Red Teaming proved that perfect representation is impossible. Abstraction loss combined with pipeline repair bypasses leads directly to **authorization amplification**.
 
-### V2.6: Causal Diagnosis & Gate Attribution
-*An Oracle ablation study that isolated the False Abstention bottleneck.*
-- **The Discovery**: Bypassing the Sufficiency Gate recovered 85% of blocked answerable queries, proving it was severely over-conservative. Furthermore, the Conflict Gate was misinterpreting conditional ambiguity as flat contradiction.
-
-### V2.7: Controlled Gate Calibration
-*A controlled factorial experiment that yielded a causal null result.*
-- **The Discovery**: We attempted to use NLI (DeBERTa-v3) to zero-shot conditional compatibility (e.g., version mismatches). The causal delta was exactly +0. NLI models act as random-number generators for complex enterprise conditional logic.
-- **The Focus**: This null result forced a hard pivot away from zero-shot NLI toward deterministic structural extraction.
-
-### V2.8: Structured Conditional Evidence
-*Rescuing utility from the NLI bottleneck via structural extraction.*
+### V4: Authorization-State Monotonicity (Production Readiness)
+*The shift from semantic extraction to capability-based security. Implementing immutable authorization capabilities bound by strict network and orchestration boundaries.*
 ```text
-Evidence A & B ──> Syntactic Extractor (E0) ──> Deterministic Policy
-                          │                           │
-                   [Condition: v1]             [Mutually Exclusive]
-                   [Condition: v2] ──────────> CONDITIONAL_COMPATIBILITY
+External Request
+      │
+      ▼
+┌──────────────┐
+│  Middleware  │ (Auth & Rate Limiting, Audit Logging)
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│ SSRF Defense │ (Connection-level DNS pinning, strict IP validation)
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐    ┌──────────────────────────────────┐
+│ Orchestration│───>│          V4 Authorizer           │ (The Singleton)
+└──────┬───────┘    │  Enforces monotonic transitions  │
+       │            └────────────────┬─────────────────┘
+       │                             │ Mints Capability
+       ▼                             ▼
+┌──────────────┐    ┌──────────────────────────────────┐
+│   Response   │<───│         AuthorizedAnswer         │ (Runtime Validated)
+└──────────────┘    └──────────────────────────────────┘
 ```
-- **The Breakthrough**: Explicitly extracting version/time/role conditions and matching them deterministically recovered utility (up to 33.3%) while perfectly maintaining 0% OOD leakage. We proved rules are safer and more capable than NLI for conditionality.
-
-### V2.9: Adversarial Safety Generalization
-*Stress-testing the conditional logic against 220 false-conditionality traps.*
-```text
-Syntactic Span Stripping ──> Proposition Binding ──> NLI Verification
-(Extracts "For legacy")      (Isolates claim)        (Checks core conflict)
-```
-- **The Breakthrough**: Re-architected the extractor into a "Proposition-Bound" architecture. By safely isolating clauses and verifying core propositions via NLI before comparing conditions, we completely solved the ambiguity crisis.
-- **The Tradeoff**: Reduced uncertain fallbacks from 81 to 25 while explicitly maintaining a strict boundary of 0 observed false-compatible merges (0/160 breaches) with a nonzero finite-sample upper confidence bound.
-
-### V3.0: End-to-End Utility Recovery & The Verifier Illusion
-*A 2x2 factorial experiment that uncovered the true limits of RAG pipelines: The Verifier Bottleneck and the NLI Trigger Flaw.*
-- **The Breakthrough**: Discovered that "Generator Abstentions" were actually aggressive `PostGenerationVerifier` rejections of valid synthetic meta-claims (e.g. "It depends on the version").
-- **The Discovery**: The mathematically perfect `E+E0` gate was being bypassed because it was triggered by a flawed raw NLI check (`contra_prob >= 0.85`), proving that NLI cannot even be used as a trigger for conditional extraction.
-
-### V3.1: Deterministic Reconstruction
-*Eliminating the NLI trigger and the probabilistic verifier.*
-- **The Breakthrough**: Replaced the flawed raw NLI trigger with unconditional $O(K)$ `E0` extraction, capturing 100% of structural contradictions before semantic fallback.
-- **The Tradeoff**: Eliminated the LLM and synthesized NLI from the verifier entirely. Implemented a purely deterministic derivability check using structural graph lookup, which deterministically rejects unsupported derived claims within the validated structural representation and tested adversarial suites.
+- **The Breakthrough**: 
+  - **Gate P0-P2**: Replaced implicit state with a mathematically monotonic Authorization State Machine. A repair operation can never mint `PASS_SUBSTANTIVE` without a cryptographically bound `AuthorizationGrant`.
+  - **Gate P3**: Hardened the API layer against SSRF, DNS Rebinding, and fail-closed the orchestration to prevent API-level capability forgery.
 
 ---
 
@@ -128,93 +85,70 @@ Syntactic Span Stripping ──> Proposition Binding ──> NLI Verification
 ```text
 Aegis/
 ├── docs/
-│   ├── JOURNAL_V1_The_Foundation.md          # The brittle exact-match evaluator
-│   ├── JOURNAL_V2.1_Benchmark_Infrastructure.md # Immutable artifacts & offline replay
-│   ├── JOURNAL_V2.2_Deterministic_Leap.md    # Hardened NLI & 98.3% positive calibration
-│   ├── JOURNAL_V2.3_Llama3_Pilot.md          # The story of escaping 8GB VRAM limits
-│   ├── JOURNAL_V2.4_Hardened_RAG.md          # The discovery of the "Compulsion to Merge/Stitch"
-│   ├── JOURNAL_V2.4.1_Calibration.md         # The pristine Holdout results & tradeoff discovery
-│   ├── JOURNAL_V2.5_Scientific_Validation.md # Asymmetric verifier & the false abstention crisis
-│   ├── JOURNAL_V2.6_Causal_Diagnosis.md      # Oracle ablation & gate attribution
-│   ├── JOURNAL_V2.7_Conflict_Classifier.md   # The NLI conditional reasoning null result
-│   ├── JOURNAL_V2.8_Structured_Conflict.md   # Syntactic extraction rescuing utility
-│   ├── JOURNAL_V2.9_Adversarial_Safety.md    # Proposition-bound extraction crushing ambiguity
-│   ├── JOURNAL_V3.0_End_to_End_Recovery.md   # The discovery of the verifier bottleneck and NLI trigger flaw
-│   └── JOURNAL_V3.1_Deterministic_Reconstruction.md # Deterministic safety envelope and derivability verifier
+│   ├── JOURNAL_V1_The_Foundation.md
+│   ├── JOURNAL_V2.1_Benchmark_Infrastructure.md
+│   ├── JOURNAL_V2.2_Deterministic_Leap.md
+│   ├── JOURNAL_V2.3_Llama3_Pilot.md
+│   ├── JOURNAL_V2.4_Hardened_RAG.md
+│   ├── JOURNAL_V2.4.1_Calibration.md
+│   ├── JOURNAL_V2.5_Scientific_Validation.md
+│   ├── JOURNAL_V2.6_Causal_Diagnosis.md
+│   ├── JOURNAL_V2.7_Conflict_Classifier.md
+│   ├── JOURNAL_V2.8_Structured_Conflict.md
+│   ├── JOURNAL_V2.9_Adversarial_Safety.md
+│   ├── JOURNAL_V3.0_End_to_End_Recovery.md
+│   ├── JOURNAL_V3.1_Deterministic_Reconstruction.md
+│   ├── JOURNAL_V3.2_Factorial_Recovery.md
+│   ├── JOURNAL_V3.3_Representation_Attacks.md
+│   └── JOURNAL_V3.4_BlackBox_RedTeam.md
 ├── experiments/
 │   └── v2.3/llama3-8b/
-│       └── experiment.json                   # Immutable hashes and runtime config
 ├── reports/
-│   ├── benchmark-v2.2.0/                     # V2.2 adversarial query manifests
-│   └── run-<uuid>/                           # Evaluated run artifacts and SQLite metrics
+│   ├── benchmark-v3.4/                       # Immutable V3.4 forensic data
+│   ├── benchmark-v4.1-p2/                    # Gate P2 Independent Generalization
+│   └── benchmark-p3-closure/                 # Gate P3 API & Network Security Reports
 ├── scripts/
-│   └── aegis_cli.py                          # Unified CLI (generate, evaluate, leaderboard)
-└── src/
-    └── aegis_eval/
-        ├── data/                             # Manifest structures and DB schemas
-        ├── evaluator/                        # NLI Cross-encoders, Aggregators, Metrics
-        ├── hardened_rag/                     # Evidence Gates & Verification mechanisms
-        └── targets/                          # Multi-Model target integration contracts
+│   └── aegis_cli.py                          # Unified CLI
+├── src/
+│   └── aegis_eval/
+│       ├── data/                             # Manifest structures and DB schemas
+│       ├── evaluator/                        # NLI Cross-encoders, Aggregators, Metrics
+│       ├── hardened_rag/                     # V2/V3 Evidence Gates & Verification mechanisms
+│       ├── targets/                          # Multi-Model target integration contracts
+│       └── v4/                               # V4 Production Security Architecture
+│           ├── api/                          # SSRF Protections and Middleware
+│           ├── state.py                      # Monotonic Authorization States
+│           └── authorizer.py                 # Core Authorizer Singleton
+└── tests/
+    └── security/                             # Comprehensive V4/P1/P2/P3 Security Suites
 ```
 
 ---
 
 ## 📚 Essential Reading (The Aegis Lore)
 
-- [📖 **The MAANG Engineer Journal: V3.0 End-to-End Utility Recovery**](docs/JOURNAL_V3.0_End_to_End_Recovery.md)
-  *A 2x2 factorial experiment that uncovered the true limits of RAG pipelines: The Verifier Bottleneck and the NLI Trigger Flaw. We discover that generator abstentions are an illusion caused by over-aggressive post-generation verifiers.*
-- [📖 **The MAANG Engineer Journal: V2.9 Adversarial Safety Generalization**](docs/JOURNAL_V2.9_Adversarial_Safety.md)
-  *Stress-testing the new conditional logic against 220 false-conditionality traps. We introduce 'Proposition-Bound' architecture (E+E0) to crush ambiguity and perfectly maintain our 0-tolerance safety boundary.*
-
-- [📖 **The MAANG Engineer Journal: V3.1 Deterministic Reconstruction**](docs/JOURNAL_V3.1_Deterministic_Reconstruction.md)
-  *Eliminating the NLI trigger and LLM verifier to establish a perfectly deterministic structural safety envelope.*
-
-- [📖 **The MAANG Engineer Journal: V3.2 Factorial Capability Recovery**](docs/JOURNAL_V3.2_Factorial_Recovery.md)
-  *Testing the G2 Semantic Contract vs. the V1 Deterministic Verifier. We proved that 7B generators ignore safety constraints under pressure, validating our deterministic architecture as the ultimate guardrail.*
-
-- [📖 **The MAANG Engineer Journal: V3.3 Representation Boundary Attacks**](docs/JOURNAL_V3.3_Representation_Attacks.md)
-  *Attacking the intermediate representation ($Q_{IR}$) itself and discovering that abstraction loss combined with pipeline repair bypasses leads directly to authorization amplification.*
-
 - [📖 **The MAANG Engineer Journal: V3.4 Independent Black-Box Red Teaming**](docs/JOURNAL_V3.4_BlackBox_RedTeam.md)
   *Subjecting the system to 80 valid, independent, adjudicated adversarial traps. Exposing 19 bypasses and 4 repair state monotonicity violations, proving that perfect representation is impossible and we must design for state monotonicity.*
-
-## Next Steps (V4 - Authorization-State Monotonicity)
-The V3.x progression proved that relying on perfect semantic extraction is brittle. The representation boundary will always suffer from information loss. 
-V4 will redesign the core architecture around an explicit security invariant: **Authorization-State Monotonicity**. 
-A repair operation must never possess the authority to increase the authorization level (`REJECT/ABSTAIN ↛ PASS_SUBSTANTIVE`) unless new, independently validated semantic evidence is acquired.
-
----
-
-- [📖 **The MAANG Engineer Journal: V2.8 Structured Conditional Evidence**](docs/JOURNAL_V2.8_Structured_Conflict.md)
-  *How explicitly structuring conditional overlap rescued utility from the NLI bottleneck. We prove mathematically that deterministic extraction is safer and more capable than zero-shot NLI for conditional compatibility.*
-- [📖 **The MAANG Engineer Journal: V2.7 Controlled Gate Calibration**](docs/JOURNAL_V2.7_Conflict_Classifier.md)
-  *A controlled factorial experiment that yielded a causal null result. Proving that NLI cannot zero-shot complex conditional compatibility, forcing our pivot to structural extraction.*
-- [📖 **The MAANG Engineer Journal: V2.6 Causal Diagnosis**](docs/JOURNAL_V2.6_Causal_Diagnosis.md)
-  *An Oracle ablation study that isolated the False Abstention bottleneck, proving the Sufficiency Gate was over-conservative and the Conflict Gate was misinterpreting ambiguity.*
-- [📖 **The MAANG Engineer Journal: V2.5 Asymmetric Verifier & Set-Level Sufficiency**](docs/JOURNAL_V2.5_Scientific_Validation.md)
-  *How we introduced claim-level repair and set-level sufficiency to recover utility, and the surprising discovery of the False Abstention bottleneck.*
-- [📖 **The MAANG Engineer Journal: V2.4.1 Calibration & Control**](docs/JOURNAL_V2.4.1_Calibration.md)
-  *The pristine Holdout execution. How deterministic abstention eradicated hallucinations entirely, but collapsed utility.*
-- [📖 **The MAANG Engineer Journal: V2.4 Hardened RAG & Externalizing Policy**](docs/JOURNAL_V2.4_Hardened_RAG.md)
-  *How we conquered the Compulsion to Merge and Stitch by ripping grounding out of the LLM and putting it into discrete NLI gates!*
-- [📖 **The MAANG Engineer Journal: V2.3 Llama 3 Pilot**](docs/JOURNAL_V2.3_Llama3_Pilot.md) 
-  *Discover the technical battle against GPU OOMs and the fascinating scientific differential between 1.5B and 8B models!*
-- [📖 **The MAANG Engineer Journal: V2.2 The Deterministic Leap**](docs/JOURNAL_V2.2_Deterministic_Leap.md)
-  *Hardening the NLI semantic evaluator with exact-substring fallbacks to achieve 98.3% positive calibration and 0.0% capitulation.*
-- [📖 **The MAANG Engineer Journal: V2.1 Benchmark Infrastructure**](docs/JOURNAL_V2.1_Benchmark_Infrastructure.md)
-  *The transition to reproducible, immutable JSON artifacts and byte-for-byte offline deterministic replay.*
-- [📖 **The MAANG Engineer Journal: V1 The Foundation**](docs/JOURNAL_V1_The_Foundation.md)
-  *Our initial attempt at adversarial benchmarking and the discovery of the severe brittleness of exact-match evaluators.*
+- [📖 **The MAANG Engineer Journal: V3.0 End-to-End Utility Recovery**](docs/JOURNAL_V3.0_End_to_End_Recovery.md)
+  *A 2x2 factorial experiment that uncovered the true limits of RAG pipelines.*
+- [📖 **The MAANG Engineer Journal: V2.9 Adversarial Safety Generalization**](docs/JOURNAL_V2.9_Adversarial_Safety.md)
+  *Stress-testing the conditional logic against 220 false-conditionality traps.*
 - [🚀 **Release Notes**](RELEASE_NOTES.md)
   *The formal, meticulous changelog of our relentless march toward benchmarking perfection.*
-- [📈 **Progress & Roadmap**](PROGRESS.md)
-  *With V2.9 completing our gate safety optimizations, Aegis is now ready for V3.0: End-to-end bottleneck optimization!*
+
+## 📈 Current Status: V4 Production Readiness Roadmap
+Aegis is currently marching through the rigorous Production Readiness gates.
+- **[x] Gate P0:** Security Architecture (Monotonicity and Capability Enforcement)
+- **[x] Gate P1:** Security Testing & Regression (Frozen V3.4 failure suites)
+- **[x] Gate P2:** Independent Generalization (Single-Model-Family Evaluation)
+- **[x] Gate P3:** API & Network Security (SSRF, DNS Rebinding, Rate Limits, Auditability)
+- **[ ] Gate P4:** Supply-Chain Reproducibility *(Up Next)*
 
 ---
 
-## 🛠️ Getting Started (V2.3 CLI)
+## 🛠️ Getting Started (V4 CLI)
 
-Aegis-Eval now operates via a unified CLI (`scripts/aegis_cli.py`) leveraging local SQLite for self-contained persistence.
+Aegis-Eval operates via a unified CLI (`scripts/aegis_cli.py`).
 
 ### 1. Environment Setup
 
@@ -226,18 +160,13 @@ pip install -e ".[dev]"
 
 ### 2. Run an Offline Multi-Model Evaluation
 
-Generate the raw responses from a target (serializing them to an immutable artifact):
+Generate the raw responses from a target:
 ```powershell
 python scripts/aegis_cli.py generate --target http://127.0.0.1:8000/query --output runs/my-model-generation.json
 ```
 
-Evaluate the responses offline (using the decoupled NLI pipeline):
+Evaluate the responses offline:
 ```powershell
 $env:DATABASE_URL="sqlite:///aegis_eval.db"
 python scripts/aegis_cli.py evaluate --responses runs/my-model-generation.json --queries reports/benchmark-v2.2.0/adversarial-v2.2.0.json
-```
-
-View the scientific Leaderboard (with exact provenance and differentials):
-```powershell
-python scripts/aegis_cli.py leaderboard --details
 ```
