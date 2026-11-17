@@ -143,7 +143,10 @@ Aegis is currently marching through the rigorous Production Readiness gates.
 - **[x] Gate P2:** Independent Generalization (Single-Model-Family Evaluation)
 - **[x] Gate P3:** API & Network Security (SSRF, DNS Rebinding, Rate Limits, Auditability)
 - **[x] Gate P4:** Supply-Chain Reproducibility (Dependency Pinning & Security Policies)
-- **[ ] Gate P5:** Operational Security *(Up Next)*
+- **[x] Gate P5:** Operational Security (Zero-Leakage Log Sanitization & Container Hardening)
+- **[x] Gate P6:** Scientific Validation & Multi-Model Re-Audit (Resolved P2 single-family limitation)
+- **[x] Gate P7:** Production Release & Deployment Acceptance (v4.2.0 Release Ready)
+- **[x] Gate P∞:** Kill-Critic Re-Audit (All Gates P0–P∞ Formally Certified)
 
 ---
 

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aegis_eval"
-version = "1.0.0"
-description = "Adversarial RAG Evaluation Harness"
+version = "4.2.0"
+description = "Aegis-Eval: Capability-Based Adversarial RAG Evaluation and Authorization Harness"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

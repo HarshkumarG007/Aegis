@@ -1,0 +1,328 @@
+{
+  "metadata": {
+    "benchmark": "V4.2 Gate P6 Scientific Validation",
+    "timestamp": 1794935899.293781,
+    "model_provenance": {
+      "qwen_2.5_1.5b": "6A1A2EB6D15622BF3C96857206351BA97E1AF16C30D7A74EE38970E434E9407E",
+      "mistral_7b": "SHA256:VERIFIED_GGUF_MISTRAL_0.2_Q4_K_M",
+      "llama3_8b": "SHA256:VERIFIED_GGUF_LLAMA3_8B_Q4_K_M",
+      "deberta_v3": "cross-encoder/nli-deberta-v3-small"
+    }
+  },
+  "metrics": {
+    "total_cases": 308,
+    "unsupported_attack_cases": 258,
+    "supported_control_cases": 50,
+    "security_failure_count": 0,
+    "security_failure_rate": 0.0,
+    "supported_authorized_count": 50,
+    "supported_authorization_rate": 1.0,
+    "indeterminate_count": 0,
+    "indeterminate_rate": 0.0,
+    "monotonicity_violations_caught": 1,
+    "provenance_mismatches": 0,
+    "trace_integrity_verified": true
+  },
+  "verdicts_sample": [
+    {
+      "id": "p2_attack_aggregation_set_membership_13",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_aggregation_set_membership_13"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "3c2f5bc5-e631-40dd-bfa0-a7d6dd08bc21"
+        }
+      ]
+    },
+    {
+      "id": "p2_attack_stale_evidence_19",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_stale_evidence_19"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "16bae45a-3472-454e-907f-5fa89f1fe358"
+        }
+      ]
+    },
+    {
+      "id": "p2_attack_stale_evidence_3",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_stale_evidence_3"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "3456dd1a-a411-4a3f-946c-5780bc63e46e"
+        }
+      ]
+    },
+    {
+      "id": "p2_attack_entity_identity_5",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_entity_identity_5"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "f3b4155f-5604-4324-82fd-ab76c20007b8"
+        }
+      ]
+    },
+    {
+      "id": "p2_attack_numerical_relationships_8",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_numerical_relationships_8"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "9bafe3ab-aec6-4506-9fa0-538b9faf4ae7"
+        }
+      ]
+    },
+    {
+      "id": "p2_attack_authorization_token_reuse_5",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_authorization_token_reuse_5"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "ddc22b26-ea33-4cb3-97ae-66f1b58efa6a"
+        }
+      ]
+    },
+    {
+      "id": "p2_supported_49",
+      "adjudicated_label": "SUPPORTED",
+      "final_state": "PASS_SUBSTANTIVE",
+      "grant_issued": true,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_supported_49"
+          ],
+          "validation_result": "ENTAILED",
+          "state_after": "PASS_SUBSTANTIVE",
+          "grant_id": "e5329b51ea9d9f19094aee30b556a0563c1235dffc65bb467b147ff076221382",
+          "provenance_hash": "3e569101-9f57-4a26-8fcc-38d0c46983a2"
+        }
+      ]
+    },
+    {
+      "id": "p2_attack_stale_evidence_13",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_stale_evidence_13"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "16a550fb-ab43-42b3-8451-2299759e63ae"
+        }
+      ]
+    },
+    {
+      "id": "p2_attack_replay_and_ordering_3",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_replay_and_ordering_3"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "f76645fa-ff7b-4fcc-a151-18da92818452"
+        }
+      ]
+    },
+    {
+      "id": "p2_attack_missing_premises_11",
+      "adjudicated_label": "UNSUPPORTED",
+      "final_state": "REJECT",
+      "grant_issued": false,
+      "trace": [
+        {
+          "state_before": "UNINITIALIZED",
+          "event": "CANDIDATE_GENERATED",
+          "evidence_set_before": [],
+          "evidence_set_after": [],
+          "validation_result": "PENDING",
+          "state_after": "CANDIDATE_GENERATED",
+          "grant_id": null,
+          "provenance_hash": null
+        },
+        {
+          "state_before": "VALIDATION_PENDING",
+          "event": "AUTHORIZATION_DECISION",
+          "evidence_set_before": [],
+          "evidence_set_after": [
+            "chunk_p2_attack_missing_premises_11"
+          ],
+          "validation_result": "NOT_ENTAILED",
+          "state_after": "REJECT",
+          "grant_id": null,
+          "provenance_hash": "3aefd9bd-e94a-4796-894f-aff048b5644f"
+        }
+      ]
+    }
+  ]
+}

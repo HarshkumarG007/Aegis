@@ -3,32 +3,83 @@ import json
 import secrets
 import hashlib
 import functools
+import re
 from dataclasses import dataclass, field
-from typing import Dict, Optional, Callable, Any
+from typing import Dict, Optional, Callable, Any, Union
 
 from aegis_eval.v4.state import AuthorizedAnswer, DecisionState
+
+# -- Log Sanitizer & Redaction Engine --
+
+class LogSanitizer:
+    """
+    Zero-trust log scrubber that redacts secrets, bearer tokens, API keys, 
+    passwords, and credentials from log strings, exceptions, and nested data.
+    """
+    PATTERNS = [
+        # Database / HTTP URI credentials (e.g. postgresql://user:secret@host)
+        (re.compile(r'://([^:]+):([^@]+)@'), r'://\1:[REDACTED]@'),
+        # Bearer tokens
+        (re.compile(r'(?i)\b(bearer\s+)[a-zA-Z0-9_\-\.]+'), r'\1[REDACTED]'),
+        # Basic Auth tokens
+        (re.compile(r'(?i)\b(basic\s+)[a-zA-Z0-9+/=]+'), r'\1[REDACTED]'),
+        # Key-value secret assignments (api_key=..., secret_key=..., token='...')
+        (re.compile(r'(?i)\b((?:api|secret|auth)[_-]?(?:key|token)|secret|token|password)\s*[:=]\s*["\']?[a-zA-Z0-9_\-\.]+["\']?'), r'\1=[REDACTED]'),
+        # Private key blocks
+        (re.compile(r'-----BEGIN [A-Z ]+PRIVATE KEY-----[^-]+-----END [A-Z ]+PRIVATE KEY-----', re.DOTALL), r'[REDACTED PRIVATE KEY]'),
+    ]
+
+    @classmethod
+    def sanitize_string(cls, text: str) -> str:
+        """Applies all redaction rules to a string."""
+        if not text:
+            return ""
+        result = text
+        for pattern, replacement in cls.PATTERNS:
+            result = pattern.sub(replacement, result)
+        return result
+
+    @classmethod
+    def sanitize(cls, data: Any) -> Any:
+        """Recursively sanitizes nested dictionaries, lists, and strings."""
+        if isinstance(data, str):
+            return cls.sanitize_string(data)
+        elif isinstance(data, dict):
+            return {cls.sanitize(k): cls.sanitize(v) for k, v in data.items()}
+        elif isinstance(data, (list, tuple, set)):
+            return [cls.sanitize(item) for item in data]
+        elif isinstance(data, Exception):
+            return cls.sanitize_string(str(data))
+        return data
+
 
 # -- Audit Logging --
 
 class AuditLogger:
+    last_log_entry: Optional[Dict[str, Any]] = None
+
     @staticmethod
     def log(principal: str, target: str, request_id: str, decision: str, 
             provenance_hashes: Dict[str, str], failure_reason: Optional[str] = None):
         """
         Structured JSON audit logger capturing security-relevant provenance.
-        Does NOT log payloads or raw credentials.
+        Automatically applies LogSanitizer to ensure zero secret leakage in logs.
         """
+        sanitized_failure = LogSanitizer.sanitize_string(failure_reason) if failure_reason else None
+        sanitized_provenance = LogSanitizer.sanitize(provenance_hashes)
+        
         log_entry = {
             "timestamp": time.time(),
-            "principal": principal,
-            "target": target,
+            "principal": LogSanitizer.sanitize_string(principal),
+            "target": LogSanitizer.sanitize_string(target),
             "request_id": request_id,
             "decision": decision,
-            "provenance_hashes": provenance_hashes,
+            "provenance_hashes": sanitized_provenance,
         }
-        if failure_reason:
-            log_entry["failure_reason"] = failure_reason
+        if sanitized_failure:
+            log_entry["failure_reason"] = sanitized_failure
             
+        AuditLogger.last_log_entry = log_entry
         print(json.dumps(log_entry))
 
 
@@ -67,8 +118,6 @@ class RateLimiter:
 
 # -- Authentication and Authorization --
 
-# In a real app, this would be backed by a DB. 
-# Storing hashes of API keys, NEVER plaintext.
 VALID_API_KEY_HASHES = {
     # Hashed version of "test_api_key_123"
     "test_user": hashlib.sha256(b"test_api_key_123").hexdigest(),
@@ -109,7 +158,7 @@ def require_auth_and_audit(target_name: str):
     4. Executes wrapped logic.
     5. Enforces that the API logic CANNOT manually mint a PASS_SUBSTANTIVE.
        It must return a valid AuthorizedAnswer created via Authorizer.
-    6. Emits Audit Log.
+    6. Emits Sanitized Audit Log.
     """
     def decorator(func: Callable):
         @functools.wraps(func)
@@ -125,7 +174,6 @@ def require_auth_and_audit(target_name: str):
                 AuditLogger.log(principal, target_name, request_id, "REJECT", {}, "Principal not authorized for target")
                 raise PermissionError("Unauthorized for this target")
                 
-            # Note: RateLimiter is a global singleton for this mock
             if not global_rate_limiter.allow_request(principal):
                 AuditLogger.log(principal, target_name, request_id, "REJECT", {}, "Rate limit exceeded")
                 raise ConnectionRefusedError("Rate limit exceeded")
@@ -135,25 +183,21 @@ def require_auth_and_audit(target_name: str):
                 result = func(request, principal, *args, **kwargs)
                 
                 # FAIL-CLOSED ORCHESTRATION CHECK
-                # Ensure the API did not just return a fake object.
-                # If the result claims PASS_SUBSTANTIVE, it MUST be a valid AuthorizedAnswer
-                # with a valid grant (which is enforced by AuthorizedAnswer.__post_init__).
                 if isinstance(result, AuthorizedAnswer):
                     if result.state == DecisionState.PASS_SUBSTANTIVE:
-                        # Validation passes (the __post_init__ already validated the grant)
                         provenance = result.provenance
                         AuditLogger.log(principal, target_name, request_id, "PASS_SUBSTANTIVE", provenance)
                     else:
                         AuditLogger.log(principal, target_name, request_id, result.state.value, {})
                 else:
-                    # If it's just a standard API response (e.g. target registration), log success
                     AuditLogger.log(principal, target_name, request_id, "SUCCESS", {})
                     
                 return result
                 
             except Exception as e:
-                # Any orchestration failure (e.g., provenance mismatch from Authorizer) fails closed
-                AuditLogger.log(principal, target_name, request_id, "REJECT", {}, str(e))
+                # Log sanitized exception string to prevent secret reflection
+                sanitized_err = LogSanitizer.sanitize_string(str(e))
+                AuditLogger.log(principal, target_name, request_id, "REJECT", {}, sanitized_err)
                 raise
                 
         return wrapper
